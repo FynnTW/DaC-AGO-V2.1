@@ -1,0 +1,781 @@
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_Ithilien/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Faramir at 0x22fd99c8 from script
+		Creating unit (Ithilien Rangers) at 0x259bbe38
+		Creating unit (Ithilien Rangers) at 0x220d5f10
+		Creating unit (Ithilien Rangers) at 0x24727828
+		Creating unit (Ithilien Rangers) at 0x21f92c40
+		Creating unit (Ithilien Rangers) at 0x220ecf08
+		Creating unit (Ithilien Rangers) at 0x21c7f2f8
+		Creating unit (Ithilien Rangers) at 0x21b7a4e0
+		Creating unit (Ithilien Rangers) at 0x21c4efb0
+		Creating unit (Ithilien Rangers) at 0x612b090
+		Creating unit (Fountain Guard) at 0x2e638d20
+		Creating unit (Citadel Guard) at 0x21b8fa70
+		Creating unit (Gondor Spearmen) at 0x21b8fcb8
+		Creating unit (Ithilien Rangers) at 0x21d94640
+		Creating unit (Ithilien Rangers) at 0x21d93f68
+Created faction spain from file
+	Creating army controlled by Amro at 0x22fd47c0 from script
+		Creating unit (Serpent Bodyguards) at 0x21d94ad0
+		Creating unit (Southron Pikemen) at 0x21d94d18
+		Creating unit (Southron Warband) at 0x21d94f60
+		Creating unit (Muhad Tribesmen) at 0x21d951a8
+		Creating unit (Haradrim Spearmen) at 0x21d953f0
+		Creating unit (Haradrim Spearmen) at 0x21d95638
+		Creating unit (Mumakil) at 0x21d95880
+		Creating unit (Haradrim Spearmen) at 0x21d95ac8
+		Creating unit (Haradrim Spearmen) at 0x21d95d10
+		Creating unit (Haradrim Spearmen) at 0x21d95f58
+		Creating unit (Southron Warband) at 0x21d961a0
+		Creating unit (Hasharii) at 0x21d963e8
+		Creating unit (Haradrim Spearmen) at 0x21d96630
+		Creating unit (Haradrim Spearmen) at 0x21d96878
+		Creating unit (Haradrim Archers) at 0x21d96ac0
+		Creating unit (Southron Pikemen) at 0x21d96d08
+		Creating unit (Southron Pikemen) at 0x229b0ec0
+		Creating unit (Southron Pikemen) at 0x229b1108
+		Creating unit (Southron Pikemen) at 0x229b1350
+		Creating unit (Southron Pikemen) at 0x229b1598
+Adding unit (Ithilien Rangers) at 0x259bbe38 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x220d5f10 to deployment area at 0xab4ef24
+Adding unit (Ithilien Rangers) at 0x24727828 to deployment area at 0xab4ef24
+Adding unit (Ithilien Rangers) at 0x21f92c40 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x220ecf08 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x21c7f2f8 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x21b7a4e0 to deployment area at 0xab4ef9c
+Adding unit (Ithilien Rangers) at 0x21c4efb0 to deployment area at 0xab4ef9c
+Adding unit (Ithilien Rangers) at 0x612b090 to deployment area at 0xab4ef9c
+Adding unit (Fountain Guard) at 0x2e638d20 to deployment area at 0xab4efd8
+Adding unit (Citadel Guard) at 0x21b8fa70 to deployment area at 0xab4efd8
+Adding unit (Gondor Spearmen) at 0x21b8fcb8 to deployment area at 0xab4efd8
+Adding unit (Ithilien Rangers) at 0x21d94640 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x21d93f68 to deployment area at 0xab4f050
+Adding unit (Serpent Bodyguards) at 0x21d94ad0 to deployment area at 0xab4f08c
+Adding unit (Southron Pikemen) at 0x21d94d18 to deployment area at 0xab4f08c
+Adding unit (Southron Warband) at 0x21d94f60 to deployment area at 0xab4f08c
+Adding unit (Muhad Tribesmen) at 0x21d951a8 to deployment area at 0xab4f08c
+Adding unit (Haradrim Spearmen) at 0x21d953f0 to deployment area at 0xab4f08c
+Adding unit (Haradrim Spearmen) at 0x21d95638 to deployment area at 0xab4f08c
+Adding unit (Mumakil) at 0x21d95880 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x21d95ac8 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x21d95d10 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x21d95f58 to deployment area at 0x21f98920
+Adding unit (Southron Warband) at 0x21d961a0 to deployment area at 0x21f98920
+Adding unit (Hasharii) at 0x21d963e8 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x21d96630 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x21d96878 to deployment area at 0x21f98920
+Adding unit (Haradrim Archers) at 0x21d96ac0 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x21d96d08 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x229b0ec0 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x229b1108 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x229b1350 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x229b1598 to deployment area at 0x21f98920
+Load finished **************************
+
+
+Trying to remove unit (Serpent Bodyguards) at 0x21d94ad0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x21d94d18 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Southron Warband) at 0x21d94f60 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Muhad Tribesmen) at 0x21d951a8 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d953f0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d95638 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Mumakil) at 0x21d95880 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d95ac8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d95d10 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d95f58 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Warband) at 0x21d961a0 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Hasharii) at 0x21d963e8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d96630 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Spearmen) at 0x21d96878 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Haradrim Archers) at 0x21d96ac0 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x21d96d08 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x229b0ec0 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x229b1108 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x229b1350 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Southron Pikemen) at 0x229b1598 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x220d5f10 from deployment area at 0xab4ef24 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x24727828 from deployment area at 0xab4ef24 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21f92c40 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x220ecf08 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21c7f2f8 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21b7a4e0 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21c4efb0 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x612b090 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Fountain Guard) at 0x2e638d20 from deployment area at 0xab4efd8 and the unit wasn't found
+Trying to remove unit (Citadel Guard) at 0x21b8fa70 from deployment area at 0xab4efd8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x21b8fcb8 from deployment area at 0xab4efd8 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21d94640 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21d93f68 from deployment area at 0xab4f050 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_Ithilien/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Faramir at 0x22e12ee8 from script
+		Creating unit (Ithilien Rangers) at 0x21d93f68
+		Creating unit (Ithilien Rangers) at 0x21d94640
+		Creating unit (Ithilien Rangers) at 0x21d96d08
+		Creating unit (Ithilien Rangers) at 0x21d96ac0
+		Creating unit (Ithilien Rangers) at 0x21d96878
+		Creating unit (Ithilien Rangers) at 0x21d96630
+		Creating unit (Ithilien Rangers) at 0x21d963e8
+		Creating unit (Ithilien Rangers) at 0x21d961a0
+		Creating unit (Ithilien Rangers) at 0x21d95f58
+		Creating unit (Fountain Guard) at 0x21d95d10
+		Creating unit (Citadel Guard) at 0x21d95ac8
+		Creating unit (Gondor Spearmen) at 0x21d95880
+		Creating unit (Ithilien Rangers) at 0x21d95638
+		Creating unit (Ithilien Rangers) at 0x21d953f0
+Created faction spain from file
+	Creating army controlled by Amro at 0x22e1bd68 from script
+		Creating unit (Serpent Bodyguards) at 0x21d951a8
+		Creating unit (Southron Pikemen) at 0x21d94f60
+		Creating unit (Southron Warband) at 0x21d94d18
+		Creating unit (Muhad Tribesmen) at 0x21d94ad0
+		Creating unit (Haradrim Spearmen) at 0x32876890
+		Creating unit (Haradrim Spearmen) at 0x32876ad8
+		Creating unit (Mumakil) at 0x32876d20
+		Creating unit (Haradrim Spearmen) at 0x32876f68
+		Creating unit (Haradrim Spearmen) at 0x328771b0
+		Creating unit (Haradrim Spearmen) at 0x328773f8
+		Creating unit (Southron Warband) at 0x32877640
+		Creating unit (Hasharii) at 0x32877888
+		Creating unit (Haradrim Spearmen) at 0x32877ad0
+		Creating unit (Haradrim Spearmen) at 0x32877d18
+		Creating unit (Haradrim Archers) at 0x32877f60
+		Creating unit (Southron Pikemen) at 0x328781a8
+		Creating unit (Southron Pikemen) at 0x328783f0
+		Creating unit (Southron Pikemen) at 0x32878638
+		Creating unit (Southron Pikemen) at 0x32878880
+		Creating unit (Southron Pikemen) at 0x32878ac8
+Adding unit (Ithilien Rangers) at 0x21d93f68 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x21d94640 to deployment area at 0xab4ef24
+Adding unit (Ithilien Rangers) at 0x21d96d08 to deployment area at 0xab4ef24
+Adding unit (Ithilien Rangers) at 0x21d96ac0 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x21d96878 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x21d96630 to deployment area at 0xab4ef60
+Adding unit (Ithilien Rangers) at 0x21d963e8 to deployment area at 0xab4ef9c
+Adding unit (Ithilien Rangers) at 0x21d961a0 to deployment area at 0xab4ef9c
+Adding unit (Ithilien Rangers) at 0x21d95f58 to deployment area at 0xab4ef9c
+Adding unit (Fountain Guard) at 0x21d95d10 to deployment area at 0xab4efd8
+Adding unit (Citadel Guard) at 0x21d95ac8 to deployment area at 0xab4efd8
+Adding unit (Gondor Spearmen) at 0x21d95880 to deployment area at 0xab4efd8
+Adding unit (Ithilien Rangers) at 0x21d95638 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x21d953f0 to deployment area at 0xab4f050
+Adding unit (Serpent Bodyguards) at 0x21d951a8 to deployment area at 0xab4f08c
+Adding unit (Southron Pikemen) at 0x21d94f60 to deployment area at 0xab4f08c
+Adding unit (Southron Warband) at 0x21d94d18 to deployment area at 0xab4f08c
+Adding unit (Muhad Tribesmen) at 0x21d94ad0 to deployment area at 0xab4f08c
+Adding unit (Haradrim Spearmen) at 0x32876890 to deployment area at 0xab4f08c
+Adding unit (Haradrim Spearmen) at 0x32876ad8 to deployment area at 0xab4f08c
+Adding unit (Mumakil) at 0x32876d20 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x32876f68 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x328771b0 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x328773f8 to deployment area at 0x21f98920
+Adding unit (Southron Warband) at 0x32877640 to deployment area at 0x21f98920
+Adding unit (Hasharii) at 0x32877888 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x32877ad0 to deployment area at 0x21f98920
+Adding unit (Haradrim Spearmen) at 0x32877d18 to deployment area at 0x21f98920
+Adding unit (Haradrim Archers) at 0x32877f60 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x328781a8 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x328783f0 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x32878638 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x32878880 to deployment area at 0x21f98920
+Adding unit (Southron Pikemen) at 0x32878ac8 to deployment area at 0x21f98920
+Load finished **************************
+
+
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_Minas_Tirith/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Iorlas at 0x2203e1a8 from script
+		Creating unit (General's Bodyguard) at 0x328791a0
+		Creating unit (Gondor Archers) at 0x32879ac0
+		Creating unit (Gondor Archers) at 0x3287a3e0
+		Creating unit (Gondor Archers) at 0x3287a628
+		Creating unit (Trebuchet) at 0x328793e8
+		Creating unit (Trebuchet) at 0x32878d10
+		Creating unit (Gondor Archers) at 0x32879630
+		Creating unit (Gondor Archers) at 0x32879878
+		Creating unit (Gondor Archers) at 0x3287a198
+		Creating unit (Trebuchet) at 0x32879f50
+		Creating unit (Trebuchet) at 0x32878f58
+		Creating unit (Trebuchet) at 0x32879d08
+		Creating unit (Gondor Spearmen) at 0x2ee3bb30
+		Creating unit (Gondor Spearmen) at 0x2ee3bd78
+		Creating unit (Gondor Spearmen) at 0x2ee3bfc0
+		Creating unit (Gondor Spearmen) at 0x2ee3c208
+		Creating unit (Dismounted Swan Knights) at 0x2ee3c450
+		Creating unit (Dismounted Swan Knights) at 0x2ee3c698
+		Creating unit (Gondor Spearmen) at 0x2ee3c8e0
+		Creating unit (Gondor Spearmen) at 0x2ee3cb28
+	Creating army controlled by Denethor at 0x220413d0 from script
+		Creating unit (Fountain Guard) at 0x2ee3cd70
+		Creating unit (Fountain Guard) at 0x2ee3cfb8
+		Creating unit (General's Bodyguard) at 0x2ee3d200
+		Creating unit (Gondor Spearmen) at 0x2ee3d448
+		Creating unit (Gondor Spearmen) at 0x2ee3d690
+		Creating unit (Gondor Spearmen) at 0x2ee3d8d8
+		Creating unit (Gondor Spearmen) at 0x2ee3db20
+		Creating unit (Gondor Spearmen) at 0x2ee3dd68
+		Creating unit (Citadel Guard) at 0x2ee3dfb0
+		Creating unit (Citadel Guard) at 0x2ee3e1f8
+		Creating unit (Ithilien Rangers) at 0x2ee3e440
+		Creating unit (Ithilien Rangers) at 0x2ee3e688
+		Creating unit (Ithilien Rangers) at 0x2ee3e8d0
+		Creating unit (Ithilien Rangers) at 0x2ee3eb18
+		Creating unit (Gondor Archers) at 0x2ee3ed60
+		Creating unit (Gondor Archers) at 0x2ee3efa8
+		Creating unit (Gondor Infantry) at 0x2ee3f1f0
+Created faction milan from file
+	Creating army controlled by Theoden at 0x2203b700 from script
+		Creating unit (Rohan Bodyguards) at 0x2ee3f438
+		Creating unit (Royal Guard) at 0x2ee3f680
+		Creating unit (Royal Guard) at 0x2ee3f8c8
+		Creating unit (Éored Heavy Lancers) at 0x3e720bb8
+		Creating unit (Éored Heavy Lancers) at 0x3e720e00
+		Creating unit (Éored Heavy Lancers) at 0x3e721048
+		Creating unit (Riders of the Fold) at 0x3e721290
+		Creating unit (Riders of the Fold) at 0x3e7214d8
+		Creating unit (Riders of the Fold) at 0x3e721720
+Created faction england from file
+	Creating army controlled by Witch-King at 0x2203bbb0 from script
+		Creating unit (Uruk Bodyguard) at 0x3e721968
+		Creating unit (Dismounted Nazgul) at 0x3e721bb0
+		Creating unit (Olog-Hai) at 0x3e721df8
+		Creating unit (Orc Band) at 0x3e722040
+		Creating unit (Orc Band) at 0x3e722288
+		Creating unit (Orc Band) at 0x3e7224d0
+		Creating unit (Orc Band) at 0x3e722718
+		Creating unit (Orc Band) at 0x3e722960
+		Creating unit (Orc Archers) at 0x3e722ba8
+		Creating unit (Orc Archers) at 0x3e722df0
+		Creating unit (Orc Archers) at 0x3e723038
+		Creating unit (Orc Archers) at 0x3e723280
+		Creating unit (Troll Catapult) at 0x3e7234c8
+		Creating unit (Troll Catapult) at 0x3e723710
+		Creating unit (Troll Catapult) at 0x3e723958
+		Creating unit (Troll Catapult) at 0x3e723ba0
+		Creating unit (Troll Catapult) at 0x3e723de8
+		Creating unit (Uruk Halberds) at 0x3e724030
+		Creating unit (Scouts) at 0x3e724278
+		Creating unit (Dismounted Black Númenóreans) at 0x3e7244c0
+	Creating army controlled by Naglur at 0x2203b610 from script
+		Creating unit (Uruk Bodyguard) at 0x3e724708
+		Creating unit (Troll Catapult) at 0x3e724950
+		Creating unit (Troll Catapult) at 0x332c1f60
+		Creating unit (Orc Band) at 0x332c21a8
+		Creating unit (Orc Band) at 0x332c23f0
+		Creating unit (Orc Band) at 0x332c2638
+		Creating unit (Orc Band) at 0x332c2880
+		Creating unit (Orc Maulers) at 0x332c2ac8
+		Creating unit (Orc Maulers) at 0x332c2d10
+		Creating unit (Orc Maulers) at 0x332c2f58
+		Creating unit (Orc Maulers) at 0x332c31a0
+		Creating unit (Morannon Guard) at 0x332c33e8
+		Creating unit (Uruks) at 0x332c3630
+		Creating unit (Uruks) at 0x332c3878
+		Creating unit (Uruks) at 0x332c3ac0
+		Creating unit (Uruks) at 0x332c3d08
+		Creating unit (Uruks) at 0x332c3f50
+		Creating unit (Uruk Archers) at 0x332c4198
+		Creating unit (Uruk Archers) at 0x332c43e0
+		Creating unit (Uruk Archers) at 0x332c4628
+	Creating army controlled by Burz at 0x22042690 from script
+		Creating unit (Uruk Bodyguard) at 0x332c4870
+		Creating unit (Uruk Archers) at 0x332c4ab8
+		Creating unit (Uruk Archers) at 0x332c4d00
+		Creating unit (Orc Band) at 0x332c4f48
+		Creating unit (Morannon Guard) at 0x332c5190
+		Creating unit (Orc Band) at 0x332c53d8
+		Creating unit (Morannon Guard) at 0x332c5620
+		Creating unit (Morannon Guard) at 0x332c5868
+		Creating unit (Orc Maulers) at 0x332c5ab0
+		Creating unit (Orc Maulers) at 0x332c5cf8
+		Creating unit (Orc Maulers) at 0x3e2e8c98
+		Creating unit (Orc Maulers) at 0x3e2e8ee0
+		Creating unit (Ranged Orc Looters) at 0x3e2e9128
+		Creating unit (Ranged Orc Looters) at 0x3e2e9370
+		Creating unit (Orc Band) at 0x3e2e95b8
+		Creating unit (Orc Band) at 0x3e2e9800
+Adding unit (General's Bodyguard) at 0x328791a0 to deployment area at 0xab4eee8
+Adding unit (Gondor Archers) at 0x32879ac0 to deployment area at 0xab4eee8
+Adding unit (Gondor Archers) at 0x3287a3e0 to deployment area at 0xab4eee8
+Adding unit (Gondor Archers) at 0x3287a628 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x2ee3bd78 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x2ee3c208 to deployment area at 0xab4eee8
+Adding unit (Dismounted Swan Knights) at 0x2ee3c698 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x2ee3cb28 to deployment area at 0xab4eee8
+Adding unit (Trebuchet) at 0x328793e8 to deployment area at 0xab4ef24
+Adding unit (Trebuchet) at 0x32878d10 to deployment area at 0xab4ef24
+Adding unit (Gondor Archers) at 0x32879630 to deployment area at 0xab4ef60
+Adding unit (Gondor Archers) at 0x32879878 to deployment area at 0xab4ef60
+Adding unit (Gondor Archers) at 0x3287a198 to deployment area at 0xab4ef60
+Adding unit (Gondor Spearmen) at 0x2ee3bb30 to deployment area at 0xab4ef60
+Adding unit (Gondor Spearmen) at 0x2ee3bfc0 to deployment area at 0xab4ef60
+Adding unit (Dismounted Swan Knights) at 0x2ee3c450 to deployment area at 0xab4ef60
+Adding unit (Gondor Spearmen) at 0x2ee3c8e0 to deployment area at 0xab4ef60
+Adding unit (Trebuchet) at 0x32879d08 to deployment area at 0xab4ef9c
+Adding unit (Trebuchet) at 0x32878f58 to deployment area at 0xab4ef9c
+Adding unit (Trebuchet) at 0x32879f50 to deployment area at 0xab4ef9c
+Adding unit (Fountain Guard) at 0x2ee3cd70 to deployment area at 0xab4efd8
+Adding unit (Fountain Guard) at 0x2ee3cfb8 to deployment area at 0xab4efd8
+Adding unit (General's Bodyguard) at 0x2ee3d200 to deployment area at 0xab4f014
+Adding unit (Gondor Archers) at 0x2ee3ed60 to deployment area at 0xab4f014
+Adding unit (Gondor Spearmen) at 0x2ee3d8d8 to deployment area at 0xab4f014
+Adding unit (Gondor Spearmen) at 0x2ee3d690 to deployment area at 0xab4f014
+Adding unit (Citadel Guard) at 0x2ee3e1f8 to deployment area at 0xab4f014
+Adding unit (Gondor Spearmen) at 0x2ee3db20 to deployment area at 0xab4f014
+Adding unit (Citadel Guard) at 0x2ee3dfb0 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x2ee3e8d0 to deployment area at 0xab4f014
+Adding unit (Gondor Spearmen) at 0x2ee3dd68 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x2ee3eb18 to deployment area at 0xab4f014
+Adding unit (Gondor Infantry) at 0x2ee3f1f0 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x2ee3e440 to deployment area at 0xab4f014
+Adding unit (Gondor Spearmen) at 0x2ee3d448 to deployment area at 0xab4f014
+Adding unit (Ithilien Rangers) at 0x2ee3e688 to deployment area at 0xab4f014
+Adding unit (Gondor Archers) at 0x2ee3efa8 to deployment area at 0xab4f014
+Adding unit (Uruk Bodyguard) at 0x3e721968 to deployment area at 0xab4f050
+Adding unit (Dismounted Nazgul) at 0x3e721bb0 to deployment area at 0xab4f050
+Adding unit (Olog-Hai) at 0x3e721df8 to deployment area at 0xab4f050
+Adding unit (Orc Band) at 0x3e722040 to deployment area at 0xab4f050
+Adding unit (Orc Band) at 0x3e722288 to deployment area at 0xab4f050
+Adding unit (Orc Band) at 0x3e7224d0 to deployment area at 0xab4f050
+Adding unit (Orc Band) at 0x3e722718 to deployment area at 0xab4f050
+Adding unit (Orc Band) at 0x3e722960 to deployment area at 0xab4f050
+Adding unit (Orc Archers) at 0x3e722ba8 to deployment area at 0xab4f050
+Adding unit (Orc Archers) at 0x3e722df0 to deployment area at 0xab4f050
+Adding unit (Orc Archers) at 0x3e723038 to deployment area at 0xab4f050
+Adding unit (Orc Archers) at 0x3e723280 to deployment area at 0xab4f050
+Adding unit (Troll Catapult) at 0x3e7234c8 to deployment area at 0xab4f050
+Adding unit (Troll Catapult) at 0x3e723710 to deployment area at 0xab4f050
+Adding unit (Troll Catapult) at 0x3e723958 to deployment area at 0xab4f050
+Adding unit (Troll Catapult) at 0x3e723ba0 to deployment area at 0xab4f050
+Adding unit (Troll Catapult) at 0x3e723de8 to deployment area at 0xab4f050
+Adding unit (Uruk Halberds) at 0x3e724030 to deployment area at 0xab4f050
+Adding unit (Scouts) at 0x3e724278 to deployment area at 0xab4f050
+Adding unit (Dismounted Black Númenóreans) at 0x3e7244c0 to deployment area at 0xab4f050
+Adding unit (Uruk Bodyguard) at 0x3e724708 to deployment area at 0xab4f08c
+Adding unit (Troll Catapult) at 0x3e724950 to deployment area at 0xab4f08c
+Adding unit (Troll Catapult) at 0x332c1f60 to deployment area at 0xab4f08c
+Adding unit (Orc Band) at 0x332c21a8 to deployment area at 0xab4f08c
+Adding unit (Orc Band) at 0x332c23f0 to deployment area at 0xab4f08c
+Adding unit (Orc Band) at 0x332c2638 to deployment area at 0xab4f08c
+Adding unit (Orc Band) at 0x332c2880 to deployment area at 0xab4f08c
+Adding unit (Orc Maulers) at 0x332c2ac8 to deployment area at 0xab4f08c
+Adding unit (Orc Maulers) at 0x332c2d10 to deployment area at 0xab4f08c
+Adding unit (Orc Maulers) at 0x332c2f58 to deployment area at 0xab4f08c
+Adding unit (Orc Maulers) at 0x332c31a0 to deployment area at 0xab4f08c
+Adding unit (Morannon Guard) at 0x332c33e8 to deployment area at 0xab4f08c
+Adding unit (Uruks) at 0x332c3630 to deployment area at 0xab4f08c
+Adding unit (Uruks) at 0x332c3878 to deployment area at 0xab4f08c
+Adding unit (Uruks) at 0x332c3ac0 to deployment area at 0xab4f08c
+Adding unit (Uruks) at 0x332c3d08 to deployment area at 0xab4f08c
+Adding unit (Uruks) at 0x332c3f50 to deployment area at 0xab4f08c
+Adding unit (Uruk Archers) at 0x332c4198 to deployment area at 0xab4f08c
+Adding unit (Uruk Archers) at 0x332c43e0 to deployment area at 0xab4f08c
+Adding unit (Uruk Archers) at 0x332c4628 to deployment area at 0xab4f08c
+Adding unit (Uruk Bodyguard) at 0x332c4870 to deployment area at 0x21f98920
+Adding unit (Uruk Archers) at 0x332c4ab8 to deployment area at 0x21f98920
+Adding unit (Uruk Archers) at 0x332c4d00 to deployment area at 0x21f98920
+Adding unit (Orc Band) at 0x332c4f48 to deployment area at 0x21f98920
+Adding unit (Morannon Guard) at 0x332c5190 to deployment area at 0x21f98920
+Adding unit (Orc Band) at 0x332c53d8 to deployment area at 0x21f98920
+Adding unit (Morannon Guard) at 0x332c5620 to deployment area at 0x21f98920
+Adding unit (Morannon Guard) at 0x332c5868 to deployment area at 0x21f98920
+Adding unit (Orc Maulers) at 0x332c5ab0 to deployment area at 0x21f98920
+Adding unit (Orc Maulers) at 0x332c5cf8 to deployment area at 0x21f98920
+Adding unit (Orc Maulers) at 0x3e2e8c98 to deployment area at 0x21f98920
+Adding unit (Orc Maulers) at 0x3e2e8ee0 to deployment area at 0x21f98920
+Adding unit (Ranged Orc Looters) at 0x3e2e9128 to deployment area at 0x21f98920
+Adding unit (Ranged Orc Looters) at 0x3e2e9370 to deployment area at 0x21f98920
+Adding unit (Orc Band) at 0x3e2e95b8 to deployment area at 0x21f98920
+Adding unit (Orc Band) at 0x3e2e9800 to deployment area at 0x21f98920
+Adding unit (Rohan Bodyguards) at 0x2ee3f438 to deployment area at 0x21f9895c
+Adding unit (Royal Guard) at 0x2ee3f680 to deployment area at 0x21f9895c
+Adding unit (Royal Guard) at 0x2ee3f8c8 to deployment area at 0x21f9895c
+Adding unit (Éored Heavy Lancers) at 0x3e720bb8 to deployment area at 0x21f9895c
+Adding unit (Éored Heavy Lancers) at 0x3e720e00 to deployment area at 0x21f9895c
+Adding unit (Éored Heavy Lancers) at 0x3e721048 to deployment area at 0x21f9895c
+Adding unit (Riders of the Fold) at 0x3e721290 to deployment area at 0x21f9895c
+Adding unit (Riders of the Fold) at 0x3e7214d8 to deployment area at 0x21f9895c
+Adding unit (Riders of the Fold) at 0x3e721720 to deployment area at 0x21f9895c
+Load finished **************************
+
+
+Trying to remove unit (Uruk Bodyguard) at 0x3e721968 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Dismounted Nazgul) at 0x3e721bb0 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Olog-Hai) at 0x3e721df8 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e722040 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e722288 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e7224d0 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e722718 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e722960 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Archers) at 0x3e722ba8 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Archers) at 0x3e722df0 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Archers) at 0x3e723038 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Orc Archers) at 0x3e723280 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e7234c8 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e723710 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e723958 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e723ba0 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e723de8 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Uruk Halberds) at 0x3e724030 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Scouts) at 0x3e724278 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Dismounted Black Númenóreans) at 0x3e7244c0 from deployment area at 0xab4f050 and the unit wasn't found
+Trying to remove unit (Uruk Bodyguard) at 0x3e724708 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x3e724950 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Troll Catapult) at 0x332c1f60 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c21a8 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c23f0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c2638 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c2880 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c2ac8 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c2d10 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c2f58 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c31a0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Morannon Guard) at 0x332c33e8 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruks) at 0x332c3630 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruks) at 0x332c3878 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruks) at 0x332c3ac0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruks) at 0x332c3d08 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruks) at 0x332c3f50 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruk Archers) at 0x332c4198 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruk Archers) at 0x332c43e0 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruk Archers) at 0x332c4628 from deployment area at 0xab4f08c and the unit wasn't found
+Trying to remove unit (Uruk Bodyguard) at 0x332c4870 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Uruk Archers) at 0x332c4ab8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Uruk Archers) at 0x332c4d00 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c4f48 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Morannon Guard) at 0x332c5190 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x332c53d8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Morannon Guard) at 0x332c5620 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Morannon Guard) at 0x332c5868 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c5ab0 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x332c5cf8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x3e2e8c98 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Maulers) at 0x3e2e8ee0 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Ranged Orc Looters) at 0x3e2e9128 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Ranged Orc Looters) at 0x3e2e9370 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e2e95b8 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Orc Band) at 0x3e2e9800 from deployment area at 0x21f98920 and the unit wasn't found
+Trying to remove unit (Rohan Bodyguards) at 0x2ee3f438 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Royal Guard) at 0x2ee3f680 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Royal Guard) at 0x2ee3f8c8 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Éored Heavy Lancers) at 0x3e720bb8 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Éored Heavy Lancers) at 0x3e720e00 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Éored Heavy Lancers) at 0x3e721048 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Riders of the Fold) at 0x3e721290 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Riders of the Fold) at 0x3e7214d8 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (Riders of the Fold) at 0x3e721720 from deployment area at 0x21f9895c and the unit wasn't found
+Trying to remove unit (General's Bodyguard) at 0x328791a0 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x32879ac0 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x3287a3e0 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x3287a628 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Trebuchet) at 0x328793e8 from deployment area at 0xab4ef24 and the unit wasn't found
+Trying to remove unit (Trebuchet) at 0x32878d10 from deployment area at 0xab4ef24 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x32879630 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x32879878 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x3287a198 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Trebuchet) at 0x32879f50 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Trebuchet) at 0x32878f58 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Trebuchet) at 0x32879d08 from deployment area at 0xab4ef9c and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3bb30 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3bd78 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3bfc0 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3c208 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Dismounted Swan Knights) at 0x2ee3c450 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Dismounted Swan Knights) at 0x2ee3c698 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3c8e0 from deployment area at 0xab4ef60 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3cb28 from deployment area at 0xab4eee8 and the unit wasn't found
+Trying to remove unit (Fountain Guard) at 0x2ee3cd70 from deployment area at 0xab4efd8 and the unit wasn't found
+Trying to remove unit (Fountain Guard) at 0x2ee3cfb8 from deployment area at 0xab4efd8 and the unit wasn't found
+Trying to remove unit (General's Bodyguard) at 0x2ee3d200 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3d448 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3d690 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3d8d8 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3db20 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2ee3dd68 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Citadel Guard) at 0x2ee3dfb0 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Citadel Guard) at 0x2ee3e1f8 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x2ee3e440 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x2ee3e688 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x2ee3e8d0 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x2ee3eb18 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x2ee3ed60 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x2ee3efa8 from deployment area at 0xab4f014 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x2ee3f1f0 from deployment area at 0xab4f014 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_the_Camp/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Eradan at 0x22424f98 from script
+		Creating unit (General's Bodyguard) at 0x32879d08
+		Creating unit (Gondor Spearmen) at 0x32878f58
+		Creating unit (Gondor Spearmen) at 0x32879f50
+		Creating unit (Gondor Spearmen) at 0x3287a198
+		Creating unit (Gondor Spearmen) at 0x32879878
+		Creating unit (Gondor Infantry) at 0x32879630
+		Creating unit (Gondor Infantry) at 0x32878d10
+		Creating unit (Gondor Infantry) at 0x328793e8
+		Creating unit (Gondor Archers) at 0x3287a628
+		Creating unit (Gondor Archers) at 0x3287a3e0
+		Creating unit (Pelargir Marines) at 0x32879ac0
+		Creating unit (Pelargir Marines) at 0x328791a0
+		Creating unit (Pelargir Marines) at 0x25b8e0a0
+		Creating unit (Ithilien Rangers) at 0x25b8e2e8
+		Creating unit (Ithilien Rangers) at 0x25b8e530
+		Creating unit (Ithilien Rangers) at 0x25b8e778
+		Creating unit (Ithilien Rangers) at 0x25b8e9c0
+		Creating unit (Gondor Cavalry) at 0x25b8ec08
+		Creating unit (Gondor Cavalry) at 0x25b8ee50
+Created faction venice from file
+	Creating army controlled by Uldor at 0x224325d0 from script
+		Creating unit ( Bodyguard) at 0x25b8f098
+		Creating unit ( Balchoth Tribesmen) at 0x25b8f2e0
+		Creating unit ( Balchoth Tribesmen) at 0x25b8f528
+		Creating unit ( Balchoth Tribesmen) at 0x25b8f770
+		Creating unit ( Balchoth Tribesmen) at 0x25b8f9b8
+		Creating unit ( Balchoth Tribesmen) at 0x25b8fc00
+		Creating unit ( Balchoth Tribesmen) at 0x25b8fe48
+		Creating unit ( Balchoth Tribesmen) at 0x25b90090
+		Creating unit ( Balchoth Tribesmen) at 0x25b902d8
+		Creating unit ( Lôke-Nar Rim) at 0x25b90520
+		Creating unit ( Lôke-Nar Rim) at 0x25b90768
+		Creating unit ( Lôke-Nar Rim) at 0x25b909b0
+		Creating unit ( Lôke-Nar Rim) at 0x25b90bf8
+		Creating unit ( Variag Raiders) at 0x25b90e40
+		Creating unit ( Variag Raiders) at 0x25b91088
+		Creating unit ( Clan Hunters) at 0x25b912d0
+		Creating unit ( Clan Hunters) at 0x25b91518
+		Creating unit ( Lôke-Nar Rim) at 0x25b91760
+		Creating unit ( Lôke-Nar Rim) at 0x25b919a8
+		Creating unit ( Lôke-Nar Rim) at 0x25b91bf0
+	Creating army controlled by Bori at 0x2243e420 from script
+		Creating unit ( Bodyguard) at 0x25b91e38
+		Creating unit ( Balchoth Tribesmen) at 0x331150a8
+		Creating unit ( Balchoth Tribesmen) at 0x331152f0
+		Creating unit ( Balchoth Tribesmen) at 0x33115538
+		Creating unit ( Balchoth Tribesmen) at 0x33115780
+		Creating unit ( Balchoth Tribesmen) at 0x331159c8
+		Creating unit ( Balchoth Tribesmen) at 0x33115c10
+		Creating unit ( Balchoth Tribesmen) at 0x33115e58
+		Creating unit ( Balchoth Tribesmen) at 0x331160a0
+		Creating unit ( Clan Hunters) at 0x331162e8
+		Creating unit ( Clan Hunters) at 0x33116530
+		Creating unit ( Lôke-Gamp Rim) at 0x33116778
+		Creating unit ( Lôke-Gamp Rim) at 0x331169c0
+		Creating unit ( Lôke-Gamp Rim) at 0x33116c08
+		Creating unit ( Lôke-Gamp Rim) at 0x33116e50
+		Creating unit ( Lôke-Gamp Rim) at 0x33117098
+		Creating unit ( Lôke-Gamp Rim) at 0x331172e0
+		Creating unit ( Lôke-Gamp Rim) at 0x33117528
+		Creating unit ( Lôke-Nar Rim) at 0x33117770
+		Creating unit ( Lôke-Nar Rim) at 0x331179b8
+Adding unit (General's Bodyguard) at 0x32879d08 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x32878f58 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x32879f50 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x3287a198 to deployment area at 0xab4eee8
+Adding unit (Gondor Spearmen) at 0x32879878 to deployment area at 0xab4eee8
+Adding unit (Gondor Infantry) at 0x32879630 to deployment area at 0xab4eee8
+Adding unit (Gondor Infantry) at 0x32878d10 to deployment area at 0xab4eee8
+Adding unit (Gondor Infantry) at 0x328793e8 to deployment area at 0xab4eee8
+Adding unit (Gondor Archers) at 0x3287a628 to deployment area at 0xab4eee8
+Adding unit (Gondor Archers) at 0x3287a3e0 to deployment area at 0xab4eee8
+Adding unit (Pelargir Marines) at 0x32879ac0 to deployment area at 0xab4eee8
+Adding unit (Pelargir Marines) at 0x328791a0 to deployment area at 0xab4eee8
+Adding unit (Pelargir Marines) at 0x25b8e0a0 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x25b8e2e8 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x25b8e530 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x25b8e778 to deployment area at 0xab4eee8
+Adding unit (Ithilien Rangers) at 0x25b8e9c0 to deployment area at 0xab4eee8
+Adding unit (Gondor Cavalry) at 0x25b8ec08 to deployment area at 0xab4eee8
+Adding unit (Gondor Cavalry) at 0x25b8ee50 to deployment area at 0xab4eee8
+Adding unit ( Bodyguard) at 0x25b8f098 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8f2e0 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8f528 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8f770 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8f9b8 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8fc00 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b8fe48 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b90090 to deployment area at 0xab4ef24
+Adding unit ( Balchoth Tribesmen) at 0x25b902d8 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b90520 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b90768 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b909b0 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b90bf8 to deployment area at 0xab4ef24
+Adding unit ( Variag Raiders) at 0x25b90e40 to deployment area at 0xab4ef24
+Adding unit ( Variag Raiders) at 0x25b91088 to deployment area at 0xab4ef24
+Adding unit ( Clan Hunters) at 0x25b912d0 to deployment area at 0xab4ef24
+Adding unit ( Clan Hunters) at 0x25b91518 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b91760 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b919a8 to deployment area at 0xab4ef24
+Adding unit ( Lôke-Nar Rim) at 0x25b91bf0 to deployment area at 0xab4ef24
+Adding unit ( Bodyguard) at 0x25b91e38 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x331150a8 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x331152f0 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x33115538 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x33115780 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x331159c8 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x33115c10 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x33115e58 to deployment area at 0xab4ef60
+Adding unit ( Balchoth Tribesmen) at 0x331160a0 to deployment area at 0xab4ef60
+Adding unit ( Clan Hunters) at 0x331162e8 to deployment area at 0xab4ef60
+Adding unit ( Clan Hunters) at 0x33116530 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x33116778 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x331169c0 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x33116c08 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x33116e50 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x33117098 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x331172e0 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Gamp Rim) at 0x33117528 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Nar Rim) at 0x33117770 to deployment area at 0xab4ef60
+Adding unit ( Lôke-Nar Rim) at 0x331179b8 to deployment area at 0xab4ef60
+Load finished **************************
+
+
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_the_Five_Armies/descr_battle.txt
+Created faction scotland from file
+	Creating army controlled by Bard at 0x225ac728 from script
+		Creating unit (Bardian Marksmen) at 0x33117e48
+		Creating unit (Dale Swordmasters) at 0x33118bf8
+		Creating unit (Dale Swordsmen) at 0x33118e40
+		Creating unit (Dale Swordsmen) at 0x331189b0
+		Creating unit (Athala Rangers) at 0x33118090
+		Creating unit (Longbowmen) at 0x33117c00
+		Creating unit (Woodsmen) at 0x33118520
+		Creating unit (Rivermen) at 0x331182d8
+		Creating unit (Rivermen) at 0x33118768
+Created faction moors from file
+	Creating army controlled by Dain at 0x225a34e8 from script
+		Creating unit (Dwarven Noblemen) at 0x5f55b3c8
+		Creating unit (Iron Guard) at 0x5f55b610
+		Creating unit (Iron Guard) at 0x5f55b858
+		Creating unit (Dwarven Halberdmen) at 0x5f55baa0
+		Creating unit (Dwarven Axemen) at 0x5f55bce8
+		Creating unit (Dwarven Halberdmen) at 0x5f55bf30
+	Creating army controlled by Thorin at 0x225a97d0 from script
+		Creating unit (Dwarven Noblemen) at 0x5f55c178
+Created faction mongols from file
+	Creating army controlled by Thranduil at 0x22594470 from script
+		Creating unit (Sindar Archers) at 0x5f55c3c0
+		Creating unit (Silvan Spearmen) at 0x5f55c608
+		Creating unit (Silvan Spearmen) at 0x5f55c850
+		Creating unit (Silvan Spearmen) at 0x5f55ca98
+		Creating unit (Silvan Spearmen) at 0x5f55cce0
+		Creating unit (Silvan Heavy Archers) at 0x5f55cf28
+		Creating unit (Light Elven Archers) at 0x5f55d170
+		Creating unit (Light Elven Archers) at 0x5f55d3b8
+		Creating unit (Sentinels of the Woodland Realms) at 0x5f55d600
+		Creating unit (Sentinels of the Woodland Realms) at 0x5f55d848
+		Creating unit (Sentinels of the Woodland Realms) at 0x5f55da90
+		Creating unit (Forest Wardens) at 0x5f55dcd8
+Created faction hre from file
+	Creating army controlled by Bolg at 0x22598d90 from script
+		Creating unit (Orc Bodyguards) at 0x5f55df20
+		Creating unit (Goblin Infantry) at 0x5f55e168
+		Creating unit (Goblin Infantry) at 0x5f55e3b0
+		Creating unit (Goblin Infantry) at 0x5f55e5f8
+		Creating unit (Goblin Infantry) at 0x5f55e840
+		Creating unit (Goblin Infantry) at 0x5f55ea88
+		Creating unit (Goblin Infantry) at 0x5f55ecd0
+		Creating unit (Goblin Infantry) at 0x5f55ef18
+		Creating unit (Goblin Infantry) at 0x5f55f160
+		Creating unit (Goblin Archers) at 0x332cbf60
+		Creating unit (Goblin Archers) at 0x332cc1a8
+		Creating unit (Goblin Archers) at 0x332cc3f0
+		Creating unit (Goblin Archers) at 0x332cc638
+		Creating unit (Heavy Goblin Halberd) at 0x332cc880
+		Creating unit (Heavy Goblin Halberd) at 0x332ccac8
+		Creating unit (Heavy Goblin Halberd) at 0x332ccd10
+		Creating unit (Heavy Goblin Halberd) at 0x332ccf58
+		Creating unit (Warg Riders) at 0x332cd1a0
+		Creating unit (Warg Riders) at 0x332cd3e8
+		Creating unit (Warg Riders) at 0x332cd630
+	Creating army controlled by Lugthak at 0x225923a0 from script
+		Creating unit (Orc Bodyguards) at 0x332cd878
+		Creating unit (Heavy Goblin Halberd) at 0x332cdac0
+		Creating unit (Heavy Goblin Halberd) at 0x332cdd08
+		Creating unit (Heavy Goblin Halberd) at 0x332cdf50
+		Creating unit (Heavy Goblin Infantry) at 0x332ce198
+		Creating unit (Heavy Goblin Infantry) at 0x332ce3e0
+		Creating unit (Heavy Goblin Infantry) at 0x332ce628
+		Creating unit (Snaga Archers) at 0x332ce870
+		Creating unit (Snaga Archers) at 0x332ceab8
+		Creating unit (Snaga Archers) at 0x332ced00
+		Creating unit (Heavy Goblin Infantry) at 0x332cef48
+		Creating unit (Heavy Goblin Infantry) at 0x332cf190
+		Creating unit (Heavy Goblin Halberd) at 0x332cf3d8
+		Creating unit (Heavy Goblin Halberd) at 0x332cf620
+		Creating unit (Heavy Goblin Archers) at 0x332cf868
+		Creating unit (Heavy Goblin Archers) at 0x332cfab0
+		Creating unit (Warg Riders) at 0x332cfcf8
+		Creating unit (Warg Riders) at 0x2f3d5ff8
+		Creating unit (Warg Riders) at 0x2f3d6240
+		Creating unit (Warg Riders) at 0x2f3d6488
+Adding unit (Bardian Marksmen) at 0x33117e48 to deployment area at 0xab4eee8
+Adding unit (Dale Swordmasters) at 0x33118bf8 to deployment area at 0xab4eee8
+Adding unit (Dale Swordsmen) at 0x33118e40 to deployment area at 0xab4eee8
+Adding unit (Dale Swordsmen) at 0x331189b0 to deployment area at 0xab4eee8
+Adding unit (Athala Rangers) at 0x33118090 to deployment area at 0xab4eee8
+Adding unit (Longbowmen) at 0x33117c00 to deployment area at 0xab4eee8
+Adding unit (Woodsmen) at 0x33118520 to deployment area at 0xab4eee8
+Adding unit (Rivermen) at 0x331182d8 to deployment area at 0xab4eee8
+Adding unit (Rivermen) at 0x33118768 to deployment area at 0xab4eee8
+Adding unit (Dwarven Noblemen) at 0x5f55b3c8 to deployment area at 0xab4ef24
+Adding unit (Iron Guard) at 0x5f55b610 to deployment area at 0xab4ef24
+Adding unit (Iron Guard) at 0x5f55b858 to deployment area at 0xab4ef24
+Adding unit (Dwarven Halberdmen) at 0x5f55baa0 to deployment area at 0xab4ef24
+Adding unit (Dwarven Axemen) at 0x5f55bce8 to deployment area at 0xab4ef24
+Adding unit (Dwarven Halberdmen) at 0x5f55bf30 to deployment area at 0xab4ef24
+Adding unit (Dwarven Noblemen) at 0x5f55c178 to deployment area at 0xab4ef60
+Adding unit (Sindar Archers) at 0x5f55c3c0 to deployment area at 0xab4ef9c
+Adding unit (Silvan Spearmen) at 0x5f55c608 to deployment area at 0xab4ef9c
+Adding unit (Silvan Spearmen) at 0x5f55c850 to deployment area at 0xab4ef9c
+Adding unit (Silvan Spearmen) at 0x5f55ca98 to deployment area at 0xab4ef9c
+Adding unit (Silvan Spearmen) at 0x5f55cce0 to deployment area at 0xab4ef9c
+Adding unit (Silvan Heavy Archers) at 0x5f55cf28 to deployment area at 0xab4ef9c
+Adding unit (Light Elven Archers) at 0x5f55d170 to deployment area at 0xab4ef9c
+Adding unit (Light Elven Archers) at 0x5f55d3b8 to deployment area at 0xab4ef9c
+Adding unit (Sentinels of the Woodland Realms) at 0x5f55d600 to deployment area at 0xab4ef9c
+Adding unit (Sentinels of the Woodland Realms) at 0x5f55d848 to deployment area at 0xab4ef9c
+Adding unit (Sentinels of the Woodland Realms) at 0x5f55da90 to deployment area at 0xab4ef9c
+Adding unit (Forest Wardens) at 0x5f55dcd8 to deployment area at 0xab4ef9c
+Adding unit (Orc Bodyguards) at 0x5f55df20 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55e168 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55e3b0 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55e5f8 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55e840 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55ea88 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55ecd0 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55ef18 to deployment area at 0xab4efd8
+Adding unit (Goblin Infantry) at 0x5f55f160 to deployment area at 0xab4efd8
+Adding unit (Goblin Archers) at 0x332cbf60 to deployment area at 0xab4efd8
+Adding unit (Goblin Archers) at 0x332cc1a8 to deployment area at 0xab4efd8
+Adding unit (Goblin Archers) at 0x332cc3f0 to deployment area at 0xab4efd8
+Adding unit (Goblin Archers) at 0x332cc638 to deployment area at 0xab4efd8
+Adding unit (Heavy Goblin Halberd) at 0x332cc880 to deployment area at 0xab4efd8
+Adding unit (Heavy Goblin Halberd) at 0x332ccac8 to deployment area at 0xab4efd8
+Adding unit (Heavy Goblin Halberd) at 0x332ccd10 to deployment area at 0xab4efd8
+Adding unit (Heavy Goblin Halberd) at 0x332ccf58 to deployment area at 0xab4efd8
+Adding unit (Warg Riders) at 0x332cd1a0 to deployment area at 0xab4efd8
+Adding unit (Warg Riders) at 0x332cd3e8 to deployment area at 0xab4efd8
+Adding unit (Warg Riders) at 0x332cd630 to deployment area at 0xab4efd8
+Adding unit (Orc Bodyguards) at 0x332cd878 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Halberd) at 0x332cdac0 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Halberd) at 0x332cdd08 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Halberd) at 0x332cdf50 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Infantry) at 0x332ce198 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Infantry) at 0x332ce3e0 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Infantry) at 0x332ce628 to deployment area at 0xab4f014
+Adding unit (Snaga Archers) at 0x332ce870 to deployment area at 0xab4f014
+Adding unit (Snaga Archers) at 0x332ceab8 to deployment area at 0xab4f014
+Adding unit (Snaga Archers) at 0x332ced00 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Infantry) at 0x332cef48 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Infantry) at 0x332cf190 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Halberd) at 0x332cf3d8 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Halberd) at 0x332cf620 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Archers) at 0x332cf868 to deployment area at 0xab4f014
+Adding unit (Heavy Goblin Archers) at 0x332cfab0 to deployment area at 0xab4f014
+Adding unit (Warg Riders) at 0x332cfcf8 to deployment area at 0xab4f014
+Adding unit (Warg Riders) at 0x2f3d5ff8 to deployment area at 0xab4f014
+Adding unit (Warg Riders) at 0x2f3d6240 to deployment area at 0xab4f014
+Adding unit (Warg Riders) at 0x2f3d6488 to deployment area at 0xab4f014
+Load finished **************************
+
+

@@ -1,0 +1,1989 @@
+North_Enedwaith_Province
+	legion: Lond_Angren_Province
+	North_Enedwaith
+	teutonic_order
+	Enedwaith_Rebels
+	72 0 0
+	forest, unlocked, roads, no_pirates, no_brigands, boats, watercourse, enedwaith_united, turk_extra, umbar_slave, Eregion, ResA
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Dunland_Province
+	legion: Dunland_Province
+	Dunland
+	aztecs
+	Dunland_Rebels
+	100 150 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, watercourse, enedwaith_united, umbar_slave, Eregion, ResB
+	5
+	1
+	religions { catholic 5 elven 0 dwarven 10 northmen 0 heretic 0 islam 0 wildmen 85 nomadic 0 orthodox 0 kings 0 }
+Eregion_Province
+	legion: Eregion_Province
+	Eregion
+	saxons
+	Bandit_Rebels
+	162 70 70
+	grassland, unlocked, roads, horde_target, no_brigands, boats, no_pirates, Eregion, ResD, watercourse, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 65 elven 0 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 30 nomadic 0 orthodox 0 kings 0 }
+Rhudaur_Province
+	legion: Eregion_Province
+	Rhudaur
+	turks
+	Rhudaur_Rebels
+	133 0 244
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Eregion, ResE, watercourse
+	5
+	1
+	religions { catholic 80 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Imladris_Province
+	legion: Imladris
+	Imladris
+	saxons
+	Elven_Imladris_Rebels
+	100 150 255
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, dunedain_camp, crusade, Eregion, ResF, watercourse, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 0 elven 95 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Central_Mountains_Province
+	legion: Central_Mountains_Province
+	Central_Mountains
+	hre
+	Evil_Looters
+	93 63 188
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, orocarni_hall, Eregion, ResG
+	5
+	0
+	religions { catholic 90 elven 0 dwarven 0 northmen 0 heretic 5 islam 5 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Hollin_Province
+	legion: Eregion_Province
+	Hollin
+	saxons
+	Bandit_Rebels
+	58 221 122
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, Eregion, ResH
+	5
+	0
+	religions { catholic 90 elven 0 dwarven 2 northmen 0 heretic 0 islam 3 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+West_Moria_Province
+	legion: East_Moria
+	West_Moria
+	hre
+	Evil_Rebels
+	36 143 36
+	mountains, unlocked, roads, horde_target, trolls, no_brigands, boats, no_pirates, orocarni_hall, avengers, Eregion, ResI, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 90 elven 0 dwarven 10 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+East_Moria_Province
+	legion: East_Moria
+	East_Moria
+	norway
+	Dwarven_Erebor_Rebels
+	255 180 200
+	mountains, unlocked, roads, horde_target, trolls, no_brigands, boats, no_pirates, orocarni_hall, avengers, Eregion, ResI, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 20 elven 0 dwarven 70 northmen 10 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Dunland_Hills_Province
+	legion: Dunland_Province
+	Dunland_Hills
+	aztecs
+	Dunland_Rebels
+	200 150 100
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Eregion, ResK
+	5
+	0
+	religions { catholic 15 elven 0 dwarven 10 northmen 0 heretic 0 islam 0 wildmen 75 nomadic 0 orthodox 0 kings 0 }
+Evendim_Province
+	legion: Arthedain_Rammas_Province
+	Evendim
+	turks
+	Arthedain_Rebels
+	100 110 200
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Arthedain, ResA, watercourse
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 15 islam 5 wildmen 80 nomadic 0 orthodox 0 kings 0 }
+Far_Arthedain_Province
+	legion: Arthedain_Rammas_Province
+	Far_Arthedain
+	turks
+	Arthedain_Rebels
+	142 192 150
+	mountains, unlocked, roads, no_pirates, no_brigands, boats, Arthedain, ResB
+	5
+	0
+	religions { catholic 5 elven 0 dwarven 0 northmen 0 heretic 65 islam 10 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Arthedain_Rammas_Province
+	legion: Arthedain_Rammas_Province
+	Arthedain_Rammas
+	turks
+	Arthedain_Rebels
+	142 15 150
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Arthedain, ResC
+	5
+	1
+	religions { catholic 20 elven 0 dwarven 0 northmen 0 heretic 52 islam 8 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Lake_Evendim_Province
+	legion: Arthedain_Rammas_Province
+	Lake_Evendim
+	turks
+	Arthedain_Rebels
+	225 223 58
+	mountains, unlocked, roads, no_brigands, no_pirates, Arthedain, crusade, watercourse, ResE, smith_orcs, smith_human, smith_adunaim, smith_risenmar, rebuild
+	5
+	2
+	religions { catholic 10 elven 0 dwarven 0 northmen 0 heretic 50 islam 30 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Arthedain_Province
+	legion: Arthedain_Rammas_Province
+	Arthedain
+	turks
+	Arthedain_Rebels
+	100 130 255
+	grassland, unlocked, roads, no_pirates, no_brigands, boats, Arthedain, crusade, ResE
+	5
+	2
+	religions { catholic 30 elven 0 dwarven 0 northmen 0 heretic 20 islam 40 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Bree_Province
+	legion: Bree_Province
+	Bree
+	normans
+	Breeland_Rebels
+	100 100 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, dunedain_camp, umbar_slave, crusade, Arthedain, ResG
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 2 northmen 0 heretic 0 islam 10 wildmen 88 nomadic 0 orthodox 0 kings 0 }
+Emyn_Beraid_Province
+	legion: Emyn_Beraid_Province
+	Emyn_Beraid
+	normans
+	Bandit_Rebels
+	255 130 100
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, Arthedain, ResH
+	5
+	0
+	religions { catholic 0 dwarven 2 elven 5 northmen 0 heretic 10 islam 3 wildmen 80 nomadic 0 orthodox 0 kings 0 }
+Shire_West_Province
+	legion: Shire_West
+	Shire_West
+	normans
+	Hobbit_Rebels
+	185 149 140
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Arthedain, ResI, roads, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 2 wildmen 98 nomadic 0 orthodox 0 kings 0 }
+Shire_South_Province
+	legion: Shire_West
+	Shire_South
+	normans
+	Hobbit_Rebels
+	123 86 122
+	grassland, no_brigands, boats, no_pirates, dunedain_camp, Arthedain, ResJ, watercourse, roads, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 5 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 90 nomadic 0 orthodox 0 kings 0 }
+Shire_North_Province
+	legion: Shire_West
+	Shire_North
+	normans
+	Hobbit_Rebels
+	200 130 100
+	grassland, no_brigands, boats, no_pirates, Arthedain, ResK, roads, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Borderlands_Province
+	legion: Borderlands_Province
+	Borderlands
+	turks
+	Arthedain_Rebels
+	207 121 121
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, frozenlands, Arthedain, ResL
+	5
+	1
+	religions { catholic 70 elven 0 dwarven 0 northmen 0 heretic 20 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Enedwaith_Province
+	legion: Enedwaith_Province
+	Enedwaith
+	teutonic_order
+	Enedwaith_Rebels
+	200 100 255
+	forest, unlocked, roads, Cardolan, coast, watercourse, no_pirates, no_brigands, boats, enedwaith_united, ResA, umbar_slave
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Central_Minhiriath_Province
+	legion: Enedwaith_Province
+	Central_Minhiriath
+	teutonic_order
+	Enedwaith_Rebels
+	0 0 53
+	mountains, unlocked, roads, Cardolan, no_brigands, boats, no_pirates, enedwaith_united, umbar_slave, coast, watercourse, ResB
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Suduri_Province
+	legion: Enedwaith_Province
+	Suduri
+	teutonic_order
+	Saralainn_Rebels
+	200 100 61
+	grassland, unlocked, roads, Cardolan, coast, watercourse, no_pirates, no_brigands, boats, enedwaith_united, umbar_slave, ResC
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Wilishar_Province
+	legion: Metraith_Province
+	Wilishar
+	turks
+	Arthedain_Rebels
+	215 143 36
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, ResD, watercourse, umbar_slave
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 20 islam 0 wildmen 80 nomadic 0 orthodox 0 kings 0 }
+Girithlin_Province
+	legion: Metraith_Province
+	Girithlin
+	turks
+	Cardolan_Rebels
+	179 202 93
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, ResE, watercourse, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 25 islam 0 wildmen 75 nomadic 0 orthodox 0 kings 0 }
+East_Cardolan_Province
+	legion: Metraith_Province
+	East_Cardolan
+	turks
+	Cardolan_Rebels
+	212 202 93
+	forest, unlocked, roads, no_pirates, no_brigands, boats, watercourse, Cardolan, enedwaith_united, ResF, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 50 islam 0 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Metraith_Province
+	legion: Metraith_Province
+	Metraith
+	turks
+	Cardolan_Rebels
+	72 150 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, umbar_slave, ResG, watercourse
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 10 islam 10 wildmen 80 nomadic 0 orthodox 0 kings 0 }
+Tharbad_Province
+	legion: Tharbad
+	Tharbad
+	turks
+	Dunland_Rebels
+	55 60 152
+	barren, unlocked, roads, Cardolan, no_pirates, no_brigands, boats, watercourse, ResH
+	5
+	1
+	religions { catholic 10 elven 0 dwarven 0 northmen 0 heretic 20 islam 0 wildmen 70 nomadic 0 orthodox 0 kings 0 }
+Cardolan_Province
+	legion: Bree_Province
+	Cardolan
+	turks
+	Evil_Looters
+	100 130 100
+	barren, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, umbar_slave, ResI
+	5
+	0
+	religions { catholic 90 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Faerdor_Province
+	legion: Metraith_Province
+	Faerdor
+	turks
+	Cardolan_Rebels
+	255 206 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, ResJ, watercourse
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 60 islam 10 wildmen 30 nomadic 0 orthodox 0 kings 0 }
+Lonehills_Province
+	legion: Metraith_Province
+	Lonehills
+	turks
+	Cardolan_Rebels
+	34 115 236
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Cardolan, ResL, watercourse
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 10 islam 40 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Athilin_Province
+	legion: Carn_Dum_Province
+	Athilin
+	turks
+	Arthedain_Rebels
+	83 153 94
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Rhudaur, umbar_slave, frozenlands, ResA
+	5
+	0
+	religions { catholic 30 elven 0 dwarven 0 northmen 0 heretic 0 islam 50 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Dordholl_Province
+	legion: Central_Vale_Province
+	Dordholl
+	timurids
+	Rhudaur_Rebels
+	147 190 171
+	forest, unlocked, roads, no_pirates, no_brigands, Rhudaur, umbar_slave, ResB, boats
+	5
+	1
+	religions { catholic 50 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Rhaglaw_Province
+	legion: Mitheithel_Province
+	Rhaglaw
+	turks
+	Rhudaur_Rebels
+	83 23 97
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Rhudaur, umbar_slave, ResC
+	5
+	0
+	religions { catholic 40 elven 0 dwarven 0 northmen 0 heretic 20 islam 0 wildmen 40 nomadic 0 orthodox 0 kings 0 }
+Ettenmoors_Province
+	legion: Mitheithel_Province
+	Ettenmoors
+	portugal
+	Rhudaur_Rebels
+	255 130 255
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, Rhudaur, umbar_slave, ResD
+	5
+	0
+	religions { catholic 70 elven 0 dwarven 0 northmen 0 heretic 20 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Mitheithel_Province
+	legion: Mitheithel_Province
+	Mitheithel
+	turks
+	Rhudaur_Rebels
+	100 150 200
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Rhudaur, trolls, umbar_slave, ResE, watercourse, dunedain_camp
+	5
+	1
+	religions { catholic 65 elven 5 dwarven 0 northmen 0 heretic 10 islam 10 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Weather_Hills_Province
+	legion: Metraith_Province
+	Weather_Hills
+	turks
+	Arthedain_Rebels
+	200 130 200
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, dunedain_camp, Rhudaur, ResK, Cardolan
+	5
+	1
+	religions { catholic 0 elven 5 dwarven 0 northmen 0 heretic 0 islam 90 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Angle_Province
+	legion: Metraith_Province
+	Angle
+	turks
+	Rhudaur_Rebels
+	162 188 0
+	forest, unlocked, roads, no_brigands, boats, no_pirates, dunedain_camp, Rhudaur, crusade, ResM, watercourse, Cardolan
+	5
+	2
+	religions { catholic 0 elven 5 dwarven 0 northmen 0 heretic 0 islam 90 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Ered_Luin_Province
+	legion: Nan_i_Naugrim_Province
+	Ered_Luin
+	hungary
+	Dwarven_EredLuin_Rebels
+	200 110 100
+	mountains, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, avengers, frozenlands, Lindon, ResA
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 95 northmen 0 heretic 5 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Nan_i_Naugrim_Province
+	legion: Nan_i_Naugrim_Province
+	Nan_i_Naugrim
+	hungary
+	Dwarven_EredLuin_Rebels
+	91 112 124
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, avengers, Lindon, ResB, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 100 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Forlindon_Province
+	legion: Mithlond_Province
+	Forlindon
+	saxons
+	Elven_Lindon_Rebels
+	200 110 200
+	forest, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, Lindon, ResC
+	5
+	2
+	religions { catholic 0 elven 80 dwarven 4 northmen 0 heretic 6 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Lune_land_Province
+	legion: Nan_i_Naugrim_Province
+	Lune_land
+	saxons
+	Elven_Lindon_Rebels
+	100 130 200
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Lindon, ResD, watercourse
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 10 northmen 0 heretic 40 islam 0 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Mithlond_Province
+	legion: Mithlond_Province
+	Mithlond
+	saxons
+	Elven_Lindon_Rebels
+	100 110 100
+	grassland, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, havenport, Lindon, ResE, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	2
+	religions { catholic 0 elven 90 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Harlindon_Province
+	legion: Mithlond_Province
+	Harlindon
+	saxons
+	Elven_Lindon_Rebels
+	255 100 200
+	forest, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, Lindon, ResF
+	5
+	2
+	religions { catholic 0 elven 80 dwarven 5 northmen 0 heretic 10 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+South_Ered_Luin_Province
+	legion: South_Ered_Luin
+	South_Ered_Luin
+	hungary
+	Dwarven_EredLuin_Rebels
+	91 112 74
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, avengers, trolls, Lindon, ResG
+	5
+	0
+	religions { catholic 50 elven 0 dwarven 10 northmen 0 heretic 40 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lune_North_Province
+	legion: Nan_i_Naugrim_Province
+	Lune_North
+	saxons
+	Elven_Lindon_Rebels
+	41 53 82
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Lindon, ResH
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 90 northmen 0 heretic 0 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Forochel_Province
+	legion: Borderlands_Province
+	Forochel
+	turks
+	Arthedain_Rebels
+	100 110 17
+	barren, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, frozenlands, Lindon, ResI
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 90 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Oiolad_Province
+	legion: Borderlands_Province
+	Oiolad
+	turks
+	Wildmen_Rebels
+	244 38 237
+	barren, unlocked, roads, no_pirates, no_brigands, boats, coast, watercourse, frozenlands, Angmar, ResC
+	5
+	1
+	religions { catholic 30 elven 0 dwarven 0 northmen 0 heretic 60 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Angsul_Province
+	legion: Carn_Dum_Province
+	Angsul
+	portugal
+	Evil_Rebels
+	100 191 255
+	barren, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, umbar_slave, frozenlands, Angmar, ResE
+	5
+	0
+	religions { catholic 90 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Carn_Dum_Province
+	legion: Carn_Dum
+	Carn_Dum
+	portugal
+	Evil_Rebels
+	100 110 255
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, frozenlands, Angmar, ResF, smith_orcs, smith_human, smith_dunedain, smith_adunaim
+	5
+	0
+	religions { catholic 95 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Litash_Province
+	legion: Carn_Dum_Province
+	Litash
+	portugal
+	Evil_Looters
+	113 190 122
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, frozenlands, Angmar, ResG
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Mt_Gram_Province
+	legion: Carn_Dum_Province
+	Mt_Gram
+	portugal
+	Evil_Looters
+	255 130 200
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, frozenlands, Angmar, ResH
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lune_Province
+	legion: Mt_Gundabad_Province
+	Lune
+	portugal
+	Evil_Looters
+	156 204 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, frozenlands, Angmar, ResI
+	5
+	1
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Mt_Gundabad_Province
+	legion: Mt_Gundabad_Province
+	Mt_Gundabad
+	hre
+	Evil_Looters
+	200 130 255
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, orocarni_hall, frozenlands, Angmar, ResJ, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Grey_Mountains_Province
+	legion: Grey_Mountains_Province
+	Grey_Mountains
+	hre
+	Evil_Looters
+	100 140 255
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, orocarni_hall, avengers, frozenlands, Angmar, ResK, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 85 elven 0 dwarven 5 northmen 0 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Scatha_Province
+	legion: Scatha_Province
+	Scatha
+	normans
+	Beorning_Rebels
+	185 141 166
+	mountains, unlocked, roads, no_pirates, no_brigands, umbar_slave, Angmar, ResM
+	5
+	1
+	religions { catholic 30 elven 0 dwarven 0 northmen 70 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Umbar_Province
+	legion: Umbar
+	Umbar
+	russia
+	Umbar_Rebels
+	150 100 150
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, havenport, Harad, ResA, smith_orcs, smith_human, smith_dunedain, smith_risenmar
+	5
+	1
+	religions { catholic 10 elven 0 dwarven 0 northmen 0 heretic 0 islam 3 wildmen 0 nomadic 2 orthodox 60 kings 25 }
+Erelond_Province
+	legion: Erelond_Province
+	Erelond
+	russia
+	Umbar_Rebels
+	231 201 170
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, Harad, ResB
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 0 nomadic 0 orthodox 80 kings 15 }
+South_Umbar_Province
+	legion: South_Umbar_Province
+	South_Umbar
+	russia
+	Umbar_Rebels
+	255 100 255
+	barren, unlocked, roads, no_brigands, boats, no_pirates, Harad, ResC
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 70 kings 25 }
+Shafra_Province
+	legion: Shafra
+	Shafra
+	spain
+	Harad_Rebels
+	34 105 35
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, umbar_slave, turk_extra, Harad, ResD, mumak
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 95 kings 0 }
+Far_Harad_Province
+	legion: Far_Harad_Province
+	Far_Harad
+	spain
+	Harad_Rebels
+	100 120 100
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, turk_extra, Harad, ResE, watercourse, mumak
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 95 kings 0 }
+Gobel_Ancalimon_Province
+	legion: Gobel_Ancalimon
+	Gobel_Ancalimon
+	spain
+	Harad_Rebels
+	97 97 178
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, coast, watercourse, turk_extra, Harad, ResF, mumak
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 95 kings 0 }
+Haradwaith_Province
+	legion: Far_Harad_Province
+	Haradwaith
+	spain
+	Harad_Rebels
+	100 120 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, turk_extra, Harad, ResG, mumak
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 0 nomadic 10 orthodox 85 kings 0 }
+Far_Desert_Province
+	legion: Far_Harad_Province
+	Far_Desert
+	spain
+	Harad_Rebels
+	45 45 45
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, turk_extra, Harad, ResH, mumak
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 10 islam 0 wildmen 0 nomadic 70 orthodox 20 kings 0 }
+Southharondor_Province
+	legion: Southharondor_Province
+	Southharondor
+	sicily
+	Harondor_Rebels
+	75 229 86
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, umbar_slave, turk_extra, Harad, ResI
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 15 wildmen 0 nomadic 0 orthodox 80 kings 5 }
+Amon_Eithel_Province
+	legion: Northern_Harondor_Province
+	Amon_Eithel
+	sicily
+	Harondor_Rebels
+	45 45 188
+	barren, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, Harad, ResJ, watercourse, coast
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 20 islam 20 wildmen 0 nomadic 0 orthodox 60 kings 0 }
+South_Mithlond_Province
+	legion: Northern_Harondor_Province
+	South_Mithlond
+	russia
+	Harondor_Rebels
+	140 154 115
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, turk_extra, coast, watercourse, Harad, ResK
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 5 wildmen 0 nomadic 5 orthodox 90 kings 0 }
+Amrun_Province
+	legion: Amrun_Province
+	Amrun
+	spain
+	Harondor_Rebels
+	212 99 82
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, turk_extra, coast, watercourse, Harad, ResL
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 95 kings 0 }
+Chelkar_Province
+	legion: Chelkar
+	Chelkar
+	spain
+	Harad_Rebels
+	255 200 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Harad, ResM
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 10 islam 0 wildmen 0 nomadic 40 orthodox 50 kings 0 }
+Udun_Province
+	legion: Udun_Province
+	Udun
+	england
+	Evil_Looters
+	200 190 255
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResA, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Morgul_Vale_Province
+	legion: Morgul_Vale
+	Morgul_Vale
+	england
+	Evil_Looters
+	255 140 200
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, Mordor, ResB
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Cirith_Province
+	legion: Cirith
+	Cirith
+	england
+	Evil_Looters
+	30 54 176
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResC
+	5
+	0  
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Morgai_Province
+	legion: Morgai
+	Morgai
+	england
+	Evil_Looters
+	255 190 255
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResD
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Orc_Province
+	legion: Gorgoroth_South_Province
+	Orc
+	england
+	Evil_Looters
+	213 69 69
+	barren, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResE
+	5
+	0
+	religions { catholic 100 dwarven 0 elven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Gorgoroth_Province
+	legion: Gorgoroth
+	Gorgoroth
+	england
+	Evil_Looters
+	255 140 255
+	barren, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResF, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Gorgoroth_South_Province
+	legion: Gorgoroth_South_Province
+	Gorgoroth_South
+	england
+	Evil_Looters
+	200 140 255
+	barren, unlocked, roads, no_brigands, boats, no_pirates, trolls, Mordor, ResG
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Carnen_Province
+	legion: Carnen_Province
+	Carnen
+	england
+	Evil_Looters
+	200 120 100
+	grassland, unlocked, roads, no_brigands, no_pirates, Mordor, ResH, watercourse
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+East_Gorgoroth_Province
+	legion: Gorgoroth_South_Province
+	East_Gorgoroth
+	england
+	Evil_Looters
+	54 96 40
+	barren, unlocked, roads, no_brigands, no_pirates, Mordor, ResI, watercourse
+	5
+	1
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Near_Harad_Province
+	legion: Amrun_Province
+	Near_Harad
+	khand
+	Evil_Looters
+	255 120 100
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Mordor, ResJ
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 60 orthodox 40 kings 0 }
+West_Khand_Province
+	legion: Khand_Province
+	West_Khand
+	khand
+	Variag_Rebels
+	255 23 100
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Mordor, ResK
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 50 orthodox 50 kings 0 }
+Harad_Province
+	legion: Khand_Province
+	Harad
+	khand
+	Variag_Rebels
+	100 100 150
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, orocarni_hall, Mordor, ResL
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 40 orthodox 60 kings 0 }
+Khand_Province
+	legion: Khand_Province
+	Khand
+	khand
+	Variag_Rebels
+	100 120 255
+	barren, unlocked, roads, no_pirates, no_brigands, boats, umbar_slave, orocarni_hall, Mordor, ResM
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 30 orthodox 70 kings 0 }
+Cair_Andros_Province
+	legion: Cair_Andros_Province
+	Cair_Andros
+	sicily
+	Gondor_Rebels
+	100 200 100
+	grassland, unlocked, roads, no_pirates, no_brigands, umbar_slave, watercourse, GondorEast, ResB
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 0 islam 80 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+East_Osgiliath_Province
+	legion: West_Osgiliath_Province
+	East_Osgiliath
+	sicily
+	Gondor_Rebels
+	169 169 169
+	forest, unlocked, roads, no_pirates, no_brigands, umbar_slave, rebuild, watercourse, GondorEast, ResC
+	5
+	1
+	religions { catholic 70 elven 0 dwarven 0 northmen 10 heretic 0 islam 20 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Ithilien_Province
+	legion: Ithilien_Province
+	Ithilien
+	sicily
+	Evil_Looters
+	150 130 150
+	forest, unlocked, roads, watercourse, no_brigands, boats, no_pirates, GondorEast, ResD, umbar_slave
+	5
+	1
+	religions { catholic 60 elven 0 dwarven 0 northmen 0 heretic 0 islam 30 wildmen 0 nomadic 0 orthodox 10 kings 0 }
+South_Ithilien_Province
+	legion: Ithilien_Province
+	South_Ithilien
+	sicily
+	Evil_Looters
+	150 140 150
+	barren, unlocked, roads, watercourse, no_brigands, boats, no_pirates, GondorEast, ResE, umbar_slave
+	5
+	1
+	religions { catholic 30 elven 0 dwarven 0 northmen 0 heretic 20 islam 20 wildmen 0 nomadic 0 orthodox 30 kings 0 }
+Harondor_Province
+	legion: Northern_Harondor_Province
+	Harondor
+	sicily
+	Evil_Looters
+	100 100 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, GondorEast, ResF
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 20 islam 5 wildmen 0 nomadic 0 orthodox 75 kings 0 }
+Northern_Harondor_Province
+	legion: Northern_Harondor_Province
+	Northern_Harondor
+	sicily
+	Harondor_Rebels
+	255 173 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, GondorEast, ResG
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 10 islam 50 wildmen 10 nomadic 0 orthodox 30 kings 0 }
+Barad_Harn_Province
+	legion: Southharondor_Province
+	Barad_Harn
+	sicily
+	Evil_Looters
+	76 76 144
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, GondorEast, ResH, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 30 islam 50 wildmen 0 nomadic 0 orthodox 20 kings 0 }
+Anduin_Straits_Province
+	legion: Anduin_Straits
+	Anduin_Straits
+	sicily
+	Evil_Looters
+	45 209 188
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, GondorEast, ResI, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 25 islam 50 wildmen 0 nomadic 0 orthodox 20 kings 0 }
+Lebennin_Province
+	legion: Lebennin
+	Lebennin
+	sicily
+	Gondor_Rebels
+	200 100 100
+	grassland, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, turk_extra, umbar_slave, crusade, GondorEast, ResJ
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 0 islam 90 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lossarnach_Province
+	legion: Lossarnach_Province
+	Lossarnach
+	sicily
+	Gondor_Rebels
+	110 120 130
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorEast, ResK
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 10 islam 80 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Anorien_Province
+	legion: Anorien
+	Anorien
+	sicily
+	Gondor_Rebels
+	173 172 171
+	grassland, unlocked, roads, watercourse, no_brigands, boats, no_pirates, turk_extra, umbar_slave, fiefdom_barracks, GondorEast, ResL, smith_orcs, smith_human, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 100 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+West_Osgiliath_Province
+	legion: West_Osgiliath_Province
+	West_Osgiliath
+	sicily
+	Gondor_Rebels
+	200 200 200
+	grassland, unlocked, roads, no_pirates, no_brigands, turk_extra, umbar_slave, rebuild, watercourse, GondorEast, ResM
+	5
+	1
+	religions { catholic 15 elven 0 dwarven 0 northmen 5 heretic 0 islam 80 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Andrast_Province
+	legion: Andrast_Province
+	Andrast
+	sicily
+	Gondor_Rebels
+	232 41 46
+	mountains, unlocked, roads, umbar_slave, coast, watercourse, no_brigands, boats, no_pirates, turk_extra, trolls, GondorWest, ResA
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 0 islam 80 wildmen 15 nomadic 0 orthodox 0 kings 0 }
+Pinnath_Gelin_Province
+	legion: Pinnath_Gelin_Province
+	Pinnath_Gelin
+	sicily
+	Gondor_Rebels
+	0 149 39
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorWest, ResB
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 0 islam 80 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Anfalas_Province
+	legion: Anfalas_Province
+	Anfalas
+	sicily
+	Gondor_Rebels
+	232 41 198
+	grassland, unlocked, roads, umbar_slave, coast, watercourse, no_brigands, boats, no_pirates, turk_extra, GondorWest, ResC
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 0 islam 85 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Lamedon_Province
+	legion: Lamedon_Province
+	Lamedon
+	sicily
+	Gondor_Rebels
+	255 170 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorWest, ResD
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 0 islam 80 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Ethring_Province
+	legion: Ethring_Province
+	Ethring
+	sicily
+	Gondor_Rebels
+	14 14 217
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorWest, ResE
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 15 heretic 0 islam 75 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Tarnost_Province
+	legion: Tarnost
+	Tarnost
+	denmark
+	Gondor_Rebels
+	200 100 200
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, GondorWest, ResF
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 0 islam 90 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Brethil_Province
+	legion: Fanuilond_Province
+	Brethil
+	sicily
+	Gondor_Rebels
+	200 163 62
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorWest, ResG
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 15 heretic 0 islam 80 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Fanuilond_Province
+	legion: Fanuilond_Province
+	Fanuilond
+	sicily
+	Gondor_Rebels
+	200 163 100
+	grassland, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, turk_extra, umbar_slave, GondorWest, ResH
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 15 heretic 0 islam 80 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+West_Lebennin_Province
+	legion: West_Lebennin
+	West_Lebennin
+	denmark
+	Gondor_Rebels
+	40 207 134
+	grassland, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, umbar_slave, GondorWest, ResI
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 0 islam 80 wildmen 5 nomadic 0 orthodox 5 kings 0 }
+Tolfalas_Province
+	legion: Tolfalas_Province
+	Tolfalas
+	sicily
+	Gondor_Rebels
+	155 146 45
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, GondorWest, ResJ, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 0 islam 95 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Methrast_Province
+	legion: Methrast
+	Methrast
+	moors
+	Wildmen_Rebels
+	100 140 200
+	forest, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, umbar_slave, GondorWest, ResK
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 5 islam 95 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Belfalas_Province
+	legion: Belfalas
+	Belfalas
+	denmark
+	Gondor_Rebels
+	203 202 201
+	mountains, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, umbar_slave, fiefdom_barracks, crusade, GondorWest, ResL, smith_orcs, smith_human, smith_adunaim, smith_risenmar
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 100 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Edhellond_Province
+	legion: Edhellond
+	Edhellond
+	saxons
+	Bandit_Rebels
+	203 202 17
+	grassland, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, turk_extra, GondorWest, ResM, umbar_slave
+	5
+	0
+	religions { catholic 0 elven 10 dwarven 0 northmen 5 heretic 0 islam 85 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Andrast_Cape_Province
+	legion: Pukel_Province
+	Andrast_Cape
+	sicily
+	Gondor_Rebels
+	112 0 114
+	barren, unlocked, roads, coast, watercourse, no_pirates, no_brigands, boats, turk_extra, trolls, Enedwaith, ResA
+	5
+	1
+	religions { catholic 0 dwarven 0 elven 0 northmen 10 heretic 30 islam 40 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Minhiriath_Province
+	legion: Pukel_Province
+	Minhiriath
+	teutonic_order
+	Enedwaith_Rebels
+	255 100 100
+	barren, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, enedwaith_united, turk_extra, umbar_slave, trolls, Enedwaith, ResB
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 20 islam 0 wildmen 70 nomadic 0 orthodox 0 kings 0 }
+Lond_Angren_Province
+	legion: Lond_Angren_Province
+	Lond_Angren
+	teutonic_order
+	Enedwaith_Rebels
+	89 238 124
+	forest, unlocked, roads, coast, watercourse, no_brigands, boats, no_pirates, enedwaith_united, turk_extra, umbar_slave, Enedwaith, ResC
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 5 islam 0 wildmen 85 nomadic 0 orthodox 0 kings 0 }
+Druwaith_Iaur_Province
+	legion: Lond_Angren_Province
+	Druwaith_Iaur
+	teutonic_order
+	Enedwaith_Rebels
+	100 100 255
+	forest, unlocked, roads, coast, watercourse, no_pirates, no_brigands, boats, enedwaith_united, turk_extra, umbar_slave, Enedwaith, ResD
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 35 islam 10 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Talsir_Province
+	legion: Lond_Angren_Province
+	Talsir
+	teutonic_order
+	Enedwaith_Rebels
+	106 106 210
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, umbar_slave, Enedwaith, ResE, coast
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 2 heretic 0 islam 0 wildmen 98 nomadic 0 orthodox 0 kings 0 }
+Heorot_Province
+	legion: Lond_Angren_Province
+	Heorot
+	teutonic_order
+	Enedwaith_Rebels
+	200 180 100
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, enedwaith_united, umbar_slave, Enedwaith, ResF
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 0 islam 0 wildmen 95 nomadic 0 orthodox 0 kings 0 }
+Duneard_Province
+	legion: Dunland_Province
+	Duneard
+	aztecs
+	Dunland_Rebels
+	100 150 207
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Enedwaith, ResG
+	5
+	1
+	religions { catholic 30 elven 0 dwarven 2 northmen 3 heretic 0 islam 0 wildmen 65 nomadic 0 orthodox 0 kings 0 }
+Fords_Province
+	legion: Ithilien_Province
+	Fords
+	sicily
+	Rohan_Rebels
+	255 160 255
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Enedwaith, ResH
+	5
+	1
+	religions { catholic 30 elven 0 dwarven 0 northmen 50 heretic 0 islam 0 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+Adorn_Province
+	legion: Gap_of_Rohan_Province
+	Adorn
+	milan
+	Rohan_Rebels
+	100 170 255
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Enedwaith, ResI, watercourse
+	5
+	3
+	religions { catholic 20 elven 0 dwarven 0 northmen 20 heretic 0 islam 0 wildmen 60 nomadic 0 orthodox 0 kings 0 }
+Pukel_Province
+	legion: Pukel_Province
+	Pukel
+	teutonic_order
+	Enedwaith_Rebels
+	255 228 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, enedwaith_united, umbar_slave, Enedwaith, ResJ, watercourse
+	5
+	1
+	religions { catholic 5 elven 0 dwarven 0 northmen 15 heretic 50 islam 0 wildmen 30 nomadic 0 orthodox 0 kings 0 }
+Pukel_Gap_Province
+	legion: Pukel_Province
+	Pukel_Gap
+	sicily
+	Gondor_Rebels
+	232 126 183
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Enedwaith, ResK
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 50 islam 10 wildmen 30 nomadic 0 orthodox 0 kings 0 }
+South_Enedwaith_Province
+	legion: Lond_Angren_Province
+	South_Enedwaith
+	teutonic_order
+	Enedwaith_Rebels
+	106 225 210
+	forest, unlocked, roads, no_brigands, boats, no_pirates, enedwaith_united, turk_extra, umbar_slave, Enedwaith, ResL, watercourse
+	5
+	1
+	religions { catholic 5 elven 0 dwarven 0 northmen 5 heretic 10 islam 0 wildmen 80 nomadic 0 orthodox 0 kings 0 }
+Fortriu_Province
+	legion: Gap_of_Rohan_Province
+	Fortriu
+	teutonic_order
+	Enedwaith_Rebels
+	200 105 200
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Enedwaith, ResM
+	5
+	1           
+	religions { catholic 20 elven 0 dwarven 0 northmen 10 heretic 0 islam 0 wildmen 70 nomadic 0 orthodox 0 kings 0 }
+Nan_Curunir_Province
+	legion: Nan_Curunir
+	Nan_Curunir
+	france
+	Evil_Rebels
+	200 180 200
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, Rohan, ResA, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	2
+	religions { catholic 95 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Westfold_Province
+	legion: Westfold_Province
+	Westfold
+	milan
+	Rohan_Rebels
+	100 180 255
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Rohan, ResB
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 90 heretic 0 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Helms_Deep_Province
+	legion: Helms_Deep
+	Helms_Deep
+	milan
+	Rohan_Rebels
+	100 170 200
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, orocarni_hall, umbar_slave, Rohan, ResC
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 100 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+West_Emnet_Province
+	legion: West_Emnet_Province
+	West_Emnet
+	milan
+	Rohan_Rebels
+	100 180 200
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Rohan, ResD
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 95 heretic 0 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+West_Wold_Province
+	legion: West_Wold_Province
+	West_Wold
+	milan
+	Rohan_Rebels
+	100 190 255
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Rohan, ResE, watercourse
+	5
+	1
+	religions { catholic 0 elven 5 dwarven 0 northmen 95 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Wold_Province
+	legion: West_Wold_Province
+	Wold
+	milan
+	Rohan_Rebels
+	100 190 200
+	barren, unlocked, roads, no_pirates, no_brigands, watercourse, Rohan, ResF
+	5
+	1
+	religions { catholic 5 elven 5 dwarven 0 northmen 80 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+East_Emnet_Province
+	legion: East_Emnet_Province
+	East_Emnet
+	milan
+	Rohan_Rebels
+	100 170 100
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Rohan, ResG
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 95 heretic 0 islam 3 wildmen 2 nomadic 0 orthodox 0 kings 0 }
+Anorien_Fields_Province
+	legion: Anorien_Fields_Province
+	Anorien_Fields
+	sicily
+	Gondor_Rebels
+	139 120 25
+	grassland, unlocked, roads, no_brigands, no_pirates, umbar_slave, watercourse, Rohan, ResH
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 20 heretic 50 islam 30 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Eastfold_Province
+	legion: Eastfold_Province
+	Eastfold
+	milan
+	Rohan_Rebels
+	200 170 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Rohan, ResI
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 95 heretic 0 islam 3 wildmen 2 nomadic 0 orthodox 0 kings 0 }
+Kings_Land_Province
+	legion: Kings_Land
+	Kings_Land
+	milan
+	Rohan_Rebels
+	255 180 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Rohan, ResJ
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 100 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Gap_of_Rohan_Province
+	legion: Gap_of_Rohan_Province
+	Gap_of_Rohan
+	milan
+	Rohan_Rebels
+	200 170 200
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Rohan, ResK, umbar_slave
+	5
+	1
+	religions { catholic 10 elven 0 dwarven 0 northmen 40 heretic 0 islam 0 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Fangorn_Province
+	legion: West_Emnet_Province
+	Fangorn
+	turks
+	Rohan_Rebels
+	255 150 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, Rohan, ResL
+	5
+	1
+	religions { catholic 60 elven 0 dwarven 0 northmen 30 heretic 0 islam 0 wildmen 10 nomadic 0 orthodox 0 kings 0 }
+Far_Khand_Province
+	legion: Khand_Province
+	Far_Khand
+	khand
+	Variag_Rebels
+	200 242 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, umbar_slave, orocarni_hall, Rhun, ResA
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 30 orthodox 70 kings 0 }
+Morad_Province
+	legion: Southern_Rhun_Province
+	Morad
+	venice
+	Rhun_Rebels
+	200 120 200
+	barren, unlocked, roads, no_brigands, boats, no_pirates, orocarni_hall, Rhun, ResB, umbar_slave
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 30 orthodox 70 kings 0 }
+Southern_Rhun_Province
+	legion: Southern_Rhun_Province
+	Southern_Rhun
+	venice
+	Rhun_Rebels
+	200 82 255
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, Rhun, ResC, umbar_slave
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 5 heretic 20 islam 0 wildmen 0 nomadic 5 orthodox 70 kings 0 }
+Eastrhun_Province
+	legion: Southern_Rhun_Province
+	Eastrhun
+	scotland
+	Rhovanion_Rebels
+	15 83 44
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Rhun, ResD, umbar_slave
+	5
+	1
+	religions { catholic 5 elven 0 dwarven 0 northmen 0 heretic 50 islam 0 wildmen 0 nomadic 5 orthodox 40 kings 0 }
+Rhun_Province
+	legion: Mistrand_Province
+	Rhun
+	venice
+	Rhun_Rebels
+	200 120 255
+	forest, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, Rhun, ResE, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 20 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 70 kings 0 }
+Mistrand_Province
+	legion: Mistrand_Province
+	Mistrand
+	venice
+	Rhun_Rebels
+	153 76 153
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, Rhun, ResF, smith_orcs, smith_human, smith_dunedain, smith_adunaim, umbar_slave
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 100 kings 0 }
+Kelepar_Province
+	legion: Southern_Rhun_Province
+	Kelepar
+	venice
+	Rhun_Rebels
+	148 54 54
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, orocarni_hall, Rhun, ResG, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 10 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 80 kings 0 }
+South_Dorwinion_Province
+	legion: South_Dorwinion
+	South_Dorwinion
+	byzantium
+	Dorwinion_Rebels
+	15 83 160
+	mountains, unlocked, roads, no_pirates, no_brigands, boats, coast, watercourse, umbar_slave, trolls, Rhun, ResH
+	5
+	1
+	religions { catholic 0 elven 10 dwarven 0 northmen 80 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 10 kings 0 }
+Near_Rhun_Province
+	legion: Near_Rhun_Province
+	Near_Rhun
+	byzantium
+	Dorwinion_Rebels
+	200 140 200
+	grassland, unlocked, roads, coast, watercourse, no_pirates, no_brigands, boats, Rhun, ResI, umbar_slave
+	5
+	0
+	religions { catholic 0 elven 10 dwarven 0 northmen 90 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+North_Rhun_Province
+	legion: Southern_Rhun_Province
+	North_Rhun
+	venice
+	Rhun_Rebels
+	150 120 150
+	forest, unlocked, roads, no_pirates, no_brigands, boats, coast, watercourse, Rhun, ResJ, umbar_slave
+	5
+	1
+	religions { catholic 0 elven 3 dwarven 0 northmen 15 heretic 2 islam 0 wildmen 0 nomadic 0 orthodox 80 kings 0 }
+Uldonavan_Province
+	legion: Dorwinion_Province
+	Uldonavan
+	byzantium
+	Dorwinion_Rebels
+	219 104 64
+	grassland, unlocked, roads, watercourse, no_brigands, boats, no_pirates, umbar_slave, Rhun, ResK
+	5
+	3
+	religions { catholic 0 elven 30 dwarven 0 northmen 70 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Dorwinion_Province
+	legion: Dorwinion_Province
+	Dorwinion
+	byzantium
+	Dorwinion_Rebels
+	100 140 100
+	grassland, unlocked, roads, coast, watercourse, no_pirates, no_brigands, boats, umbar_slave, Rhun, ResL
+	5
+	3
+	religions { catholic 0 elven 30 dwarven 0 northmen 70 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Wintirion_Province
+	legion: Wintirion_Province
+	Wintirion
+	scotland
+	Human_Rebels
+	150 188 150
+	forest, unlocked, roads, no_brigands, boats, no_pirates, coast, watercourse, Rhun, ResM
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 60 heretic 5 islam 0 wildmen 0 nomadic 0 orthodox 35 kings 0 }
+Withered_Province
+	legion: Withered_Province
+	Withered
+	hre
+	Evil_Looters
+	100 190 158
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, orocarni_hall, frozenlands, Logathavuld, ResA
+	5
+	0
+	religions { catholic 70 elven 0 dwarven 5 northmen 0 heretic 25 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+ Erebor_Province
+	legion: Erebor
+	Erebor
+	moors
+	Dwarven_Erebor_Rebels
+	100 160 100
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, orocarni_hall, crusade, avengers, frozenlands, Logathavuld, ResB, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 90 northmen 10 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Dale_Province
+	legion: Dale
+	Dale
+	scotland
+	Human_Rebels
+	200 160 100
+	grassland, unlocked, roads, watercourse, no_pirates, no_brigands, boats, turk_extra, umbar_slave, crusade, Logathavuld, ResC
+	5
+	2
+	religions { catholic 0 elven 5 dwarven 15 northmen 80 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Esgaroth_Province
+	legion: Esgaroth
+	Esgaroth
+	scotland
+	Human_Rebels
+	200 190 200
+	grassland, unlocked, roads, no_pirates, no_brigands, boats, watercourse, turk_extra, umbar_slave, Logathavuld, ResD
+	5
+	0
+	religions { catholic 0 elven 2 dwarven 3 northmen 95 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celduin_Province
+	legion: Dale_Province
+	Celduin
+	scotland
+	Human_Rebels
+	255 190 200
+	grassland, unlocked, roads, watercourse, no_pirates, no_brigands, boats, umbar_slave, Logathavuld, ResE
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 90 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celduin_East_Province
+	legion: Dale_Province
+	Celduin_East
+	scotland
+	Human_Rebels
+	255 160 100
+	grassland, unlocked, roads, no_pirates, no_brigands, boats, watercourse, Logathavuld, ResF
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 90 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celduin_Far_Province
+	legion: Celduin_Far_Province
+	Celduin_Far
+	scotland
+	Human_Rebels
+	183 207 150
+	grassland, unlocked, roads, watercourse, no_pirates, no_brigands, boats, Logathavuld, ResG
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 80 heretic 20 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celduin_Far_East_Province
+	legion: Celduin_Far_East_Province
+	Celduin_Far_East
+	scotland
+	Human_Rebels
+	167 207 122
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, watercourse, Logathavuld, ResH
+	5
+	1
+	religions { catholic 0 elven 5 dwarven 0 northmen 70 heretic 25 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+North_Khand_Province
+	legion: North_Khand_Province
+	North_Khand
+	khand
+	Rhun_Rebels
+	200 242 226
+	grassland, unlocked, roads, no_pirates, no_brigands, boats, Logathavuld, ResI
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 5 northmen 55 heretic 30 islam 0 wildmen 0 nomadic 0 orthodox 10 kings 0 }
+South_Logathavuld_Province
+	legion: South_Logathavuld_Province
+	South_Logathavuld
+	venice
+	Rhun_Rebels
+	131 114 108
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, orocarni_hall, Logathavuld, ResJ
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 25 northmen 30 heretic 10 islam 0 wildmen 0 nomadic 5 orthodox 30 kings 0 }
+Logathavuld_Province
+	legion: Logathavuld_Province
+	Logathavuld
+	scotland
+	Human_Rebels
+	167 148 86
+	forest, unlocked, roads, no_brigands, boats, no_pirates, Logathavuld, ResK
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 60 northmen 30 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Iron_Hills_Province
+	legion: Iron_Hills_Province
+	Iron_Hills
+	moors
+	Dwarven_Erebor_Rebels
+	255 120 255
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, orocarni_hall, crusade, avengers, frozenlands, Logathavuld, ResL, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 100 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celduin_North_Province
+	legion: Dale_Province
+	Celduin_North
+	scotland
+	Human_Rebels
+	255 118 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Logathavuld, ResM
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 20 northmen 80 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Grey_Foothills_Province
+	legion: Grey_Mountains_Province
+	Grey_Foothills
+	moors
+	Evil_Looters
+	101 59 101
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, frozenlands, Mirkwood, ResA
+	5
+	0
+	religions { catholic 10 elven 0 dwarven 40 northmen 20 heretic 30 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+South_Elven_Mirkwood_Province
+	legion: Elven_Mirkwood_Province
+	South_Elven_Mirkwood
+	mongols
+	Elven_Lindon_Rebels
+	255 150 154
+	forest, unlocked, no_brigands, boats, no_pirates, Mirkwood, ResB
+	5
+	0
+	religions { catholic 10 elven 80 dwarven 0 northmen 10 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Elven_Mirkwood_Province
+	legion: Elven_Mirkwood_Province
+	Elven_Mirkwood
+	mongols
+	Elven_Thranduil_Rebels
+	255 150 255
+	forest, unlocked, no_brigands, boats, no_pirates, silvan_capital, crusade, Mirkwood, ResC, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 0 elven 95 dwarven 0 northmen 5 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+West_Mirkwood_Province
+	legion: Elven_Mirkwood_Province
+	West_Mirkwood
+	mongols
+	Mirkwood_Rebels
+	255 180 255
+	mountains, unlocked, no_brigands, boats, no_pirates, trolls, Mirkwood, ResD
+	5
+	0
+	religions { catholic 0 elven 80 dwarven 5 northmen 5 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Central_Mirkwood_Province
+	legion: Central_Mirkwood_Province
+	Central_Mirkwood
+	mongols
+	Mirkwood_Spiders
+	100 160 255
+	forest, unlocked, no_brigands, boats, no_pirates, Mirkwood, ResE
+	5
+	0
+	religions { catholic 20 elven 50 dwarven 0 northmen 10 heretic 20 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Woodsmen_Province
+	legion: Middle_Mirkwood_Province
+	Woodsmen
+	timurids
+	Mirkwood_Spiders
+	72 154 71
+	forest, unlocked, no_brigands, boats, no_pirates, Mirkwood, ResF
+	5
+	0
+	religions { catholic 20 elven 10 dwarven 0 northmen 60 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Middle_Mirkwood_Province
+	legion: Middle_Mirkwood_Province
+	Middle_Mirkwood
+	mongols
+	Mirkwood_Spiders
+	100 120 25
+	forest, unlocked, no_brigands, boats, no_pirates, Mirkwood, ResG
+	5
+	0
+	religions { catholic 20 elven 50 dwarven 0 northmen 10 heretic 20 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+East_Mirkwood_Province
+	legion: Middle_Mirkwood_Province
+	East_Mirkwood
+	mongols
+	Mirkwood_Spiders
+	72 78 71
+	forest, unlocked, no_brigands, boats, no_pirates, Mirkwood, ResH
+	5
+	0
+	religions { catholic 25 elven 35 dwarven 0 northmen 5 heretic 35 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Far_Rhovanion_Province
+	legion: Far_Rhovanion_Province
+	Far_Rhovanion
+	scotland
+	Rhovanion_Rebels
+	166 185 0
+	grassland, unlocked, roads, watercourse, no_pirates, no_brigands, boats, turk_extra, Mirkwood, ResI
+	5
+	3
+	religions { catholic 10 elven 0 dwarven 0 northmen 75 heretic 15 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+New_Mirkwood_Province
+	legion: Deep_Mirkwood_Province
+	New_Mirkwood
+	mongols
+	Mirkwood_Spiders
+	72 112 71
+	forest, unlocked, no_brigands, boats, no_pirates, trolls, Mirkwood, ResJ
+	5
+	0
+	religions { catholic 70 elven 10 dwarven 0 northmen 5 heretic 15 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Wildlands_Province
+	legion: Wildlands_Province
+	Wildlands
+	turks
+	Wildmen_Rebels
+	255 110 100
+	barren, unlocked, roads, no_brigands, boats, no_pirates, watercourse, Mirkwood, ResK
+	5
+	0
+	religions { catholic 10 elven 5 dwarven 0 northmen 75 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Deep_Mirkwood_Province
+	legion: Deep_Mirkwood
+	Deep_Mirkwood
+	poland
+	Mirkwood_Rebels
+	200 160 200
+	barren, unlocked, trolls, no_brigands, boats, no_pirates, silvan_capital, Mirkwood, ResL, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+East_Deep_Mirkwood_Province
+	legion: Deep_Mirkwood_Province
+	East_Deep_Mirkwood
+	poland
+	Mirkwood_Spiders
+	76 78 61
+	forest, unlocked, no_brigands, boats, no_pirates, trolls, Mirkwood, ResM
+	5
+	0
+	religions { catholic 95 elven 0 dwarven 0 northmen 0 heretic 5 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Wrakyaburg_Province
+	legion: Anduin_Vale_Province
+	Wrakyaburg
+	timurids
+	Beorning_Rebels
+	255 150 200
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResA
+	5
+	3
+	religions { catholic 20 elven 5 dwarven 5 northmen 70 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lower_Anduin_Vale_Province
+	legion: Anduin_Vale_Province
+	Lower_Anduin_Vale
+	timurids
+	Beorning_Rebels
+	200 180 255
+	forest, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResB
+	5
+	1
+	religions { catholic 0 elven 0 dwarven 0 northmen 100 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+West_Anduin_Province
+	legion: Anduin_Vale_Province
+	West_Anduin
+	timurids
+	Beorning_Rebels
+	100 190 171
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResC
+	5
+	3
+	religions { catholic 0 elven 0 dwarven 0 northmen 95 heretic 5 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Gladden_Fields_Province
+	legion: Central_Vale_Province
+	Gladden_Fields
+	timurids
+	Beorning_Rebels
+	100 190 100
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResD
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 50 heretic 0 islam 0 wildmen 50 nomadic 0 orthodox 0 kings 0 }
+Central_Vale_Province
+	legion: Central_Vale_Province
+	Central_Vale
+	timurids
+	Beorning_Rebels
+	255 120 200
+	forest, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResE
+	5
+	3
+	religions { catholic 10 elven 0 dwarven 0 northmen 80 heretic 5 islam 0 wildmen 5 nomadic 0 orthodox 0 kings 0 }
+Pezarsan_Province
+	legion: Lowest_Anduin_Vale_Province
+	Pezarsan
+	spain
+	Human_Rebels
+	46 46 150
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResF
+	5
+	1
+	religions { catholic 25 elven 25 dwarven 25 northmen 25 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lowest_Anduin_Vale_Province
+	legion: Lowest_Anduin_Vale_Province
+	Lowest_Anduin_Vale
+	timurids
+	Beorning_Rebels
+	155 85 85
+	forest, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResG
+	5
+	3
+	religions { catholic 0 elven 10 dwarven 0 northmen 90 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Celebrant_Province
+	legion: Celebrant
+	Celebrant
+	ireland
+	Evil_Looters
+	255 190 100
+	forest, unlocked, no_pirates, no_brigands, watercourse, silvan_capital, crusade, Vale, ResH, smith_orcs, smith_human, smith_dunedain, smith_adunaim, smith_risenmar
+	5
+	0
+	religions { catholic 0 elven 100 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Far_Low_Anduin_Province
+	legion: Lowest_Anduin_Vale_Province
+	Far_Low_Anduin
+	timurids
+	Beorning_Rebels
+	155 85 15
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, Vale, ResI
+	5
+	1
+	religions { catholic 65 elven 10 dwarven 0 northmen 25 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Lothlorien_Province
+	legion: Lothlorien_Province
+	Lothlorien
+	ireland
+	Evil_Looters
+	200 190 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, crusade, Vale, ResJ
+	5
+	1
+	religions { catholic 0 elven 95 dwarven 0 northmen 5 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Border_Province
+	legion: Lothlorien_Province
+	Border
+	milan
+	Human_Rebels
+	71 86 124
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, Vale, ResK
+	5
+	2
+	religions { catholic 5 elven 60 dwarven 0 northmen 20 heretic 15 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Anduin_Vale_Province
+	legion: Anduin_Vale_Province
+	Anduin_Vale
+	timurids
+	Beorning_Rebels
+	200 150 255
+	grassland, unlocked, roads, no_pirates, no_brigands, watercourse, umbar_slave, Vale, ResL
+	5
+	3
+	religions { catholic 5 elven 0 dwarven 0 northmen 85 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+High_Pass_Province
+	legion: High_Pass_Province
+	High_Pass
+	hre
+	Evil_Rebels
+	200 150 200
+	mountains, unlocked, roads, trolls, no_brigands, boats, no_pirates, Vale, ResM
+	5
+	0
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Wilderland_Province
+	legion: Wilderland_Province
+	Wilderland
+	scotland
+	Evil_Looters
+	255 160 200
+	barren, unlocked, roads, no_pirates, no_brigands, watercourse, Rhovanion, ResA
+	5
+	0
+	religions { catholic 80 elven 0 dwarven 0 northmen 5 heretic 15 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Isenmouthe_Province
+	legion: Isenmouthe_Province
+	Isenmouthe
+	scotland
+	Evil_Looters
+	213 101 69
+	barren, unlocked, roads, no_pirates, no_brigands, watercourse, Rhovanion, ResB
+	5
+	0
+	religions { catholic 99 elven 0 dwarven 0 northmen 0 heretic 1 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Dagorlad_Province
+	legion: Dagorlad_Province
+	Dagorlad
+	england
+	Evil_Rebels
+	200 160 255
+	barren, unlocked, roads, no_pirates, no_brigands, watercourse, Rhovanion, ResC
+	5
+	1
+	religions { catholic 100 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Farest_Rhun_Province
+	legion: Farest_Rhun_Province
+	Farest_Rhun
+	scotland
+	Evil_Looters
+	200 140 141
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, Rhovanion, ResD
+	5
+	1
+	religions { catholic 50 elven 0 dwarven 0 northmen 0 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 50 kings 0 }
+Scorched_Province
+	legion: Centre_Rhovanion_Province
+	Scorched
+	scotland
+	Evil_Looters
+	42 239 37
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResE
+	5
+	0
+	religions { catholic 35 elven 0 dwarven 0 northmen 15 heretic 20 islam 0 wildmen 0 nomadic 0 orthodox 30 kings 0 }
+Tirith_Thoron_Province
+	legion: Tirith_Thoron_Province
+	Tirith_Thoron
+	scotland
+	Evil_Looters
+	232 114 164
+	mountains, unlocked, roads, no_brigands, boats, no_pirates, Rhovanion, ResF
+	5
+	1
+	religions { catholic 10 elven 0 dwarven 0 northmen 30 heretic 30 islam 0 wildmen 0 nomadic 0 orthodox 30 kings 0 }
+Rhovanion_Province
+	legion: Centre_Rhovanion_Province
+	Rhovanion
+	scotland
+	Evil_Looters
+	255 140 100
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResG, watercourse
+	5
+	0
+	religions { catholic 50 elven 0 dwarven 0 northmen 50 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Staddle_Province
+	legion: Centre_Rhovanion_Province
+	Staddle
+	normans
+	Evil_Looters
+	154 88 88
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResH, watercourse
+	5
+	0
+	religions { catholic 20 elven 0 dwarven 0 northmen 60 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 20 kings 0 }
+Erech_Province
+	legion: Centre_Rhovanion_Province
+	Erech
+	sicily
+	Rhovanion_Rebels
+	100 180 100
+	forest, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResI
+	5
+	1
+	religions { catholic 10 elven 0 dwarven 0 northmen 80 heretic 0 islam 0 wildmen 0 nomadic 5 orthodox 5 kings 0 }
+Nurunk_Province
+	legion: Centre_Rhovanion_Province
+	Nurunk
+	scotland
+	Rhovanion_Rebels
+	0 209 0
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResJ
+	5
+	1
+	religions { catholic 0 elven 20 dwarven 0 northmen 70 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 10 kings 0 }
+Centre_Rhovanion_Province
+	legion: Centre_Rhovanion_Province
+	Centre_Rhovanion
+	scotland
+	Rhovanion_Rebels
+	194 209 0
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResK
+	5
+	2
+	religions { catholic 0 elven 0 dwarven 0 northmen 80 heretic 10 islam 0 wildmen 0 nomadic 0 orthodox 10 kings 0 }
+North_Rhovanion_Province
+	legion: North_Rhovanion_Province
+	North_Rhovanion
+	scotland
+	Rhovanion_Rebels
+	100 160 200
+	forest, unlocked, roads, watercourse, no_pirates, no_brigands, boats, turk_extra, Rhovanion, ResL
+	5
+	2
+	religions { catholic 0 elven 5 dwarven 0 northmen 90 heretic 5 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Rhawburg_Province
+	legion: Centre_Rhovanion_Province
+	Rhawburg
+	scotland
+	Evil_Looters
+	82 50 168
+	grassland, unlocked, roads, no_brigands, boats, no_pirates, turk_extra, Rhovanion, ResM, watercourse
+	5
+	1
+	religions { catholic 5 elven 0 dwarven 0 northmen 95 heretic 0 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }
+Forodwaith_Province
+	Forodwaith
+	turks
+	Wildmen_Rebels
+	44 159 44
+	no_brigands, boats, no_pirates
+	5
+	0
+	religions { catholic 0 elven 0 dwarven 0 northmen 0 heretic 100 islam 0 wildmen 0 nomadic 0 orthodox 0 kings 0 }

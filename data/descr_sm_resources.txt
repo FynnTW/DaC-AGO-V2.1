@@ -1,0 +1,152 @@
+mine		data/models_strat/resource_mine.CAS
+
+; Animals
+
+type		camels
+trade_value	0
+item		data/models_strat/resource_carrock.CAS
+icon		data/ui/resources/resource_camels.tga
+
+type		elephants
+trade_value	0
+item		data/models_strat/resource_beacon.CAS
+icon		data/ui/resources/resource_elephants.tga
+
+type		dogs
+trade_value	8
+item		data/models_strat/resource_horses.CAS
+icon		data/ui/resources/resource_dogs.tga
+
+type		slaves
+trade_value	0
+item		data/models_strat/resource_barrow.CAS
+icon		data/ui/resources/resource_slaves.tga
+
+; Goods
+
+type		cotton
+trade_value	0
+item		data/models_strat/resource_rammas_echor.CAS
+icon		data/ui/resources/resource_cotton.tga
+
+type		spices
+trade_value	0
+item		data/models_strat/resource_dome_of_stars.CAS
+icon		data/ui/resources/resource_spices.tga
+
+type		dyes
+trade_value	0
+item		data/models_strat/resource_elf_towers.CAS
+icon		data/ui/resources/resource_dyes.tga
+
+type		sulfur
+trade_value	7
+item		data/models_strat/resource_pigs.CAS
+icon		data/ui/resources/resource_sulfur.tga
+
+type		tin
+trade_value	0
+item		data/models_strat/resource_argonaths.CAS
+icon		data/ui/resources/resource_tin.tga
+has_mine
+
+type		coal
+trade_value	5
+item		data/models_strat/resource_fruit.CAS
+icon		data/ui/resources/resource_fruit.tga
+
+type		grain
+trade_value	5
+item		data/models_strat/resource_grain.CAS
+icon		data/ui/resources/resource_grain.tga
+
+type		timber
+trade_value	5
+item		data/models_strat/resource_timber.CAS
+icon		data/ui/resources/resource_timber.tga
+
+type		wool
+trade_value	5
+item		data/models_strat/resource_wool.CAS
+icon		data/ui/resources/resource_wool.tga
+
+type		fish
+trade_value	5
+item		data/models_strat/resource_fish.CAS
+icon		data/ui/resources/resource_fish.tga
+
+type		furs
+trade_value	6
+item		data/models_strat/resource_fur.CAS
+icon		data/ui/resources/resource_fur.tga
+
+type		iron
+trade_value	8
+item		data/models_strat/resource_iron.CAS
+icon		data/ui/resources/resource_iron.tga
+has_mine
+
+type		wine
+trade_value	7
+item		data/models_strat/resource_wine.CAS
+icon		data/ui/resources/resource_wine.tga
+
+type		amber
+trade_value	6
+item		data/models_strat/resource_village.CAS
+icon		data/ui/resources/resource_amber.tga
+
+type		ivory
+trade_value	10
+item		data/models_strat/resource_labour_camp.CAS
+icon		data/ui/resources/resource_ivory.tga
+
+type		marble
+trade_value	8
+item		data/models_strat/resource_honey.CAS
+icon		data/ui/resources/resource_honey.tga
+
+type		silk
+trade_value	8
+item		data/models_strat/resource_silk.CAS
+icon		data/ui/resources/resource_silk.tga
+
+type		sugar
+trade_value	8
+item		data/models_strat/resource_hobbit.CAS
+icon		data/ui/resources/resource_sugar.tga
+
+type		textiles
+trade_value	8
+item		data/models_strat/resource_textile.CAS
+icon		data/ui/resources/resource_textiles.tga
+
+type		tobacco
+trade_value	0
+item		data/models_strat/resource_tobacco.CAS
+icon		data/ui/resources/resource_tobacco.tga
+
+type		silver
+trade_value	16
+item		data/models_strat/resource_silver.CAS
+icon		data/ui/resources/resource_silver.tga
+has_mine
+
+type		gold
+trade_value	18
+item		data/models_strat/resource_gold.CAS
+icon		data/ui/resources/resource_gold.tga
+has_mine
+
+type		chocolate
+trade_value	60
+item		data/models_strat/resource_mithril.CAS
+icon		data/ui/resources/resource_chocolate.tga
+has_mine
+
+; Trade Scroll
+
+type		generic
+trade_value	0
+item		data/models_strat/resource_arrow.CAS
+icon		data/ui/resources/resource_trade_goods.tga

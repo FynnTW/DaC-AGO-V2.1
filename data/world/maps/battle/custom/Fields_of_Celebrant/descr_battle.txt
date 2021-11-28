@@ -1,0 +1,233 @@
+; Historical Battle by Red_Devil for The Third Age Total War
+
+battle		Fields_of_Celebrant
+playable
+	sicily
+	venice
+end
+nonplayable
+	milan
+	poland
+end
+
+
+start_date	500 summer
+end_date	500 summer
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of factions section <<<<
+
+faction	sicily
+character	Cirion, named character, male, leader, age 30, x 371, y 239, portrait Ecthelion
+army
+unit		Gondor Bodyguard				soldiers 45 exp 7 armour 3 weapon_lvl 1
+unit		Lossarnach Axemen				soldiers 150 exp 4 armour 1 weapon_lvl 1
+unit		Lossarnach Axemen				soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 4 armour 2 weapon_lvl 0
+unit		Gondor Spearmen					soldiers 150 exp 4 armour 2 weapon_lvl 0
+unit		Blackroot Vale Archers			soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Blackroot Vale Archers			soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Cavalry					soldiers 60 exp 3 armour 2 weapon_lvl 0
+unit		Gondor Infantry					soldiers 150 exp 6 armour 2 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 6 armour 2 weapon_lvl 1
+
+character	Arthor, named character, male, age 20, x 371, y 239, portrait Elrohir
+army
+unit		Gondor Bodyguard				soldiers 45 exp 3 armour 2 weapon_lvl 1
+unit		Westron Ballista				soldiers 60 exp 1 armour 2 weapon_lvl 1
+unit		Westron Ballista				soldiers 60 exp 1 armour 2 weapon_lvl 1
+unit		Westron Ballista				soldiers 60 exp 1 armour 2 weapon_lvl 1
+unit		Westron Ballista				soldiers 60 exp 1 armour 2 weapon_lvl 1
+unit		Gondor Archer Militia			soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Archer Militia			soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Archer Militia			soldiers 150 exp 4 armour 1 weapon_lvl 1
+unit		Gondor Militia					soldiers 175 exp 1 armour 1 weapon_lvl 1
+unit		Gondor Militia					soldiers 175 exp 2 armour 1 weapon_lvl 0
+unit		Lebennin Marines				soldiers 150 exp 2 armour 1 weapon_lvl 0
+
+faction	milan
+character	Eorl, named character, male, leader, age 25, x 371, y 239, portrait Erkenbrand
+army
+unit		Rohan Bodyguard					soldiers 15 exp 7 armour 3 weapon_lvl 1
+unit		Rohirrim Archers				soldiers 75 exp 4 armour 1 weapon_lvl 1
+unit		Rohirrim Archers				soldiers 75 exp 4 armour 1 weapon_lvl 1
+unit		Peasant Scouts					soldiers 90 exp 4 armour 3 weapon_lvl 1
+unit		Eored Lancers					soldiers 60 exp 4 armour 1 weapon_lvl 1
+unit		Eored Lancers					soldiers 60 exp 4 armour 2 weapon_lvl 1
+unit		Eored Skirmishers				soldiers 70 exp 4 armour 2 weapon_lvl 1
+unit		Eored Skirmishers				soldiers 70 exp 4 armour 2 weapon_lvl 1
+unit		Rohirrim						soldiers 82 exp 2 armour 1 weapon_lvl 1
+unit		Rohirrim						soldiers 82 exp 2 armour 1 weapon_lvl 1
+
+faction	poland
+character	Zaglug, named character, male, age 30, x 371, y 239, portrait Grishnak
+army
+unit		Uruk Bodyguard					soldiers 75 exp 7 armour 2 weapon_lvl 1
+unit		Dol Guldur Host					soldiers 225 exp 4 armour 1 weapon_lvl 0
+unit		Dol Guldur Host					soldiers 225 exp 4 armour 1 weapon_lvl 0
+unit		Dol Guldur Host					soldiers 225 exp 4 armour 1 weapon_lvl 0
+unit		Mirkwood Uruks					soldiers 175 exp 6 armour 2 weapon_lvl 0
+unit		Mirkwood Uruks					soldiers 175 exp 6 armour 2 weapon_lvl 0
+unit		Mirkwood Uruks					soldiers 175 exp 4 armour 2 weapon_lvl 0
+unit		Mirkwood Hunters				soldiers 200 exp 2 armour 0 weapon_lvl 0
+unit		Mirkwood Hunters				soldiers 200 exp 2 armour 0 weapon_lvl 0
+unit		Mirkwood Goblins				soldiers 250 exp 3 armour 1 weapon_lvl 1
+
+faction	venice
+character	Borthand, named character, male, age 25, x 371, y 239, portrait Khand
+army
+unit		Loke Rim Bodyguard				soldiers 57 exp 6 armour 3 weapon_lvl 1
+unit		Khandish Raiders				soldiers 75 exp 4 armour 1 weapon_lvl 0
+unit		Khandish Raiders				soldiers 75 exp 4 armour 1 weapon_lvl 0
+unit		Khandish Raiders				soldiers 75 exp 4 armour 1 weapon_lvl 0
+unit		Balchoth Tribesmen				soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Balchoth Tribesmen				soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Balchoth Spearmen				soldiers 187 exp 2 armour 1 weapon_lvl 0
+unit		Balchoth Spearmen				soldiers 187 exp 2 armour 1 weapon_lvl 0
+unit		Balchoth Spearmen				soldiers 187 exp 2 armour 1 weapon_lvl 0
+unit		Balchoth Spearmen				soldiers 187 exp 2 armour 1 weapon_lvl 0
+unit		Loke-Flag Rim					soldiers 150 exp 2 armour 1 weapon_lvl 1
+unit		Loke-Flag Rim					soldiers 150 exp 2 armour 1 weapon_lvl 1
+unit		Loke-Nar Rim					soldiers 125 exp 4 armour 1 weapon_lvl 1
+unit		Loke-Nar Rim					soldiers 125 exp 4 armour 1 weapon_lvl 1
+unit		Loke-Nar Rim					soldiers 125 exp 4 armour 1 weapon_lvl 1
+unit		Loke-Gamp Rim					soldiers 150 exp 4 armour 2 weapon_lvl 1
+unit		Loke-Gamp Rim					soldiers 150 exp 4 armour 2 weapon_lvl 1
+unit		Loke-Gamp Rim					soldiers 150 exp 4 armour 2 weapon_lvl 1
+unit		Loke-Innas Rim					soldiers 50 exp 3 armour 2 weapon_lvl 1
+unit		Loke-Innas Rim					soldiers 50 exp 3 armour 2 weapon_lvl 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of battle section <<<<
+
+battle	371, 239
+battle_time	12.00	24.00
+weather	cloudy arid
+
+home_faction	sicily
+alliance	can_view	poland, venice, attacking
+alliance	can_view	sicily, milan, defending
+
+army	sicily, 0, no_withdraw, supporting_armies 0
+
+deployment_area_point	453.008, -529.858
+deployment_area_point	223.728, -533.501
+deployment_area_point	80.187, -32.415
+deployment_area_point	356.211, -1.516
+
+unit			0, 147.336, -113.231, 66, formation_type square, formation_width 83.765
+unit			1, 293.948, -207.658, 4, formation_type square, formation_width 13.159
+unit			2, 272.704, -205.832, 7, formation_type square, formation_width 13.868
+unit			3, 291.048, -255.355, 2, formation_type square, formation_width 12.486
+unit			4, 268.398, -254.316, 4, formation_type square, formation_width 12.528
+unit			5, 268.177, -285.164, 0, formation_type square, formation_width 36.847
+unit			6, 267.907, -235.721, 2, formation_type square, formation_width 38.567
+unit			7, 272.036, -157.432, 6, formation_type square, formation_width 49.390
+unit			8, 267.083, -299.756, -1, formation_type square, formation_width 40.693
+unit			9, 268.829, -188.691, 4, formation_type square, formation_width 43.304
+
+army	sicily, 1, no_withdraw, supporting_armies 0
+
+deployment_area_point	125.469, 834.026
+deployment_area_point	205.575, 211.892
+deployment_area_point	577.591, 222.690
+deployment_area_point	522.859, 821.608
+
+unit			0, 468.942, 539.209, -91, formation_type square, formation_width 45.859
+unit			1, 225.121, 408.058, -125, formation_type square, formation_width 52.711
+unit			2, 206.257, 609.132, -121, formation_type square, formation_width 26.078
+unit			3, 199.722, 672.215, -63, formation_type square, formation_width 31.700
+unit			4, 216.258, 454.691, -52, formation_type square, formation_width 47.488
+unit			5, 207.338, 415.190, -91, formation_type square, formation_width 38.962
+unit			6, 191.445, 631.978, -94, formation_type square, formation_width 35.645
+unit			7, 206.358, 259.476, -55, formation_type square, formation_width 32.368
+unit			8, 229.826, 311.106, -83, formation_type square, formation_width 53.218
+unit			9, 185.360, 730.762, -91, formation_type square, formation_width 47.699
+unit			10, 227.365, 516.985, -95, formation_type square, formation_width 49.497
+
+
+
+
+army	venice, 0, no_withdraw, supporting_armies 0
+
+deployment_area_point	-841.723, 10.076
+deployment_area_point	29.452, 180.051
+deployment_area_point	-3.576, 836.936
+deployment_area_point	-835.422, 755.283
+
+unit			0, -66.118, 336.098, 87, formation_type square, formation_width 87.372
+unit			1, -26.565, 667.733, 89, formation_type square, formation_width 141.990
+unit			2, 2.726, 458.619, 90, formation_type square, formation_width 164.963
+unit			3, -16.065, 277.828, 76, formation_type square, formation_width 115.974
+unit			4, -93.096, 347.088, 83, formation_type square, formation_width 61.319
+unit			5, -32.321, 255.475, 78, formation_type square, formation_width 108.347
+unit			6, -13.892, 360.587, 83, formation_type square, formation_width 26.813
+unit			7, -22.929, 767.442, 86, formation_type square, formation_width 65.675
+unit			8, 12.564, 365.617, 85, formation_type square, formation_width 32.500
+unit			9, 14.500, 329.494, 82, formation_type square, formation_width 34.740
+unit			10, -3.031, 567.492, 82, formation_type square, formation_width 77.360
+unit			11, -15.911, 324.048, 72, formation_type square, formation_width 28.250
+unit			12, 1.085, 374.168, 87, formation_type square, formation_width 118.026
+unit			13, -43.033, 771.545, 84, formation_type square, formation_width 78.254
+unit			14, -21.724, 568.838, 81, formation_type square, formation_width 83.864
+unit			15, -36.823, 344.875, 88, formation_type square, formation_width 29.617
+unit			16, -35.125, 306.919, 84, formation_type square, formation_width 31.957
+unit			17, -46.116, 383.796, 77, formation_type square, formation_width 34.087
+unit			18, -66.225, 386.300, 89, formation_type square, formation_width 37.156
+unit			19, -65.868, 242.107, 86, formation_type square, formation_width 36.836
+
+
+
+reinforcement	milan, 0, no_withdraw, supporting_armies 0
+reinforcement_time	0.167
+
+deployment_area_point	843.767, -731.395
+deployment_area_point	843.937, -240.820
+deployment_area_point	504.569, -279.024
+deployment_area_point	597.854, -796.998
+
+unit			0, 675.179, -550.715, -28, formation_type square, formation_width 118.807
+unit			1, 636.435, -580.438, -27, formation_type square, formation_width 32.286
+unit			2, 761.740, -513.693, -34, formation_type square, formation_width 33.490
+unit			3, 644.059, -631.942, -26, formation_type square, formation_width 45.606
+unit			4, 689.104, -571.119, -25, formation_type square, formation_width 86.307
+unit			5, 690.092, -609.715, -25, formation_type square, formation_width 47.750
+unit			6, 787.087, -554.384, -34, formation_type square, formation_width 48.423
+unit			7, 736.572, -585.811, -32, formation_type square, formation_width 49.366
+unit			8, 613.552, -538.857, -25, formation_type square, formation_width 95.417
+unit			9, 727.505, -483.754, -26, formation_type square, formation_width 108.078
+
+
+reinforcement	poland, 0, no_withdraw, supporting_armies 0
+reinforcement_time	0.117
+
+deployment_area_point	576.715, -841.233
+deployment_area_point	479.083, -554.618
+deployment_area_point	-0.846, -546.822
+deployment_area_point	51.532, -838.716
+
+unit			0, 430.627, -677.465, -24, formation_type square, formation_width 61.026
+unit			1, 382.467, -667.074, -26, formation_type square, formation_width 48.086
+unit			2, 307.236, -713.668, -21, formation_type square, formation_width 64.124
+unit			3, 108.852, -759.074, -4, formation_type square, formation_width 68.320
+unit			4, 119.121, -697.064, -3, formation_type square, formation_width 52.155
+unit			5, 202.830, -749.595, -1, formation_type square, formation_width 60.276
+unit			6, 387.547, -728.124, -17, formation_type square, formation_width 61.111
+unit			7, 294.358, -752.707, -16, formation_type square, formation_width 79.150
+unit			8, 423.244, -773.173, -29, formation_type square, formation_width 64.098
+unit			9, 173.923, -786.448, -7, formation_type square, formation_width 62.119
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of objectives scripting section <<<<
+
+objectives
+
+alliance 0
+condition destroy_character Cirion, sicily
+
+alliance 1
+condition destroy_or_rout_enemy
+

@@ -1,0 +1,259 @@
+; custom locations , add new locations at the bottom
+
+custom_location		Fords of Isen
+{
+	location		224	268
+	image			data/menu/battlefield_pics/isen.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Mountain Pass
+{
+	location		256	369
+	image			data/menu/battlefield_pics/mountain_pass.tga
+	sett_locked		yes
+	climate			highland
+	summer			no
+}
+custom_location		Osgiliath Rivercrossing
+{
+	location		329	219
+	image			data/menu/battlefield_pics/custom_rivercrossing.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Pelennor Fields
+{
+	location		325	220
+	image			data/menu/battlefield_pics/pelennor.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Rammas Echor
+{
+	location		324	221
+	image			data/menu/battlefield_pics/rammas.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		The Gates of Argonath
+{
+	location		301	259
+	image			data/menu/battlefield_pics/argonath.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Undertowers
+{
+	location		101	377
+	image			data/menu/battlefield_pics/undertowers.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Amon Hen
+{
+	location		301	251
+	image			data/menu/battlefield_pics/amonhen.tga
+	sett_locked		yes
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Barrow Downs
+{
+	location		162	367
+	image			data/menu/battlefield_pics/barrow_downs.tga
+	sett_locked		yes
+	climate			tropical
+	summer			no
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+custom_location		Anduin
+{
+	location		280	341
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_coniferous_forest
+	summer			no
+}
+custom_location		Anorien
+{
+	location		316	231
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			mediterranean
+	summer			no
+}
+custom_location		Bree
+{
+	location		166	380
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Dale
+{
+	location		338	417
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_coniferous_forest
+	summer			no
+}
+custom_location		Dol Amroth
+{
+	location		243	189
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			mediterranean
+	summer			no
+}
+custom_location		Dunland
+{
+	location		209	318
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Enedwaith
+{
+	location		144	262
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Fangorn Forest
+{
+	location		247	290
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_coniferous_forest
+	summer			no
+}
+custom_location		Gap of Rohan
+{
+	location		217	269
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Grey Mountains
+{
+	location		285	439
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			highland
+	summer			no
+}
+custom_location		Gulf of Lune
+{
+	location		59	379
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Haradwaith
+{
+	location		360	60
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			rocky_desert
+	summer			yes
+}
+custom_location		Iron Hills
+{
+	location		398	419
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			highland
+	summer			no
+}
+custom_location		Ithilien
+{
+	location		334	210
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			mediterranean
+	summer			no
+}
+custom_location		Khand
+{
+	location		474	157
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			rocky_desert
+	summer			yes
+}
+custom_location		Mirkwood
+{
+	location		317	379
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_coniferous_forest
+	summer			no
+}
+custom_location		Misty Mountains
+{
+	location		260	393
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			highland
+	summer			no
+}
+custom_location		Mordor
+{
+	location		357	223
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			sandy_desert
+	summer			yes
+}
+custom_location		Rhovanion
+{
+	location		357	299
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Rhunic Steppe
+{
+	location		501	255
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			steppe
+	summer			yes
+}
+custom_location		The Shire
+{
+	location		135	282
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			temperate_deciduous_forest
+	summer			no
+}
+custom_location		Umbar
+{
+	location		265	81
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			unused1
+	summer			yes
+}
+custom_location		Dagorlad
+{
+	location		329	259
+	image			data/menu/battlefield_pics/dunland.tga
+	sett_locked		no
+	climate			semi_arid
+	summer			yes
+}

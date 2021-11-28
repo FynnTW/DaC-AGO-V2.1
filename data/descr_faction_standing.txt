@@ -1,0 +1,1709 @@
+;#########################################
+;##### Setup #############################
+;##### Global ############################
+;##### Scripts: One Ring #################
+;#########################################
+
+;##################
+;##### Setup ######
+;##################
+
+min_faction_standing -1.0
+max_faction_standing 1.0
+
+relations_improved_thresholds
+{
+	0.25
+	0.4
+	0.6
+}
+
+relations_worsened_thresholds
+{
+	-0.8
+	-0.4
+	-0.25
+}
+
+;##################
+;##### Global #####
+;##################
+
+
+	
+Trigger Global_Rohan_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType milan
+    and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { aztecs, england, france, papal_states, poland, hre, gundabad } normalise -1.0 20	
+	
+Trigger Global_Rohan_Hate_Slow
+WhenToTest FactionTurnStart
+Condition FactionType milan
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { spain, venice, russia, portugal } normalise -0.8 50
+	
+Trigger Global_Rohan_Like
+WhenToTest FactionTurnStart
+Condition FactionType milan
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { denmark, sicily, turks, timurids } normalise 1.00 20
+	
+Trigger Global_Sauron_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType papal_states
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { denmark, milan, mongols, ireland, saxons, sicily, turks, timurids, scotland, byzantium, normans, moors, norway, hungary, teutonic_order, aztecs, russia } normalise -1.0 5	
+	
+Trigger Global_Sauron_Like
+WhenToTest FactionTurnStart
+Condition FactionType papal_states
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { england, poland, portugal } normalise 1.00 20
+	
+Trigger Global_Mordor_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType england
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, scotland, byzantium, normans, saxons, ireland, mongols, moors, norway, hungary, russia } normalise -1.0 5	
+	
+Trigger Global_Mordor_Like
+WhenToTest FactionTurnStart
+Condition FactionType england
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { papal_states, poland, portugal, spain, venice } normalise 1.00 20
+	
+Trigger Global_Mordor_Like_2
+WhenToTest FactionTurnStart
+Condition FactionType england
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { hre, gundabad } normalise 0.5 40
+	
+Trigger Global_DG_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType poland
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, scotland, byzantium, normans, saxons, ireland, mongols, moors, norway, hungary, russia } normalise -1.0 5	
+	
+Trigger Global_DG_Like
+WhenToTest FactionTurnStart
+Condition FactionType poland
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { papal_states, england, portugal, spain, venice } normalise 1.00 20
+	
+Trigger Global_DG_Like_2
+WhenToTest FactionTurnStart
+Condition FactionType poland
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { hre, gundabad } normalise 0.8 40
+	
+Trigger Global_Isengard_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType france
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, scotland, byzantium, saxons, ireland, mongols } normalise -1.0 20	
+	
+Trigger Global_Isengard_Hate_Slow
+WhenToTest FactionTurnStart
+Condition FactionType france
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { khand, venice, spain, portugal } normalise -0.6 80
+	
+Trigger Global_Isengard_Hate_Dwarves
+WhenToTest FactionTurnStart
+Condition FactionType france
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { hungary, moors, norway } normalise -0.5 80	
+
+Trigger Global_Isengard_Like_Dunland
+WhenToTest FactionTurnStart
+Condition FactionType france
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { aztecs } normalise 0.8 80
+	
+Trigger Global_Isengard_Like_2
+WhenToTest FactionTurnStart
+Condition FactionType france
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { hre, gundabad, portugal } normalise 0.3 60
+	
+Trigger Global_Dunland_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType aztecs
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { milan, timurids } normalise -1.0 20
+	
+Trigger Global_Dunland_Like
+WhenToTest FactionTurnStart
+Condition FactionType aztecs
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { france } normalise 1.0 30
+
+Trigger Global_Gundabad_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType gundabad
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, scotland, byzantium, normans, saxons, ireland, mongols, moors, norway, hungary } normalise -1.0 5		
+	
+Trigger Global_Moria_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType hre
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, scotland, byzantium, normans, saxons, ireland, mongols, moors, norway, hungary } normalise -1.0 5	
+	
+Trigger Global_Angmar_Hate_Fast
+WhenToTest FactionTurnStart
+Condition FactionType portugal
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { sicily, denmark, turks, milan, timurids, normans, saxons, ireland, mongols, russia } normalise -1.0 5	
+	
+Trigger Global_Angmar_Hate_Slow
+WhenToTest FactionTurnStart
+Condition FactionType portugal
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { moors, norway, hungary, scotland, byzantium } normalise -0.5 40	
+	
+Trigger Global_Angmar_Like
+WhenToTest FactionTurnStart
+Condition FactionType portugal
+      and I_EventCounter imperial_campaign = 1
+	FactionStanding factions { papal_states, england, poland } normalise 1.00 5
+	
+Trigger Global_Bree_Like_ND
+WhenToTest FactionTurnStart
+Condition FactionType normans
+      and I_EventCounter imperial_campaign = 1
+	  and I_EventCounter scouring_shire = 0
+    FactionStanding factions { turks } normalise 1.00 5	
+
+Trigger Global_Gondor_Like_DA
+WhenToTest FactionTurnStart
+Condition FactionType sicily
+      and I_EventCounter imperial_campaign = 1
+    FactionStanding factions { denmark } normalise 1.00 5	
+	
+Trigger Global_DA_Like_Gondor
+WhenToTest FactionTurnStart
+Condition FactionType sicily
+      and I_EventCounter imperial_campaign = 1
+    FactionStanding factions { sicily } normalise 1.00 5		
+	
+Trigger Global_DG_Like_Mordor
+WhenToTest FactionTurnStart
+Condition FactionType poland
+      and I_EventCounter imperial_campaign = 1
+    FactionStanding factions { england } normalise 1.00 5			
+	
+Trigger Global_Mordor_Like_DG
+WhenToTest FactionTurnStart
+Condition FactionType england
+      and I_EventCounter imperial_campaign = 1
+    FactionStanding factions { poland } normalise 1.00 5			
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; DUNEDAIN ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Trigger Dunedain_Hate_Fast
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+      	and I_EventCounter imperial_campaign = 1
+		
+	FactionStanding factions { england, papal_states, france, poland, hre, gundabad, portugal, russia } normalise -1.0 10
+	
+;------------------------------------------	
+Trigger Dunedain_Like
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+      	and I_EventCounter imperial_campaign = 1
+		
+	FactionStanding factions { denmark, milan, saxons, sicily, turks } normalise 1.00 20
+	
+;------------------------------------------
+Trigger Dunedain_Like_Bree
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType turks
+      	and I_EventCounter imperial_campaign = 1
+	  	and I_EventCounter scouring_shire = 0
+		
+	FactionStanding factions { normans } normalise 1.00 20
+	
+;------------------------------------------
+Trigger Dunedain_Invaded_Settlement
+	WhenToTest Transgression
+	
+	Condition TransgressionName = TC_INVADED_SETTLEMENT
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.05
+	
+;------------------------------------------
+Trigger Dunedain_Invaded_Fort
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_FORT
+		and TargetFactionReligion islam
+
+	FactionStanding factions { turks, denmark, sicily } -0.025
+	
+;------------------------------------------
+Trigger Dunedain_Invaded_Watchtower
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_WATCHTOWER
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.0125
+	
+;------------------------------------------
+Trigger Dunedain_Declared_War
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_DECLARED_WAR
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.1
+
+;------------------------------------------
+Trigger Dunedain_Instigate_Siege
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_SIEGE
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.05
+
+;------------------------------------------
+Trigger Dunedain_Threaten_War
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_THREATEN_WAR
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.0125
+
+;------------------------------------------
+Trigger Dunedain_Undeclared_Attack
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_UNDECLARED_ATTACK
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.1
+
+;------------------------------------------
+Trigger Dunedain_INSTIGATE_ASSAULT
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_ASSAULT
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.025
+
+;------------------------------------------
+Trigger Dunedain_BLOCKADE
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BLOCKADE
+		and TargetFactionReligion islam
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, denmark, sicily } -0.0125
+	
+;------------------------------------------
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ELVES;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;------------------------------------------
+Trigger Invaded_Settlement_Elves
+	WhenToTest Transgression
+	
+	Condition TransgressionName = TC_INVADED_SETTLEMENT
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.05
+	FactionStanding factions { denmark } -0.02
+	
+;------------------------------------------
+Trigger Invaded_Fort_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_FORT
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.025
+	FactionStanding factions { denmark } -0.01
+	
+;------------------------------------------
+Trigger Invaded_Watchtower_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_WATCHTOWER
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.0125
+	
+;------------------------------------------
+Trigger Declared_War_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_DECLARED_WAR
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.1
+	FactionStanding factions { denmark } -0.05
+
+;------------------------------------------
+Trigger Instigate_Siege_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_SIEGE
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.05
+	FactionStanding factions { denmark } -0.02
+
+;------------------------------------------
+Trigger Threaten_War_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_THREATEN_WAR
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.0125
+
+;------------------------------------------
+Trigger Undeclared_Attack_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_UNDECLARED_ATTACK
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.1
+	FactionStanding factions { denmark } -0.05
+
+;------------------------------------------
+Trigger INSTIGATE_ASSAULT_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_ASSAULT
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.025
+	FactionStanding factions { denmark } -0.015
+
+;------------------------------------------
+Trigger BLOCKADE_Elves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BLOCKADE
+		and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.0125
+	
+;------------------------------------------
+Trigger Elves_Like_Elves
+	WhenToTest FactionTurnStart
+
+	Condition FactionReligion elven
+      	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { ireland, mongols, saxons, turks } normalise 1.0 3
+
+;------------------------------------------
+Trigger Elves_Like_Avari
+	WhenToTest FactionTurnStart
+
+	Condition FactionReligion elven
+      	and I_EventCounter imperial_campaign = 1
+      	and I_EventCounter dorwinion_elf = 1
+	  
+	FactionStanding factions { byzantium } normalise 1.0 10
+
+;------------------------------------------
+Trigger Elves_Avari_Betrayal
+	WhenToTest FactionTurnStart
+
+	Condition FactionReligion elven
+      	and I_EventCounter imperial_campaign = 1
+      	and I_EventCounter dorwinion_war = 1
+	  
+	FactionStanding factions { byzantium } normalise -1.0 5
+
+;------------------------------------------
+Trigger Elves_Hate_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion elven
+      	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { russia, portugal, france, hre, gundabad, poland, england, papal_states } normalise -1.0 3
+	
+;------------------------------------------
+Trigger Elves_Released
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType release
+		  and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } 0.05
+	
+;------------------------------------------
+Trigger Elves_Executed
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType execute
+		  and TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.2
+	
+;------------------------------------------
+Trigger Sack_Elves
+	WhenToTest SackSettlement
+
+	Condition TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.05
+	
+;------------------------------------------
+Trigger Exterminate_Elves
+	WhenToTest ExterminatePopulation
+
+	Condition TargetFactionReligion elven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, mongols, ireland } -0.5
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BREE ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;------------------------------------------
+Trigger Invaded_Settlement_Bree
+	WhenToTest Transgression
+	
+	Condition TransgressionName = TC_INVADED_SETTLEMENT
+		and TargetFactionType normans
+	 	and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+		
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.05
+	
+;------------------------------------------
+Trigger Invaded_Fort_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_FORT
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.025
+	
+;------------------------------------------
+Trigger Invaded_Watchtower_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_WATCHTOWER
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.0125
+	
+;------------------------------------------
+Trigger Declared_War_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_DECLARED_WAR
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.1
+
+;------------------------------------------
+Trigger Instigate_Siege_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_SIEGE
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.05
+
+;------------------------------------------
+Trigger Threaten_War_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_THREATEN_WAR
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.0125
+
+;------------------------------------------
+Trigger Undeclared_Attack_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_UNDECLARED_ATTACK
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.1
+
+;------------------------------------------
+Trigger INSTIGATE_ASSAULT_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_ASSAULT
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.025
+
+;------------------------------------------
+Trigger BLOCKADE_Bree
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BLOCKADE
+		and TargetFactionType normans
+	  and I_EventCounter scouring_shire = 0
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { turks, saxons, ireland, moors, norway } -0.0125
+	
+;------------------------------------------
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Dwarves;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;------------------------------------------
+Trigger Invaded_Settlement_Dwarves
+	WhenToTest Transgression
+	
+	Condition TransgressionName = TC_INVADED_SETTLEMENT
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.05
+	
+;------------------------------------------
+Trigger Invaded_Fort_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_FORT
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.025
+	
+;------------------------------------------
+Trigger Invaded_Watchtower_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_WATCHTOWER
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.0125
+	
+;------------------------------------------
+Trigger Declared_War_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_DECLARED_WAR
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.1
+
+;------------------------------------------
+Trigger Instigate_Siege_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_SIEGE
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.05
+;------------------------------------------
+Trigger Threaten_War_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_THREATEN_WAR
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.0125
+
+;------------------------------------------
+Trigger Undeclared_Attack_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_UNDECLARED_ATTACK
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.1
+
+;------------------------------------------
+Trigger INSTIGATE_ASSAULT_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INSTIGATE_ASSAULT
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.025
+
+;------------------------------------------
+Trigger BLOCKADE_Dwarves
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BLOCKADE
+		and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.0125
+	
+;------------------------------------------
+Trigger Dwarves_Like_Dwarves
+	WhenToTest FactionTurnStart
+
+	Condition FactionReligion dwarven
+      	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { moors, norway, hungary } normalise 1.0 10
+
+;------------------------------------------
+Trigger Dwarves_Avari_Betrayal
+	WhenToTest FactionTurnStart
+
+	Condition FactionReligion dwarven
+		and not FactionType hungary
+      	and I_EventCounter dorwinion_war = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { byzantium } normalise -1.0 10
+
+;------------------------------------------
+Trigger Dwarves_Avari_Betrayal_EL
+	WhenToTest FactionTurnStart
+
+	Condition FactionType hungary
+      	and I_EventCounter dorwinion_war = 1
+		and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { byzantium } normalise -1.0 10
+
+;------------------------------------------
+Trigger Dwarves_Hate_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion dwarven
+		and not FactionType hungary
+      	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { russia, portugal, france, hre, gundabad, poland, england, papal_states } normalise -1.0 20
+	
+;------------------------------------------
+Trigger EL_Hate_Orcs_Rings
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hungary
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { russia, portugal, france, hre, gundabad, poland, england, papal_states } normalise -1.0 80
+	
+;------------------------------------------
+Trigger EL_Hate_Orcs_No_Rings
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hungary
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { russia, portugal, france, hre, gundabad, poland, england, papal_states } normalise -1.0 20
+	
+;------------------------------------------
+Trigger Dwarves_Released
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType release
+		  and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } 0.05
+	
+;------------------------------------------
+Trigger Dwarves_Executed
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType execute
+		  and TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.2
+	
+;------------------------------------------
+Trigger Sack_Dwarves
+	WhenToTest SackSettlement
+
+	Condition TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.05
+	
+;------------------------------------------
+Trigger Exterminate_Dwarves
+	WhenToTest ExterminatePopulation
+
+	Condition TargetFactionReligion dwarven
+    	and I_EventCounter imperial_campaign = 1
+
+	FactionStanding factions { moors, norway, hungary } -0.5
+	
+;------------------------------------------	
+;;;;;;;;;;;;;;
+;; ERED LUIN ;;
+;;;;;;;;;;;;;;
+;------------------------------------------
+Trigger Ered_Rings
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hungary
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, normans } -0.2
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, normans } normalise -1.0 60	  
+	FactionStanding factions { portugal, france, hre, poland, england, papal_states, venice, spain } 0.2
+	FactionStanding factions { portugal, france, hre, poland, england, papal_states, venice, spain } normalise 1.0 60
+	
+;------------------------------------------	
+Trigger Ered_Rings_Target_Elves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion elven
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Ered_Rings_Target_Dunedain
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+;------------------------------------------		
+Trigger Ered_Rings_Target_Bree
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType normans
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------	
+Trigger Ered_Rings_Target_Rohan
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType milan
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------			
+Trigger Ered_Rings_Target_Dwarves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion dwarven
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Ered_Rings_Target_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion catholic
+	and not FactionType gundabad
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Ered_Rings_Target_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion orthodox
+	and I_EventCounter luin_ring_accepted = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Ered_No_Rings
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hungary
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan } 0.2
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan } normalise 1.0 50	  
+	FactionStanding factions { portugal, france, hre, poland, england, papal_states, venice, spain } -0.2
+	FactionStanding factions { portugal, france, hre, poland, england, papal_states, venice, spain } normalise -1.0 50
+	
+;------------------------------------------	
+Trigger Ered_No_Rings_Target_Elves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion elven
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Ered_No_Rings_Target_Dunedain
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------	
+Trigger Ered_No_Rings_Target_Rohan
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType milan
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------			
+Trigger Ered_No_Rings_Target_Dwarves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion dwarven
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } 0.2
+	FactionStanding factions { hungary } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Ered_No_Rings_Target_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion catholic
+	and not FactionType gundabad
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Ered_No_Rings_Target_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion orthodox
+	and I_EventCounter luin_ring_rejected = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { hungary } -0.2
+	FactionStanding factions { hungary } normalise -1.0 30
+	
+;------------------------------------------		
+;;;;;;;;;;;;;;
+;; KHAND ;;
+;;;;;;;;;;;;;;
+;------------------------------------------
+Trigger Khand_Wizards
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType khand
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, byzantium, scotland } 0.2
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, byzantium, scotland } normalise 1.0 50	  
+	FactionStanding factions { portugal, france, hre, gundabad, poland, england, papal_states, venice, spain } -0.2
+	FactionStanding factions { portugal, france, hre, gundabad, poland, england, papal_states, venice, spain } normalise -1.0 50
+	
+;------------------------------------------
+Trigger Khand_Wizards_Target_Elves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion elven
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Khand_Wizards_Target_Dunedain
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+;------------------------------------------		
+Trigger Khand_Wizards_Target_Dale
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType scotland
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------	
+Trigger Khand_Wizards_Target_Dorwinion
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType byzantium
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------	
+Trigger Khand_Wizards_Target_Rohan
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType milan
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------			
+Trigger Khand_Wizards_Target_Dwarves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion dwarven
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Khand_Wizards_Target_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion catholic
+	and not FactionType gundabad
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Khand_Wizards_Target_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion orthodox
+	and I_EventCounter blue_wizards_succeed = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------			
+Trigger Khand_No_Wizards
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType khand
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, byzantium, scotland } -0.2
+	FactionStanding factions { sicily, denmark, turks, saxons, ireland, mongols, moors, norway, milan, byzantium, scotland } normalise -1.0 50	  
+	FactionStanding factions { portugal, france, hre, gundabad, poland, england, papal_states, venice, spain } 0.2
+	FactionStanding factions { portugal, france, hre, gundabad, poland, england, papal_states, venice, spain } normalise 1.0 50
+
+;------------------------------------------
+Trigger Khand_No_Wizards_Target_Elves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion elven
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Khand_No_Wizards_Target_Dunedain
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion islam
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+;------------------------------------------		
+Trigger Khand_No_Wizards_Target_Dale
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType scotland
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+;------------------------------------------	
+Trigger Khand_No_Wizards_Target_Dorwinion
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType byzantium
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------	
+Trigger Khand_No_Wizards_Target_Rohan
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType milan
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------			
+Trigger Khand_No_Wizards_Target_Dwarves
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion dwarven
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } -0.2
+	FactionStanding factions { khand } normalise -1.0 30
+	
+;------------------------------------------		
+Trigger Khand_No_Wizards_Target_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion catholic
+	and not FactionType gundabad
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------		
+Trigger Khand_No_Wizards_Target_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion orthodox
+	and I_EventCounter blue_wizards_fail = 1
+    	and I_EventCounter imperial_campaign = 1
+	  
+	FactionStanding factions { khand } 0.2
+	FactionStanding factions { khand } normalise 1.0 30
+	
+;------------------------------------------		
+;;;;;;;;;;;;;;
+;; GLOBAL ;;
+;;;;;;;;;;;;;;
+;------------------------------------------
+Trigger 0050_T_Invaded_Fort
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_FORT
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 15
+	FactionStanding target_allies normalise -1.0 30
+	FactionStanding target_enemies normalise 1.0 60
+	
+;------------------------------------------
+Trigger 0052_T_Invaded_Settlement
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_SETTLEMENT
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 8
+	FactionStanding target_allies normalise -1.0 15
+	FactionStanding target_enemies normalise 1.0 30
+	
+;------------------------------------------	
+Trigger 0053_T_Invaded_Watchtower
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVADED_WATCHTOWER
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+	
+;------------------------------------------	
+Trigger 0055_T_Invasion_Neutral
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_INVASION
+	   and not TargetFactionType slave
+		and not DiplomaticStanceFactions = Allied
+
+	FactionStanding target_faction normalise -1.0 120
+	FactionStanding target_allies normalise -1.0 240
+	FactionStanding target_enemies normalise 1.0 480
+
+;------------------------------------------
+	Trigger 0056_T_Nullified_Alliance
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_NULLIFIED_ALLIANCE
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 8
+	FactionStanding target_allies normalise -1.0 15
+	FactionStanding target_enemies normalise 1.0 30
+
+;------------------------------------------
+Trigger 0057_T_Broke_Treaty_terms
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BROKE_TREATY_TERMS
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 15
+	FactionStanding target_allies normalise -1.0 30
+	FactionStanding target_enemies normalise 1.0 60
+
+;------------------------------------------
+Trigger 0060_T_Declared_War
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_DECLARED_WAR
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 8
+	FactionStanding target_allies normalise -1.0 15
+	FactionStanding target_enemies normalise 1.0 30
+	
+;------------------------------------------
+Trigger 0070_T_Spying
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_SPYING
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+
+;------------------------------------------
+Trigger 0071_T_Threaten_War
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_THREATEN_WAR
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+
+;------------------------------------------
+Trigger 0072_T_Undeclared_Attack
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_UNDECLARED_ATTACK
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 8
+	FactionStanding target_allies normalise -1.0 15
+	FactionStanding target_enemies normalise 1.0 30
+	
+;------------------------------------------
+Trigger 0074_T_BLOCKADE
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BLOCKADE
+	   and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+;------------------------------------------
+	
+Trigger 0078b_DT_Break_Alliance_War
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BROKE_ALLIANCE
+	   and not TargetFactionType slave
+		and DiplomaticStanceFactions = AtWar
+
+	FactionStanding global -0.1
+	FactionStanding target_faction normalise -1.0 8
+	FactionStanding target_allies normalise -1.0 15
+	FactionStanding target_enemies normalise 1.0 30
+
+;------------------------------------------
+Trigger 0078c_DT_Break_Alliance_Neutral
+	WhenToTest Transgression
+
+	Condition TransgressionName = TC_BROKE_ALLIANCE
+	   and not TargetFactionType slave
+		and DiplomaticStanceFactions = Neutral
+
+	FactionStanding global -0.05
+	FactionStanding target_faction normalise -1.0 15
+	FactionStanding target_allies normalise -1.0 30
+	FactionStanding target_enemies normalise 1.0 60
+;;;;;;;;;;;;;;;;
+;; GLOBAL POSITIVE ;;
+;;;;;;;;;;;;;;;;
+
+Trigger Normalize_Reputation
+	WhenToTest FactionTurnStart
+	
+	Condition I_EventCounter imperial_campaign = 1
+	
+	FactionStanding global 0.01
+	
+;------------------------------------------
+Trigger Normalize_Reputation_Orcs
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion catholic
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding global -0.1
+	
+;------------------------------------------
+Trigger Normalize_Reputation_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion orthodox
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding global normalise -0.5 40
+	
+;------------------------------------------
+Trigger Normalize_Reputation_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType aztecs
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding global normalise -0.5 40
+	
+;------------------------------------------
+Trigger Normalize_Reputation_Evil
+	WhenToTest FactionTurnStart
+	
+	Condition FactionReligion kings
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding global normalise -0.8 20
+	
+;------------------------------------------
+Trigger 0079_F_Trade_Agreement
+	WhenToTest FactionTradeAgreementMade
+
+	FactionStanding target_faction 0.05
+	FactionStanding target_faction normalise 1.0 15
+	FactionStanding target_allies normalise 1.0 30
+	FactionStanding target_enemies normalise -1.0 60
+
+;------------------------------------------
+Trigger 0080_F_Military_Assistance
+	WhenToTest Forgiveness
+
+	Condition ForgivenessName = FC_MILITARY_ASSISTANCE
+	
+	FactionStanding target_faction 0.2
+	FactionStanding target_faction normalise 1.0 8
+	FactionStanding target_allies normalise 1.0 15
+	FactionStanding target_enemies normalise -1.0 30
+	
+;------------------------------------------
+Trigger 0082b_F_Alliance_Declared
+	WhenToTest FactionAllianceDeclared
+
+	Condition not TargetFactionType england
+
+	FactionStanding target_faction 0.2
+	FactionStanding target_faction normalise 1.0 8
+	FactionStanding target_allies normalise 1.0 15
+	FactionStanding target_enemies normalise -1.0 30
+	
+;------------------------------------------
+Trigger 0083c_Update_Allies_Allies
+	WhenToTest UpdateAttitude
+
+	Condition DiplomaticStanceFactions = Allied
+	
+	FactionStanding target_faction normalise 1.0 30
+	FactionStanding target_allies normalise 1.0 60
+	FactionStanding target_enemies normalise -1.0 120
+
+;------------------------------------------
+Trigger 0083d_Update_Enemies_Allies
+	WhenToTest UpdateAttitude
+
+	Condition DiplomaticStanceFactions = AtWar
+			and not TargetFactionType slave
+
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+	
+;------------------------------------------	
+Trigger 0085_Update_Religion
+	WhenToTest FactionTurnStart
+
+	FactionStanding own_religion normalise 1.0 120
+	
+;------------------------------------------
+Trigger 0099a_prisoners_released_increase_global
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType release
+		  and not TargetFactionReligion heretic
+
+	FactionStanding global 0.02
+	FactionStanding target_faction normalise 1.0 30
+	FactionStanding target_allies normalise 1.0 60
+	FactionStanding target_enemies normalise -1.0 120
+	
+;------------------------------------------
+Trigger 0100_prisoners_executed_decrease_global
+	WhenToTest FactionLeaderPrisonersRansomedCaptor
+
+	Condition RansomType execute
+		  and not FactionReligion catholic
+		  and not TargetFactionReligion catholic
+		  and not TargetFactionReligion heretic
+
+	FactionStanding global -0.05
+	FactionStanding target_faction normalise -1.0 30
+	FactionStanding target_allies normalise -1.0 60
+	FactionStanding target_enemies normalise 1.0 120
+	
+;------------------------------------------
+Trigger 0103_sack_settlement_decrease_global
+	WhenToTest SackSettlement
+
+	Condition not FactionReligion catholic
+		  and not TargetFactionReligion catholic
+		  and not TargetFactionReligion heretic
+	
+    FactionStanding target_faction normalise -1.0 30
+    FactionStanding target_allies normalise -1.0 60
+    FactionStanding target_enemies normalise 1.0 120
+	
+;------------------------------------------
+Trigger 0104_extermination_decrease_global
+	WhenToTest ExterminatePopulation
+
+	Condition not FactionReligion catholic
+		  and not TargetFactionReligion catholic
+		  and not TargetFactionReligion heretic
+
+	FactionStanding global -0.1
+    FactionStanding target_faction normalise -1.0 15
+    FactionStanding target_allies normalise -1.0 30
+    FactionStanding target_enemies normalise 1.0 60
+	
+;------------------------------------------
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ONE RING ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;------------------------------------------
+Trigger Gondor_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType sicily
+    	and I_EventCounter gondor_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------
+Trigger DA_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType denmark
+    	and I_EventCounter da_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Rohan_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType milan
+    	and I_EventCounter da_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Bree_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType normans
+    	and I_EventCounter bree_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Dale_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType scotland
+    	and I_EventCounter dale_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Anduin_Keeps_Ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType timurids
+    	and I_EventCounter anduin_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Dorwinion_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType byzantium
+    	and I_EventCounter dorwinion_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------
+Trigger Erebor_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType moors
+    	and I_EventCounter erebor_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger EL_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hungary
+    	and I_EventCounter el_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger KD_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType norway
+    	and I_EventCounter kd_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Enedwaith_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType teutonic_order
+    	and I_EventCounter enedwaith_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Dunland_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType aztecs
+    	and I_EventCounter dunland_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Rhun_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType venice
+    	and I_EventCounter rhun_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------
+Trigger Gundabad_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType gundabad
+    	and I_EventCounter gundabad_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Harad_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType spain
+    	and I_EventCounter harad_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------		
+Trigger Khand_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType khand
+    	and I_EventCounter khand_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------		
+Trigger AA_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType russia
+    	and I_EventCounter aa_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger DG_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType poland
+    	and I_EventCounter dg_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, portugal, aztecs, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Moria_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType hre
+    	and I_EventCounter moria_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, portugal, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------	
+Trigger Angmar_keeps_ring
+	WhenToTest FactionTurnStart
+	
+	Condition FactionType portugal
+    	and I_EventCounter angmar_keeps_ring = 1
+    	and I_EventCounter imperial_campaign = 1
+	
+	FactionStanding factions { england, france, spain, venice, hre, aztecs, poland, saxons, mongols, ireland, turks } normalise -1.00 1
+	
+;------------------------------------------		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+

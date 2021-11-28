@@ -1,0 +1,1085 @@
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Battle_of_the_Plains/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Anarion at 0x22fe4368 from script
+		Creating unit (General's Bodyguard) at 0x22922f88
+		Creating unit (Gondor Infantry) at 0x261a5568
+		Creating unit (Gondor Infantry) at 0x2213be70
+		Creating unit (Gondor Infantry) at 0x21bd5308
+		Creating unit (Gondor Infantry) at 0x2432e0e0
+		Creating unit (Gondor Spearmen) at 0x2614e7a0
+		Creating unit (Gondor Spearmen) at 0x21c56aa8
+		Creating unit (Gondor Archers) at 0x6506fd8
+		Creating unit (Gondor Archers) at 0x2f8f0d20
+		Creating unit (Gondor Archers) at 0x2313b488
+		Creating unit (Gondor Archers) at 0x220e50d0
+		Creating unit (Gondor Spearmen) at 0x21c6a8b8
+		Creating unit (Gondor Infantry) at 0x21ddf260
+		Creating unit (Gondor Infantry) at 0x21ddfb80
+		Creating unit (Gondor Archers) at 0x21ddfdc8
+		Creating unit (Gondor Archers) at 0x21de0010
+		Creating unit (Ithilien Rangers) at 0x21de0258
+		Creating unit (Ithilien Rangers) at 0x21de04a0
+		Creating unit (Gondor Cavalry) at 0x21de06e8
+		Creating unit (Gondor Cavalry) at 0x21de0930
+Created faction milan from file
+	Creating army controlled by Alchfrid at 0x22fe46b0 from script
+		Creating unit (Rohan Bodyguards) at 0x21de0b78
+		Creating unit (Eorling Axemen) at 0x21de0dc0
+		Creating unit (Eorling Swordsmen) at 0x21de1008
+		Creating unit (Rohan Spearmen) at 0x21de1250
+		Creating unit (Dismounted Éored Lancers) at 0x21de1498
+		Creating unit (Royal Guard) at 0x21de16e0
+		Creating unit (Royal Guard) at 0x21de1928
+		Creating unit (Riddermark Axemen) at 0x21de1b70
+		Creating unit (Riddermark Axemen) at 0x21de1db8
+Created faction venice from file
+	Creating army controlled by Borlad at 0x22fe4548 from script
+		Creating unit ( Bodyguard) at 0x21de2000
+		Creating unit ( Clan Hunters) at 0x25f380c0
+		Creating unit ( Clan Hunters) at 0x25f38308
+		Creating unit ( Lôke-Gamp Rim) at 0x25f38550
+		Creating unit ( Lôke-Gamp Rim) at 0x25f38798
+		Creating unit ( Lôke-Gamp Rim) at 0x25f389e0
+		Creating unit ( Lôke-Gamp Rim) at 0x25f38c28
+		Creating unit ( Lôke-Gamp Rim) at 0x25f38e70
+		Creating unit ( Lôke-Innas Rim) at 0x25f390b8
+		Creating unit ( Lôke-Innas Rim) at 0x25f39300
+		Creating unit ( Lôke-Flag Rim) at 0x25f39548
+		Creating unit ( Lôke-Flag Rim) at 0x25f39790
+		Creating unit ( Lôke-Flag Rim) at 0x25f399d8
+		Creating unit ( Lôke-Flag Rim) at 0x25f39c20
+		Creating unit ( Lôke-Flag Rim) at 0x25f39e68
+		Creating unit ( Lôke-Flag Rim) at 0x25f3a0b0
+		Creating unit ( Lôke-Gamp Rim) at 0x25f3a2f8
+		Creating unit ( Clan Hunters) at 0x25f3a540
+Adding unit (General's Bodyguard) at 0x22922f88 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x261a5568 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x2213be70 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x21bd5308 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x2432e0e0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x2614e7a0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c56aa8 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x6506fd8 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x2f8f0d20 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x2313b488 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x220e50d0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c6a8b8 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x21ddf260 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x21ddfb80 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x21ddfdc8 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x21de0010 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x21de0258 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x21de04a0 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21de06e8 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21de0930 to deployment area at 0xabceee8
+Adding unit (Rohan Bodyguards) at 0x21de0b78 to deployment area at 0xabcef24
+Adding unit (Eorling Axemen) at 0x21de0dc0 to deployment area at 0xabcef24
+Adding unit (Eorling Swordsmen) at 0x21de1008 to deployment area at 0xabcef24
+Adding unit (Rohan Spearmen) at 0x21de1250 to deployment area at 0xabcef24
+Adding unit (Dismounted Éored Lancers) at 0x21de1498 to deployment area at 0xabcef24
+Adding unit (Royal Guard) at 0x21de16e0 to deployment area at 0xabcef24
+Adding unit (Royal Guard) at 0x21de1928 to deployment area at 0xabcef24
+Adding unit (Riddermark Axemen) at 0x21de1b70 to deployment area at 0xabcef24
+Adding unit (Riddermark Axemen) at 0x21de1db8 to deployment area at 0xabcef24
+Adding unit ( Bodyguard) at 0x21de2000 to deployment area at 0xabcef60
+Adding unit ( Clan Hunters) at 0x25f380c0 to deployment area at 0xabcef60
+Adding unit ( Clan Hunters) at 0x25f38308 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f38550 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f38798 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f389e0 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f38c28 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f38e70 to deployment area at 0xabcef60
+Adding unit ( Lôke-Innas Rim) at 0x25f390b8 to deployment area at 0xabcef60
+Adding unit ( Lôke-Innas Rim) at 0x25f39300 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f39548 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f39790 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f399d8 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f39c20 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f39e68 to deployment area at 0xabcef60
+Adding unit ( Lôke-Flag Rim) at 0x25f3a0b0 to deployment area at 0xabcef60
+Adding unit ( Lôke-Gamp Rim) at 0x25f3a2f8 to deployment area at 0xabcef60
+Adding unit ( Clan Hunters) at 0x25f3a540 to deployment area at 0xabcef60
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x21de2000 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Clan Hunters) at 0x25f380c0 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Clan Hunters) at 0x25f38308 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f38550 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f38798 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f389e0 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f38c28 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f38e70 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25f390b8 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25f39300 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f39548 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f39790 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f399d8 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f39c20 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f39e68 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Flag Rim) at 0x25f3a0b0 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25f3a2f8 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit ( Clan Hunters) at 0x25f3a540 from deployment area at 0xabcef60 and the unit wasn't found
+Trying to remove unit (Rohan Bodyguards) at 0x21de0b78 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Eorling Axemen) at 0x21de0dc0 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Eorling Swordsmen) at 0x21de1008 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Rohan Spearmen) at 0x21de1250 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Dismounted Éored Lancers) at 0x21de1498 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Royal Guard) at 0x21de16e0 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Royal Guard) at 0x21de1928 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Riddermark Axemen) at 0x21de1b70 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (Riddermark Axemen) at 0x21de1db8 from deployment area at 0xabcef24 and the unit wasn't found
+Trying to remove unit (General's Bodyguard) at 0x22922f88 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x261a5568 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x2213be70 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x21bd5308 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x2432e0e0 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x2614e7a0 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x21c56aa8 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x6506fd8 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x2f8f0d20 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x2313b488 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x220e50d0 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Spearmen) at 0x21c6a8b8 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x21ddf260 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Infantry) at 0x21ddfb80 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x21ddfdc8 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Archers) at 0x21de0010 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21de0258 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Ithilien Rangers) at 0x21de04a0 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Cavalry) at 0x21de06e8 from deployment area at 0xabceee8 and the unit wasn't found
+Trying to remove unit (Gondor Cavalry) at 0x21de0930 from deployment area at 0xabceee8 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x22802d18 from script
+		Creating unit (General's Bodyguard) at 0x21de0930
+		Creating unit (Gondor Spearmen) at 0x21de06e8
+		Creating unit (Gondor Spearmen) at 0x21de04a0
+		Creating unit (Gondor Spearmen) at 0x21de0258
+		Creating unit (Gondor Spearmen) at 0x21de0010
+		Creating unit (Gondor Spearmen) at 0x21ddfdc8
+		Creating unit (Ithilien Rangers) at 0x21ddfb80
+		Creating unit (Gondor Archers) at 0x21ddf260
+		Creating unit (Gondor Infantry) at 0x21de1db8
+		Creating unit (Gondor Cavalry) at 0x21de1b70
+		Creating unit (Gondor Cavalry) at 0x21de1928
+	Creating army controlled by Arthon at 0x22811c28 from script
+		Creating unit (General's Bodyguard) at 0x21de16e0
+		Creating unit (Gondor Cavalry) at 0x21de1498
+		Creating unit (Gondor Cavalry) at 0x21de1250
+	Creating army controlled by Faramir at 0x2280bd00 from script
+		Creating unit (General's Bodyguard) at 0x21de1008
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x2280bb20 from script
+		Creating unit (Rohan Bodyguards) at 0x21de0dc0
+		Creating unit (Eorling Axemen) at 0x21de0b78
+		Creating unit (Eorling Swordsmen) at 0x21de2000
+		Creating unit (Eorling Archers) at 0x30764e90
+Created faction venice from file
+	Creating army controlled by Borthand at 0x2281a3a0 from script
+		Creating unit ( Bodyguard) at 0x307650d8
+		Creating unit ( Lôke-Gamp Rim) at 0x30765320
+		Creating unit ( Lôke-Gamp Rim) at 0x30765568
+		Creating unit ( Lôke-Gamp Rim) at 0x307657b0
+		Creating unit ( Lôke-Gamp Rim) at 0x307659f8
+		Creating unit ( Lôke-Gamp Rim) at 0x30765c40
+		Creating unit ( Lôke-Nar Rim) at 0x30765e88
+		Creating unit ( Lôke-Nar Rim) at 0x307660d0
+		Creating unit ( Lôke-Nar Rim) at 0x30766318
+		Creating unit ( Dismounted Variags) at 0x30766560
+		Creating unit ( Dismounted Variags) at 0x307667a8
+		Creating unit ( Dismounted Variags) at 0x307669f0
+		Creating unit ( Dismounted Variags) at 0x30766c38
+		Creating unit ( Dismounted Variags) at 0x30766e80
+		Creating unit ( Variag Raiders) at 0x307670c8
+		Creating unit ( Variag Raiders) at 0x30767310
+		Creating unit ( Lôke-Innas Rim) at 0x30767558
+	Creating army controlled by Sacal at 0x22803600 from script
+		Creating unit ( Bodyguard) at 0x307677a0
+		Creating unit ( Lôke-Nar Rim) at 0x307679e8
+		Creating unit ( Lôke-Nar Rim) at 0x30767c30
+		Creating unit ( Lôke-Nar Rim) at 0x30767e78
+		Creating unit ( Lôke-Nar Rim) at 0x307680c0
+		Creating unit ( Lôke-Nar Rim) at 0x30768308
+		Creating unit (Ballista) at 0x30768550
+		Creating unit (Ballista) at 0x30768798
+		Creating unit ( Lôke-Gamp Rim) at 0x307689e0
+		Creating unit ( Lôke-Gamp Rim) at 0x30768c28
+		Creating unit ( Lôke-Gamp Rim) at 0x25e060a8
+		Creating unit ( Lôke-Innas Rim) at 0x25e062f0
+		Creating unit ( Lôke-Innas Rim) at 0x25e06538
+Adding unit (General's Bodyguard) at 0x21de0930 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21de06e8 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21de04a0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21de0258 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21de0010 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21ddfdc8 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x21ddfb80 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x21ddf260 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x21de1db8 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21de1b70 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21de1928 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x21de16e0 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x21de1498 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x21de1250 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x21de1008 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x21de0dc0 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x21de0b78 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x21de2000 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x30764e90 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x307650d8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765320 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765568 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x307657b0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x307659f8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765c40 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x30765e88 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x307660d0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x30766318 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x30766560 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x307667a8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x307669f0 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x30766c38 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x30766e80 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x307670c8 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x30767310 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x30767558 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x307677a0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x307679e8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x30767c30 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x30767e78 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x307680c0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x30768308 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x30768550 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x30768798 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x307689e0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x30768c28 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x25e060a8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x25e062f0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x25e06538 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x307650d8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x30765320 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x30765568 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x307657b0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x307659f8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x30765c40 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x30765e88 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x307660d0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x30766318 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x30766560 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x307667a8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x307669f0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x30766c38 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x30766e80 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x307670c8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x30767310 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x30767558 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x307677a0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x307679e8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x30767c30 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x30767e78 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x307680c0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x30768308 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x30768550 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x30768798 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x307689e0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x30768c28 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25e060a8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25e062f0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25e06538 from deployment area at 0xabcf014 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x22804668 from script
+		Creating unit (General's Bodyguard) at 0x30768c28
+		Creating unit (Gondor Spearmen) at 0x307689e0
+		Creating unit (Gondor Spearmen) at 0x30768798
+		Creating unit (Gondor Spearmen) at 0x30768550
+		Creating unit (Gondor Spearmen) at 0x30768308
+		Creating unit (Gondor Spearmen) at 0x307680c0
+		Creating unit (Ithilien Rangers) at 0x30767e78
+		Creating unit (Gondor Archers) at 0x30767c30
+		Creating unit (Gondor Infantry) at 0x307679e8
+		Creating unit (Gondor Cavalry) at 0x307677a0
+		Creating unit (Gondor Cavalry) at 0x30767558
+	Creating army controlled by Arthon at 0x2281d2f8 from script
+		Creating unit (General's Bodyguard) at 0x30767310
+		Creating unit (Gondor Cavalry) at 0x307670c8
+		Creating unit (Gondor Cavalry) at 0x30766e80
+	Creating army controlled by Faramir at 0x228042a8 from script
+		Creating unit (General's Bodyguard) at 0x30766c38
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x22806648 from script
+		Creating unit (Rohan Bodyguards) at 0x307669f0
+		Creating unit (Eorling Axemen) at 0x307667a8
+		Creating unit (Eorling Swordsmen) at 0x30766560
+		Creating unit (Eorling Archers) at 0x30766318
+Created faction venice from file
+	Creating army controlled by Borthand at 0x2280baa8 from script
+		Creating unit ( Bodyguard) at 0x307660d0
+		Creating unit ( Lôke-Gamp Rim) at 0x30765e88
+		Creating unit ( Lôke-Gamp Rim) at 0x30765c40
+		Creating unit ( Lôke-Gamp Rim) at 0x307659f8
+		Creating unit ( Lôke-Gamp Rim) at 0x307657b0
+		Creating unit ( Lôke-Gamp Rim) at 0x30765568
+		Creating unit ( Lôke-Nar Rim) at 0x30765320
+		Creating unit ( Lôke-Nar Rim) at 0x307650d8
+		Creating unit ( Lôke-Nar Rim) at 0x25bc6090
+		Creating unit ( Dismounted Variags) at 0x25bc62d8
+		Creating unit ( Dismounted Variags) at 0x25bc6520
+		Creating unit ( Dismounted Variags) at 0x25bc6768
+		Creating unit ( Dismounted Variags) at 0x25bc69b0
+		Creating unit ( Dismounted Variags) at 0x25bc6bf8
+		Creating unit ( Variag Raiders) at 0x25bc6e40
+		Creating unit ( Variag Raiders) at 0x25bc7088
+		Creating unit ( Lôke-Innas Rim) at 0x25bc72d0
+	Creating army controlled by Sacal at 0x2280cf48 from script
+		Creating unit ( Bodyguard) at 0x25bc7518
+		Creating unit ( Lôke-Nar Rim) at 0x25bc7760
+		Creating unit ( Lôke-Nar Rim) at 0x25bc79a8
+		Creating unit ( Lôke-Nar Rim) at 0x25bc7bf0
+		Creating unit ( Lôke-Nar Rim) at 0x25b68090
+		Creating unit ( Lôke-Nar Rim) at 0x25b682d8
+		Creating unit (Ballista) at 0x25b68520
+		Creating unit (Ballista) at 0x25b68768
+		Creating unit ( Lôke-Gamp Rim) at 0x25b689b0
+		Creating unit ( Lôke-Gamp Rim) at 0x25b68bf8
+		Creating unit ( Lôke-Gamp Rim) at 0x25b68e40
+		Creating unit ( Lôke-Innas Rim) at 0x25b69088
+		Creating unit ( Lôke-Innas Rim) at 0x25b692d0
+Adding unit (General's Bodyguard) at 0x30768c28 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x307689e0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30768798 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30768550 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30768308 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x307680c0 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x30767e78 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x30767c30 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x307679e8 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x307677a0 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x30767558 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x30767310 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x307670c8 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x30766e80 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x30766c38 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x307669f0 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x307667a8 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x30766560 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x30766318 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x307660d0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765e88 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765c40 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x307659f8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x307657b0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x30765568 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x30765320 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x307650d8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x25bc6090 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x25bc62d8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x25bc6520 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x25bc6768 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x25bc69b0 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x25bc6bf8 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x25bc6e40 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x25bc7088 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x25bc72d0 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x25bc7518 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x25bc7760 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x25bc79a8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x25bc7bf0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x25b68090 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x25b682d8 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x25b68520 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x25b68768 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x25b689b0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x25b68bf8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x25b68e40 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x25b69088 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x25b692d0 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Lôke-Nar Rim) at 0x25bc6090 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x25bc62d8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x25bc6520 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x25bc6768 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x25bc69b0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x25bc6bf8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x25bc6e40 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x25bc7088 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25bc72d0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x25bc7518 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25bc7760 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25bc79a8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25bc7bf0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25b68090 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25b682d8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x25b68520 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x25b68768 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25b689b0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25b68bf8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25b68e40 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25b69088 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x25b692d0 from deployment area at 0xabcf014 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x189436c0 from script
+		Creating unit (General's Bodyguard) at 0x30078f50
+		Creating unit (Gondor Spearmen) at 0x30079198
+		Creating unit (Gondor Spearmen) at 0x300793e0
+		Creating unit (Gondor Spearmen) at 0x30079628
+		Creating unit (Gondor Spearmen) at 0x30079870
+		Creating unit (Gondor Spearmen) at 0x30079ab8
+		Creating unit (Ithilien Rangers) at 0x30079d00
+		Creating unit (Gondor Archers) at 0x30079f48
+		Creating unit (Gondor Infantry) at 0x3007a190
+		Creating unit (Gondor Cavalry) at 0x3007a3d8
+		Creating unit (Gondor Cavalry) at 0x3007a620
+	Creating army controlled by Arthon at 0x18938c98 from script
+		Creating unit (General's Bodyguard) at 0x3007a868
+		Creating unit (Gondor Cavalry) at 0x3007aab0
+		Creating unit (Gondor Cavalry) at 0x25acc090
+	Creating army controlled by Faramir at 0x18934dc8 from script
+		Creating unit (General's Bodyguard) at 0x25acc2d8
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x18937b40 from script
+		Creating unit (Rohan Bodyguards) at 0x25acc520
+		Creating unit (Eorling Axemen) at 0x25acc768
+		Creating unit (Eorling Swordsmen) at 0x25acc9b0
+		Creating unit (Eorling Archers) at 0x25accbf8
+Created faction venice from file
+	Creating army controlled by Borthand at 0x18937a50 from script
+		Creating unit ( Bodyguard) at 0x25acce40
+		Creating unit ( Lôke-Gamp Rim) at 0x25acd088
+		Creating unit ( Lôke-Gamp Rim) at 0x25acd2d0
+		Creating unit ( Lôke-Gamp Rim) at 0x25acd518
+		Creating unit ( Lôke-Gamp Rim) at 0x25acd760
+		Creating unit ( Lôke-Gamp Rim) at 0x25acd9a8
+		Creating unit ( Lôke-Nar Rim) at 0x25acdbf0
+		Creating unit ( Lôke-Nar Rim) at 0x2fc674f0
+		Creating unit ( Lôke-Nar Rim) at 0x2fc67738
+		Creating unit ( Dismounted Variags) at 0x2fc67980
+		Creating unit ( Dismounted Variags) at 0x2fc67bc8
+		Creating unit ( Dismounted Variags) at 0x2fc67e10
+		Creating unit ( Dismounted Variags) at 0x2fc68058
+		Creating unit ( Dismounted Variags) at 0x2fc682a0
+		Creating unit ( Variag Raiders) at 0x2fc684e8
+		Creating unit ( Variag Raiders) at 0x2fc68730
+		Creating unit ( Lôke-Innas Rim) at 0x2fc68978
+	Creating army controlled by Sacal at 0x18937618 from script
+		Creating unit ( Bodyguard) at 0x2fc68bc0
+		Creating unit ( Lôke-Nar Rim) at 0x2fc68e08
+		Creating unit ( Lôke-Nar Rim) at 0x2fc69050
+		Creating unit ( Lôke-Nar Rim) at 0x2fc694f0
+		Creating unit ( Lôke-Nar Rim) at 0x2fc69738
+		Creating unit ( Lôke-Nar Rim) at 0x2fc69980
+		Creating unit (Ballista) at 0x2fc69bc8
+		Creating unit (Ballista) at 0x2fc69e10
+		Creating unit ( Lôke-Gamp Rim) at 0x2fc6a058
+		Creating unit ( Lôke-Gamp Rim) at 0x2fc6a2a0
+		Creating unit ( Lôke-Gamp Rim) at 0x2fc6a4e8
+		Creating unit ( Lôke-Innas Rim) at 0x2fc6a730
+		Creating unit ( Lôke-Innas Rim) at 0x2fc6a978
+Adding unit (General's Bodyguard) at 0x30078f50 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30079198 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x300793e0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30079628 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30079870 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x30079ab8 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x30079d00 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x30079f48 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x3007a190 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x3007a3d8 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x3007a620 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x3007a868 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x3007aab0 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x25acc090 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x25acc2d8 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x25acc520 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x25acc768 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x25acc9b0 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x25accbf8 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x25acce40 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x25acd088 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x25acd2d0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x25acd518 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x25acd760 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x25acd9a8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x25acdbf0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x2fc674f0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x2fc67738 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x2fc67980 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x2fc67bc8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x2fc67e10 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x2fc68058 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x2fc682a0 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x2fc684e8 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x2fc68730 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x2fc68978 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x2fc68bc0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x2fc68e08 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x2fc69050 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x2fc694f0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x2fc69738 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x2fc69980 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x2fc69bc8 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x2fc69e10 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x2fc6a058 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x2fc6a2a0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x2fc6a4e8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x2fc6a730 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x2fc6a978 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x25acce40 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25acd088 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25acd2d0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25acd518 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25acd760 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x25acd9a8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x25acdbf0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc674f0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc67738 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x2fc67980 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x2fc67bc8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x2fc67e10 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x2fc68058 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x2fc682a0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x2fc684e8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x2fc68730 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x2fc68978 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x2fc68bc0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc68e08 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc69050 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc694f0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc69738 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x2fc69980 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x2fc69bc8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x2fc69e10 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x2fc6a058 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x2fc6a2a0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x2fc6a4e8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x2fc6a730 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x2fc6a978 from deployment area at 0xabcf014 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x1893b7b8 from script
+		Creating unit (General's Bodyguard) at 0x25acdbf0
+		Creating unit (Gondor Spearmen) at 0x25acd9a8
+		Creating unit (Gondor Spearmen) at 0x25acd760
+		Creating unit (Gondor Spearmen) at 0x25acd518
+		Creating unit (Gondor Spearmen) at 0x25acd2d0
+		Creating unit (Gondor Spearmen) at 0x25acd088
+		Creating unit (Ithilien Rangers) at 0x25acce40
+		Creating unit (Gondor Archers) at 0x21c25a98
+		Creating unit (Gondor Infantry) at 0x21c25ce0
+		Creating unit (Gondor Cavalry) at 0x21c25f28
+		Creating unit (Gondor Cavalry) at 0x21c26170
+	Creating army controlled by Arthon at 0x1893f598 from script
+		Creating unit (General's Bodyguard) at 0x21c263b8
+		Creating unit (Gondor Cavalry) at 0x21c26600
+		Creating unit (Gondor Cavalry) at 0x21c26848
+	Creating army controlled by Faramir at 0x18939850 from script
+		Creating unit (General's Bodyguard) at 0x21c26a90
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x18939c10 from script
+		Creating unit (Rohan Bodyguards) at 0x21c26cd8
+		Creating unit (Eorling Axemen) at 0x21c26f20
+		Creating unit (Eorling Swordsmen) at 0x21c27168
+		Creating unit (Eorling Archers) at 0x21c273b0
+Created faction venice from file
+	Creating army controlled by Borthand at 0x1893a0c0 from script
+		Creating unit ( Bodyguard) at 0x21c275f8
+		Creating unit ( Lôke-Gamp Rim) at 0x410ec130
+		Creating unit ( Lôke-Gamp Rim) at 0x410ec378
+		Creating unit ( Lôke-Gamp Rim) at 0x410ec5c0
+		Creating unit ( Lôke-Gamp Rim) at 0x410ec808
+		Creating unit ( Lôke-Gamp Rim) at 0x410eca50
+		Creating unit ( Lôke-Nar Rim) at 0x410ecc98
+		Creating unit ( Lôke-Nar Rim) at 0x410ecee0
+		Creating unit ( Lôke-Nar Rim) at 0x410ed128
+		Creating unit ( Dismounted Variags) at 0x410ed370
+		Creating unit ( Dismounted Variags) at 0x410ed5b8
+		Creating unit ( Dismounted Variags) at 0x410ed800
+		Creating unit ( Dismounted Variags) at 0x410eda48
+		Creating unit ( Dismounted Variags) at 0x410edc90
+		Creating unit ( Variag Raiders) at 0x417e6030
+		Creating unit ( Variag Raiders) at 0x417e6278
+		Creating unit ( Lôke-Innas Rim) at 0x417e64c0
+	Creating army controlled by Sacal at 0x1893dae0 from script
+		Creating unit ( Bodyguard) at 0x417e6708
+		Creating unit ( Lôke-Nar Rim) at 0x417e6950
+		Creating unit ( Lôke-Nar Rim) at 0x417e6b98
+		Creating unit ( Lôke-Nar Rim) at 0x417e6de0
+		Creating unit ( Lôke-Nar Rim) at 0x417e7028
+		Creating unit ( Lôke-Nar Rim) at 0x417e7270
+		Creating unit (Ballista) at 0x417e74b8
+		Creating unit (Ballista) at 0x417e7700
+		Creating unit ( Lôke-Gamp Rim) at 0x417e7948
+		Creating unit ( Lôke-Gamp Rim) at 0x417e7b90
+		Creating unit ( Lôke-Gamp Rim) at 0x30933630
+		Creating unit ( Lôke-Innas Rim) at 0x30933878
+		Creating unit ( Lôke-Innas Rim) at 0x30933ac0
+Adding unit (General's Bodyguard) at 0x25acdbf0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25acd9a8 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25acd760 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25acd518 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25acd2d0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25acd088 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x25acce40 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x21c25a98 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x21c25ce0 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21c25f28 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x21c26170 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x21c263b8 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x21c26600 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x21c26848 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x21c26a90 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x21c26cd8 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x21c26f20 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x21c27168 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x21c273b0 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x21c275f8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x410ec130 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x410ec378 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x410ec5c0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x410ec808 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x410eca50 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x410ecc98 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x410ecee0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x410ed128 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x410ed370 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x410ed5b8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x410ed800 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x410eda48 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x410edc90 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x417e6030 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x417e6278 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x417e64c0 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x417e6708 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x417e6950 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x417e6b98 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x417e6de0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x417e7028 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x417e7270 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x417e74b8 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x417e7700 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x417e7948 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x417e7b90 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x30933630 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x30933878 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x30933ac0 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x21c275f8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x410ec130 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x410ec378 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x410ec5c0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x410ec808 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x410eca50 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x410ecc98 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x410ecee0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x410ed128 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x410ed370 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x410ed5b8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x410ed800 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x410eda48 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x410edc90 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x417e6030 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x417e6278 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x417e64c0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x417e6708 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x417e6950 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x417e6b98 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x417e6de0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x417e7028 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x417e7270 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x417e74b8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x417e7700 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x417e7948 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x417e7b90 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x30933630 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x30933878 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x30933ac0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Rohan Bodyguards) at 0x21c26cd8 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Axemen) at 0x21c26f20 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Swordsmen) at 0x21c27168 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Archers) at 0x21c273b0 from deployment area at 0xabcef9c and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x1893c460 from script
+		Creating unit (General's Bodyguard) at 0x21c273b0
+		Creating unit (Gondor Spearmen) at 0x21c27168
+		Creating unit (Gondor Spearmen) at 0x21c26f20
+		Creating unit (Gondor Spearmen) at 0x21c26cd8
+		Creating unit (Gondor Spearmen) at 0x21c275f8
+		Creating unit (Gondor Spearmen) at 0x25ba4090
+		Creating unit (Ithilien Rangers) at 0x25ba42d8
+		Creating unit (Gondor Archers) at 0x25ba4520
+		Creating unit (Gondor Infantry) at 0x25ba4768
+		Creating unit (Gondor Cavalry) at 0x25ba49b0
+		Creating unit (Gondor Cavalry) at 0x25ba4bf8
+	Creating army controlled by Arthon at 0x1893f3b8 from script
+		Creating unit (General's Bodyguard) at 0x25ba4e40
+		Creating unit (Gondor Cavalry) at 0x25ba5088
+		Creating unit (Gondor Cavalry) at 0x25ba52d0
+	Creating army controlled by Faramir at 0x18941140 from script
+		Creating unit (General's Bodyguard) at 0x25ba5518
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x1893e788 from script
+		Creating unit (Rohan Bodyguards) at 0x25ba5760
+		Creating unit (Eorling Axemen) at 0x25ba59a8
+		Creating unit (Eorling Swordsmen) at 0x25ba5bf0
+		Creating unit (Eorling Archers) at 0x438b8570
+Created faction venice from file
+	Creating army controlled by Borthand at 0x18943300 from script
+		Creating unit ( Bodyguard) at 0x438b87b8
+		Creating unit ( Lôke-Gamp Rim) at 0x438b8a00
+		Creating unit ( Lôke-Gamp Rim) at 0x438b8c48
+		Creating unit ( Lôke-Gamp Rim) at 0x438b8e90
+		Creating unit ( Lôke-Gamp Rim) at 0x438b90d8
+		Creating unit ( Lôke-Gamp Rim) at 0x438b9320
+		Creating unit ( Lôke-Nar Rim) at 0x438b9568
+		Creating unit ( Lôke-Nar Rim) at 0x438b97b0
+		Creating unit ( Lôke-Nar Rim) at 0x438b99f8
+		Creating unit ( Dismounted Variags) at 0x438b9c40
+		Creating unit ( Dismounted Variags) at 0x438b9e88
+		Creating unit ( Dismounted Variags) at 0x438ba0d0
+		Creating unit ( Dismounted Variags) at 0x474bb168
+		Creating unit ( Dismounted Variags) at 0x474bb3b0
+		Creating unit ( Variag Raiders) at 0x474bb5f8
+		Creating unit ( Variag Raiders) at 0x474bb840
+		Creating unit ( Lôke-Innas Rim) at 0x474bba88
+	Creating army controlled by Sacal at 0x18935278 from script
+		Creating unit ( Bodyguard) at 0x474bbcd0
+		Creating unit ( Lôke-Nar Rim) at 0x474bbf18
+		Creating unit ( Lôke-Nar Rim) at 0x474bc160
+		Creating unit ( Lôke-Nar Rim) at 0x474bc3a8
+		Creating unit ( Lôke-Nar Rim) at 0x474bc5f0
+		Creating unit ( Lôke-Nar Rim) at 0x474bc838
+		Creating unit (Ballista) at 0x474bca80
+		Creating unit (Ballista) at 0x474bccc8
+		Creating unit ( Lôke-Gamp Rim) at 0x40fdd6b8
+		Creating unit ( Lôke-Gamp Rim) at 0x40fdd900
+		Creating unit ( Lôke-Gamp Rim) at 0x40fddb48
+		Creating unit ( Lôke-Innas Rim) at 0x40fddd90
+		Creating unit ( Lôke-Innas Rim) at 0x40fddfd8
+Adding unit (General's Bodyguard) at 0x21c273b0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c27168 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c26f20 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c26cd8 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x21c275f8 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x25ba4090 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x25ba42d8 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x25ba4520 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x25ba4768 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x25ba49b0 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x25ba4bf8 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x25ba4e40 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x25ba5088 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x25ba52d0 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x25ba5518 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x25ba5760 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x25ba59a8 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x25ba5bf0 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x438b8570 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x438b87b8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x438b8a00 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x438b8c48 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x438b8e90 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x438b90d8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x438b9320 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x438b9568 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x438b97b0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x438b99f8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x438b9c40 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x438b9e88 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x438ba0d0 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x474bb168 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x474bb3b0 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x474bb5f8 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x474bb840 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x474bba88 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x474bbcd0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x474bbf18 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x474bc160 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x474bc3a8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x474bc5f0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x474bc838 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x474bca80 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x474bccc8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x40fdd6b8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x40fdd900 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x40fddb48 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x40fddd90 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x40fddfd8 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x438b87b8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x438b8a00 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x438b8c48 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x438b8e90 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x438b90d8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x438b9320 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x438b9568 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x438b97b0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x438b99f8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x438b9c40 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x438b9e88 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x438ba0d0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x474bb168 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x474bb3b0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x474bb5f8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x474bb840 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x474bba88 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x474bbcd0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x474bbf18 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x474bc160 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x474bc3a8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x474bc5f0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x474bc838 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x474bca80 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x474bccc8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x40fdd6b8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x40fdd900 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x40fddb48 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x40fddd90 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x40fddfd8 from deployment area at 0xabcf014 and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Ambush_at_the_Black_Gate/descr_battle.txt
+Created faction sicily from file
+	Creating army controlled by Orodreth at 0x18934fa8 from script
+		Creating unit (General's Bodyguard) at 0x438ba0d0
+		Creating unit (Gondor Spearmen) at 0x438b9e88
+		Creating unit (Gondor Spearmen) at 0x438b9c40
+		Creating unit (Gondor Spearmen) at 0x438b99f8
+		Creating unit (Gondor Spearmen) at 0x438b97b0
+		Creating unit (Gondor Spearmen) at 0x438b9568
+		Creating unit (Ithilien Rangers) at 0x438b9320
+		Creating unit (Gondor Archers) at 0x438b90d8
+		Creating unit (Gondor Infantry) at 0x438b8e90
+		Creating unit (Gondor Cavalry) at 0x438b8c48
+		Creating unit (Gondor Cavalry) at 0x438b8a00
+	Creating army controlled by Arthon at 0x18938518 from script
+		Creating unit (General's Bodyguard) at 0x438b87b8
+		Creating unit (Gondor Cavalry) at 0x34b2ade8
+		Creating unit (Gondor Cavalry) at 0x34b2b030
+	Creating army controlled by Faramir at 0x18944368 from script
+		Creating unit (General's Bodyguard) at 0x34b2b278
+Created faction milan from file
+	Creating army controlled by Dernhelm at 0x1893f1d8 from script
+		Creating unit (Rohan Bodyguards) at 0x34b2b4c0
+		Creating unit (Eorling Axemen) at 0x34b2b708
+		Creating unit (Eorling Swordsmen) at 0x34b2b950
+		Creating unit (Eorling Archers) at 0x34b2bb98
+Created faction venice from file
+	Creating army controlled by Borthand at 0x1893ebc0 from script
+		Creating unit ( Bodyguard) at 0x34b2bde0
+		Creating unit ( Lôke-Gamp Rim) at 0x34b2c028
+		Creating unit ( Lôke-Gamp Rim) at 0x34b2c270
+		Creating unit ( Lôke-Gamp Rim) at 0x34b2c4b8
+		Creating unit ( Lôke-Gamp Rim) at 0x34b2c700
+		Creating unit ( Lôke-Gamp Rim) at 0x34b2c948
+		Creating unit ( Lôke-Nar Rim) at 0x47194820
+		Creating unit ( Lôke-Nar Rim) at 0x47194a68
+		Creating unit ( Lôke-Nar Rim) at 0x47194cb0
+		Creating unit ( Dismounted Variags) at 0x47194ef8
+		Creating unit ( Dismounted Variags) at 0x47195140
+		Creating unit ( Dismounted Variags) at 0x47195388
+		Creating unit ( Dismounted Variags) at 0x471955d0
+		Creating unit ( Dismounted Variags) at 0x47195818
+		Creating unit ( Variag Raiders) at 0x47195a60
+		Creating unit ( Variag Raiders) at 0x47195ca8
+		Creating unit ( Lôke-Innas Rim) at 0x47195ef0
+	Creating army controlled by Sacal at 0x1893dbd0 from script
+		Creating unit ( Bodyguard) at 0x47196138
+		Creating unit ( Lôke-Nar Rim) at 0x47196380
+		Creating unit ( Lôke-Nar Rim) at 0x46ceab70
+		Creating unit ( Lôke-Nar Rim) at 0x46ceadb8
+		Creating unit ( Lôke-Nar Rim) at 0x46ceb000
+		Creating unit ( Lôke-Nar Rim) at 0x46ceb248
+		Creating unit (Ballista) at 0x46ceb490
+		Creating unit (Ballista) at 0x46ceb6d8
+		Creating unit ( Lôke-Gamp Rim) at 0x46ceb920
+		Creating unit ( Lôke-Gamp Rim) at 0x46cebb68
+		Creating unit ( Lôke-Gamp Rim) at 0x46cebdb0
+		Creating unit ( Lôke-Innas Rim) at 0x46cebff8
+		Creating unit ( Lôke-Innas Rim) at 0x46cec240
+Adding unit (General's Bodyguard) at 0x438ba0d0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x438b9e88 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x438b9c40 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x438b99f8 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x438b97b0 to deployment area at 0xabceee8
+Adding unit (Gondor Spearmen) at 0x438b9568 to deployment area at 0xabceee8
+Adding unit (Ithilien Rangers) at 0x438b9320 to deployment area at 0xabceee8
+Adding unit (Gondor Archers) at 0x438b90d8 to deployment area at 0xabceee8
+Adding unit (Gondor Infantry) at 0x438b8e90 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x438b8c48 to deployment area at 0xabceee8
+Adding unit (Gondor Cavalry) at 0x438b8a00 to deployment area at 0xabceee8
+Adding unit (General's Bodyguard) at 0x438b87b8 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x34b2ade8 to deployment area at 0xabcef24
+Adding unit (Gondor Cavalry) at 0x34b2b030 to deployment area at 0xabcef24
+Adding unit (General's Bodyguard) at 0x34b2b278 to deployment area at 0xabcef60
+Adding unit (Rohan Bodyguards) at 0x34b2b4c0 to deployment area at 0xabcef9c
+Adding unit (Eorling Axemen) at 0x34b2b708 to deployment area at 0xabcef9c
+Adding unit (Eorling Swordsmen) at 0x34b2b950 to deployment area at 0xabcef9c
+Adding unit (Eorling Archers) at 0x34b2bb98 to deployment area at 0xabcef9c
+Adding unit ( Bodyguard) at 0x34b2bde0 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x34b2c028 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x34b2c270 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x34b2c4b8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x34b2c700 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Gamp Rim) at 0x34b2c948 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x47194820 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x47194a68 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Nar Rim) at 0x47194cb0 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x47194ef8 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x47195140 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x47195388 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x471955d0 to deployment area at 0xabcefd8
+Adding unit ( Dismounted Variags) at 0x47195818 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x47195a60 to deployment area at 0xabcefd8
+Adding unit ( Variag Raiders) at 0x47195ca8 to deployment area at 0xabcefd8
+Adding unit ( Lôke-Innas Rim) at 0x47195ef0 to deployment area at 0xabcefd8
+Adding unit ( Bodyguard) at 0x47196138 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x47196380 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x46ceab70 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x46ceadb8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x46ceb000 to deployment area at 0xabcf014
+Adding unit ( Lôke-Nar Rim) at 0x46ceb248 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x46ceb490 to deployment area at 0xabcf014
+Adding unit (Ballista) at 0x46ceb6d8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x46ceb920 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x46cebb68 to deployment area at 0xabcf014
+Adding unit ( Lôke-Gamp Rim) at 0x46cebdb0 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x46cebff8 to deployment area at 0xabcf014
+Adding unit ( Lôke-Innas Rim) at 0x46cec240 to deployment area at 0xabcf014
+Load finished **************************
+
+
+Trying to remove unit ( Bodyguard) at 0x34b2bde0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x34b2c028 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x34b2c270 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x34b2c4b8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x34b2c700 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x34b2c948 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x47194820 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x47194a68 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x47194cb0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x47194ef8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x47195140 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x47195388 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x471955d0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Dismounted Variags) at 0x47195818 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x47195a60 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Variag Raiders) at 0x47195ca8 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x47195ef0 from deployment area at 0xabcefd8 and the unit wasn't found
+Trying to remove unit ( Bodyguard) at 0x47196138 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x47196380 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x46ceab70 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x46ceadb8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x46ceb000 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Nar Rim) at 0x46ceb248 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x46ceb490 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Ballista) at 0x46ceb6d8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x46ceb920 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x46cebb68 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Gamp Rim) at 0x46cebdb0 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x46cebff8 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit ( Lôke-Innas Rim) at 0x46cec240 from deployment area at 0xabcf014 and the unit wasn't found
+Trying to remove unit (Rohan Bodyguards) at 0x34b2b4c0 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Axemen) at 0x34b2b708 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Swordsmen) at 0x34b2b950 from deployment area at 0xabcef9c and the unit wasn't found
+Trying to remove unit (Eorling Archers) at 0x34b2bb98 from deployment area at 0xabcef9c and the unit wasn't found
+Loading from file mods/Third_Age/data/world/maps/battle/custom/Azanulbizar/descr_battle.txt
+Created faction moors from file
+	Creating army controlled by Thrain at 0x18937348 from script
+		Creating unit (Dwarven Noblemen) at 0x34b2bb98
+		Creating unit (Dwarven Halberdmen) at 0x34b2b950
+		Creating unit (Dwarven Halberdmen) at 0x34b2b708
+		Creating unit (Dwarven Halberdmen) at 0x34b2b4c0
+		Creating unit (Dwarven Axemen) at 0x34b2c948
+		Creating unit (Dwarven Axemen) at 0x34b2c700
+		Creating unit (Dwarven Warriors) at 0x34b2c4b8
+		Creating unit (Dwarven Warriors) at 0x34b2c270
+		Creating unit (Dwarven Warriors) at 0x34b2c028
+		Creating unit (Iron Crossbowmen) at 0x34b2bde0
+		Creating unit (Axethrowers) at 0x30d01620
+		Creating unit (Vault Wardens) at 0x30d01868
+		Creating unit (Vault Wardens) at 0x30d01ab0
+		Creating unit (Vault Wardens) at 0x30d01cf8
+	Creating army controlled by Nain at 0x18938068 from script
+		Creating unit (Dwarven Noblemen) at 0x30d01f40
+		Creating unit (Iron Guard) at 0x30d02188
+Created faction hre from file
+	Creating army controlled by Azog at 0x1893e080 from script
+		Creating unit (Orc Bodyguards) at 0x30d023d0
+		Creating unit (Heavy Goblin Halberd) at 0x30d02618
+		Creating unit (Heavy Goblin Halberd) at 0x30d02860
+		Creating unit (Heavy Goblin Halberd) at 0x30d02aa8
+		Creating unit (Heavy Goblin Halberd) at 0x30d02cf0
+		Creating unit (Heavy Goblin Infantry) at 0x30d02f38
+		Creating unit (Heavy Goblin Infantry) at 0x30d03180
+		Creating unit (Heavy Goblin Archers) at 0x41d1bfe0
+		Creating unit (Heavy Goblin Archers) at 0x41d1c228
+		Creating unit (Goblin Infantry) at 0x41d1c470
+		Creating unit (Goblin Infantry) at 0x41d1c6b8
+		Creating unit (Heavy Goblin Halberd) at 0x41d1c900
+		Creating unit (Cave Trolls) at 0x41d1cb48
+		Creating unit (Cave Trolls) at 0x41d1cd90
+	Creating army controlled by Mauthak at 0x18937168 from script
+		Creating unit (Orc Bodyguards) at 0x41d1cfd8
+		Creating unit (Goblin Infantry) at 0x41d1d220
+		Creating unit (Goblin Infantry) at 0x41d1d468
+		Creating unit (Goblin Infantry) at 0x41d1d6b0
+		Creating unit (Goblin Infantry) at 0x41d1d8f8
+		Creating unit (Heavy Goblin Halberd) at 0x41d1db40
+		Creating unit (Snaga Archers) at 0x46d2c520
+		Creating unit (Snaga Archers) at 0x46d2c768
+		Creating unit (Heavy Goblin Infantry) at 0x46d2c9b0
+Adding unit (Dwarven Noblemen) at 0x34b2bb98 to deployment area at 0xabceee8
+Adding unit (Dwarven Halberdmen) at 0x34b2b950 to deployment area at 0xabceee8
+Adding unit (Dwarven Halberdmen) at 0x34b2b708 to deployment area at 0xabceee8
+Adding unit (Dwarven Halberdmen) at 0x34b2b4c0 to deployment area at 0xabceee8
+Adding unit (Dwarven Axemen) at 0x34b2c948 to deployment area at 0xabceee8
+Adding unit (Dwarven Axemen) at 0x34b2c700 to deployment area at 0xabceee8
+Adding unit (Dwarven Warriors) at 0x34b2c4b8 to deployment area at 0xabceee8
+Adding unit (Dwarven Warriors) at 0x34b2c270 to deployment area at 0xabceee8
+Adding unit (Dwarven Warriors) at 0x34b2c028 to deployment area at 0xabceee8
+Adding unit (Iron Crossbowmen) at 0x34b2bde0 to deployment area at 0xabceee8
+Adding unit (Axethrowers) at 0x30d01620 to deployment area at 0xabceee8
+Adding unit (Vault Wardens) at 0x30d01868 to deployment area at 0xabceee8
+Adding unit (Vault Wardens) at 0x30d01ab0 to deployment area at 0xabceee8
+Adding unit (Vault Wardens) at 0x30d01cf8 to deployment area at 0xabceee8
+Adding unit (Dwarven Noblemen) at 0x30d01f40 to deployment area at 0xabcef24
+Adding unit (Iron Guard) at 0x30d02188 to deployment area at 0xabcef24
+Adding unit (Orc Bodyguards) at 0x30d023d0 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Halberd) at 0x30d02618 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Halberd) at 0x30d02860 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Halberd) at 0x30d02aa8 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Halberd) at 0x30d02cf0 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Infantry) at 0x30d02f38 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Infantry) at 0x30d03180 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Archers) at 0x41d1bfe0 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Archers) at 0x41d1c228 to deployment area at 0xabcef60
+Adding unit (Goblin Infantry) at 0x41d1c470 to deployment area at 0xabcef60
+Adding unit (Goblin Infantry) at 0x41d1c6b8 to deployment area at 0xabcef60
+Adding unit (Heavy Goblin Halberd) at 0x41d1c900 to deployment area at 0xabcef60
+Adding unit (Cave Trolls) at 0x41d1cb48 to deployment area at 0xabcef60
+Adding unit (Cave Trolls) at 0x41d1cd90 to deployment area at 0xabcef60
+Adding unit (Orc Bodyguards) at 0x41d1cfd8 to deployment area at 0xabcef9c
+Adding unit (Goblin Infantry) at 0x41d1d220 to deployment area at 0xabcef9c
+Adding unit (Goblin Infantry) at 0x41d1d468 to deployment area at 0xabcef9c
+Adding unit (Goblin Infantry) at 0x41d1d6b0 to deployment area at 0xabcef9c
+Adding unit (Goblin Infantry) at 0x41d1d8f8 to deployment area at 0xabcef9c
+Adding unit (Heavy Goblin Halberd) at 0x41d1db40 to deployment area at 0xabcef9c
+Adding unit (Snaga Archers) at 0x46d2c520 to deployment area at 0xabcef9c
+Adding unit (Snaga Archers) at 0x46d2c768 to deployment area at 0xabcef9c
+Adding unit (Heavy Goblin Infantry) at 0x46d2c9b0 to deployment area at 0xabcef9c
+Load finished **************************
+
+

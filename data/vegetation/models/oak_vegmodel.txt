@@ -1,0 +1,11 @@
+1144   [Number of vertices]
+3471   [trianglepoints]
+1157   [Number of triangles]
+0   [integer zero]
+1144   [verts]
+0   [integer zero]
+3471   [trianglepoints]
+21 textures/oak.texture
+220 112 220 2
+4   [integerfour]
+  -7.5974002   -0.4048000   -7.9045000    8.6336002   17.0524006    9.0663996   14.0051060    8.3238001 

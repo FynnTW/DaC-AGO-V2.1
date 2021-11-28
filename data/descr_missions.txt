@@ -1,0 +1,1358 @@
+; descr_missions.txt
+;;;;;;;;;;;;;;;;;;;;;
+; This file contains all the data required for pope missions.
+;
+; The first section specifies payback lists.  Each payback list contains a list of 
+; individual reward and penalty items for success/failure of missions.
+; The allowable payback items are:
+;   - money                [int]   (specifies how much money is gained/lost as a result
+;   - income               [float]
+;   - buildable_unit       [uint]
+;   - best_buildable_unit  [uint]
+;   - minor_exotic_unit    [uint]
+;   - major_exotic_unit    [uint]
+;   - guild_money 	   [int] [guild]
+;   - assassinate          [float]
+;   - null_payback         [string]
+;
+; Other paybacks are handled through the event / condition system: (be sure to add null paybacks for them if you want payback text descriptions
+;   - papal standing
+;   - guild points
+;   - relics
+;   - traits
+;   - ancillaries
+;
+;
+; The second section contains data used to initialise the missions.
+; Each mission has a type, which must be one of the supported types.
+; An additional optional mission id can be specified for multiple 
+; missions of the same type with different parameters
+;
+; e.g. 
+;  - mission guild_recruit_agent recruit_assassin
+;  - mission guild_recruit_agent recruit_merchant
+;
+;
+; supported mission types:
+;
+; Pope Missions: 
+;                - join crusade
+;                - return home city
+;                - cease_hostilities
+;                - assassinate_cardinal
+;                - assassinate_witch
+;                - papal_blockade_port
+;                - break_alliance
+;                - papal_build_church
+;                - convert
+;                - gift_from_pope
+;                - give_cash
+;                - give_ancillary
+;                - recruit_priest
+; Council Missions: 
+;                - assassinate_general
+;                - council_blockade_port
+;                - council_take_rebel_settlement
+;                - council_take_settlement
+;                - gift_from_council
+;                - council_marry_princess
+;                - annex_settlement
+; Guild Missions: 
+;                - guild_take_settlement
+;                - guild_recruit_agent
+;                - guild_acquisition
+;                - guild_trade_agreement
+;
+; Base Mission Parameters:
+;   - [MISSION_SOURCE]	e.g. POPE_MISSION, used as a text lookup for the source of the mission
+;   - image_path_issued [image_name]	the event image name for mission issued event (default = mission_issued)
+;   - image_path_expired [image_name]	the event image name for mission expired event (default = mission_expired)
+;   - image_path_success [image_name]	the event image name for mission success event (default = mission_success)
+;   - image_path_failed [image_name]	the event image name for mission failed event (default = mission_failed)
+;   - duration [uint]	duration of the mission before automatic failure
+;   - exclude_duration [uint]	number of turns score is reduced for mission selection (score *= num_turns_since/exclude_duration) (default = 0)
+;   - score_modifier [float]	modifies the mission score (chance mission is chosen, higher = more frequent) (default = 1.0)
+;   - difficulty_threshold [float]	difficulty threshold used for mission rejection.  mission difficulty levels <= difficulty threshold are not selected for first 50 turns or if player on easy difficulty setting (default = 0.0)
+;   - turn_start [uint]	at what turn number do these missions become available? (default = 2)
+;   - paybacks 	structure indicating the conditions required to get a certain payback list
+;		The list is iterated until all conditions for that payback list are met, in which case it is chosen
+;
+;       - papal_standing [float]	the max papal standing condition
+;	- difficulty [float]		the max difficulty level, normally between 0.0 (impossible) and 1.0 (extremely easy)
+;	- cash [float]			the max treasury
+;	- random [float]		the max random value (may be cumulative with previous random conditions)
+;
+;   - Each mission may have additional parameters specified.
+
+
+;;;;;;;;;;;;;;;;;;;
+;; PAYBACK LISTS ;;
+;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;EMPTY PAYBACK;;;;;;;
+payback_list empty_payback
+{
+}
+
+;;;;;;;;;;;WHITE COUNCIL PAYBACKS;;;;;;;;;;;;
+payback_list ring_choice_payback
+{
+	reward
+	{
+		null_payback	RING_CHOICE_PAYBACK_REWARD
+	}
+	penalty
+	{
+		null_payback	RING_CHOICE_PAYBACK_PENALTY
+	}
+}
+
+;;;;;;;POPE GENERIC PAYBACKS;;;;;;;;
+payback_list pope_inquisition_only
+{
+	penalty
+	{
+		inquisition_chance	1.0	
+	}
+}
+
+payback_list pope_excomm_only
+{
+	penalty
+	{
+		excommunication_chance	1.0
+	}
+}
+
+payback_list pope_major_penalty_only
+{
+	penalty
+	{
+		null_payback	LARGE_PAPAL_STANDING_PENALTY
+		excommunication_chance	0.05
+		inquisition_chance	0.05
+	}
+}
+
+payback_list pope_mod_penalty_only
+{
+	penalty
+	{
+		null_payback	MED_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_min_penalty_only
+{
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_min_reward_only
+{
+	reward
+	{
+		null_payback	SMALL_PAPAL_STANDING_REWARD
+		money		600
+	}
+}
+
+payback_list pope_mod_reward_only
+{
+	reward
+	{
+		null_payback	MED_PAPAL_STANDING_REWARD
+		money		1200
+	}
+}
+
+payback_list pope_major_reward_only
+{
+	reward
+	{
+		null_payback	LARGE_PAPAL_STANDING_REWARD
+		money		2400
+	}
+}
+
+payback_list pope_min_penalty_min_reward
+{
+	reward
+	{
+		null_payback	SMALL_PAPAL_STANDING_REWARD
+		money		600
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_min_penalty_mod_reward
+{
+	reward
+	{
+		null_payback	MED_PAPAL_STANDING_REWARD
+		money		1200
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_mod_penalty_min_reward
+{
+	reward
+	{
+		null_payback	SMALL_PAPAL_STANDING_REWARD
+		money		600
+	}
+	penalty
+	{
+		null_payback	MED_PAPAL_STANDING_PENALTY
+	}
+}
+
+;;;;;;;;POPE GIVE ROME PAYBACKS;;;;;;;;;
+payback_list pope_rome_major_penalty_only
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD
+		null_payback	VNV_ADORED_BY_POPE		
+	}
+	penalty
+	{
+		null_payback	LARGE_PAPAL_STANDING_PENALTY
+		excommunication_chance	0.05
+		inquisition_chance	0.05
+	}
+}
+
+payback_list pope_rome_mod_penalty_only
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD		
+		null_payback	VNV_ADORED_BY_POPE
+	}
+	penalty
+	{
+		null_payback	MED_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_rome_min_penalty_only
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD		
+		null_payback	VNV_ADORED_BY_POPE
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_rome_min_penalty_min_reward
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD
+		money		600
+		null_payback	VNV_ADORED_BY_POPE
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_rome_min_penalty_mod_reward
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD
+		money		1200
+		null_payback	VNV_ADORED_BY_POPE
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_rome_min_penalty_major_reward
+{
+	reward
+	{
+		null_payback	HUGE_PAPAL_STANDING_REWARD
+		money		2400
+		null_payback	VNV_ADORED_BY_POPE
+		;null_payback	CHANCE_ANC_RELIC
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+;;;;;;;;;POPE CARDINAL PAYBACKS;;;;;;;;;
+payback_list pope_cardinal_mod_penalty_only
+{
+	reward
+	{
+		null_payback	VNV_POPES_ENFORCER
+	}
+	penalty
+	{
+		null_payback	MED_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_cardinal_mod_penalty_min_reward
+{
+	reward
+	{
+		null_payback	SMALL_PAPAL_STANDING_REWARD
+		money		600
+		null_payback	VNV_POPES_ENFORCER
+	}
+	penalty
+	{
+		null_payback	MED_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_cardinal_min_penalty_min_reward
+{
+	reward
+	{
+		null_payback	SMALL_PAPAL_STANDING_REWARD
+		money		600
+		null_payback	VNV_POPES_ENFORCER
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_cardinal_min_penalty_only
+{
+	reward
+	{
+		null_payback	VNV_POPES_ENFORCER
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_cardinal_min_penalty_mod_reward
+{
+	reward
+	{
+		null_payback	MED_PAPAL_STANDING_REWARD
+		money		1200
+		null_payback	VNV_POPES_ENFORCER
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+payback_list pope_cardinal_mod_reward_only
+{
+	reward
+	{
+		null_payback	MED_PAPAL_STANDING_REWARD
+		money		1200
+		null_payback	VNV_POPES_ENFORCER
+	}
+}
+
+payback_list pope_cardinal_major_reward_only
+{
+	reward
+	{
+		null_payback	LARGE_PAPAL_STANDING_REWARD
+		money		2400
+		null_payback	VNV_POPES_ENFORCER
+		;null_payback	CHANCE_VNV_ADORED_BY_POPE
+		;null_payback	CHANCE_ANC_RELIC
+	}
+}
+
+payback_list pope_cardinal_min_penalty_major_reward
+{
+	reward
+	{
+		null_payback	LARGE_PAPAL_STANDING_REWARD
+		money		2400
+		null_payback	VNV_POPES_ENFORCER
+		;null_payback	CHANCE_VNV_ADORED_BY_POPE
+		;null_payback	CHANCE_ANC_RELIC
+	}
+	penalty
+	{
+		null_payback	SMALL_PAPAL_STANDING_PENALTY
+	}
+}
+
+;;;;;;;;;;;POPE GIFT PAYBACKS;;;;;;;;;;;;
+
+payback_list pope_min_reward_gift_only
+{
+	reward
+	{
+		money		600
+	}
+}
+
+payback_list pope_mod_reward_gift_only
+{
+	reward
+	{
+		money		1200
+	}
+}
+
+payback_list pope_major_reward_gift_only
+{
+	reward
+	{
+		money		2400
+	}
+}
+
+;;;;;;;;;;;COUNCIL PAYBACKS;;;;;;;;;;;;;
+payback_list council_min_income
+{
+	reward
+	{
+		money 900 ;income_percent 0.01
+	}
+}
+
+payback_list council_mod_income
+{
+	reward
+	{
+		money 1500 ;income_percent 0.05
+	}
+}
+
+payback_list council_major_income
+{
+	reward
+	{
+		money 2400 ;income_percent 0.1
+	}
+}
+
+payback_list council_min_unit
+{
+	reward
+	{
+ 		buildable_unit 		450	1
+	}
+}
+
+payback_list council_mod_unit
+{
+    reward
+    {
+         buildable_unit 		650	1
+    }
+}
+
+payback_list council_mod_unit_best
+{
+    reward
+    {
+        best_buildable_unit	1100	1
+    }
+}
+
+payback_list council_major_unit
+{
+    reward
+    {
+        best_buildable_unit	3250	1
+    }
+}
+
+payback_list council_min_money
+{
+	reward
+	{
+		money	1200
+	}
+}
+
+payback_list council_mod_money
+{
+	reward
+	{
+		money	1800
+	}
+}
+
+payback_list council_major_money
+{
+	reward
+	{
+		money	2400
+	}
+}
+
+;;;;;;;;;;;GUILD PAYBACKS;;;;;;;;;;;;
+payback_list guild_build_church
+{
+	reward
+	{
+		null_payback	PLACE_OF_WORSHIP_REWARD
+	}
+}
+
+payback_list guild_merchants_mod
+{
+	reward
+	{
+		null_payback	MOD_MERCHANTS_GUILD_POINTS_REWARD
+		guild_money	720	merchants_guild
+	}
+	penalty
+	{
+		null_payback	MOD_MERCHANTS_GUILD_POINTS_PENALTY
+	}
+}
+
+payback_list guild_merchants_min
+{
+	reward
+	{
+		null_payback	MIN_MERCHANTS_GUILD_POINTS_REWARD
+		guild_money	360	merchants_guild
+	}
+	penalty
+	{
+		null_payback	MIN_MERCHANTS_GUILD_POINTS_PENALTY
+	}
+}
+
+;payback_list guild_avengers_min
+;{
+;	reward
+;	{
+;		null_payback	MIN_AVENGERS_GUILD_POINTS_REWARD
+;		guild_money	900	avengers_guild
+;	}
+;	penalty
+;	{
+;		null_payback	MIN_AVENGERS_GUILD_POINTS_PENALTY
+;	}
+;}
+
+
+;;;;;;;;;;FACTION PAYBACKS;;;;;;;;;;;
+payback_list faction_regicide_payback
+{
+	reward
+	{
+		null_payback	FACTION_STANDING_REWARD		;TBD add standing increase via export_descr_faction_standing.txt
+		money	6000
+	}
+	penalty
+	{
+		null_payback	FACTION_STANDING_PENALTY	;TBD add standing decrease via export_descr_faction_standing.txt
+	}
+}
+
+
+;;;;;;;;;;;;;;;;;;;
+;; POPE MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;
+
+;;;******* tune exclude duration for all missions
+
+
+mission	join_crusade
+{
+    POPE_MISSION
+    image_path_issued	pope_mission_issued
+    image_path_expired	pope_mission_expired
+    image_path_success	pope_mission_success
+    image_path_failed	pope_mission_failed
+    duration 8
+    score_modifier 1.0
+    turn_start		50
+    paybacks
+    {
+	papal_standing -0.4 	payback_id pope_major_penalty_only
+	papal_standing -0.1	payback_id pope_mod_penalty_only
+	papal_standing 0.4	payback_id pope_min_penalty_only
+				payback_id pope_min_penalty_min_reward
+
+    }
+
+    leader_pfp_boundary -0.4		; upper bound for leader required to join
+    heir_pfp_boundary 	-0.1		; upper bound for heir required to join
+}
+
+
+; chance of ai accepting = ai_accept_base_chance + (faction_standing_to_papacy * ai_accept_fs_modifier) + (global_standing * ai_accept_gs_modifier) + (num_settlements_owned * ai_sett_modifier)
+mission	return_papal_settlement		; (NOT SUITABLE FOR VARIANTS) optional mission, duration is ignored, score = 1.0, difficulty = 1.0
+{
+    POPE_MISSION
+    image_path_issued	pope_mission_issued
+    image_path_success	pope_approval
+    image_path_failed	pope_mission_failed
+    duration 0
+    score_modifier 1.0
+    paybacks
+    {
+        papal_standing -0.7	payback_id pope_rome_major_penalty_only
+        papal_standing -0.4	payback_id pope_rome_mod_penalty_only
+        papal_standing -0.1	payback_id pope_rome_min_penalty_only
+        papal_standing 0.1	payback_id pope_rome_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_rome_min_penalty_mod_reward
+				payback_id pope_rome_min_penalty_major_reward
+    }
+
+    settlement Rome			; the id of the settlement belonging to the papal states
+    ai_accept_base_chance 20.0		; base chance for ai accepting mission
+    ai_accept_fs_modifier 80.0		; ai chance modifier for the papal standing with the ai faction.  i.e. the more they like the pope, the greater the chance
+    ai_accept_gs_modifier 20.0		; ai chance modifier for the factions global standing.  i.e. the more tructed the faction, the higher chance to give back
+    ai_min_settlements    3		; the minimum number of settlements an ai faction must have to accept
+    ai_sett_modifier      5.0		; ai chance modifier for each settlement an ai faction has
+}
+
+; chance = popes_violence_attribute * -0.03 + (pfp_score_threshold - attackers_pfp)/8 + (defenders_pfp + 1)/8
+; chance += settlement_score_offset (if target is a settlement)
+; chance += default_settlement_score_offset (if targets default owner is attacker)
+; chance += navy_score_offset (if a naval battle)
+; chance += army_score_offset (if not a settlement or naval battle)
+; chance += military_access_score_offset (if not a settlement or naval battle and target has miloitary access)
+; chance += own_region_army_score_offset (if battle in attackers own region)
+; chance *= ai_atacker_modifier (if attacker is ai)
+; chance *= ai_human_defender_modifier (if defender is human)
+; chance *= ai_papal_defender_modifier (if defender is papal states)
+; chance += target_mission_offset (if target already has a cease hostilities mission against attacker)
+mission	cease_hostilities ; (NOT SUITABLE FOR VARIANTS)
+{
+    POPE_MISSION
+    image_path_issued	pope_mission_issued
+    image_path_expired	pope_mission_expired
+    image_path_success	pope_approval
+    image_path_failed	pope_mission_failed
+    duration 5
+    score_modifier 0.8
+    turn_start		3
+    paybacks
+    {
+        papal_standing 0.2	payback_id pope_excomm_only
+        papal_standing 0.6	payback_id pope_mod_penalty_only
+				payback_id pope_min_penalty_only
+    }
+
+    difficulty_lower_pfp_bound      -2.0	; lower boundary for difficulty = 0.0
+    difficulty_upper_pfp_bound      0.0		; upper boundary for difficulty = 1.0
+    max_duration_modifier           3		; duration = duration + duration_modifier * (difficulty-0.5) * 2.0
+    pfp_score_threshold             0.6		; adjusts score modifier by how much attackers pfp is below this
+    settlement_score_offset         0.2		; percentage (0.0 -> 1.0) score modifier if attacking settlement
+    army_score_offset               0.1		; percentage score modifier if attacking army
+    own_region_army_score_offset    -2.0	; percentage score modifier if attacking army in own region (cumulative with army_score_offset)
+    military_access_score_offset    2.0		; percentage score modifier if defending army has military access (cumulative with above)
+    navy_score_offset               0.1		; percentage score modifier if attacking navy
+    default_settlement_score_offset -0.3	; percentage score modifier if attacking settlement for which attacker is default owner (cumulative with settlement_score_offset)
+    ai_attacker_modifier            1.0		; score *= modifier if attacking faction AI (score used for excommunication chance)
+    ai_human_defender_modifier      1.0		; score *= modifier if attacking faction AI and defnder is human
+    ai_papal_defender_modifier      5.0		; score *= modifier if attacking faction AI and defender papal states
+    num_active_missions_modifier    1.0		; score = score / (1.0f * num_active_cease_hostilities missions * num_active_missions_modifier)
+;   target_mission_offset           999.9       ; score += offset if target has a cease hostilities mission already against the attacker
+}
+
+
+mission	assassinate_cardinal
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 25
+    score_modifier 1.2
+    difficulty_threshold 0.4		; assassination mission marked as too difficult if chance of success <= 40%
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.7			payback_id pope_cardinal_mod_penalty_only	
+        papal_standing -0.4	difficulty 0.6	payback_id pope_cardinal_mod_penalty_min_reward
+        papal_standing 0.0			payback_id pope_cardinal_mod_penalty_only
+        papal_standing 0.1	difficulty 0.6	payback_id pope_cardinal_min_penalty_min_reward
+        papal_standing 0.1			payback_id pope_cardinal_min_penalty_only
+        papal_standing 0.4	difficulty 0.6	payback_id pope_cardinal_min_penalty_mod_reward
+        papal_standing 0.4			payback_id pope_cardinal_min_penalty_min_reward
+        papal_standing 0.7	difficulty 0.6	payback_id pope_cardinal_mod_reward_only
+        papal_standing 0.8			payback_id pope_cardinal_min_penalty_mod_reward
+        			difficulty 0.6	payback_id pope_cardinal_major_reward_only
+        					payback_id pope_cardinal_min_penalty_major_reward
+    }
+
+    papal_standing_boundary  -0.1	; used to exclude cardinal with higher papal standing and as the base for score calculation
+}
+
+
+mission	assassinate_witch_heretic
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 25
+    score_modifier 1.2
+    difficulty_threshold 0.4		; assassination mission marked as too difficult for easy setting or turn < 50, if chance of success <= 5%
+    turn_start		999
+    paybacks
+    {
+        papal_standing -0.4			payback_id pope_inquisition_only
+        papal_standing -0.1	difficulty 0.6	payback_id pope_min_penalty_min_reward
+        papal_standing -0.1			payback_id pope_min_penalty_only
+        papal_standing 0.4	difficulty 0.6	payback_id pope_min_penalty_mod_reward
+        papal_standing 0.4			payback_id pope_min_penalty_min_reward
+						payback_id pope_mod_reward_only
+    }
+}
+
+
+mission papal_blockade_port
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 40
+    score_modifier 1.0
+    max_score		100
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.7	payback_id pope_mod_penalty_only
+        papal_standing -0.4	payback_id pope_mod_penalty_min_reward
+        papal_standing 0.1	payback_id pope_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_min_penalty_mod_reward
+				payback_id pope_mod_reward_only
+    }
+
+    num_turns_success       3		; num turns blockade must stand for success
+  	min_turns_distance      0		; min search distance from ships and ports for a valid target
+    max_turns_distance      3		; max search distance from ships and ports for a valid target
+    excommunicated_modifier 5.0		; score modifier for excommunicated targets
+    religion_modifiers
+    {
+        northmen                0.0		; score modifier for pagan targets
+        islam              0.0		; score modifier for muslim targets
+        catholic                1.0		; required for excommunicated factions
+      	heretic                 0.0		; rebel factions
+    }
+}
+
+mission papal_blockade_port blockade_heretic
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 40
+    score_modifier 1.0
+    max_score		100
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.7	payback_id pope_mod_penalty_only
+        papal_standing -0.4	payback_id pope_mod_penalty_min_reward
+        papal_standing 0.1	payback_id pope_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_min_penalty_mod_reward
+				payback_id pope_mod_reward_only
+    }
+
+    num_turns_success       3		; num turns blockade must stand for success
+  	min_turns_distance      0		; min search distance from ships and ports for a valid target
+    max_turns_distance      3		; max search distance from ships and ports for a valid target
+    excommunicated_modifier 1.0		; score modifier for excommunicated targets
+    religion_modifiers
+    {
+        heretic                 3.0		; rebel factions
+        northmen                0.0		; score modifier for pagan targets
+        islam              0.0		; score modifier for muslim targets
+        catholic                0.0		; required for excommunicated factions
+    }
+}
+
+mission papal_blockade_port blockade_pagan
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 40
+    score_modifier 1.0
+    max_score		100
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.7	payback_id pope_mod_penalty_only
+        papal_standing -0.4	payback_id pope_mod_penalty_min_reward
+        papal_standing 0.1	payback_id pope_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_min_penalty_mod_reward
+				payback_id pope_mod_reward_only
+    }
+
+    num_turns_success       3		; num turns blockade must stand for success
+  	min_turns_distance      0		; min search distance from ships and ports for a valid target
+    max_turns_distance      3		; max search distance from ships and ports for a valid target
+    excommunicated_modifier 1.0		; score modifier for excommunicated targets
+    religion_modifiers
+    {
+        heretic                 0.0		; rebel factions
+        northmen                3.0		; score modifier for pagan targets
+        islam              0.0		; score modifier for muslim targets
+        catholic                0.0		; required for excommunicated factions
+    }
+}
+
+mission papal_blockade_port blockade_islam
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 40
+    score_modifier 1.0
+    max_score		100
+    turn_start		3
+   paybacks
+    {
+        papal_standing -0.7	payback_id pope_mod_penalty_only
+        papal_standing -0.4	payback_id pope_mod_penalty_min_reward
+        papal_standing 0.1	payback_id pope_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_min_penalty_mod_reward
+				payback_id pope_mod_reward_only
+    }
+
+    num_turns_success       3		; num turns blockade must stand for success
+  	min_turns_distance      0		; min search distance from ships and ports for a valid target
+    max_turns_distance      3		; max search distance from ships and ports for a valid target
+    excommunicated_modifier 1.0		; score modifier for excommunicated targets
+    religion_modifiers
+    {
+        heretic                 0.0		; required for excommunicated factions
+        northmen                0.0		; score modifier for pagan targets
+        islam              3.0		; score modifier for muslim targets
+        catholic                0.0		; required for excommunicated factions
+    }
+}
+
+
+mission break_alliance
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 10
+    exclude_duration 30
+    score_modifier 1.0
+    paybacks
+    {
+        papal_standing -0.1	payback_id pope_mod_penalty_only
+				payback_id pope_min_penalty_only
+    }
+
+    target_pfp_score_threshold  0.0	; modifies score by how much lower target is from this pfp
+}
+
+mission convert
+{
+    POPE_MISSION
+    image_path_issued	pope_mission
+    image_path_expired	pope_disapproval
+    image_path_success	pope_approval
+    image_path_failed	pope_disapproval
+    duration 15
+    exclude_duration 30
+    score_modifier 1.0
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.4	payback_id pope_mod_penalty_min_reward
+        papal_standing 0.1	payback_id pope_min_penalty_min_reward
+        papal_standing 0.4	payback_id pope_min_reward_only
+				payback_id pope_mod_reward_only
+    }
+
+    religion_thresh			0.6	; threshold for catholic religion percent for possible issue of mission
+    diff_pfp_lower_bound		-0.4	; lower bound for difficulty = 0.0
+    diff_pfp_upper_bound		0.4	; upper bound for difficulty = 1.0
+    target_religion_base_offset		0.08	; base target religion percent added to current religion level
+    max_target_percent_modifier		0.05	; target = base + max_target_modifier*(diff-0.5)*2.0
+    own_region_score_modifier		30.0	; score modifier for own region
+    max_search_turns			5	; max search path for priests in selecting suitable target regions
+}
+;********* separate into difficulties -> rewards
+
+mission gift_from_pope
+{
+    POPE_MISSION
+    image_path_issued	pope_approval
+    exclude_duration 30
+    score_modifier 0.5
+    turn_start		3
+    paybacks
+    {
+        papal_standing 0.4	payback_id pope_min_reward_gift_only
+        papal_standing 0.7	payback_id pope_mod_reward_gift_only
+				payback_id pope_major_reward_gift_only
+    }
+
+    pfp_thresh		0.1		; threshold for possible issue of mission
+}
+
+
+mission give_cash
+{
+    POPE_MISSION
+    image_path_issued	pope_approval
+    exclude_duration 30
+    score_modifier 1.0
+    turn_start		3
+    paybacks
+    {
+        papal_standing -0.4	payback_id pope_mod_penalty_only
+				payback_id pope_min_penalty_only
+    }
+
+    min_treasury		1000	; upper bound on current treasury for issue of this mission
+    pfp_lower_boundary		-0.7	; lower bound for difficulty = 0.0
+    pfp_upper_boundary		-0.1	; upper bound for difficulty = 1.0, also cutoff for possible issue of mission
+    lower_boundary_income	0.15	; percent of income for difficulty = 0.0
+    upper_boundary_income	0.05	; percent of income for difficulty = 1.0
+}
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; COUNCIL OF NOBLES MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+mission	assassinate_general
+{
+    COUNCIL_MISSION
+    duration 10
+    exclude_duration 25
+    score_modifier 1.2
+    difficulty_threshold 0.4		; assassination mission marked as too difficult if chance of success <= 40%
+    turn_start		3
+    paybacks
+    {
+	random 0.33	payback_id council_mod_income
+	random 0.5	payback_id council_mod_unit
+				payback_id council_mod_unit_best
+    }
+   
+    enemy_modifier	30.0
+    own_region_modifier	50.0
+    per_unit_modifier	4.0
+;   character_type	named_character
+}
+
+mission council_blockade_port
+{
+    COUNCIL_MISSION
+    duration 10
+    exclude_duration 40
+    score_modifier 0.8
+    max_score		100.0	; max score clamp
+    turn_start		20
+	factions { spain, russia, khand, sicily, turks, denmark, teutonic_order, aztecs, scotland, venice, byzantium, saxons, scotland, united, }
+    paybacks
+    {
+	random 0.33	payback_id council_mod_income
+				payback_id council_mod_unit
+    }
+
+    num_turns_success       3		; num turns blockade must stand for success
+  	min_turns_distance      0		; min search distance from ships and ports for a valid target
+    max_turns_distance      1		; max search distance from ships and ports for a valid target
+}
+
+;****** separate by min/max turns distance - different rewards
+
+mission council_blockade_port blockade_moderate
+{
+    COUNCIL_MISSION
+    duration 10
+    exclude_duration 40
+    score_modifier 0.8
+    max_score		100.0	; max score clamp
+    turn_start		20
+	factions { spain, russia, khand, sicily, turks, denmark, teutonic_order, aztecs, scotland, venice, byzantium, saxons, scotland, united, }
+    paybacks
+    {
+	random 0.33	payback_id council_mod_income
+				payback_id council_mod_unit
+    }
+
+    num_turns_success       2		; num turns blockade must stand for success
+  	min_turns_distance      2		; min search distance from ships and ports for a valid target
+    max_turns_distance      3		; max search distance from ships and ports for a valid target
+}
+
+mission council_blockade_port blockade_distant
+{
+    COUNCIL_MISSION
+    duration 10
+    exclude_duration 40
+    score_modifier 0.8
+    max_score		100.0	; max score clamp
+    turn_start		20
+	factions { spain, russia, khand, sicily, turks, denmark, teutonic_order, aztecs, scotland, venice, byzantium, saxons, scotland, united, }
+    paybacks
+    {
+	random 0.33	payback_id council_mod_income
+	random 0.5	payback_id council_mod_unit
+				payback_id council_mod_unit_best
+    }
+
+    num_turns_success       1		; num turns blockade must stand for success
+  	min_turns_distance      4		; min search distance from ships and ports for a valid target
+    max_turns_distance      5		; max search distance from ships and ports for a valid target
+}
+
+
+mission	council_take_rebel_settlement
+{
+    COUNCIL_MISSION
+    duration 15
+    exclude_duration 20
+    score_modifier 1.5
+    max_score			300.0	; max score clamp
+    paybacks
+    {
+	random 0.5	payback_id council_major_income
+				payback_id council_mod_unit
+    }
+   
+    lower_diff_threshold	0.0	; threshold on sent faction strength/ settlement strength for difficulty = 0.0
+    upper_diff_threshold	1.0	; threshold on sent faction strength/ settlement strength for difficulty = 1.0
+    ratio_modifier		50.0	; modifies score (+) by ratio * modifier
+    no_garrison_modifier	50.0	; modifies score (+) by modifier if garrison exists
+}
+
+
+mission	council_take_settlement
+{
+    COUNCIL_MISSION
+    duration 15
+    exclude_duration 25
+    score_modifier 1.5
+    max_score			200.0	; max score clamp
+    turn_start			20
+    paybacks
+    {
+	random 0.5	payback_id council_major_income
+				payback_id council_major_unit
+    }
+   
+    lower_diff_threshold	0.0	; threshold on sent faction strength/ settlement strength for difficulty = 0.0
+    upper_diff_threshold	1.0	; threshold on sent faction strength/ settlement strength for difficulty = 1.0
+    ratio_modifier		50.0	; modifies score (+) by ratio * modifier
+    no_garrison_modifier	50.0	; modifies score (+) by modifier if garrison exists
+}
+
+
+mission gift_from_council
+{
+    COUNCIL_MISSION
+    exclude_duration 20
+    score_modifier 0.5
+    max_score			100.0	; max score clamp
+    turn_start		8
+    paybacks
+    {
+	cash 0		payback_id council_major_money
+	cash 6000	payback_id council_mod_money
+	cash 12000	payback_id council_min_money
+				payback_id council_min_money
+    }
+
+}
+
+
+mission council_marry_princess
+{
+    COUNCIL_MISSION
+    duration 10
+    exclude_duration 20
+    score_modifier 1.0
+    turn_start 30
+    paybacks
+    {
+	random 0.33	payback_id council_mod_income
+				payback_id council_mod_unit
+				payback_id council_mod_unit_best
+    }
+
+    max_loyalty			5	; only analyses generals with loyalty lower/equal than this
+}
+
+;mission annex_settlement
+;{
+;    COUNCIL_MISSION
+;    duration 10
+;    exclude_duration 30
+;    score_modifier 0.8
+;    turn_start		3
+;   paybacks
+;    {
+;	random 0.33	payback_id council_mod_income
+;	random 0.5	payback_id council_mod_unit
+;				payback_id council_mod_unit_best
+;    }
+;
+;    min_strength_balance	3.0	; minimum ratio of sent faction to target faction army strength for issue of mission
+;}
+
+
+; score = (10.0 - turns distance) * 5.0 + (max agreements - num agreements) * 2.5
+mission send_emissary
+{
+    COUNCIL_MISSION
+    duration 5
+    exclude_duration 20
+    score_modifier 1.0
+    turn_start		3
+    paybacks
+    {
+        random 0.5	payback_id council_min_income
+					payback_id council_min_unit
+    }
+
+    max_agreements		20						; modifies score inversely by max agreements
+}
+
+;;;;;;;;;;;;;;;;;;;;
+;; GUILD MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;;
+
+mission guild_recruit_agent guild_recruit_merchant
+{
+    MERCHANTS_GUILD_MISSION
+    duration 5
+    exclude_duration 20
+    score_modifier 1.0
+    turn_start		3
+    paybacks
+    {
+	payback_id guild_merchants_min
+    }
+
+    min_treasury		1500						; lower bound on current treasury for issue of this mission
+    settlement_agent_ratio	8.0						; min ratio for issue of mission
+    agent_type			merchant					; what agent should be created
+    guild_handles		merchants_guild		; what guilds are required for this mission
+}
+
+; score = (target finance * chance of success * target modifier) + (trade value of targets resource for sent faction merchant * trade modifier) + (number of guilds of type * 5.0)
+mission guild_acquisition
+{
+    MERCHANTS_GUILD_MISSION
+    duration 10
+    exclude_duration 25
+    score_modifier 1.0
+    max_score			100.0			; max score clamp
+    turn_start		3
+    paybacks
+    {
+	payback_id guild_merchants_mod
+    }
+
+    target_modifier		10.0			; score modifier per finance level of target merchant
+    trade_modifier		0.5			; score modifier for trade value of resource target is on
+    guild_handles		merchants_guild		; guilds required for this mission
+}
+
+; score = (10.0 - turns distance) * 5.0 + (max agreements - num agreements) * 2.5
+mission guild_trade_agreement
+{
+    MERCHANTS_GUILD_MISSION
+    duration 10
+    exclude_duration 20
+    score_modifier 1.0
+    turn_start		3
+    paybacks
+    {
+	payback_id guild_merchants_min
+    }
+
+    max_agreements		20			; modifies score inversely by max agreements
+    guild_handles		merchants_guild		; what guilds are required for this mission
+}
+
+
+;mission	guild_take_settlement
+;{
+;    AVENGERS_GUILD_MISSION
+;    duration 25
+;    exclude_duration 15
+;    score_modifier 1.5
+;    max_score			200.0	; max score clamp
+;    turn_start			2
+;    paybacks
+;    {
+;	payback_id guild_avengers_min
+;    }
+;   
+;    guild_handles		avengers_guild
+;    resource_type		mountains
+;}
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; FACTION MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;;;;
+
+
+; score = (1.0 - diff) * 50 + stance modifier
+mission regicide
+{
+    FACTION_MISSION
+    duration 10
+    exclude_duration 30
+    score_modifier 3.0
+    difficulty_threshold 0.3		; assassination mission marked as too difficult if chance of success <= 40%
+    turn_start		3
+    paybacks
+    {
+        payback_id faction_regicide_payback
+    }
+   
+    max_loyalty		5		; max faction heir loyalty for issue of this mission
+    neutral_modifier	50.0		; score += modifier if heir from neutral faction
+    enemy_modifier	30.0		; score += modifier if heir from enemy faction
+    ally_modifier	10.0		; score += modifier if heir from ally faction
+}
+
+
+;;;;;;;;;;;;;;;;;;;;
+;; OTHER MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;;
+
+
+mission crusade_active ; (NOT SUITABLE FOR VARIANTS)
+{
+    duration 10
+    paybacks
+    {
+        payback_id empty_payback
+    }
+
+    eligible_religions
+    {
+        catholic
+    }
+}
+
+
+mission jihad_active ; (NOT SUITABLE FOR VARIANTS)
+{
+    duration 10
+    paybacks
+    {
+        payback_id empty_payback
+    }
+
+    eligible_religions
+    {
+        islam
+    }
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;; ONE RING MISSIONS ;;
+;;;;;;;;;;;;;;;;;;;;;;;
+mission give_ancillary ring_choice
+{
+    WHITECOUNCIL_MISSION
+    image_path_issued	council
+    image_path_success	council
+    image_path_failed	ring_destruction_mission_failed
+    turn_start 999
+    paybacks
+    {
+        payback_id ring_choice_payback
+    }
+    ancillary_type relic_ring
+    pfp_upper_boundary 1.1
+}
+
+mission give_ancillary destroyOneRing
+{
+    WHITECOUNCIL_MISSION
+    image_path_issued	ring_destruction_mission_issued
+    image_path_failed	ring_destruction_mission_received
+    turn_start 999
+    paybacks
+    {
+        payback_id empty_payback
+    }
+    ancillary_type relic_ring
+    pfp_upper_boundary 1.1
+}
+
+mission give_ancillary giveRingSauron
+{
+    POPE_MISSION
+    turn_start 999
+    paybacks
+    {
+        payback_id empty_payback
+    }
+    ancillary_type relic_ring
+    pfp_upper_boundary 1.1
+}
+
+mission give_ancillary keep_ring
+{
+    COUNCIL_MISSION
+    image_path_issued	ring_keep_issued
+    image_path_success	ring_keep_success
+    image_path_failed	ring_keep_failure
+    turn_start 999
+    paybacks
+    {
+        payback_id empty_payback
+    }
+    ancillary_type relic_ring
+    pfp_upper_boundary 1.1
+}

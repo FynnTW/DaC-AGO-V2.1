@@ -1,0 +1,352 @@
+Overview of the retraining capabilities of the Waystation, t1 is first tier, t2 is second tier (second tier trains all the tier 1 as well)
+
+Gondor
+t1
+Amrothian Squires
+Sea-ward Lancers
+Sea-ward Spearmen
+Pinnath Gelin Cavalry
+Lebennin Marines
+Anfalas Pikemen
+Lamedon Clansmen
+Blackroot Vale Archers
+Ithilien Rangers
+t2
+White Knights
+Knights of the Silver Swan
+Lossarnach Axemen
+Guards of Osgiliath
+Wardens White Tower
+Talon Knights
+Osgiliath Veterans
+
+Dol Amroth
+t1
+Pinnath Gelin Cavalry
+Lebennin Marines
+Anfalas Pikemen
+Lamedon Clansmen
+Blackroot Vale Archers
+Ithilien Rangers
+Coastal Wardens
+t2
+White Knights
+Knights of the Silver Swan
+Lossarnach Axemen
+Guards of Osgiliath
+Wardens White Tower
+Talon Knights
+Osgiliath Veterans
+
+Harad
+t1
+Marauders
+Steppe Tribesmen
+Steppe Archers
+Khandish Raiders
+Nomad Horsemen
+Khandish Hunters
+Camel Riders
+t2
+Muhad Beastmasters
+Troll-men Warriors
+Troll-men Hunters
+Hasharii Blades
+Troll-men Champions
+Nomad Warriors
+Nomad Axemen
+Variag Swordsmen
+Variag Horse Archers
+Warlords Guard
+Warlords Kataphract Archers
+Warlords Kataphracts
+
+Rhun
+t1
+Marauders
+Steppe Tribesmen
+Steppe Archers
+Khandish Raiders
+Nomad Horsemen
+Khandish Hunters
+Balchoth Tribesmen
+t2
+Suriut Chariots
+Dragons Wrath Guildsmen
+Nomad Warriors
+Nomad Axemen
+Variag Swordsmen
+Variag Horse Archers
+Warlords Guard
+Warlords Kataphract Archers
+Warlords Kataphracts
+
+Mordor
+t1
+Marauders
+Steppe Tribesmen
+Steppe Archers
+Khandish Raiders
+Nomad Horsemen
+Khandish Hunters
+t2
+Saurons Will
+Morgul Chosen
+Great Beasts
+Temple Wards
+Temple Marksmen
+Temple Knights
+Olog-hai
+Nomad Warriors
+Nomad Axemen
+Variag Swordsmen
+Variag Horse Archers
+Warlords Guard
+Warlords Kataphract Archers
+Warlords Kataphracts
+
+DG
+t1
+t2
+Khamuls Shadowknights
+Khamuls Shadowguard
+Khamuls Shadow Rangers
+Castellans of Dol Guldur
+Olog-hai
+
+khand
+t1
+Stiffbeard Archers
+Stonefoot Spearmen
+Orocarni Warriors
+t2
+Iron Fist Hammers
+Blacklock Engineers
+Temple Wards
+Temple Marksmen
+Great Beasts
+
+Angmar
+t1
+t2
+Snow Trolls
+Darkblades
+Barrow Wights
+Guardians of Carn Dum
+Olog-hai
+
+Gundabad
+t1
+Mountain-Orc Hunters
+t2
+Orc Avengers
+Bolgs Champions
+Olog-hai
+
+Moria
+t1
+Mountain-Orc Hunters
+t2
+Azogs Defilers
+Mountain Uruks
+Olog-hai
+
+Isengard
+t1
+Dunlending Pikemen
+Beast Slayers
+Dunlending Horsemen
+Clan Spearmen
+Greyflood Raiders
+Greyflood Horsemen
+Angren Raiders
+Orthanc Sentries
+t2
+Olog-hai
+Orthanc Guard
+
+Dale
+t1
+Rhovanion Gadrauhts
+Athala Rangers
+Erebor Infantry
+Woodland Scouts
+t2
+Aihwothiuda Horseguards
+Earls
+Barons
+Hearthguard
+Woodland Sentinels
+Kings Shields
+
+Dorwinion
+t1
+Athala Rangers
+t2
+
+
+Rohan
+t1
+Helmingas
+t2
+Riddermark Cavalry
+Riders of the Fold
+Riddermark Axemen
+
+Bree
+t1
+Watch Shirriffs
+Bandobras Archers
+Dunedain Rangers
+Dunedain Wardens
+Dwarven Travellers
+t2
+Sworn Horsemen
+Dunedain Blademasters
+
+Anduin
+t1
+Stoor Shirriffs
+Stoor Hunters
+t2
+Vale Defenders
+Carrock Guard
+Silvan Marchwardens
+Greenwood Foresters
+
+Enedwaith
+t1
+Eryn Vorn Woodsmen
+Angren Raiders
+t2
+Greenwood Foresters
+War Wagons
+Moot Keepers
+
+ND
+t1
+Cardolan Sentinels
+Cardolan Riders
+Hillmen
+Rhudaur Savages
+Rhudaur Pikemen
+Rhudaur Warriors
+Arthedain Footmen
+Dunedain Wardens
+Dunedain Scouts
+Pinnath Gelin Cavalry
+Lebennin Marines
+Anfalas Pikemen
+Lamedon Clansmen
+Blackroot Vale Archers
+Ithilien Rangers
+t2
+White Knights
+Knights of the Silver Swan
+Lossarnach Axemen
+Guards of Osgiliath
+Wardens White Tower
+Talon Knights
+Osgiliath Veterans
+Dunedain Steelbowmen
+Rhudaur Huscarles
+Dunedain Cavalry
+Dunedain Rangers
+Dunedain Blademasters
+Dunedain Armsmen
+Arthedain Knights
+Arthedain Royal Guard
+
+Dunland
+t1
+Peasant Militia
+Peasant Scouts
+Rohirrim
+Rohirrim Archers
+Beast Slayers
+t2
+Isenmach Axemen
+Isenmach Raiders
+Riders of the Fold
+
+AA
+t1
+Azrazair Raiders
+Azrazair Archers
+Azrazair Warriors
+Azrazair Crossbowmen
+t2
+Adunaim Armsmen
+Beruthiels Rangers
+
+WR
+t1
+Arthirochon
+t2
+Hin e-Daur
+Aredhirith
+
+lorien
+t1
+t2
+Lorien Lancers
+Gurveleg
+Berio I Ngelaidh
+
+HE
+t1
+Lindon Longspears
+Lindar Guards
+Lindar Bowmen
+Dunedain Wardens
+Dunedain Scouts
+t2
+Sindar Spearmen
+Sindar Archers
+Sindar Axemen
+Amanyar Riders
+Amanyar Swordmasters
+Amanyar Rangers
+
+EL
+t1
+Firebeard Warriors
+t2
+Broadbeam Marksmen
+Khazad-dum Guardians
+Dragonslayers
+Sons of the Fallen
+
+Erebor
+t1
+Stiffbeard Archers
+Stonefoot Spearmen
+t2
+Iron Fist Hammers
+Blacklock Engineers
+Axeguard of Erebor
+Khazad-dum Guardians
+Dragonslayers
+Sons of the Fallen
+
+KD 
+t1
+Ered Luin Militia
+Ered Luin Pikemen
+Erebor Infantry
+t2
+Khazad-dum Reclaimers
+Khazad-dum Guardians
+Blacklock Engineers
+Dragonslayers
+Sons of the Fallen
+Kings Axes
+
+
+
+
+
+
+
+
+

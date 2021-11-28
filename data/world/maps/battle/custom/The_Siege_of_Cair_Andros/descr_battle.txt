@@ -1,0 +1,191 @@
+; Historical Battle by Red_Devil for The Third Age Total War
+
+battle		The_Siege_of_Cair_Andros
+playable
+	sicily
+	england
+	france
+end
+nonplayable
+end
+
+
+start_date	3018 summer
+end_date	3018 summer
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of factions section <<<<
+
+faction	sicily
+character	Faeldir, named character, male, heir, age 30, x 253, y 139, portrait Halbarad
+army
+unit		Gondor Bodyguard				soldiers 45 exp 9 armour 3 weapon_lvl 1
+unit		Gondor Archers					soldiers 125 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Archers					soldiers 125 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Archers					soldiers 125 exp 9 armour 3 weapon_lvl 1
+unit		Gondor Archers					soldiers 125 exp 9 armour 3 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Ithilien Rangers				soldiers 100 exp 6 armour 1 weapon_lvl 1
+unit		Gondor Cavalry					soldiers 75 exp 3 armour 2 weapon_lvl 1
+unit		Gondor Cavalry					soldiers 75 exp 3 armour 2 weapon_lvl 1
+unit		Lebennin Marines				soldiers 150 exp 3 armour 1 weapon_lvl 0
+unit		Gondor Spearmen					soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Gondor Spearmen					soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Westron Catapult				soldiers 60 exp 6 armour 1 weapon_lvl 0
+unit		Citadel Guard					soldiers 125 exp 6 armour 1 weapon_lvl 1
+unit		Citadel Guard					soldiers 125 exp 6 armour 1 weapon_lvl 1
+unit		Blackroot Vale Archers			soldiers 150 exp 5 armour 1 weapon_lvl 1
+unit		Knights of the Silver Swan		soldiers 50 exp 4 armour 2 weapon_lvl 1
+
+faction	england
+character	Nazgula, named character, male, age 25, x 253, y 139, portrait nazgul1, battle_model witchking, hero_ability Terror_of_the_Witch_King
+army
+unit		Temple Knights					soldiers 40 exp 7 armour 1 weapon_lvl 1
+unit		Temple Marksmen					soldiers 100 exp 9 armour 1 weapon_lvl 1
+unit		Black Uruk Halberds				soldiers 175 exp 2 armour 2 weapon_lvl 0
+unit		Black Uruk Halberds				soldiers 175 exp 2 armour 2 weapon_lvl 0
+unit		Olog-hai						soldiers 12 exp 2 armour 2 weapon_lvl 0
+unit		Olog-hai						soldiers 12 exp 3 armour 1 weapon_lvl 1
+unit		Black Uruks						soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Black Uruks						soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Black Uruks						soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Morannon Guard					soldiers 225 exp 3 armour 1 weapon_lvl 1
+unit		Morannon Guard					soldiers 225 exp 3 armour 1 weapon_lvl 1
+unit		Black Uruk Archers				soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Black Uruk Archers				soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Orc Archers						soldiers 175 exp 3 armour 1 weapon_lvl 1
+unit		Orc Host						soldiers 225 exp 3 armour 1 weapon_lvl 1
+unit		Orc Maulers						soldiers 225 exp 3 armour 1 weapon_lvl 1
+
+faction	france
+character	Grishnakh, named character, male, age 20, x 253, y 139, portrait Grishnak, battle_model grish
+army
+unit		Uruk-hai Bodyguards				soldiers 75 exp 6 armour 3 weapon_lvl 1
+unit		Uruk-hai Pikemen				soldiers 125 exp 3 armour 1 weapon_lvl 1
+unit		Uruk-hai Pikemen				soldiers 125 exp 3 armour 1 weapon_lvl 1
+unit		Uruk-hai Infantry				soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Uruk-hai Infantry				soldiers 150 exp 3 armour 1 weapon_lvl 1
+unit		Berserkers						soldiers 80 exp 3 armour 1 weapon_lvl 1
+unit		Berserkers						soldiers 80 exp 3 armour 1 weapon_lvl 1
+unit		Berserkers						soldiers 80 exp 3 armour 1 weapon_lvl 1
+unit		Uruk-hai Crossbow				soldiers 137 exp 3 armour 2 weapon_lvl 1
+unit		Uruk-hai Crossbow				soldiers 137 exp 3 armour 2 weapon_lvl 1
+unit		Orthanc Guard					soldiers 125 exp 3 armour 2 weapon_lvl 1
+unit		Orthanc Guard					soldiers 125 exp 3 armour 2 weapon_lvl 1
+unit		Warg Marauders					soldiers 75 exp 4 armour 1 weapon_lvl 0
+unit		Warg Marauders					soldiers 75 exp 4 armour 1 weapon_lvl 0
+unit		Uruk Reavers					soldiers 200 exp 2 armour 1 weapon_lvl 1
+unit		Uruk Reavers					soldiers 200 exp 2 armour 1 weapon_lvl 1
+unit		Snaga Catapult					soldiers 60 exp 2 armour 1 weapon_lvl 1
+unit		Snaga Catapult					soldiers 60 exp 2 armour 1 weapon_lvl 1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of battle section <<<<
+
+battle	253, 139
+battle_time	22.00	24.00
+weather	cloudy
+
+home_faction	sicily
+alliance	can_view	england, france, attacking
+alliance	can_view	sicily, defending
+
+army	sicily, 0, no_withdraw, supporting_armies 0
+
+deployment_area_point	549.779, -822.487
+deployment_area_point	778.412, -228.012
+deployment_area_point	-592.824, 451.576
+deployment_area_point	-597.116, -794.050
+
+unit			0, -509.346, -293.287, -88, formation_type square, formation_width 92.954
+unit			1, -506.759, -201.498, -89, formation_type square, formation_width 114.404
+unit			2, -506.040, -417.141, -89, formation_type square, formation_width 125.111
+unit			3, 227.817, -513.120, 179, formation_type square, formation_width 121.998
+unit			4, 140.338, -485.271, -179, formation_type square, formation_width 64.592
+unit			5, -476.723, -448.122, 179, formation_type square, formation_width 20.036
+unit			6, 176.536, -449.040, -177, formation_type square, formation_width 20.511
+unit			7, 473.913, -274.014, 15, formation_type square, formation_width 62.163
+unit			8, -298.504, -149.841, -85, formation_type square, formation_width 50.782
+unit			9, 466.784, -388.377, 17, formation_type square, formation_width 56.671
+unit			10, -479.740, -703.981, -98, formation_type square, formation_width 100.039
+unit			11, -450.264, -595.237, -99, formation_type square, formation_width 90.570
+unit			12, 577.594, -488.042, 44, formation_type square, formation_width 43.979
+unit			13, -183.310, -235.301, 93, formation_type square, formation_width 43.740
+unit			14, -179.500, -183.048, 94, formation_type square, formation_width 46.130
+unit			15, -328.290, -100.273, -103, formation_type square, formation_width 22.617
+unit			16, 15.207, -447.804, 179, formation_type square, formation_width 54.256
+unit			17, -305.570, -361.167, 1, formation_type square, formation_width 44.014
+unit			18, -373.849, -439.431, -93, formation_type square, formation_width 57.913
+unit			19, -331.204, -404.094, 4, formation_type square, formation_width 89.226
+
+
+army	england, 0, supporting_armies 0
+
+deployment_area_point	295.292, 806.178
+deployment_area_point	381.451, 47.610
+deployment_area_point	781.084, -113.783
+deployment_area_point	843.089, 840.384
+
+unit			0, 597.224, 224.997, -175, formation_type square, formation_width 30.155
+unit			1, 731.452, -9.389, -152, formation_type square, formation_width 48.913
+unit			2, 771.113, 130.140, -153, formation_type square, formation_width 95.689
+unit			3, 658.070, 183.165, 178, formation_type square, formation_width 93.411
+unit			4, 762.712, 559.568, -152, formation_type horde, formation_width 65.583
+unit			5, 663.817, 567.371, 179, formation_type horde, formation_width 68.227
+unit			6, 783.588, 479.744, -177, formation_type square, formation_width 19.342
+unit			7, 719.273, 468.145, -176, formation_type square, formation_width 17.953
+unit			8, 768.043, 296.869, -172, formation_type square, formation_width 17.259
+unit			9, 770.607, 395.521, 172, formation_type square, formation_width 16.839
+unit			10, 706.298, 279.662, -173, formation_type square, formation_width 14.919
+unit			11, 715.558, 368.568, -177, formation_type square, formation_width 16.082
+unit			12, 743.106, 210.914, -158, formation_type square, formation_width 15.085
+unit			13, 623.658, 44.835, -165, formation_type square, formation_width 66.030
+unit			14, 667.788, 38.280, -119, formation_type square, formation_width 56.126
+unit			15, 652.693, 101.520, -179, formation_type square, formation_width 66.324
+
+
+army	france, 0, no_withdraw, supporting_armies 0
+
+deployment_area_point	-617.283, -835.443
+deployment_area_point	-847.800, -826.383
+deployment_area_point	-842.630, 176.461
+deployment_area_point	-661.064, 202.294
+
+unit			0, -819.514, -320.349, 89, formation_type square, formation_width 69.283
+unit			1, -762.302, -273.056, 89, formation_type square, formation_width 97.225
+unit			2, -732.785, -379.500, 88, formation_type square, formation_width 95.149
+unit			3, -765.443, -405.062, 87, formation_type square, formation_width 75.627
+unit			4, -753.354, -165.435, 89, formation_type square, formation_width 76.192
+unit			5, -791.006, -348.192, 92, formation_type square, formation_width 42.860
+unit			6, -791.462, -295.914, 91, formation_type square, formation_width 30.653
+unit			7, -807.540, -410.167, 86, formation_type square, formation_width 38.433
+unit			8, -791.384, -179.007, 89, formation_type square, formation_width 81.069
+unit			9, -736.183, -259.966, 86, formation_type square, formation_width 79.895
+unit			10, -780.816, -483.276, 84, formation_type square, formation_width 20.041
+unit			11, -784.481, -454.782, 86, formation_type square, formation_width 19.296
+unit			12, -772.122, -94.824, 94, formation_type square, formation_width 55.430
+unit			13, -794.603, -523.836, 89, formation_type square, formation_width 51.886
+unit			14, -811.961, -143.136, 90, formation_type square, formation_width 31.966
+unit			15, -818.930, -195.881, 86, formation_type square, formation_width 37.814
+unit			16, -806.113, -257.917, 88, formation_type square, formation_width 23.782
+unit			17, -815.130, -484.067, 92, formation_type square, formation_width 28.682
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of objectives scripting section <<<<
+
+objectives
+
+alliance 0
+condition destroy_character Faeldir, sicily
+
+alliance 1
+condition destroy_or_rout_enemy
+

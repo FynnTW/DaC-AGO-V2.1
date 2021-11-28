@@ -1,0 +1,297 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	heat	range 1-4 (zero would mean no armour effects to fatigue at all)
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+climates
+{
+	mediterranean			;Gondor (pink)			2
+	sandy_desert			;Mordor				4
+	rocky_desert			;Far Harad (Purple)			4
+	unused1				;South Gondor and Harad (Dark Pink)		0
+	steppe 				;Khandish Desert (Red)				2
+	temperate_deciduous_forest	;Eriador (Dark Orange)	1
+	temperate_coniferous_forest 	;Rhudaur/Rhovanion/Mirkwood (Light Orange)		0
+	unused2				;Lothlorien	(yellow) 2
+	highland 			;Northern Middle Earth adn Mountains (Light Green)	0
+	alpine				;ForodWaith/snow (Dark Green)			0
+	tropical			;Moria	(Very dark green)			2
+	semi_arid			;Dead Marshes/Dagorland (Blue)				3
+}
+
+climate mediterranean
+{
+	colour	236 0 140
+	heat	2
+	winter
+
+	strategy	summer	sparse_tree	deciduous_a.cas				1
+	strategy	summer	sparse_tree	birch_a.cas				1
+	strategy	summer	dense_tree	deciduous_a_impassable.cas		0
+	strategy	summer	dense_tree	birch_a_impassable.cas			0
+	strategy	summer	canopy		deciduous_a_impassable.cas			12
+	strategy	summer	canopy		birch_a_impassable.cas			12
+
+	strategy	winter	sparse_tree	deciduous_a_winter.cas			5
+	strategy	winter	sparse_tree	birch_a_winter.cas				5
+	strategy	winter	dense_tree	deciduous_a_impassable_winter.cas	4
+	strategy	winter	dense_tree	birch_a_impassable_winter.cas			4
+	strategy	winter	canopy		deciduous_a_impassable_winter.cas		13
+	strategy	winter	canopy		birch_a_impassable_winter.cas			13
+
+	battle_vegetation
+	dense_forest		forest_open_dense_forest
+	dense_scrub		forest_open_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_open_dense_forest_win
+	dense_scrub		forest_open_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate sandy_desert
+{
+	colour	102 45 145
+	heat	4
+
+	strategy	summer	sparse_tree	twisted.cas				2
+	strategy	summer	dense_tree	twisted.cas		2
+	strategy	summer	canopy		twisted.cas			14
+	
+	battle_vegetation
+	dense_forest		forest_deep_dense_forest
+	dense_scrub		forest_deep_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_deep_dense_forest
+	dense_scrub		forest_deep_dense_scrub
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate rocky_desert
+{
+	colour	146 39 143
+	heat	3
+	strategy	summer	sparse_tree	tropical_group_B.cas				8
+	strategy	summer	sparse_tree	palm_b.cas				9
+	strategy	summer	dense_tree	palm_b.cas			9
+	strategy	summer	canopy	palm_b.cas			9
+
+	battle_vegetation
+	dense_forest		semi_arid_dense_forest
+	dense_scrub		semi_arid_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		semi_arid_dense_forest
+	dense_scrub		semi_arid_dense_scrub
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate unused1
+{
+	colour	237 20 91
+	heat	2
+
+	strategy	summer	sparse_tree	birch_a.cas				1
+	strategy	summer	sparse_tree	olive_a.cas				10
+	strategy	summer	dense_tree	birch_a_impassable.cas			0
+	strategy	summer	dense_tree	olive_a_impassable.cas			10
+	strategy	summer	canopy		birch_a_impassable.cas			12
+	strategy	summer	canopy	olive_a_impassable.cas			10
+
+	battle_vegetation
+	dense_forest		forest_open_dense_forest
+	dense_scrub		forest_open_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_open_dense_forest
+	dense_scrub		forest_open_dense_scrub
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate steppe
+{
+	colour	237 28 36
+	heat	2
+	strategy	summer	sparse_tree	palm_small_A.cas				8
+	strategy	summer	dense_tree	palm_small_A.cas			8
+	strategy	summer	canopy	palm_small_A.cas			8
+
+	battle_vegetation
+	dense_forest		grass_infert_dense_forest
+	dense_scrub		grass_infert_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		grass_infert_dense_forest_win
+	dense_scrub		grass_infert_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate temperate_deciduous_forest
+{
+	colour	242 101 34
+	heat	1
+	winter
+
+	strategy	summer	sparse_tree	deciduous_a.cas				1
+	strategy	summer	dense_tree	deciduous_a_impassable.cas		0
+	strategy	summer	canopy		deciduous_a_impassable.cas			12
+
+	strategy	winter	sparse_tree	deciduous_a_winter.cas			5
+	strategy	winter	dense_tree	deciduous_a_impassable_winter.cas	4
+	strategy	winter	canopy		deciduous_a_impassable_winter.cas		13
+
+	battle_vegetation
+	dense_forest		forest_open_dense_forest
+	dense_scrub		forest_open_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_open_dense_forest_win
+	dense_scrub		forest_open_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate temperate_coniferous_forest
+{
+	colour	247 148 29
+	heat	0
+	winter
+
+	strategy	summer	sparse_tree	conifer_a.cas				2
+	strategy	summer	dense_tree	conifer_a_impassable.cas		3
+	strategy	summer	canopy		conifer_a_impassable.cas			14
+
+	strategy	winter	sparse_tree	conifer_a_winter.cas			7
+	strategy	winter	dense_tree	conifer_a_impassable_winter.cas		6
+	strategy	winter	canopy		conifer_a_impassable_winter.cas		15
+
+	battle_vegetation
+	dense_forest		forest_deep_dense_forest
+	dense_scrub		forest_deep_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_deep_dense_forest_win
+	dense_scrub		forest_deep_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate unused2
+{
+	colour	255 242 0
+	heat	0
+	winter
+
+	strategy	summer	sparse_tree	lorien_winter.cas				2
+	strategy	summer	dense_tree	lorien_impassable_winter.cas		3
+	strategy	summer	canopy		lorien_impassable_winter.cas			14
+
+	strategy	winter	sparse_tree	lorien.cas			7
+	strategy	winter	dense_tree	lorien_impassable.cas		6
+	strategy	winter	canopy		lorien_impassable.cas		15
+
+	battle_vegetation
+	dense_forest		
+	dense_scrub			forest_deep_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_deep_dense_forest
+	dense_scrub			forest_deep_dense_scrub
+	env_map				data/battlefield/envmaps/grass.dds
+}
+
+climate highland
+{
+	colour	141 198 63
+	heat	0
+	winter
+
+	strategy	summer	sparse_tree	conifer_a.cas				2
+	strategy	summer	dense_tree	conifer_a_impassable.cas		3
+	strategy	summer	canopy		conifer_a_impassable.cas			14
+	
+	strategy	winter	sparse_tree	conifer_a_winter.cas			7
+	strategy	winter	dense_tree	conifer_a_impassable_winter.cas		6
+	strategy	winter	canopy		conifer_a_impassable_winter.cas		15
+
+	battle_vegetation
+	dense_forest		highland_dense_forest
+	dense_scrub		highland_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		highland_dense_forest_win
+	dense_scrub		highland_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate alpine
+{
+	colour	57 181 74
+	heat	0
+	winter
+
+	strategy	summer	sparse_tree	conifer_a_winter.cas			7
+	strategy	summer	dense_tree	conifer_a_impassable_winter.cas		6
+	strategy	summer	canopy		conifer_a_impassable_winter.cas		15
+
+	strategy	winter	sparse_tree	conifer_a_winter.cas			7
+	strategy	winter	dense_tree	conifer_a_impassable_winter.cas		6
+	strategy	winter	canopy		conifer_a_impassable_winter.cas		15
+
+
+	battle_vegetation
+	dense_forest		alpine_dense_forest
+	dense_scrub		alpine_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		alpine_dense_forest_win
+	dense_scrub		alpine_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate tropical
+{
+	colour	0 166 81
+	heat	0
+	winter
+
+	strategy	summer	sparse_tree	conifer_a.cas				2
+	strategy	summer	dense_tree	conifer_a_impassable.cas		3
+	strategy	summer	canopy		conifer_a_impassable.cas			14
+
+	strategy	winter	sparse_tree	conifer_a_winter.cas			7
+	strategy	winter	dense_tree	conifer_a_impassable_winter.cas		6
+	strategy	winter	canopy		conifer_a_impassable_winter.cas		15
+	
+	battle_vegetation
+	dense_forest		alpine_dense_forest
+	dense_scrub		alpine_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		alpine_dense_forest_win
+	dense_scrub		alpine_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}
+
+climate semi_arid
+{
+	colour	0 114 188
+	heat	2
+	winter
+
+	strategy	summer	sparse_tree	twisted.cas				2
+	strategy	summer	dense_tree	twisted.cas		2
+	strategy	summer	canopy		twisted.cas			14
+
+	strategy	winter	sparse_tree	twisted_winter.cas				2
+	strategy	winter	dense_tree	twisted_winter.cas		2
+	strategy	winter	canopy		twisted_winter.cas			14
+	battle_vegetation
+	dense_forest		forest_open_dense_forest
+	dense_scrub		forest_open_dense_scrub
+
+	battle_winter_vegetation
+	dense_forest		forest_deep_dense_forest_win
+	dense_scrub		forest_deep_dense_scrub_win
+	env_map			data/battlefield/envmaps/grass.dds
+}

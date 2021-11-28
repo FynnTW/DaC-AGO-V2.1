@@ -1,0 +1,328 @@
+;############################
+;##### Non Region Based #####
+;############################
+
+rebel_type		gladiator_uprising
+category		gladiator_revolt
+chance			100
+description		gladiator_uprising
+unit			Bandits
+
+rebel_type		brigands
+category		brigands
+chance			50
+description		brigands
+unit			Bandits
+
+rebel_type		pirates
+category		pirates
+chance			50
+description		pirates
+unit			Human Boat
+
+;########################
+;##### Region Based #####
+;########################
+
+rebel_type		Arthedain_Rebels
+category		peasant_revolt
+chance			2
+description		Arthedain_Rebels
+unit			Sellswords
+unit			Bandits
+unit			Bandits
+unit			Woodland Hunters
+
+rebel_type		Bandit_Rebels
+category		peasant_revolt
+chance			2
+description		Bandit_Rebels
+unit			Bandits
+unit			Bandits
+unit			Bandits
+
+rebel_type		Beorning_Rebels
+category		peasant_revolt
+chance			2
+description		Beorning_Rebels
+unit			Beorning Warriors
+unit			Stoor Shirriffs
+unit			Valesmen
+unit			Valesmen
+
+rebel_type		Breeland_Rebels
+category		peasant_revolt
+chance			2
+description		Breeland_Rebels
+unit			Bandits
+unit			Sellswords
+unit			Woodland Hunters
+
+rebel_type		Cardolan_Rebels
+category		peasant_revolt
+chance			2
+description		Cardolan_Rebels
+unit			Sellswords
+unit			Bandits
+unit			Bandits
+unit			Woodland Hunters
+
+rebel_type		Druedain_Rebels
+category		peasant_revolt
+chance			2
+description		Druedain_Rebels
+unit			Druedain Hunters
+unit			Druedain Hunters
+unit			Druedain Hunters
+unit			Druedain Hunters
+
+rebel_type		Dorwinion_Rebels
+category		peasant_revolt
+chance			2
+description		Dorwinion_Rebels
+unit			Vineyard Levies
+unit			Vineyard Levies
+unit			Privateer Axemen
+
+rebel_type		Dunland_Rebels
+category		peasant_revolt
+chance			4
+description		Dunland_Rebels
+unit			Brehins Sword-Wielders
+unit			Dunnish Speutamen
+unit			Dunnish Speutamen
+unit			Clan Hunters
+
+rebel_type		Dwarven_EredLuin_Rebels
+category		peasant_revolt
+chance			2
+description		Dwarven_EredLuin_Rebels
+unit			Ered Luin Militia
+unit			Ered Luin Militia
+unit			Ered Luin Scouts
+
+rebel_type		Dwarven_Erebor_Rebels
+category		peasant_revolt
+chance			2
+description		Dwarven_Erebor_Rebels
+unit			Erebor Infantry
+unit			Erebor Infantry
+unit			Erebor Axethrowers
+
+rebel_type		Elven_Imladris_Rebels
+category		peasant_revolt
+chance			2
+description		Elven_Imladris_Rebels
+unit			Amanyar Riders
+unit			Amanyar Riders
+unit			Amanyar Swordmasters
+
+rebel_type		Elven_Lindon_Rebels
+category		peasant_revolt
+chance			2
+description		Elven_Lindon_Rebels
+unit			Lindar Guards
+unit			Lindar Guards
+unit			Lindar Bowmen
+
+rebel_type		Elven_Lothlorien_Rebels
+category		peasant_revolt
+chance			2
+description		Elven_Lothlorien_Rebels
+unit			Lorien Warders
+unit			Lorien Archers
+unit			Lorien Archers
+
+rebel_type		Elven_Thranduil_Rebels
+category		peasant_revolt
+chance			2
+description		Elven_Thranduil_Rebels
+unit			Maethyr i-Thewair
+unit			Elvenkings Bowguard
+unit			Elvenkings Bowguard
+
+rebel_type		Enedwaith_Rebels
+category		peasant_revolt
+chance			4
+description		Enedwaith_Rebels
+unit			Eryn Vorn Woodsmen
+unit			Greyflood Axemen
+unit			Greyflood Raiders
+unit			Greyflood Raiders
+unit			Foresters of Haleth
+
+rebel_type		Ent_Rebels
+category		peasant_revolt
+chance			10
+description		Ent_Rebels
+unit			Ents
+unit			Ents
+
+rebel_type		Evil_Rebels
+category		peasant_revolt
+chance			2
+description		Evil_Rebels
+unit			Trolls
+unit			Raider Warband
+unit			Raider Skirmishers
+
+rebel_type		Evil_Looters
+category		peasant_revolt
+chance			4
+description		Evil_Looters
+unit			Raider Warband
+unit			Orc Maulers
+unit			Orc Band
+unit			Raider Skirmishers
+unit			Orc Raiders
+
+rebel_type		Gondor_Rebels
+category		peasant_revolt
+chance			2
+description		Gondor_Rebels
+unit			Raider Warband
+unit			Orc Maulers
+unit			Orc Band
+unit			Raider Skirmishers
+unit			Orc Raiders
+
+rebel_type		Harad_Rebels
+category		peasant_revolt
+chance			2
+description		Harad_Rebels
+unit			Southron Warband
+unit			Southron Warband
+unit			Haradrim Archers
+
+rebel_type		Harondor_Rebels
+category		peasant_revolt
+chance			2
+description		Harondor_Rebels
+unit			Bandits
+unit			Bandits
+unit			Bandits
+unit			Woodland Hunters
+unit			Woodland Hunters
+unit			Harondor Mercenaries
+unit			Harondor Mercenaries
+
+rebel_type		Hobbit_Rebels
+category		peasant_revolt
+chance			2
+description		Hobbit_Rebels
+unit			Watch Shirriffs
+unit			Watch Shirriffs
+unit			Bandobras Archers
+unit			Watch Shirriffs
+unit			Watch Shirriffs
+
+rebel_type		Human_Rebels
+category		peasant_revolt
+chance			2
+description		Human_Rebels
+unit			Sellswords
+unit			Sellswords
+unit			Sellswords
+unit			Bandits
+unit			Woodland Hunters
+
+rebel_type		Ithilien_Rebels
+category		peasant_revolt
+chance			2
+description		Ithilien_Rebels
+unit			Sellswords
+unit			Sellswords
+unit			Ithilien Rangers
+unit			Ithilien Rangers
+
+rebel_type		Mirkwood_Rebels
+category		peasant_revolt
+chance			4
+description		Mirkwood_Rebels
+unit			Raider Warband
+unit			Raider Warband
+unit			Raider Warband
+unit			Raider Warband
+
+rebel_type		Mirkwood_Spiders
+category		peasant_revolt
+chance			4
+description		Mirkwood_Spiders
+unit			Black Spiders
+unit			Forest Spiders
+
+rebel_type		No_Rebels
+category		peasant_revolt
+chance			0
+description		No_Rebels
+unit			Bandits
+
+rebel_type		Rhovanion_Rebels
+category		peasant_revolt
+chance			4
+description		Rhovanion_Rebels
+unit			Rhovanion Riders
+unit			Rhovanion Riders
+unit			Rhovanion Spearmen
+unit			Rhovanion Hunters
+
+rebel_type		Rhudaur_Rebels
+category		peasant_revolt
+chance			4
+description		Rhudaur_Rebels
+unit			Rhudaur Savages
+unit			Hillmen
+unit			Hillmen
+unit			Rhudaur Warriors
+
+rebel_type		Rhun_Rebels
+category		peasant_revolt
+chance			2
+description		Rhun_Rebels
+unit			Daritai Clansmen
+unit			Balchoth Tribesmen
+unit			Daritai Hunters
+unit			Daritai Hunters
+
+rebel_type		Rohan_Rebels
+category		peasant_revolt
+chance			2
+description		Rohan_Rebels
+unit			Bandits
+unit			Woodland Hunters
+unit			Woodland Hunters
+
+rebel_type		Saralainn_Rebels
+category		peasant_revolt
+chance			6
+description		Saralainn_Rebels
+unit			Sellswords
+unit			Sellswords
+unit			Bandits
+unit			Woodland Hunters
+
+rebel_type		Umbar_Rebels
+category		peasant_revolt
+chance			4
+description		Umbar_Rebels
+unit			Azrazair Raiders
+unit			Azrazair Raiders
+unit			Azrazair Raiders
+unit			Azrazair Raiders
+
+rebel_type		Variag_Rebels
+category		peasant_revolt
+chance			2
+description		Variag_Rebels
+unit			Nomad Horsemen
+unit			Steppe Tribesmen
+unit			Steppe Tribesmen
+unit			Steppe Archers
+
+rebel_type		Wildmen_Rebels
+category		peasant_revolt
+chance			2
+description		Wildmen_Rebels
+unit			Druedain Hunters
+unit			Druedain Hunters
+unit			Sellswords
