@@ -530,6 +530,21 @@ water_trail_effect	horse_water_trail
 root_node_height	1.0
 rider_offset		0.0, 0.38, 0.70
 
+
+;type					reindeer
+;class					horse
+;model					mount_reindeer
+;radius					1.2
+;x_radius				0.5
+;y_offset				0.7
+;height					2.5
+;mass					4.0
+;banner_height			0
+;bouyancy_offset			1.8
+;water_trail_effect		horse_water_trail
+;root_node_height		1.0
+;rider_offset			0.0, 0.8, -0.3
+
 ;#########################
 ;##### Miscellaneous #####
 ;#########################

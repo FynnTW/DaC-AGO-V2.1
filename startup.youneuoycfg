@@ -11,7 +11,7 @@ Music_Volume = "0"
 
 ;It is recommended to adjust the level of anti-aliasing here. 
 By setting it up in the game, you will most likely get a crash.
-Antialiasing = "0"
+Antialiasing = "3"
 
 ;Enable borderless window mode. It is highly recommended to leave activated
 Borderless = "1"

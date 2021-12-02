@@ -23,6 +23,19 @@
          <morale_max>16</morale_max>
       </area_effect>
       <area_effect>    
+         <name>ae_poison_arrownosmoke</name>
+         <type>nausea</type>
+         <ground_effect>poison_arrow_impact_set</ground_effect>
+         <radius>1.0</radius>
+         <duration>30</duration>
+         <banner_colour>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+		 </banner_colour>
+         <morale_effect>-3</morale_effect>
+      </area_effect>
+      <area_effect>    
          <name>ae_poison_arrow</name>
          <type>nausea</type>
          <ground_effect>dpoison_arrow_impact_set</ground_effect>
@@ -301,11 +314,11 @@
          <name>ae_nahptha_shot</name>
          <type>explosion</type>
          <effect>ae_medium_fire</effect>
-         <impulse_radius>0.5</impulse_radius>         
+         <impulse_radius>1.0</impulse_radius>         
          <impulse_force>5.0</impulse_force>
-         <effective_radius>0.5</effective_radius>
+         <effective_radius>2.0</effective_radius>
          <effective_damage>1.0</effective_damage>
-         <kill_radius>1.0</kill_radius>
+         <kill_radius>2.0</kill_radius>
          <kill_damage>3.0</kill_damage>
          <fiery>1</fiery>
       </area_effect>

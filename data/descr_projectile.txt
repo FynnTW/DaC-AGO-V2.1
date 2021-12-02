@@ -169,7 +169,7 @@ end_shatter_package_effect	arrow_broken_impact_wall_set
 ;end_shatter_man_effect		poison_arrow_impact_set                ;to add the poison cloud
 
 effect_offset	-1.5
-area_effect		ae_poison_arrow
+area_effect		ae_poison_arrownosmoke
 damage		0
 radius		0.1
 mass		0.09
@@ -371,7 +371,7 @@ end_shatter_package_effect	arrow_broken_impact_wall_set
 ;end_shatter_man_effect		poison_arrow_impact_set            ;to add the poison cloud
 
 effect_offset	-1.5
-area_effect		ae_poison_arrow
+area_effect		ae_poison_arrownosmoke
 damage		0
 radius		0.1
 mass		0.05
@@ -752,7 +752,7 @@ end_shatter_package_effect	arrow_broken_impact_wall_set
 ;end_shatter_man_effect		poison_arrow_impact_set              ;to add the poison cloud
 
 effect_offset	-1.5
-area_effect		ae_poison_arrow
+area_effect		ae_poison_arrownosmoke
 damage		0
 radius		0.1
 mass		0.05
@@ -2163,13 +2163,13 @@ end_shatter_effect		ground_fiery_impact_ballista_set
 
 area_effect				ae_nahptha_shot
 damage		0
-radius		0.5
+radius		0.8
 mass		10
 affected_by_rain
 fiery
 min_angle	-60
 max_angle	60
-velocity	27.305
+velocity	28.305
 display		aimed
 effect_only
 

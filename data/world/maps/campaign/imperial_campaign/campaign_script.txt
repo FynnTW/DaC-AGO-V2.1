@@ -360,7 +360,7 @@ script ; first line of script, must exist!
             and I_IsFactionAIControlled gundabad
             and I_SettlementUnderSiege Lune
             console_command create_unit Lune "Orc Garrison Elite" 2 3 1 1		
-        end_if	
+        end_if
     end_monitor
     
     monitor_event FactionTurnEnd    ;log FactionTurnEnd, destroy garrisons
@@ -22556,6 +22556,7 @@ script ; first line of script, must exist!
             set_event_counter ring_given_cirdan 1
             set_event_counter ring_given_ai 1
         end_if
+        inc_counter ring_held_destroy 1
     end_monitor
     
     declare_counter udun_check
@@ -22625,6 +22626,7 @@ script ; first line of script, must exist!
     
     monitor_event FactionTurnStart I_EventCounter ring_given_ai = 1
     and I_EventCounter ring_bearer_faction = 1
+    and I_CompareCounter ring_held_destroy >= 25
     
         if I_EventCounter ring_destroyed = 1
             terminate_monitor
@@ -22665,43 +22667,36 @@ script ; first line of script, must exist!
             if I_EventCounter ring_given_elrond = 1
                 console_command character_reset elrond_1
                 move elrond_1, 345, 251
-                point_at_character elrond_1
                 log always ----------elrond moved 1 ------------------
             end_if
             if I_EventCounter ring_given_glorfindel = 1
                 console_command character_reset glorfindel_1
                 move glorfindel_1, 345, 251
-                point_at_character glorfindel_1
                 log always ----------glorfindel_1 moved 1 ------------------
             end_if
             if I_EventCounter ring_given_cirdan = 1
                 console_command character_reset cirdan_1
                 move cirdan_1, 345, 251
-                point_at_character cirdan_1
                 log always ----------cirdan_1 moved 1 ------------------
             end_if
             if I_EventCounter ring_given_celeborn = 1
                 console_command character_reset celeborn_1
                 move celeborn_1, 345, 251
-                point_at_character celeborn_1
                 log always ----------celeborn_1 moved 1 ------------------
             end_if
             if I_EventCounter ring_given_aragorn = 1
                 console_command character_reset aragorn_1
                 move aragorn_1, 345, 251
-                point_at_character aragorn_1
                 log always ----------aragorn_1 moved 1 ------------------
             end_if
             if I_EventCounter ring_given_gandalf1 = 1
                 console_command character_reset gandalf_1
                 move gandalf_1, 345, 251
-                point_at_character gandalf_1
                 log always ----------gandalf_1 moved 1 ------------------
             end_if
             if I_EventCounter ring_given_gandalf2 = 1
                 console_command character_reset gandalf_2
                 move gandalf_2, 345, 251
-                point_at_character gandalf_2
                 log always ----------gandalf_2 moved 1 ------------------
             end_if
         end_if
@@ -22711,7 +22706,6 @@ script ; first line of script, must exist!
                 console_command character_reset elrond_1
                 move elrond_1, 359, 233
                 console_command mp elrond_1 30
-                point_at_character elrond_1
                 log always ----------elrond moved 2 ------------------
             end_if
             if I_EventCounter ring_given_glorfindel = 1
@@ -22725,35 +22719,30 @@ script ; first line of script, must exist!
                 console_command character_reset cirdan_1
                 move cirdan_1, 359, 233
                 console_command mp cirdan_1 30
-                point_at_character cirdan_1
                 log always ----------cirdan_1 moved 2 ------------------
             end_if
             if I_EventCounter ring_given_celeborn = 1
                 console_command character_reset celeborn_1
                 move celeborn_1, 359, 233
                 console_command mp celeborn_1 30
-                point_at_character celeborn_1
                 log always ----------celeborn_1 moved 2 ------------------
             end_if
             if I_EventCounter ring_given_aragorn = 1
                 console_command character_reset aragorn_1
                 move aragorn_1, 359, 233
                 console_command mp aragorn_1 30
-                point_at_character aragorn_1
                 log always ----------aragorn_1 moved 2 ------------------
             end_if
             if I_EventCounter ring_given_gandalf1 = 1
                 console_command character_reset gandalf_1
                 move gandalf_1, 359, 233
                 console_command mp gandalf_1 30
-                point_at_character gandalf_1
                 log always ----------gandalf_1 moved 2 ------------------
             end_if
             if I_EventCounter ring_given_gandalf2 = 1
                 console_command character_reset gandalf_2
                 move gandalf_2, 359, 233
                 console_command mp gandalf_2 30
-                point_at_character gandalf_2
                 log always ----------gandalf_2 moved 2 ------------------
             end_if
         end_if
@@ -22764,6 +22753,7 @@ script ; first line of script, must exist!
     and IsRegionOneOf Udun_Province
     and not CharacterIsLocal
     and I_EventCounter ring_given_ai = 1
+    and I_CompareCounter ring_held_destroy >= 25
     
         if I_EventCounter ring_destroyed = 1
             terminate_monitor
@@ -22835,6 +22825,7 @@ script ; first line of script, must exist!
     and not EndedInSettlement
     and not CharacterIsLocal
     and I_EventCounter ring_given_ai = 1
+    and I_CompareCounter ring_held_destroy >= 25
     
         if I_EventCounter ring_destroyed = 1
             terminate_monitor
@@ -25635,6 +25626,7 @@ script ; first line of script, must exist!
             increment_kings_purse england -150
         end_if
 	end_monitor
+    
     
     ;Witch-king to Angmar	
 	monitor_event FactionTurnStart FactionType portugal
@@ -31113,6 +31105,30 @@ script ; first line of script, must exist!
         end_if
         if I_CompareCounter faction_ID_poland == 1
             historic_event faction_info_dg
+            if I_CharacterExists spiders_1
+                point_at_character spiders_1
+            end_if
+            if I_CharacterExists spiders_2
+                point_at_character spiders_2
+            end_if
+            if I_CharacterExists spiders_3
+                point_at_character spiders_3
+            end_if
+            if I_CharacterExists spiders_4
+                point_at_character spiders_4
+            end_if
+            if I_CharacterExists spiders_5
+                point_at_character spiders_5
+            end_if
+            if I_CharacterExists spiders_6
+                point_at_character spiders_6
+            end_if
+            if I_CharacterExists spiders_7
+                point_at_character spiders_7
+            end_if
+            if I_CharacterExists spiders_8
+                point_at_character spiders_8
+            end_if
         end_if
         if I_CompareCounter faction_ID_hre == 1
             historic_event faction_info_moria
@@ -31802,7 +31818,7 @@ script ; first line of script, must exist!
         and WonBattle
         and not I_ConflictType Naval
         and I_CompareCounter battle_no = 1
-        log always --------------------------- give money check spoils------------------------
+        log always --------------------------- give money check spoils ------------------------
 
         if I_CompareCounter very_small_army = 1
             console_command add_money 100

@@ -20,25 +20,25 @@
 
 pool Mordor
 	regions Gorgoroth_Province Morgul_Vale_Province Gorgoroth_South_Province Udun_Province Carnen_Province Morgai_Province Orc_Province East_Gorgoroth_Province Cirith_Province
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
-	unit Orc Maulers,			exp 0 cost 510 replenish 0.04 - 0.072 max 2 initial 1 religions { catholic orthodox }
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
+	unit Orc Maulers,			exp 0 cost 510 replenish 0.04 - 0.072 max 2 initial 1 religions { catholic orthodox kings }
 	
 pool SouthMirkwood
 	regions East_Deep_Mirkwood_Province Far_Low_Anduin_Province Wilderland_Province Isenmouthe_Province Dagorlad_Province
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Orc Maulers,			exp 0 cost 510 replenish 0.04 - 0.072 max 2 initial 1 religions { catholic orthodox }
 
 pool Isengard
 	regions Nan_Curunir_Province
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
-	unit Goblin Infantry,			exp 0 cost 480 replenish 0.024 - 0.10 max 2 initial 1 religions { catholic orthodox }
+	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 3 initial 2 religions { catholic orthodox kings }
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Clan Axemen,			exp 0 cost 500 replenish 0.064 - 0.15 max 3 initial 1  religions { islam }
-	unit Brehins Sword-Wielders,				exp 0 cost 650 replenish 0.064 - 0.10 max 2 initial 1  religions { islam }
-	unit Dunlending Horsemen,			exp 0 cost 750 replenish 0.064 - 0.10 max 2 initial 1  religions { islam }
-	unit Wulfingir Pikes,			exp 0 cost 900 replenish 0.02 - 0.048 max 2 initial 1  religions { islam }
+	unit Brehins Sword-Wielders,				exp 0 cost 650 replenish 0.064 - 0.10 max 2 initial 0  religions { islam }
+	unit Dunlending Horsemen,			exp 0 cost 750 replenish 0.064 - 0.10 max 2 initial 0  religions { islam }
+	unit Wulfingir Pikes,			exp 0 cost 900 replenish 0.02 - 0.048 max 2 initial 0  religions { islam }
 
 pool Harad
 	regions Umbar_Province Gobel_Ancalimon_Province Amrun_Province Shafra_Province Erelond_Province 
@@ -46,19 +46,19 @@ pool Harad
 	unit Human Boat,				exp 1 cost 1000 replenish 0.04 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven kings nomadic }
 	unit Harondor Mercenaries				exp 0 cost 900 replenish 0.056 - 0.10 max 2 initial 1 religions { islam orthodox kings nomadic }	
 	unit Azrazair Raiders,			exp 1 cost 280 replenish 0.12 - 0.2 max 2 initial 1 religions { catholic kings orthodox nomadic }
-	unit Southron Warband,		exp 0 cost 350 replenish 0.056 - 0.10 max 3 initial 1 religions { catholic kings orthodox nomadic }
-	unit Haradrim Archers,		exp 0 cost 300 replenish 0.12 - 0.20 max 2 initial 1 religions { catholic kings orthodox nomadic }
-	unit Southron Archers,		exp 0 cost 400 replenish 0.056 - 0.10 max 3 initial 1 religions { catholic kings orthodox nomadic }
-	unit Troll-men Warriors,		exp 0 cost 900 replenish 0.024 - 0.04 max 1 initial 1 religions { catholic kings orthodox nomadic }
+	unit Southron Warband,		exp 0 cost 350 replenish 0.056 - 0.10 max 3 initial 0 religions { catholic kings orthodox nomadic }
+	unit Haradrim Archers,		exp 0 cost 300 replenish 0.12 - 0.20 max 2 initial 0 religions { catholic kings orthodox nomadic }
+	unit Southron Archers,		exp 0 cost 400 replenish 0.056 - 0.10 max 3 initial 0 religions { catholic kings orthodox nomadic }
+	unit Troll-men Warriors,		exp 0 cost 900 replenish 0.024 - 0.04 max 1 initial 0 religions { catholic kings orthodox nomadic }
 	
 pool HaradNoBoat
 	regions South_Umbar_Province Far_Harad_Province
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Harondor Mercenaries				exp 0 cost 900 replenish 0.056 - 0.10 max 1 initial 1 religions { islam orthodox kings nomadic }	
 	unit Azrazair Raiders,			exp 1 cost 280 replenish 0.12 - 0.2 max 2 initial 1 religions { catholic kings orthodox nomadic }
-	unit Southron Warband,		exp 0 cost 350 replenish 0.056 - 0.10 max 3 initial 1 religions { catholic kings orthodox nomadic }
-	unit Haradrim Archers,		exp 0 cost 300 replenish 0.12 - 0.20 max 2 initial 1 religions { catholic kings orthodox nomadic }
-	unit Southron Archers,		exp 0 cost 400 replenish 0.056 - 0.10 max 3 initial 1 religions { catholic kings orthodox nomadic }
+	unit Southron Warband,		exp 0 cost 350 replenish 0.056 - 0.10 max 3 initial 0 religions { catholic kings orthodox nomadic }
+	unit Haradrim Archers,		exp 0 cost 300 replenish 0.12 - 0.20 max 2 initial 0 religions { catholic kings orthodox nomadic }
+	unit Southron Archers,		exp 0 cost 400 replenish 0.056 - 0.10 max 3 initial 0 religions { catholic kings orthodox nomadic }
 	unit Troll-men Warriors,		exp 0 cost 900 replenish 0.024 - 0.04 max 1 initial 0 religions { catholic kings orthodox nomadic }
 
 pool Khand
@@ -74,7 +74,7 @@ pool Rhun
 	unit Balchoth Tribesmen,		exp 0 cost 500 replenish 0.032 - 0.056 max 2 initial 1 religions { catholic orthodox kings nomadic }
 	unit Daritai Clansmen,		exp 0 cost 450 replenish 0.032 - 0.2 max 2 initial 0 religions { catholic orthodox kings nomadic }
 	unit Daritai Hunters,		exp 0 cost 450 replenish 0.032 - 0.2 max 2 initial 0 religions { catholic orthodox kings nomadic }
-	unit Farrhun Mercanaries,			exp 0 cost 750 replenish 0.04 - 0.064 max 2 initial 1 religions { catholic orthodox kings nomadic }
+	unit Farrhun Mercanaries,			exp 0 cost 750 replenish 0.04 - 0.064 max 2 initial 0 religions { catholic orthodox kings nomadic }
 	unit Arulad Dragonriders,			exp 0 cost 1000 replenish 0.04 - 0.064 max 2 initial 0 religions { catholic orthodox kings nomadic }
 	unit Udege Marines,			exp 0 cost 1200 replenish 0.024 - 0.032 max 1 initial 0 religions { catholic orthodox kings nomadic }
 
@@ -93,6 +93,7 @@ pool Gondor6
 pool GondorMountains
 	regions Pukel_Gap_Province Adorn_Province
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
+	unit Druedain Hunters,			exp 0 cost 400 replenish 0.052 - 0.068 max 2 initial 1 religions { wildmen }
 	
 pool Gondor5
 	regions Pinnath_Gelin_Province
@@ -101,30 +102,32 @@ pool Gondor5
 pool Harondor
 	regions Amon_Eithel_Province Barad_Harn_Province Anduin_Straits_Province Southharondor_Province South_Mithlond_Province South_Ithilien_Province
 	unit Harondor Mercenaries				exp 0 cost 900 replenish 0.056 - 0.10 max 2 initial 1 religions { islam orthodox kings northmen nomadic }
-	unit Raider Warband,		exp 0 cost 270 replenish 0.16 - 0.24 max 3 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.08 - 0.16 max 2 initial 2 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }
 	unit Human Boat				exp 0 cost 900 replenish 0.016 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox }
 	
 pool HarondorNoBoat
 	regions Northern_Harondor_Province Harondor_Province
 	unit Harondor Mercenaries				exp 0 cost 900 replenish 0.056 - 0.10 max 2 initial 1 religions { islam orthodox kings nomadic }
-	unit Raider Warband,		exp 0 cost 270 replenish 0.16 - 0.24 max 3 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.08 - 0.16 max 2 initial 2 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }
 	
 pool Fords
 	regions Fords_Province
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
-	unit Raider Warband,		exp 0 cost 270 replenish 0.08 - 0.12 max 1 initial 1 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven }
 	
 pool Talsir
 	regions Talsir_Province Lond_Angren_Province
 	unit Human Boat,				exp 0 cost 900 replenish 0.016 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox }
-	unit Enedwaith Hunters,					exp 0 cost 500 replenish 0.064 - 0.1 max 2 initial 1  religions { islam }
-	unit Greyflood Raiders,					exp 0 cost 650 replenish 0.064 - 0.1 max 2 initial 1  religions { islam }
-	unit River Archers,						exp 0 cost 650 replenish 0.064 - 0.1 max 2 initial 1  religions { islam }
-	unit River Elders,			exp 0 cost 900 replenish 0.04 - 0.048 max 1 initial 1  religions { islam }	
+	unit Enedwaith Hunters,					exp 0 cost 500 replenish 0.064 - 0.1 max 2 initial 1  religions { islam northmen wildmen dwarven }
+	unit Greyflood Raiders,					exp 0 cost 650 replenish 0.064 - 0.1 max 2 initial 1  religions { islam northmen wildmen dwarven }
+	unit River Archers,						exp 0 cost 650 replenish 0.064 - 0.1 max 2 initial 1  religions { islam northmen wildmen dwarven }
+	unit River Elders,			exp 0 cost 900 replenish 0.04 - 0.048 max 1 initial 1  religions { islam northmen wildmen dwarven }	
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
 
@@ -156,11 +159,14 @@ pool Lune
 	regions Lune_North_Province Lune_land_Province Emyn_Beraid_Province
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.016 - 0.048 max 1 initial 1 religions { dwarven elven }
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 2 initial 1 religions { northmen wildmen islam orthodox dwarven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool AnduinBandits
 	regions Scatha_Province Pezarsan_Province
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 2 initial 1 religions { northmen wildmen islam orthodox dwarven }
 	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.04 max 1 initial 1 religions { northmen islam wildmen dwarven elven }
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 
 pool Dwarves2
 	regions Erebor_Province Iron_Hills_Province Logathavuld_Province
@@ -173,14 +179,16 @@ pool Dwarves3
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 3 initial 2 religions { northmen wildmen islam orthodox dwarven }
 	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.04 max 1 initial 1 religions { northmen islam wildmen dwarven elven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Dwarves5
 	regions East_Moria_Province High_Pass_Province Mt_Gundabad_Province Central_Mountains_Province Grey_Mountains_Province Grey_Foothills_Province Lune_Province West_Moria_Province Withered_Province
 	unit Sons of the Fallen,		exp 0 cost 1400 replenish 0.024 - 0.032 max 1 initial 1 religions { northmen islam wildmen orthodox }
 	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.056 max 1 initial 1 religions { northmen islam wildmen dwarven }	
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
-	unit Goblin Infantry,			exp 0 cost 480 replenish 0.024 - 0.10 max 2 initial 1 religions { catholic orthodox }
+	unit Raider Warband,			exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
+	unit Goblin Infantry,			exp 0 cost 480 replenish 0.024 - 0.10 max 2 initial 1 religions { catholic orthodox kings }
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
 
 pool Rhovanion
 regions Farest_Rhun_Province Celduin_Far_East_Province Southern_Rhun_Province
@@ -194,6 +202,7 @@ regions Farest_Rhun_Province Celduin_Far_East_Province Southern_Rhun_Province
 	unit Daritai Clansmen,		exp 0 cost 450 replenish 0.032 - 0.056 max 2 initial 1 religions { catholic orthodox kings nomadic }
 	unit Daritai Hunters,		exp 0 cost 450 replenish 0.032 - 0.056 max 2 initial 1 religions { catholic orthodox kings nomadic }
 	unit Udege Marines,			exp 0 cost 1200 replenish 0.024 - 0.032 max 1 initial 0 religions { catholic orthodox kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Rhovanion2
 regions Rhovanion_Province North_Rhovanion_Province Eastrhun_Province Tirith_Thoron_Province Far_Rhovanion_Province Nurunk_Province Rhawburg_Province Scorched_Province Staddle_Province Wildlands_Province
@@ -202,6 +211,8 @@ regions Rhovanion_Province North_Rhovanion_Province Eastrhun_Province Tirith_Tho
 	unit Rhovanion Spearmen,		exp 0 cost 470 replenish 0.032 - 0.056 max 2 initial 1 religions { northmen islam dwarven orthodox kings nomadic elven }
 	unit Rhovanion Hunters,			exp 0 cost 470 replenish 0.032 - 0.056 max 2 initial 1 religions { northmen islam dwarven orthodox kings nomadic elven }
 	unit Rhovanion Riders,			exp 0 cost 690 replenish 0.04 - 0.056 max 2 initial 1 religions { northmen islam dwarven orthodox kings nomadic elven }
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Ithilien
 	regions Cair_Andros_Province East_Osgiliath_Province Ithilien_Province
@@ -215,16 +226,17 @@ pool MiddleEriador
 	regions Eregion_Province Hollin_Province Lonehills_Province
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
 	unit Goblin Infantry,			exp 0 cost 480 replenish 0.024 - 0.10 max 2 initial 1 religions { catholic orthodox }
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Tharbad
 	regions Tharbad_Province
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 1 initial 1 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 1 initial 1 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
 	unit Human Boat				exp 0 cost 900 replenish 0.016 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox }
@@ -236,9 +248,10 @@ pool Gram
 	unit Snow-Orc Spearmen,			exp 0 cost 760 replenish 0.04 - 0.056 max 2 initial 1 religions { catholic orthodox kings }
 	unit Sons of the Fallen,		exp 0 cost 1400 replenish 0.024 - 0.032 max 1 initial 1 religions { northmen islam wildmen orthodox }
 	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.056 max 1 initial 1 religions { northmen islam wildmen dwarven }	
-	unit Raider Warband,		exp 0 cost 270 replenish 0.2 - 0.28 max 4 initial 3 religions { catholic } crusading
-	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.12 - 0.2 max 3 initial 2 religions { catholic } crusading
+	unit Raider Warband,		exp 0 cost 270 replenish 0.1 - 0.14 max 2 initial 1 religions { catholic orthodox kings }
+	unit Raider Skirmishers,		exp 0 cost 250 replenish 0.06 - 0.1 max 1 initial 1 religions { catholic orthodox kings }
 	unit Goblin Infantry,			exp 0 cost 480 replenish 0.024 - 0.10 max 2 initial 1 religions { catholic orthodox }
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
 	
 pool Pukel
 	regions Pukel_Province
@@ -250,6 +263,7 @@ pool AnorienFields
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Rohirrim,			exp 0 cost 830 replenish 0.032 - 0.10 max 1 initial 1 religions { northmen islam elven }
 	unit Rohirrim,			exp 0 cost 830 replenish 0.016 - 0.048 max 1 initial 1 religions { dwarven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool AndrastCape
 	regions Andrast_Cape_Province Minhiriath_Province
@@ -283,7 +297,8 @@ pool Bree_BoH
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven }
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 2 initial 1 religions { northmen wildmen islam orthodox dwarven }
-	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.056 max 1 initial 1 religions { northmen islam wildmen dwarven elven }	
+	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.056 max 1 initial 1 religions { northmen islam wildmen dwarven elven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }	
 	
 pool Rohan_BoH_West
 	regions Helms_Deep_Province Westfold_Province Gap_of_Rohan_Province West_Emnet_Province West_Wold_Province Fangorn_Province
@@ -294,6 +309,7 @@ pool Rohan_BoH_West
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Rohirrim,			exp 0 cost 830 replenish 0.032 - 0.10 max 1 initial 1 religions { northmen islam elven }
 	unit Rohirrim,			exp 0 cost 830 replenish 0.016 - 0.048 max 1 initial 1 religions { dwarven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Rohan_BoH_East
 	regions Eastfold_Province East_Emnet_Province Wold_Province
@@ -304,6 +320,7 @@ pool Rohan_BoH_East
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Rohirrim,			exp 0 cost 830 replenish 0.032 - 0.10 max 1 initial 1 religions { northmen islam elven }
 	unit Rohirrim,			exp 0 cost 830 replenish 0.016 - 0.048 max 1 initial 1 religions { dwarven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Rohan_BoH_Edoras
 	regions Kings_Land_Province
@@ -316,6 +333,7 @@ pool Rohan_BoH_Edoras
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Rohirrim,			exp 0 cost 830 replenish 0.032 - 0.10 max 1 initial 1 religions { northmen islam elven }
 	unit Rohirrim,			exp 0 cost 830 replenish 0.016 - 0.048 max 1 initial 1 religions { dwarven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Anduin_Vale_BoH
 	regions Lowest_Anduin_Vale_Province Lower_Anduin_Vale_Province Anduin_Vale_Province Gladden_Fields_Province West_Anduin_Province Central_Vale_Province Wrakyaburg_Province
@@ -327,6 +345,8 @@ pool Anduin_Vale_BoH
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam }
 	unit Beorning Warriors,			exp 0 cost 820 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam elven dwarven }
 	unit Beorning Riders,		exp 0 cost 800 replenish 0.04 - 0.048 max 1 initial 1 religions { dwarven elven }	
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Dale_BoH
 	regions Dale_Province Esgaroth_Province Celduin_Province Celduin_East_Province Celduin_Far_Province Celduin_North_Province
@@ -340,6 +360,7 @@ pool Dale_BoH
 	unit Bandits,				exp 0 cost 500 replenish 0.04 - 0.064 max 2 initial 1 religions { northmen islam orthodox kings nomadic }
 	unit Privateer Cavalry,		exp 0 cost 980 replenish 0.032 - 0.04 max 1 initial 1 religions { northmen islam dwarven orthodox wildmen kings nomadic elven }
 	unit Privateer Axemen,			exp 0 cost 900 replenish 0.032 - 0.048 max 1 initial 1 religions { northmen islam dwarven orthodox wildmen kings nomadic elven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 	
 pool Dorwinion_BoH
@@ -352,6 +373,7 @@ pool Dorwinion_BoH
 	unit Bandits,				exp 0 cost 500 replenish 0.04 - 0.064 max 2 initial 1 religions { northmen islam orthodox kings nomadic }
 	unit Avari Spearmen,		exp 0 cost 1100 replenish 0.024 - 0.032 max 1 initial 1 religions { elven }
 	unit Human Boat,				exp 0 cost 900 replenish 0.05 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Dorwinion_BoH_NoBoat
 	regions Erech_Province Centre_Rhovanion_Province
@@ -365,6 +387,7 @@ pool Dorwinion_BoH_NoBoat
 	unit Rhovanion Hunters,			exp 0 cost 470 replenish 0.032 - 0.056 max 2 initial 1 religions { northmen islam dwarven orthodox kings nomadic }
 	unit Rhovanion Riders,			exp 0 cost 690 replenish 0.04 - 0.056 max 2 initial 1 religions { northmen islam dwarven orthodox kings nomadic }
 	unit Avari Spearmen,		exp 0 cost 1100 replenish 0.024 - 0.032 max 1 initial 1 religions { elven }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 ;Always Available;	
 pool Enedwaith_BoH_North
@@ -378,6 +401,7 @@ pool Enedwaith_BoH_North
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 2 initial 1 religions { northmen wildmen islam orthodox dwarven }
 	unit Human Boat,				exp 0 cost 900 replenish 0.05 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Enedwaith_BoH_South
 	regions South_Enedwaith_Province Heorot_Province Fortriu_Province
@@ -388,6 +412,7 @@ pool Enedwaith_BoH_South
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
 	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 
 pool Dunland_BoH
 	regions Dunland_Hills_Province Dunland_Province Duneard_Province
@@ -398,6 +423,8 @@ pool Dunland_BoH
 	unit Bandits,				exp 0 cost 500 replenish 0.064 - 0.08 max 2 initial 1 religions { northmen wildmen islam kings nomadic }
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven }		
 	unit Dunnish Warspear-Throng,			exp 0 cost 500 replenish 0.04 - 0.072 max 2 initial 1 religions { northmen islam dwarven wildmen catholic orthodox kings nomadic }
+	unit Warg Pack,					exp 0 cost 800 replenish 0.04 - 0.06 max 1 initial 1 religions { catholic orthodox }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }
 	
 pool Enedwaith_BoH_Boat 
 	regions North_Enedwaith_Province
@@ -408,3 +435,4 @@ pool Enedwaith_BoH_Boat
 	unit Bandits,				exp 0 cost 500 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
 	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic }
 	unit Human Boat,				exp 0 cost 900 replenish 0.05 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven catholic orthodox kings nomadic }
+	unit Farmhand Pikemen,				exp 0 cost 750 replenish 0.032 - 0.056 max 1 initial 1 religions { wildmen northmen islam kings nomadic elven dwarven }

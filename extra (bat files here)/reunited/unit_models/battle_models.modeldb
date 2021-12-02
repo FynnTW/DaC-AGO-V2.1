@@ -2771,7 +2771,7 @@
 1
 21 MTW2_Arquebus_Primary
 0
-16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
+-1 0 0 0 0 0 0
 14 elephant_crew4
 1 1
 50 unit_models/_Units/EN_Lmail_Hmail/sauron_lod0.mesh 64000
@@ -52160,7 +52160,7 @@
 10 indep_warg
 0.85 1
 45 unit_models/_units/wargs/indep_warg_lod0.mesh 10000
-8
+9
 5 turks
 52 unit_models/_units/wargs/textures/indep_warg.texture
 57 unit_models/_units/wargs/textures/indep_warg_norm.texture
@@ -52193,11 +52193,17 @@
 52 unit_models/_units/wargs/textures/indep_warg.texture
 57 unit_models/_units/wargs/textures/indep_warg_norm.texture
 36 unit_sprites/merc_wardogs_sprite.spr
+4 merc
+52 unit_models/_units/wargs/textures/indep_warg.texture
+57 unit_models/_units/wargs/textures/indep_warg_norm.texture
+36 unit_sprites/merc_wardogs_sprite.spr
 0
 1
 8 elephant
 13 Warhammer_elg 0
-0 0 -1 0 0 0 0 0 0
+0 
+0 
+-1 0 0 0 0 0 0
 12 spider_mount 
 1 1 
 41 unit_models/_units/botet/spider_lod0.mesh 6400 

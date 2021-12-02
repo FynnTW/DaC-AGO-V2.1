@@ -1,3 +1,4 @@
+
 *.tga
 *.dds
 *.texture
@@ -33,3 +34,9 @@
 *.vege_model
 *.vege_sprite*
 *.db
+data/blockset/textures/cityorc/rename.bat
+data/blockset/textures/needed/rename.bat
+data/blockset/textures/ne_large_wooden_palisade_orcs.xcf
+*.dae
+data/settlements/north_european/settlements/large_town/north_european_large_town_a_world.txt
+DaC AGO V2.1 beta.7z
