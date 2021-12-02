@@ -8142,12 +8142,7 @@ script ; first line of script, must exist!
         and I_NumberOfSettlements poland = 0
         log always ---------------------------lorien unite message---------------------------------
         if I_IsFactionAIControlled ireland
-            if not I_IsFactionAIControlled mongols
-                terminate_monitor
-            end_if
-            if I_IsFactionAIControlled mongols
-                set_event_counter elven_union_lorien_accepted 1
-            end_if
+            set_event_counter elven_union_lorien_accepted 1
         end_if
         if I_EventCounter elven_union = 1
             terminate_monitor
