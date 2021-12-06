@@ -305,7 +305,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   test_climate_summer_forest                            0.90   1.20   1.00   1.50    0.50     0          1  
 4  nmodelentries (must be 1 to 4)
-52  195  215  130  
+52  195  181  130  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2285,16 +2285,16 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_forest                              0.30   1.60   0.80   1.30    0.50     0          1  
 4  nmodelentries (must be 1 to 4)
-37  79  32  36  
+90  92  97  111  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
 #---------------   vegetationgroup  221  --------------------------------------
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
-  sub_arctic_winter_forest                              0.50   1.30   1.00   1.30    0.50     0          1  
+  sub_arctic_winter_forest                              0.30   1.60   0.80   1.30    0.50     0          1  
 4  nmodelentries (must be 1 to 4)
-35  33  34  80  
+90  92  97  111  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2303,7 +2303,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_mangroves                           1.00   2.00   1.00   1.30    0.50     0          1  
 2  nmodelentries (must be 1 to 4)
-74  3  
+113  104  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2311,8 +2311,8 @@ water_cover
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_mangroves                           1.00   2.00   1.00   1.30    0.50     0          1  
-3  nmodelentries (must be 1 to 4)
-75  69  66  
+2  nmodelentries (must be 1 to 4)
+113  104  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2321,7 +2321,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_cactii                              1.00   2.00   1.00   1.30    0.50     1          0  
 1  nmodelentries (must be 1 to 4)
-5  
+91  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2330,7 +2330,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_cactii                              1.00   2.00   1.00   1.30    0.50     1          0  
 1  nmodelentries (must be 1 to 4)
-5  
+91  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2339,16 +2339,16 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_shrubs                              1.00   2.00   1.00   1.30    0.50     1          0  
 1  nmodelentries (must be 1 to 4)
-3  
+105  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
 #---------------   vegetationgroup  227  --------------------------------------
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
-  sub_arctic_winter_shrubs                              1.00   1.00   1.00   1.00    0.50     1          0  
+  sub_arctic_winter_shrubs                              1.00   2.00   1.00   1.30    0.50     1          0  
 1  nmodelentries (must be 1 to 4)
-66  
+105  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2357,7 +2357,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_long_grass                          1.00   2.00   1.00   1.30    0.50     1          0  
 4  nmodelentries (must be 1 to 4)
-68  4  3  21  
+97  102  105  112  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2365,8 +2365,8 @@ water_cover
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_long_grass                          1.00   2.00   1.00   1.30    0.50     1          0  
-3  nmodelentries (must be 1 to 4)
-69  25  26  
+4  nmodelentries (must be 1 to 4)
+97  102  105  112  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2375,7 +2375,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_reeds                               1.00   2.00   1.00   1.30    0.50     2          0  
 2  nmodelentries (must be 1 to 4)
-68  61  
+110  113  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2384,7 +2384,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_reeds                               1.00   2.00   1.00   1.30    0.50     2          0  
 2  nmodelentries (must be 1 to 4)
-69  66  
+110  113  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2393,7 +2393,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_grass                               1.00   1.50   1.00   1.30    0.50     2          0  
 1  nmodelentries (must be 1 to 4)
-68  
+111  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2402,7 +2402,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_grass                               1.00   1.50   1.00   1.30    0.50     2          0  
 1  nmodelentries (must be 1 to 4)
-69  
+111  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2411,7 +2411,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_summer_water_cover                         1.00   2.00   1.00   1.30    0.50     3          0  
 1  nmodelentries (must be 1 to 4)
-4  
+96  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2420,7 +2420,7 @@ water_cover
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_water_cover                         1.00   2.00   1.00   1.30    0.50     3          0  
 1  nmodelentries (must be 1 to 4)
-4  
+96  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2437,8 +2437,8 @@ water_cover
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
   sub_arctic_winter_small_rocks                         0.80   1.20   1.00   1.20    0.50     2          0  
-1  nmodelentries (must be 1 to 4)
-119  
+4  nmodelentries (must be 1 to 4)
+90  91  92  93  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2454,9 +2454,9 @@ water_cover
 #---------------   vegetationgroup  239  --------------------------------------
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
-  sub_arctic_winter_large_rocks                         0.80   1.20   1.00   1.20    2.20     0          1  
-2  nmodelentries (must be 1 to 4)
-115  116  
+  sub_arctic_winter_large_rocks                         0.80   1.20   1.00   1.30    2.20     0          1  
+4  nmodelentries (must be 1 to 4)
+83  84  85  86  
 16  values count 
 -1001 -1000 -999 -998 -1 0 1 2 999 1000 1001 1002 1999 2000 2001 2002 int values 
 #---------------------------------------------------------------------------------------------------
@@ -2472,9 +2472,9 @@ water_cover
 #---------------   vegetationgroup  241  --------------------------------------
 #---------------------------------------------------------------------------------------------------
 # Veggroup name                                         Hmin   Hmax   Amin   Amax  Radius  Lodtyperef  Tallveg
-  sub_arctic_winter_small_shrubs                        1.00   1.00   1.00   1.00    0.50     2          0  
+  sub_arctic_winter_small_shrubs                        1.00   2.00   1.00   1.30    0.50     2          0  
 1  nmodelentries (must be 1 to 4)
-66  
+4  
 4  values count 
 0 1 1000 1001 int values 
 #---------------------------------------------------------------------------------------------------

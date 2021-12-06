@@ -2290,6 +2290,7 @@ skeleton			strat_named_with_army
 scale				0.7
 indiv_range			40
 texture				turks, models_strat/textures/dunedain_captain.tga
+texture				slave, models_strat/textures/dunedain_captain.tga
 texture				portugal, models_strat/textures/angmar_wraith.tga
 model_flexi_m			models_strat/dunedain_captain.cas, max
 shadow_model_flexi		models_strat/shadow_sword.CAS, max

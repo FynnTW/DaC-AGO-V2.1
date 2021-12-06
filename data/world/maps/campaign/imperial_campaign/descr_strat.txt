@@ -11825,8 +11825,6 @@ famine_threat 0
 watchtower 289 102
 watchtower 299 97
 watchtower 289 110
-watchtower 288 119
-watchtower 281 121
 watchtower 276 116
 watchtower 278 103
 watchtower 269 110

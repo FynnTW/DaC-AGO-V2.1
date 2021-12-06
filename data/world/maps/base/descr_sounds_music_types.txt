@@ -4,104 +4,141 @@
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-music_type eastern_european
+music_type gondor					;Gondor
 
-	regions Mitheithel_Province Central_Mountains_Province High_Pass_Province Mt_Gundabad_Province Lune_Province Grey_Mountains_Province Wrakyaburg_Province Withered_Province East_Mirkwood_Province
-	regions Middle_Mirkwood_Province New_Mirkwood_Province East_Deep_Mirkwood_Province Deep_Mirkwood_Province Far_Low_Anduin_Province Wilderland_Province Rhovanion_Province
-	regions Nan_Curunir_Province Fortriu_Province Adorn_Province Dagorlad_Province Isenmouthe_Province Udun_Province Morgai_Province Orc_Province Fords_Province
-	regions Morgul_Vale_Province Cirith_Province Gorgoroth_Province Gorgoroth_South_Province Carnen_Province East_Gorgoroth_Province Woodsmen_Province Scatha_Province
+	regions Anorien_Fields_Province Cair_Andros_Province West_Osgiliath_Province East_Osgiliath_Province Anorien_Province Lossarnach_Province Brethil_Province Lebennin_Province Fanuilond_Province Tarnost_Province
+	regions Ethring_Province Lamedon_Province Pinnath_Gelin_Province Anfalas_Province Andrast_Province Pukel_Gap_Province Andrast_Cape_Province Ithilien_Province
+
+	factions sicily
 	
-	factions england poland france hre gundabad
+music_type amroth					;Dol Amroth
 
-music_type southern_european
+	regions Edhellond_Province Belfalas_Province Methrast_Province West_Lebennin_Province Tolfalas_Province Anduin_Straits_Province Barad_Harn_Province
 
-	regions Erebor_Province Iron_Hills_Province Ered_Luin_Province Nan_i_Naugrim_Province South_Ered_Luin_Province Lune_North_Province
-	regions East_Moria_Province West_Moria_Province Logathavuld_Province Grey_Foothills_Province Lune_land_Province
+	factions denmark
 
-	factions moors norway hungary
+music_type northern_european		;Northern Dunedain
 
-music_type greek
+	regions Arthedain_Province Weather_Hills_Province Far_Arthedain_Province Arthedain_Rammas_Province Evendim_Province Lonehills_Province Faerdor_Province Angle_Province Mitheithel_Province Tharbad_Province
+	regions Rhudaur_Province Hollin_Province Forodwaith_Province
+	
+	factions turks slave
+	
+music_type united					;Arnor/Reunited Kingdom
 
-	regions Imladris_Province Harlindon_Province Mithlond_Province Forlindon_Province Celebrant_Province Lothlorien_Province Hollin_Province
-	regions Central_Mirkwood_Province West_Mirkwood_Province Elven_Mirkwood_Province South_Elven_Mirkwood_Province Eregion_Province Emyn_Beraid_Province
+	regions Lake_Evendim_Province 
+	
+	factions united
+
+music_type greek					;Elves
+
+	regions Mithlond_Province Forlindon_Province Harlindon_Province Imladris_Province Eregion_Province Celebrant_Province Lothlorien_Province Central_Mirkwood_Province West_Mirkwood_Province
+	regions South_Elven_Mirkwood_Province Elven_Mirkwood_Province Border_Province 
 
 	factions saxons mongols ireland papal_states
 
-music_type middle_eastern
+music_type southern_european		;Dwarves
 
-	regions North_Rhun_Province Kelepar_Province Mistrand_Province Morad_Province Southern_Rhun_Province Rhun_Province Eastrhun_Province Farest_Rhun_Province Amon_Eithel_Province Northern_Harondor_Province
-	regions South_Ithilien_Province Harondor_Province South_Mithlond_Province Gobel_Ancalimon_Province Shafra_Province Far_Harad_Province Amrun_Province Chelkar_Province Haradwaith_Province
+	regions Erebor_Province Withered_Province Grey_Mountains_Province Iron_Hills_Province Grey_Foothills_Province Logathavuld_Province East_Moria_Province West_Moria_Province South_Ered_Luin_Province Nan_i_Naugrim_Province Lune_land_Province 
+	regions Lune_North_Province Ered_Luin_Province Forochel_Province 
 
-	factions spain venice
+	factions moors norway hungary
 
-music_type gondor
+music_type milan					;Rohan
 
-	regions Cair_Andros_Province West_Osgiliath_Province East_Osgiliath_Province Anorien_Fields_Province Anorien_Province Lossarnach_Province Brethil_Province Lebennin_Province
-	regions Fanuilond_Province West_Lebennin_Province Tolfalas_Province Methrast_Province Belfalas_Province Tarnost_Province Ethring_Province Edhellond_Province Lamedon_Province Pinnath_Gelin_Province
-	regions Anfalas_Province Andrast_Province Andrast_Cape_Province Pukel_Gap_Province Ithilien_Province
-
-
-	factions sicily denmark
-
-music_type northern_european
-
-	regions Angle_Province Weather_Hills_Province Lonehills_Province Faerdor_Province Tharbad_Province Metraith_Province Arthedain_Province Lake_Evendim_Province Tirith_Thoron_Province
-	regions Far_Arthedain_Province Arthedain_Rammas_Province Rhaglaw_Province Evendim_Province Oiolad_Province Forochel_Province Wildlands_Province Border_Province Forodwaith_Province
-
-	factions turks slave
-
-music_type milan
-
-	regions Kings_Land_Province Helms_Deep_Province East_Emnet_Province West_Emnet_Province Eastfold_Province Fangorn_Province 
-	regions Westfold_Province Wold_Province West_Wold_Province Gap_of_Rohan_Province
+	regions Kings_Land_Province Helms_Deep_Province Westfold_Province Gap_of_Rohan_Province West_Emnet_Province East_Emnet_Province Eastfold_Province Wold_Province West_Wold_Province
+	regions 
 
 	factions milan
 	
-music_type khand
+music_type middlemen				;Anduin
 
-	regions Harad_Province Far_Khand_Province West_Khand_Province Khand_Province Near_Harad_Province Far_Desert_Province
-	
-	factions khand
-	
-music_type russia
-
-	regions Umbar_Province South_Umbar_Province Erelond_Province Southharondor_Province Barad_Harn_Province Anduin_Straits_Province
-	
-	factions russia
-	
-music_type normans
-	
-	regions Bree_Province Shire_West_Province Shire_North_Province Shire_South_Province 
-	
-	factions normans
-	
-music_type mesoamerican
-
-	regions Dunland_Hills_Province Dunland_Province Duneard_Province Heorot_Province Pukel_Province South_Enedwaith_Province Minhiriath_Province Lond_Angren_Province Talsir_Province Druwaith_Iaur_Province
-	regions Suduri_Province Central_Minhiriath_Province East_Cardolan_Province North_Enedwaith_Province Girithlin_Province Enedwaith_Province Wilishar_Province 
-	
-	factions aztecs teutonic_order
-	
-music_type byzantium
-
-	regions South_Dorwinion_Province Dorwinion_Province Uldonavan_Province Near_Rhun_Province Centre_Rhovanion_Province North_Rhovanion_Province Nurunk_Province Erech_Province Scorched_Province Staddle_Province Rhawburg_Province
-	
-	factions byzantium
-	
-music_type scotland
-
-	regions Dale_Province Celduin_Province Celduin_East_Province Esgaroth_Province North_Khand_Province Wintirion_Province South_Logathavuld_Province Far_Rhovanion_Province Celduin_North_Province Celduin_Far_East_Province Celduin_Far_Province
-	
-	factions scotland
-	
-music_type angmar
-
-	regions Litash_Province Carn_Dum_Province Mt_Gram_Province Rhudaur_Province Angsul_Province Dordholl_Province Ettenmoors_Province Borderlands_Province Athilin_Province Cardolan_Province
-	
-	factions portugal
-	
-music_type anduin
-
-	regions Pezarsan_Province Lowest_Anduin_Vale_Province Central_Vale_Province Gladden_Fields_Province Lower_Anduin_Vale_Province West_Anduin_Province Anduin_Vale_Province
+	regions Lower_Anduin_Vale_Province West_Anduin_Province Anduin_Vale_Province Scatha_Province Wrakyaburg_Province Gladden_Fields_Province Central_Vale_Province Pezarsan_Province Lowest_Anduin_Vale_Province
 	
 	factions timurids
+	
+music_type byzantium				;Dorwinion
+
+	regions Dorwinion_Province Uldonavan_Province South_Dorwinion_Province Nurunk_Province Tirith_Thoron_Province Scorched_Province Staddle_Province Centre_Rhovanion_Province Rhawburg_Province North_Rhovanion_Province Far_Rhovanion_Province
+	
+	factions byzantium
+
+music_type scotland					;Dale
+
+	regions  Dale_Province Esgaroth_Province Celduin_Province Celduin_North_Province Celduin_East_Province Celduin_Far_Province Celduin_Far_East_Province North_Khand_Province Wintirion_Province South_Logathavuld_Province
+	
+	factions scotland
+
+music_type mesoamerican				;Wildmen
+
+	regions Dunland_Province Dunland_Hills_Province North_Enedwaith_Province Heorot_Province Duneard_Province Fortriu_Province Pukel_Province South_Enedwaith_Province Lond_Angren_Province 
+	regions Minhiriath_Province Talsir_Province Druwaith_Iaur_Province Suduri_Province East_Cardolan_Province Girithlin_Province Enedwaith_Province Central_Minhiriath_Province 
+	
+	factions aztecs teutonic_order
+
+music_type russia					;Ar Adunaim
+
+	regions Southharondor_Province Erelond_Province Umbar_Province South_Umbar_Province
+	
+	factions russia
+
+music_type harad					;Harad
+
+	regions Gobel_Ancalimon_Province South_Mithlond_Province Amon_Eithel_Province Amrun_Province Chelkar_Province Haradwaith_Province Far_Harad_Province Shafra_Province Northern_Harondor_Province
+
+	factions spain
+	
+music_type rhun						;Rhun
+
+	regions Mistrand_Province Rhun_Province North_Rhun_Province Kelepar_Province Morad_Province Southern_Rhun_Province Eastrhun_Province Farest_Rhun_Province Near_Rhun_Province 
+	
+	factions venice
+
+music_type khand					;Khand
+
+	regions Harad_Province Khand_Province West_Khand_Province Far_Khand_Province Far_Desert_Province Near_Harad_Province South_Ithilien_Province Harondor_Province
+	
+	factions khand
+
+music_type angmar					;Angmar
+
+	regions Carn_Dum_Province Litash_Province Mt_Gram_Province Ettenmoors_Province Rhaglaw_Province Dordholl_Province Athilin_Province Angsul_Province Borderlands_Province Oiolad_Province Cardolan_Province 
+	
+	factions portugal
+
+music_type gundabad					;Gundabad
+
+	regions Mt_Gundabad_Province Lune_Province
+	
+	factions gundabad
+	
+music_type goblins					;Goblins				
+
+	regions High_Pass_Province Central_Mountains_Province
+	
+	factions hre
+
+music_type guldur					;Dol Guldur
+
+	regions East_Mirkwood_Province Middle_Mirkwood_Province New_Mirkwood_Province East_Deep_Mirkwood_Province Deep_Mirkwood_Province Far_Low_Anduin_Province
+	
+	factions poland
+	
+music_type mordor					;Mordor
+
+	regions Gorgoroth_Province East_Gorgoroth_Province Carnen_Province Gorgoroth_South_Province Orc_Province Morgai_Province Cirith_Province Morgul_Vale_Province Udun_Province Dagorlad_Province 
+	regions Isenmouthe_Province Wilderland_Province Rhovanion_Province Wildlands_Province 
+	
+	factions england
+
+music_type isengard					;Isengard
+
+	regions Nan_Curunir_Province Fords_Province Adorn_Province Fangorn_Province
+	
+	factions france
+	
+music_type	breeland				;Breeland
+
+	regions Shire_North_Province Shire_West_Province Shire_South_Province Emyn_Beraid_Province Bree_Province Metraith_Province Wilishar_Province
+	
+	factions normans

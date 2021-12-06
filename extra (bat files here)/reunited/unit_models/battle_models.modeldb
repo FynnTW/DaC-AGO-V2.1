@@ -1,4 +1,4 @@
-22 serialization::archive 3 0 0 0 0 1253 0 0
+22 serialization::archive 3 0 0 0 0 1255 0 0
 5 blank 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 17 azrazair_captains
 1 1
@@ -156,7 +156,7 @@
 9 speutamen
 1 1
 51 unit_models/_Units/Dunland_Bill/speutamen_lod0.mesh 6400
-3
+4
 6 aztecs
 58 unit_models/_Units/Dunland_Bill/textures/derfelmen.texture
 63 unit_models/_Units/Dunland_Bill/textures/derfelmen_norm.texture 0
@@ -166,7 +166,10 @@
 5 slave
 58 unit_models/_Units/Dunland_Bill/textures/derfelmen.texture
 63 unit_models/_Units/Dunland_Bill/textures/derfelmen_norm.texture 0
-3
+6 france
+58 unit_models/_Units/Dunland_Bill/textures/derfelmen.texture
+63 unit_models/_Units/Dunland_Bill/textures/derfelmen_norm.texture 0
+4
 6 aztecs
 65 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach.texture
 70 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach_norm.texture 0
@@ -174,6 +177,9 @@
 65 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach.texture
 70 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach_norm.texture 0
 5 slave
+65 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach.texture
+70 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach_norm.texture 0
+6 france
 65 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach.texture
 70 unit_models/_Units/Dunland_Bill/textures/derfelmen_attach_norm.texture 0
 1
@@ -243,7 +249,7 @@
 17 MTW2_Pike_primary
 1
 18 MTW2_Sword_Primary
-16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002				 
+16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
 17 pharazon_faithful
 1 1
 55 unit_models/_units/Umbar/NEW_arpharazon_faith_lod0.mesh 6400
@@ -2802,7 +2808,7 @@
 54 unit_models/_Units/Sauron/textures/sauron_norm.texture 0
 0 
 1
-8 elephant
+8 Elephant
 22 fs_sauron_elephant_fix 0
 2
 17 MTW2_Mace_Primary 14 fs_test_shield
@@ -16072,7 +16078,7 @@
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -16120,7 +16126,7 @@
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -16161,7 +16167,7 @@
 59 unit_models/AttachmentSets/Final orcsmm_orcsmm_norm.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -16202,7 +16208,7 @@
 59 unit_models/AttachmentSets/Final orcsmm_orcsmm_norm.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -16256,7 +16262,7 @@
 59 unit_models/AttachmentSets/Final orcsmm_orcsmm_norm.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -16290,7 +16296,7 @@
 59 unit_models/AttachmentSets/Final orcsmm_orcsmm_norm.texture 0
 1
 4 None
-34 MTW2_Goblin_Pavise_Crossbow_String 15 MTW2_Non_Shield
+34 MTW2_Goblin_Pavise_Crossbow_String 23 MTW2_Goblin_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -23594,6 +23600,74 @@
 2
 17 MTW2_Mace_Primary 14 fs_test_shield
 16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
+19 dunland_officer_new
+1 1
+57 unit_models/_Units/Dunland_Bill/dunland_officer_lod0.mesh 6400
+8
+6 russia
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+5 turks
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+6 france
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+14 teutonic_order
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+6 aztecs
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+4 merc
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+5 slave
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+7 normans
+63 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt.texture
+68 unit_models/_units/Dunland_Bill/textures/dunland_BG_alt_norm.texture
+35 unit_sprites/dunlendings_sprite.spr
+8
+5 turks
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+6 france
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+6 russia
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+14 teutonic_order
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+6 aztecs
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+4 merc
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+5 slave
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+7 normans
+59 unit_models/_units/Dunland_Bill/textures/dunland_bg.texture
+64 unit_models/_units/Dunland_Bill/textures/dunland_bg_norm.texture 0
+1
+4 None
+14 MTW2_Swordsman 0
+2
+18 MTW2_Sword_Primary 14 fs_test_shield
+0
+16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
 9 saralainn
 1 1
 59 unit_models/_Units/ES_Greek_Greek_Heavy/saralainn_lod0.mesh 6400
@@ -25227,7 +25301,7 @@
 60 unit_models/AttachmentSets/Final Danish_dwarves_norm.texture 0
 1
 4 None
-31 MTW2_Dwarf_Fast_Crossbow_String 15 MTW2_Dwarf_Mace
+31 MTW2_Dwarf_Fast_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -26200,7 +26274,7 @@
 61 unit_models/AttachmentSets/Final Eriador_hobbit_norm4.texture 0
 1
 4 None
-35 MTW2_Hobbit_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+35 MTW2_Hobbit_Fast_Shortbowman_String 23 MTW2_Hobbit_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 2
@@ -26241,7 +26315,7 @@
 61 unit_models/AttachmentSets/Final Eriador_hobbit_norm5.texture 0
 1
 4 None
-35 MTW2_Hobbit_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+35 MTW2_Hobbit_Fast_Shortbowman_String 23 MTW2_Hobbit_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 2
@@ -26275,7 +26349,7 @@
 63 unit_models/AttachmentSets/hobbit_gen_bree_att_upg_norm.texture 0
 1
 4 None
-35 MTW2_Hobbit_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+35 MTW2_Hobbit_Fast_Shortbowman_String 23 MTW2_Hobbit_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 2
@@ -31405,11 +31479,11 @@
 49 unit_models/AttachmentSets/woses_att_norm.texture 0
 1
 4 None
-27 MTW2_Fast_Longbowman_String 9 MTW2_Pike
+34 MTW2_Dwarf_Fast_Shortbowman_String 15 MTW2_Dwarf_Pike
 1
-19 MTW2_Bowman_Primary
+25 MTW2_Dwarf_Bowman_Primary
 1
-17 MTW2_Pike_primary
+23 MTW2_Dwarf_Pike_primary
 16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
 13 dun_chieftain
 1 1
@@ -32399,6 +32473,87 @@
 22 MTW2_Sword_Primary_new
 0
 -1 0 0 0 0 0 0
+18 dunland_banner_low
+1 1
+60 unit_models/_Units/Dunland_Bill/dunland_banner_low_lod0.mesh 100000
+9
+6 russia
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+7 normans
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+5 turks
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+14 teutonic_order
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+6 france
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+8 timurids
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+6 aztecs
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+5 slave
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+4 merc
+63 unit_models/_Units/Dunland_Bill/textures/dunland_banner.texture
+68 unit_models/_Units/Dunland_Bill/textures/dunland_banner_norm.texture 0
+9
+6 russia
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+7 normans
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+5 turks
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+14 teutonic_order
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+6 france
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+8 timurids
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+6 aztecs
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+5 slave
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+4 merc
+70 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach.texture
+75 unit_models/_Units/Dunland_Bill/textures/dunland_banner_attach_norm.texture 0
+4
+4 None
+14 MTW2_Spear_new 0
+1
+22 MTW2_Spear_primary_new
+0
+5 horse
+17 MTW2_HR_Sword_new 0
+1
+22 MTW2_Sword_Primary_new
+0
+8 elephant
+17 MTW2_HR_Sword_new 0
+1
+22 MTW2_Sword_Primary_new
+0
+5 camel
+17 MTW2_HR_Sword_new 0
+1
+22 MTW2_Sword_Primary_new
+0
+-1 0 0 0 0 0 0
 21 dunland_ballista_crew
 1 1
 54 unit_models/_units/dunland/dun_catapult_crew_lod0.mesh 6400
@@ -33038,7 +33193,7 @@
 59 unit_models/AttachmentSets/ered_heavy_xbow_att_norm.texture 0
 1
 4 None
-33 MTW2_Dwarf_Pavise_Crossbow_String 15 MTW2_Non_Shield
+33 MTW2_Dwarf_Pavise_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -33072,7 +33227,7 @@
 59 unit_models/AttachmentSets/ered_heavy_xbow_att_norm.texture 0
 1
 4 None
-33 MTW2_Dwarf_Pavise_Crossbow_String 15 MTW2_Non_Shield
+33 MTW2_Dwarf_Pavise_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -33282,7 +33437,7 @@
 60 unit_models/AttachmentSets/Final Danish_dwarves_norm.texture 0
 1
 4 None
-33 MTW2_Dwarf_Pavise_Crossbow_String 15 MTW2_Non_Shield
+33 MTW2_Dwarf_Pavise_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -33316,7 +33471,7 @@
 60 unit_models/AttachmentSets/Final Danish_dwarves_norm.texture 0
 1
 4 None
-33 MTW2_Dwarf_Pavise_Crossbow_String 15 MTW2_Non_Shield
+33 MTW2_Dwarf_Pavise_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 1
 27 MTW2_Dwarf_Crossbow_Primary
 1
@@ -34508,7 +34663,7 @@
 53 unit_models/_Units/anduin/textures/stoor_norm.texture 0
 1
 4 None
-35 MTW2_Hobbit_Fast_Shortbowman_String 20 MTW2_Hobbit_Knifeman
+35 MTW2_Hobbit_Fast_Shortbowman_String 23 MTW2_Hobbit_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 1
@@ -34549,7 +34704,7 @@
 53 unit_models/_Units/anduin/textures/stoor_norm.texture 0
 1
 4 None
-35 MTW2_Hobbit_Fast_Shortbowman_String 20 MTW2_Hobbit_Knifeman
+35 MTW2_Hobbit_Fast_Shortbowman_String 23 MTW2_Hobbit_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 1
@@ -35373,7 +35528,7 @@
 21 beorning_spearmen_upg
 1 1
 62 unit_models/_units/Anduin_Bill/Beorning_spearmen_upg_lod0.mesh 6400
-7
+8
 8 timurids
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
@@ -35402,7 +35557,11 @@
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
 46 unit_sprites/timurids_vale_spearmen_sprite.spr
-7
+7 ireland
+56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
+61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
+46 unit_sprites/timurids_vale_spearmen_sprite.spr
+8
 8 timurids
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
@@ -35422,6 +35581,9 @@
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
 6 russia
+56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
+61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
+7 ireland
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
 1
@@ -37844,7 +38006,7 @@
 1
 4 None
 35 MTW2_Goblin_Fast_Shortbowman_String 
-15 MTW2_Non_Shield
+23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -37960,7 +38122,7 @@
 58 unit_models/AttachmentSets/dor_maa46_attach_normal.texture 0
 1
 4 None
-35 MTW2_Goblin_Fast_Shortbowman_String 15 MTW2_Non_Shield
+35 MTW2_Goblin_Fast_Shortbowman_String 23 MTW2_Goblin_Mace_Archer
 1
 26 MTW2_Goblin_Bowman_Primary
 1
@@ -39267,7 +39429,7 @@
 57 unit_models/AttachmentSets/khazad_archer_att_norm.texture 0
 1
 4 None
-34 MTW2_Dwarf_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+34 MTW2_Dwarf_Fast_Shortbowman_String 22 MTW2_Dwarf_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 1
@@ -39775,7 +39937,7 @@
 57 unit_models/AttachmentSets/oroc_block_attach_norm.texture 0
 1
 4 None
-33 MTW2_Dwarf_Pavise_Crossbow_String 20 MTW2_Dwarf_Swordsman
+33 MTW2_Dwarf_Pavise_Crossbow_String 22 MTW2_Dwarf_Mace_Archer
 2
 27 MTW2_Dwarf_Crossbow_Primary 14 fs_test_shield
 2
@@ -39809,7 +39971,7 @@
 60 unit_models/AttachmentSets/Final Danish_dwarves_norm.texture 0
 1
 4 None
-34 MTW2_Dwarf_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+34 MTW2_Dwarf_Fast_Shortbowman_String 22 MTW2_Dwarf_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 1
@@ -44130,7 +44292,7 @@
 1
 21 MTW2_Arquebus_Primary
 0
-16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
+-1 0 0 0 0 0 0
 15 turkish_archers
 1 1
 60 unit_models/_Units/ME_Light_Padded/turkish_archers_lod0.mesh 6400
@@ -50923,7 +51085,7 @@
 56 unit_models/AttachmentSets/mattocks_dwarves_norm.texture 0
 1
 4 None
-34 MTW2_Dwarf_Fast_Shortbowman_String 16 MTW2_Hobbit_Mace
+34 MTW2_Dwarf_Fast_Shortbowman_String 22 MTW2_Dwarf_Mace_Archer
 1
 26 MTW2_Hobbit_Bowman_Primary
 1
