@@ -1,4 +1,5 @@
 ;##########################################################
+;##########################################################
 ;----------------------------------------------------------
 ;----- New DAC EDCT ----------- February 2020 -------------
 ;----------------------------------------------------------
@@ -16661,7 +16662,7 @@ Trigger ElvenSupply_UnderSiege1
         and IsUnderSiege
         and Trait ElvenSupply > 2
 
-	Affects ElvenSupply -2 Chance 100
+	Affects ElvenSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger ElvenSupply_Besieging
 	WhenToTest CharacterTurnEndInSettlement
@@ -16672,7 +16673,7 @@ Trigger ElvenSupply_Besieging
         and IsBesieging
         and Trait ElvenSupply > 2
 
-	Affects ElvenSupply -2 Chance 100
+	Affects ElvenSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger ElvenSupply_EnemyLands1
 	WhenToTest CharacterTurnEnd
@@ -16684,7 +16685,7 @@ Trigger ElvenSupply_EnemyLands1
         and not AtSea
         and Trait ElvenSupply > 2
 
-	Affects ElvenSupply -4 Chance 90
+	Affects ElvenSupply -8 Chance 90
 ;----------------------------------------------------------
 Trigger ElvenSupply_Ambition
 	WhenToTest CharacterTurnEnd
@@ -16718,8 +16719,8 @@ Trigger ElvenSupply_EnemyLands_Winter
         and Trait ElvenSupply > 2
         and I_EventCounter winter = 1
 
-	Affects ElvenSupply -1 Chance 100
-	Affects ElvenSupply -1 Chance 50
+	Affects ElvenSupply -2 Chance 100
+	Affects ElvenSupply -2 Chance 50
 ;----------------------------------------------------------
 Trigger ElvenSupply_Devastation
 	WhenToTest GeneralDevastatesTile
@@ -16796,9 +16797,9 @@ Trigger ElvenSupply_SupplyCamp2
         and not Trait ElvenSupply > 2
 		and not WonBattle
 
-	Affects ElvenSupply -3 Chance 100
-	Affects ElvenSupply -1 Chance 75
-	Affects ElvenSupply -1 Chance 50
+	Affects ElvenSupply -5 Chance 100
+	Affects ElvenSupply -2 Chance 75
+	Affects ElvenSupply -2 Chance 50
 ;----------------------------------------------------------
 Trigger ElvenSupply_Foraging
 	WhenToTest CharacterTurnEnd
@@ -16871,7 +16872,7 @@ Trigger DwarvenSupply_UnderSiege1
         and IsUnderSiege
         and Trait DwarvenSupply > 2
 
-	Affects DwarvenSupply -4 Chance 100
+	Affects DwarvenSupply -8 Chance 100
 ;----------------------------------------------------------
 Trigger DwarvenSupply_Besieging
 	WhenToTest CharacterTurnEndInSettlement
@@ -16882,7 +16883,7 @@ Trigger DwarvenSupply_Besieging
         and IsBesieging
         and Trait DwarvenSupply > 2
 
-	Affects DwarvenSupply -2 Chance 100
+	Affects DwarvenSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger DwarvenSupply_EnemyLands1
 	WhenToTest CharacterTurnEnd
@@ -16894,8 +16895,8 @@ Trigger DwarvenSupply_EnemyLands1
         and not AtSea
         and Trait DwarvenSupply > 2
 
-	Affects DwarvenSupply -4 Chance 90
-	Affects DwarvenSupply -2 Chance 50
+	Affects DwarvenSupply -8 Chance 90
+	Affects DwarvenSupply -4 Chance 50
 ;----------------------------------------------------------
 Trigger DwarvenSupply_Ambition
 	WhenToTest CharacterTurnEnd
@@ -16931,7 +16932,7 @@ Trigger DwarvenSupply_EnemyLands_Winter
         and Trait DwarvenSupply > 2
         and I_EventCounter winter = 1
 
-	Affects DwarvenSupply -1 Chance 50
+	Affects DwarvenSupply -2 Chance 50
 ;----------------------------------------------------------
 Trigger DwarvenSupply_Devastation
 	WhenToTest GeneralDevastatesTile
@@ -17009,9 +17010,9 @@ Trigger DwarvenSupply_SupplyCamp2
         and not Trait DwarvenSupply > 2
 		and not WonBattle
 
-	Affects DwarvenSupply -4 Chance 100
-	Affects DwarvenSupply -1 Chance 75
-	Affects DwarvenSupply -1 Chance 50
+	Affects DwarvenSupply -8 Chance 100
+	Affects DwarvenSupply -2 Chance 75
+	Affects DwarvenSupply -2 Chance 50
 ;----------------------------------------------------------
 Trigger DwarvenSupply_Foraging
 	WhenToTest CharacterTurnEnd
@@ -17094,7 +17095,7 @@ Trigger OrcSupply_UnderSiege1
         and IsUnderSiege
         and Trait OrcSupply > 2
 
-	Affects OrcSupply -3 Chance 100
+	Affects OrcSupply -6 Chance 100
 ;----------------------------------------------------------
 Trigger OrcSupply_Besieging
 	WhenToTest CharacterTurnEndInSettlement
@@ -17105,7 +17106,7 @@ Trigger OrcSupply_Besieging
         and IsBesieging
         and Trait OrcSupply > 2
 
-	Affects OrcSupply -2 Chance 100
+	Affects OrcSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger OrcSupply_EnemyLands1
 	WhenToTest CharacterTurnEnd
@@ -17117,8 +17118,8 @@ Trigger OrcSupply_EnemyLands1
         and not AtSea
         and Trait OrcSupply > 2
 
-	Affects OrcSupply -4 Chance 90
-	Affects OrcSupply -2 Chance 50
+	Affects OrcSupply -8 Chance 90
+	Affects OrcSupply -4 Chance 50
 ;----------------------------------------------------------
 Trigger OrcSupply_Ambition
 	WhenToTest CharacterTurnEnd
@@ -17153,7 +17154,7 @@ Trigger OrcSupply_EnemyLands_Winter
         and I_EventCounter winter = 1
         and not FactionType gundabad
 
-	Affects OrcSupply -1 Chance 75
+	Affects OrcSupply -2 Chance 75
 ;----------------------------------------------------------
 Trigger OrcSupply_Devastation
 	WhenToTest GeneralDevastatesTile
@@ -17232,8 +17233,8 @@ Trigger OrcSupply_SupplyCamp2
         and not Trait OrcSupply > 2
 		and not WonBattle
 
-	Affects OrcSupply -4 Chance 100
-	Affects OrcSupply -1 Chance 50
+	Affects OrcSupply -8 Chance 100
+	Affects OrcSupply -2 Chance 50
 ;----------------------------------------------------------;men
 Trigger MenSupply_Initial
 	WhenToTest CharacterTurnStart
@@ -17302,7 +17303,7 @@ Trigger MenSupply_UnderSiege1
         and IsUnderSiege
         and Trait MenSupply > 2
 
-	Affects MenSupply -2 Chance 100
+	Affects MenSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger MenSupply_Besieging
 	WhenToTest CharacterTurnEndInSettlement
@@ -17315,7 +17316,7 @@ Trigger MenSupply_Besieging
         and IsBesieging
         and Trait MenSupply > 2
 
-	Affects MenSupply -2 Chance 100
+	Affects MenSupply -4 Chance 100
 ;----------------------------------------------------------
 Trigger MenSupply_EnemyLands1
 	WhenToTest CharacterTurnEnd
@@ -17329,8 +17330,8 @@ Trigger MenSupply_EnemyLands1
         and not AtSea
         and Trait MenSupply > 2
 
-	Affects MenSupply -5 Chance 90
-	Affects MenSupply -2 Chance 50
+	Affects MenSupply -10 Chance 90
+	Affects MenSupply -4 Chance 50
 ;----------------------------------------------------------
 Trigger MenSupply_Ambition
 	WhenToTest CharacterTurnEnd
@@ -17372,7 +17373,7 @@ Trigger MenSupply_EnemyLands_Winter
         and I_EventCounter winter = 1
         and not FactionType portugal
 
-	Affects MenSupply -3 Chance 100
+	Affects MenSupply -6 Chance 100
 ;----------------------------------------------------------
 Trigger MenSupply_Devastation
 	WhenToTest GeneralDevastatesTile
@@ -17464,9 +17465,9 @@ Trigger MenSupply_SupplyCamp2
         and not Trait MenSupply > 2
 		and not WonBattle
 
-	Affects MenSupply -3 Chance 100
-	Affects MenSupply -1 Chance 75
-	Affects MenSupply -1 Chance 50
+	Affects MenSupply -6 Chance 100
+	Affects MenSupply -2 Chance 75
+	Affects MenSupply -2 Chance 50
 ;----------------------------------------------------------
 Trigger MenSupply_Foraging
 	WhenToTest CharacterTurnEnd

@@ -5567,7 +5567,7 @@ unit		Uruk-hai Archers			exp 2 armour 1 weapon_lvl 0
 unit		Uruk-hai Raiders			exp 3 armour 1 weapon_lvl 0
 unit		Uruk-hai Raiders			exp 3 armour 1 weapon_lvl 0
 
-character	Ushgol, named character, male, age 42, x 487, y 482
+character	Ushgol, named character, male, age 42, x 487, y 482, label ushgol_1
 traits		UrukHaiRace 1	
 army
 unit		Dunnish Speutamen			exp 2 armour 3 weapon_lvl 1
@@ -5795,8 +5795,6 @@ unit		Clan Hunters			exp 1 armour 0 weapon_lvl 0
 unit		Huntmasters			exp 1 armour 1 weapon_lvl 0
 unit		Clan Axemen				exp 1 armour 0 weapon_lvl 0
 
-
-
 character	Freca, named character, male, heir, age 19, x 205, y 286, portrait Heir, hero_ability SHIELD, label freca_1
 traits		Hero 1, MiddleManRace 1, Dunlending 1, FactionHeir 1, HeroAbilityShield 1, Hatred 1, Berserker 1, FathersLegacy 1, GoodCommander 2, Loyal 3, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1, OneRingAvailable 1
 ancillaries	dunland_helmet, wulf_axe
@@ -5819,7 +5817,7 @@ traits		MiddleManRace 1, Dunlending 1, Hatred 1, GoodAttacker 1, GoodCommander 1
 ancillaries	fur_trapper
 
 army
-unit		Brehins Oathband	exp 1 armour 1 weapon_lvl 0
+unit		Frekkalingir			exp 1 armour 1 weapon_lvl 0
 unit		Clan Hunters			exp 1 armour 0 weapon_lvl 0
 
 character	Aoidhean, spy, male, age 20, x 200, y 320

@@ -5003,8 +5003,6 @@ building castle_woodcutting_isengard
 			}
 			faction_capability
 			{
-				construction_cost_bonus_wooden bonus 5 requires factions { eastern_european, southern_european, }
-				taxable_income_bonus bonus 5 requires factions { eastern_european, southern_european, }
 			}
 			material wooden
 			construction  5
@@ -5015,7 +5013,7 @@ building castle_woodcutting_isengard
 				c_sawmill
 			}
 		}
-		c_sawmill requires factions { france, england, poland, hre, portugal, gundabad, }
+		c_sawmill requires factions { france, england, poland, hre, portugal, gundabad, } and building_present_min_level isengard_barracks isengard_barracks_lvl1
 		{
 			capability
 			{
@@ -5027,8 +5025,8 @@ building castle_woodcutting_isengard
 			faction_capability
 			{
 				retrain_cost_bonus bonus 1 requires factions { eastern_european, southern_european, }
-				construction_cost_bonus_wooden bonus 10 requires factions { eastern_european, southern_european, }
-				taxable_income_bonus bonus 10 requires factions { eastern_european, southern_european, }
+				construction_cost_bonus_wooden bonus 5 requires factions { eastern_european, southern_european, }
+				taxable_income_bonus bonus 5 requires factions { eastern_european, southern_european, }
 			}
 			material wooden
 			construction  12
@@ -5039,7 +5037,7 @@ building castle_woodcutting_isengard
 				c_lumber_yard
 			}
 		}
-		c_lumber_yard requires factions { france, england, poland, hre, portugal, gundabad, }
+		c_lumber_yard requires factions { france, england, poland, hre, portugal, gundabad, } and building_present_min_level isengard_barracks isengard_barracks_lvl2
 		{
 			capability
 			{
@@ -5051,8 +5049,8 @@ building castle_woodcutting_isengard
 			faction_capability
 			{
 				retrain_cost_bonus bonus 1 requires factions { eastern_european, southern_european, }
-				construction_cost_bonus_wooden bonus 15 requires factions { eastern_european, southern_european, }
-				taxable_income_bonus bonus 15 requires factions { eastern_european, southern_european, }
+				construction_cost_bonus_wooden bonus 10 requires factions { eastern_european, southern_european, }
+				taxable_income_bonus bonus 10 requires factions { eastern_european, southern_european, }
 				population_growth_bonus bonus 1 requires factions { eastern_european, southern_european, }
 			}
 			material wooden
@@ -13161,7 +13159,7 @@ building isengard_barracks
 			}
 		}
 		
-		isengard_barracks_lvl2 city requires factions { france, } and event_counter isengard_barracks_lvl2_ready 1
+		isengard_barracks_lvl2 city requires factions { france, } and event_counter isengard_barracks_lvl2_ready 1 and building_present_min_level city_hall council_chambers and building_present_min_level smith blacksmith
 		{
 			capability
 			{
@@ -13186,7 +13184,7 @@ building isengard_barracks
 			}
 		}
 		
-		isengard_barracks_lvl3 city requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1
+		isengard_barracks_lvl3 city requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1 and building_present_min_level city_hall city_hall and building_present_min_level smith armourer
 		{
 			capability
 			{
@@ -13222,7 +13220,7 @@ building c_isengard_barracks
 	convert_to isengard_barracks
 	levels c_isengard_barracks_lvl1 c_isengard_barracks_lvl2 c_isengard_barracks_lvl3
 	{
-		c_isengard_barracks_lvl1 castle requires factions { france, } and event_counter isengard_barracks_lvl1_ready 1
+		c_isengard_barracks_lvl1 castle requires factions { france, } and event_counter isengard_barracks_lvl1_ready 1 
 		{
 			capability
 			{
@@ -13243,7 +13241,7 @@ building c_isengard_barracks
 			}
 		}
 		
-		c_isengard_barracks_lvl2 castle requires factions { france, } and event_counter isengard_barracks_lvl2_ready 1
+		c_isengard_barracks_lvl2 castle requires factions { france, } and event_counter isengard_barracks_lvl2_ready 1 and building_present_min_level castle_hall c_council_chambers and building_present_min_level smith blacksmith
 		{
 			capability
 			{
@@ -13268,7 +13266,7 @@ building c_isengard_barracks
 			}
 		}
 		
-		c_isengard_barracks_lvl3 castle requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1
+		c_isengard_barracks_lvl3 castle requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1 and building_present_min_level city_hall city_hall and building_present_min_level smith armourer
 		{
 			capability
 			{

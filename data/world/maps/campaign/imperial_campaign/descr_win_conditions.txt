@@ -92,26 +92,26 @@ outlive hre gundabad
 
 saxons
 hold_regions Mithlond_Province Imladris_Province Eregion_Province
-take_regions 12
+take_regions 24
 outlive england portugal hre
 short_campaign hold_regions Mithlond_Province
-take_regions 8
+take_regions 16
 outlive portugal
 
 ireland
 hold_regions Celebrant_Province Deep_Mirkwood_Province
-take_regions 12
+take_regions 24
 outlive england poland
 short_campaign hold_regions Celebrant_Province 
-take_regions 10
+take_regions 20
 outlive poland
 
 mongols
 hold_regions Elven_Mirkwood_Province Deep_Mirkwood_Province
-take_regions 16
+take_regions 32
 outlive england poland
 short_campaign hold_regions Elven_Mirkwood_Province 
-take_regions 12
+take_regions 24
 outlive poland
 
 teutonic_order

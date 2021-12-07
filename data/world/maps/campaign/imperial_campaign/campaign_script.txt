@@ -4151,6 +4151,7 @@ script ; first line of script, must exist!
             log always ---------------------------isengard player start----------------------------------
             historic_event isengard_start factions { france, }
             historic_event isengard_ring factions { france, }
+            kill_character ushgol_1
             increment_kings_purse france 600
             add_money france 1500
             if I_IsFactionAIControlled sicily
@@ -4611,7 +4612,6 @@ script ; first line of script, must exist!
         if not I_IsFactionAIControlled poland
             log always ---------------------------dg player start----------------------------------
             historic_event shadow_start factions { poland, }
-            increment_kings_purse poland 300
             if I_IsFactionAIControlled scotland 
                 increment_kings_purse scotland 800		
             end_if
@@ -7316,7 +7316,7 @@ script ; first line of script, must exist!
         inc_counter ent_counter 1
         
         ;if I_TurnNumber = 1
-        if I_CompareCounter ent_counter = 10
+        if I_CompareCounter ent_counter = 20
         and I_IsFactionAIControlled ireland
         and I_IsFactionAIControlled mongols
         and I_SettlementOwner Fangorn = france
@@ -7429,7 +7429,7 @@ script ; first line of script, must exist!
             terminate_monitor
         end_if
     
-        if I_EventCounter ents_spawned = 1
+        if I_EventCounter ents_spawned = 10
         and not I_SettlementOwner Fangorn = france
         and I_SettlementOwner Nan_Curunir = france
             inc_counter ents_attack 1
@@ -31408,6 +31408,119 @@ script ; first line of script, must exist!
    ;    console_command control russia
    ;end_monitor
 
+; reset the event on the turn of the faction that triggered it
+
+    monitor_event FactionTurnStart
+        if not I_HotseatEnabled
+            terminate_monitor
+        end_if
+
+        if I_CompareCounter faction_ID_sicily == 1
+        and I_EventCounter ENABLED_CONSOLE_SICILY > 0
+            set_event_counter ENABLED_CONSOLE_SICILY 0
+        end_if
+        if I_CompareCounter faction_ID_denmark == 1
+        and I_EventCounter ENABLED_CONSOLE_DENMARK > 0
+            set_event_counter ENABLED_CONSOLE_DENMARK 0
+        end_if
+        if I_CompareCounter faction_ID_milan == 1
+        and I_EventCounter ENABLED_CONSOLE_MILAN > 0
+            set_event_counter ENABLED_CONSOLE_MILAN 0
+        end_if
+        if I_CompareCounter faction_ID_normans == 1
+        and I_EventCounter ENABLED_CONSOLE_NORMANS > 0
+            set_event_counter ENABLED_CONSOLE_NORMANS 0
+        end_if
+        if I_CompareCounter faction_ID_turks == 1
+        and I_EventCounter ENABLED_CONSOLE_TURKS > 0
+            set_event_counter ENABLED_CONSOLE_TURKS 0
+        end_if
+        if I_CompareCounter faction_ID_scotland == 1
+        and I_EventCounter ENABLED_CONSOLE_SCOTLAND > 0
+            set_event_counter ENABLED_CONSOLE_SCOTLAND 0
+        end_if
+        if I_CompareCounter faction_ID_timurids == 1
+        and I_EventCounter ENABLED_CONSOLE_TIMURIDS > 0
+            set_event_counter ENABLED_CONSOLE_TIMURIDS 0
+        end_if
+        if I_CompareCounter faction_ID_byzantium == 1
+        and I_EventCounter ENABLED_CONSOLE_BYZANTIUM > 0
+            set_event_counter ENABLED_CONSOLE_BYZANTIUM 0
+        end_if
+        if I_CompareCounter faction_ID_moors == 1
+        and I_EventCounter ENABLED_CONSOLE_MOORS > 0
+            set_event_counter ENABLED_CONSOLE_MOORS 0
+        end_if
+        if I_CompareCounter faction_ID_hungary == 1
+        and I_EventCounter ENABLED_CONSOLE_HUNGARY > 0
+            set_event_counter ENABLED_CONSOLE_HUNGARY 0
+        end_if
+        if I_CompareCounter faction_ID_norway == 1
+        and I_EventCounter ENABLED_CONSOLE_NORWAY > 0
+            set_event_counter ENABLED_CONSOLE_NORWAY 0
+        end_if
+        if I_CompareCounter faction_ID_saxons == 1
+        and I_EventCounter ENABLED_CONSOLE_SAXONS > 0
+            set_event_counter ENABLED_CONSOLE_SAXONS 0
+        end_if
+        if I_CompareCounter faction_ID_ireland == 1
+        and I_EventCounter ENABLED_CONSOLE_IRELAND > 0
+            set_event_counter ENABLED_CONSOLE_IRELAND 0
+        end_if
+        if I_CompareCounter faction_ID_mongols == 1
+        and I_EventCounter ENABLED_CONSOLE_MONGOLS > 0
+            set_event_counter ENABLED_CONSOLE_MONGOLS 0
+        end_if
+        if I_CompareCounter faction_ID_teutonic_order == 1
+        and I_EventCounter ENABLED_CONSOLE_TEUTONIC_ORDER > 0
+            set_event_counter ENABLED_CONSOLE_TEUTONIC_ORDER 0
+        end_if
+        if I_CompareCounter faction_ID_aztecs == 1
+        and I_EventCounter ENABLED_CONSOLE_AZTECS > 0
+            set_event_counter ENABLED_CONSOLE_AZTECS 0
+        end_if
+        if I_CompareCounter faction_ID_france == 1
+        and I_EventCounter ENABLED_CONSOLE_FRANCE > 0
+            set_event_counter ENABLED_CONSOLE_FRANCE 0
+        end_if
+        if I_CompareCounter faction_ID_england == 1
+        and I_EventCounter ENABLED_CONSOLE_ENGLAND > 0
+            set_event_counter ENABLED_CONSOLE_ENGLAND 0
+        end_if
+        if I_CompareCounter faction_ID_poland == 1
+        and I_EventCounter ENABLED_CONSOLE_POLAND > 0
+            set_event_counter ENABLED_CONSOLE_POLAND 0
+        end_if
+        if I_CompareCounter faction_ID_hre == 1
+        and I_EventCounter ENABLED_CONSOLE_HRE > 0
+            set_event_counter ENABLED_CONSOLE_HRE 0
+        end_if
+        if I_CompareCounter faction_ID_portugal == 1
+        and I_EventCounter ENABLED_CONSOLE_PORTUGAL > 0
+            set_event_counter ENABLED_CONSOLE_PORTUGAL 0
+        end_if
+        if I_CompareCounter faction_ID_venice == 1
+        and I_EventCounter ENABLED_CONSOLE_VENICE > 0
+            set_event_counter ENABLED_CONSOLE_VENICE 0
+        end_if
+        if I_CompareCounter faction_ID_gundabad == 1
+        and I_EventCounter ENABLED_CONSOLE_GUNDABAD > 0
+            set_event_counter ENABLED_CONSOLE_GUNDABAD 0
+        end_if
+        if I_CompareCounter faction_ID_spain == 1
+        and I_EventCounter ENABLED_CONSOLE_SPAIN > 0
+            set_event_counter ENABLED_CONSOLE_SPAIN 0
+        end_if
+        if I_CompareCounter faction_ID_khand == 1
+        and I_EventCounter ENABLED_CONSOLE_KHAND > 0
+            set_event_counter ENABLED_CONSOLE_KHAND 0
+        end_if
+        if I_CompareCounter faction_ID_russia == 1
+        and I_EventCounter ENABLED_CONSOLE_RUSSIA > 0
+            set_event_counter ENABLED_CONSOLE_RUSSIA 0
+        end_if
+    end_monitor
+
     monitor_event ShortcutTriggered ShortcutTriggered object_manager show_console
         if not I_HotseatEnabled
             terminate_monitor
@@ -31600,119 +31713,6 @@ script ; first line of script, must exist!
         end_if
         if I_EventCounter ENABLED_CONSOLE_RUSSIA > 0
             historic_event ENABLED_CONSOLE_RUSSIA
-        end_if
-    end_monitor
-
-; reset the event on the turn of the faction that triggered it
-
-    monitor_event FactionTurnStart
-        if not I_HotseatEnabled
-            terminate_monitor
-        end_if
-
-        if I_CompareCounter faction_ID_sicily == 1
-        and I_EventCounter ENABLED_CONSOLE_SICILY > 0
-            set_event_counter ENABLED_CONSOLE_SICILY 0
-        end_if
-        if I_CompareCounter faction_ID_denmark == 1
-        and I_EventCounter ENABLED_CONSOLE_DENMARK > 0
-            set_event_counter ENABLED_CONSOLE_DENMARK 0
-        end_if
-        if I_CompareCounter faction_ID_milan == 1
-        and I_EventCounter ENABLED_CONSOLE_MILAN > 0
-            set_event_counter ENABLED_CONSOLE_MILAN 0
-        end_if
-        if I_CompareCounter faction_ID_normans == 1
-        and I_EventCounter ENABLED_CONSOLE_NORMANS > 0
-            set_event_counter ENABLED_CONSOLE_NORMANS 0
-        end_if
-        if I_CompareCounter faction_ID_turks == 1
-        and I_EventCounter ENABLED_CONSOLE_TURKS > 0
-            set_event_counter ENABLED_CONSOLE_TURKS 0
-        end_if
-        if I_CompareCounter faction_ID_scotland == 1
-        and I_EventCounter ENABLED_CONSOLE_SCOTLAND > 0
-            set_event_counter ENABLED_CONSOLE_SCOTLAND 0
-        end_if
-        if I_CompareCounter faction_ID_timurids == 1
-        and I_EventCounter ENABLED_CONSOLE_TIMURIDS > 0
-            set_event_counter ENABLED_CONSOLE_TIMURIDS 0
-        end_if
-        if I_CompareCounter faction_ID_byzantium == 1
-        and I_EventCounter ENABLED_CONSOLE_BYZANTIUM > 0
-            set_event_counter ENABLED_CONSOLE_BYZANTIUM 0
-        end_if
-        if I_CompareCounter faction_ID_moors == 1
-        and I_EventCounter ENABLED_CONSOLE_MOORS > 0
-            set_event_counter ENABLED_CONSOLE_MOORS 0
-        end_if
-        if I_CompareCounter faction_ID_hungary == 1
-        and I_EventCounter ENABLED_CONSOLE_HUNGARY > 0
-            set_event_counter ENABLED_CONSOLE_HUNGARY 0
-        end_if
-        if I_CompareCounter faction_ID_norway == 1
-        and I_EventCounter ENABLED_CONSOLE_NORWAY > 0
-            set_event_counter ENABLED_CONSOLE_NORWAY 0
-        end_if
-        if I_CompareCounter faction_ID_saxons == 1
-        and I_EventCounter ENABLED_CONSOLE_SAXONS > 0
-            set_event_counter ENABLED_CONSOLE_SAXONS 0
-        end_if
-        if I_CompareCounter faction_ID_ireland == 1
-        and I_EventCounter ENABLED_CONSOLE_IRELAND > 0
-            set_event_counter ENABLED_CONSOLE_IRELAND 0
-        end_if
-        if I_CompareCounter faction_ID_mongols == 1
-        and I_EventCounter ENABLED_CONSOLE_MONGOLS > 0
-            set_event_counter ENABLED_CONSOLE_MONGOLS 0
-        end_if
-        if I_CompareCounter faction_ID_teutonic_order == 1
-        and I_EventCounter ENABLED_CONSOLE_TEUTONIC_ORDER > 0
-            set_event_counter ENABLED_CONSOLE_TEUTONIC_ORDER 0
-        end_if
-        if I_CompareCounter faction_ID_aztecs == 1
-        and I_EventCounter ENABLED_CONSOLE_AZTECS > 0
-            set_event_counter ENABLED_CONSOLE_AZTECS 0
-        end_if
-        if I_CompareCounter faction_ID_france == 1
-        and I_EventCounter ENABLED_CONSOLE_FRANCE > 0
-            set_event_counter ENABLED_CONSOLE_FRANCE 0
-        end_if
-        if I_CompareCounter faction_ID_england == 1
-        and I_EventCounter ENABLED_CONSOLE_ENGLAND > 0
-            set_event_counter ENABLED_CONSOLE_ENGLAND 0
-        end_if
-        if I_CompareCounter faction_ID_poland == 1
-        and I_EventCounter ENABLED_CONSOLE_POLAND > 0
-            set_event_counter ENABLED_CONSOLE_POLAND 0
-        end_if
-        if I_CompareCounter faction_ID_hre == 1
-        and I_EventCounter ENABLED_CONSOLE_HRE > 0
-            set_event_counter ENABLED_CONSOLE_HRE 0
-        end_if
-        if I_CompareCounter faction_ID_portugal == 1
-        and I_EventCounter ENABLED_CONSOLE_PORTUGAL > 0
-            set_event_counter ENABLED_CONSOLE_PORTUGAL 0
-        end_if
-        if I_CompareCounter faction_ID_venice == 1
-        and I_EventCounter ENABLED_CONSOLE_VENICE > 0
-            set_event_counter ENABLED_CONSOLE_VENICE 0
-        end_if
-        if I_CompareCounter faction_ID_gundabad == 1
-        and I_EventCounter ENABLED_CONSOLE_GUNDABAD > 0
-            set_event_counter ENABLED_CONSOLE_GUNDABAD 0
-        end_if
-        if I_CompareCounter faction_ID_spain == 1
-        and I_EventCounter ENABLED_CONSOLE_SPAIN > 0
-            set_event_counter ENABLED_CONSOLE_SPAIN 0
-        end_if
-        if I_CompareCounter faction_ID_khand == 1
-        and I_EventCounter ENABLED_CONSOLE_KHAND > 0
-            set_event_counter ENABLED_CONSOLE_KHAND 0
-        end_if
-        if I_CompareCounter faction_ID_russia == 1
-        and I_EventCounter ENABLED_CONSOLE_RUSSIA > 0
-            set_event_counter ENABLED_CONSOLE_RUSSIA 0
         end_if
     end_monitor
     
