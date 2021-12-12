@@ -1635,7 +1635,6 @@ script ; first line of script, must exist!
     monitor_event PreFactionTurnStart FactionType norway ;Khazad-dûm
         log always -----------------------------------Khazad-dûm Turn-------------------------------
         set_counter faction_ID_norway 1
-        set_counter faction_ID_norway 1
         set_event_counter norway_turn 1
         set_event_counter good_ring_faction 1
         if I_TurnNumber = 28
@@ -1838,9 +1837,6 @@ script ; first line of script, must exist!
         set_event_counter slave_turn 1
         ;call_object_shortcut - screen_grab
     end_monitor
-    
-    set_event_counter reunited_kingdom 1
-    set_event_counter reunited_kingdom 0
     
     ;############################### Main ##############################
 
@@ -6395,44 +6391,15 @@ script ; first line of script, must exist!
     declare_counter oathbreaker_timer
     
     ;3 times battle limit for Oathbreakers
-    monitor_event PostBattle FactionType turks
-        log always ---------------------------oathbreaker monitor---------------------------------	
-        if I_IsFactionAIControlled turks
-            terminate_monitor
-        end_if
-        if I_FactionLeaderTrait turks Aragorn = 0
-            and I_EventCounter aragorn_army_dead_middle = 0
-            set_counter oathbreaker_timer -1
-            terminate_monitor
-        end_if
-        if I_BattlePlayerArmyNumberOfAttribute oathbreakers_unit > 0
-            inc_counter oathbreaker_timer 1
-            campaign_wait 0.1
-        end_if
-        if I_FactionLeaderTrait turks Aragorn = 0
-            set_counter oathbreaker_timer 4
-        end_if
-        if I_CompareCounter oathbreaker_timer = 4
-            set_counter oathbreaker_timer -1
-            if I_EventCounter is_the_ai = 0
-                while I_CompareCounter oathbreaker_timer = -1
-                    and I_EventCounter is_the_ai = 0
-                end_while
-                historic_event aragorn_army_dead_final factions { turks, }
-                destroy_units turks Oathbreakers
-                if I_CharacterExists King_of_the_Dead
-                    kill_character King_of_the_Dead
-                end_if
-                terminate_monitor
-            end_if
-            while I_CompareCounter oathbreaker_timer = -1
-                and I_EventCounter is_the_ai = 1
-            end_while
-            historic_event aragorn_army_dead_final factions { turks, }
-            destroy_units turks Oathbreakers
+    monitor_event PostBattle Trait KingDead > 0
+        log always ---------------------oathbreaker monitor---------------------
+        inc_counter oathbreaker_timer 1
+        if I_CompareCounter oathbreaker_timer = 3
             if I_CharacterExists King_of_the_Dead
                 kill_character King_of_the_Dead
             end_if
+            historic_event aragorn_army_dead_final factions { turks, }
+            destroy_units turks Oathbreakers
             terminate_monitor
         end_if
     end_monitor
@@ -7429,13 +7396,13 @@ script ; first line of script, must exist!
             terminate_monitor
         end_if
     
-        if I_EventCounter ents_spawned = 10
+        if I_EventCounter ents_spawned = 1
         and not I_SettlementOwner Fangorn = france
         and I_SettlementOwner Nan_Curunir = france
             inc_counter ents_attack 1
             
             ;if I_CompareCounter ents_attack = 2
-            if I_CompareCounter ents_attack = 5
+            if I_CompareCounter ents_attack = 10
             and I_IsFactionAIControlled ireland
             and I_IsFactionAIControlled mongols
                 set_counter ents_attack 0
@@ -9264,10 +9231,7 @@ script ; first line of script, must exist!
         log always ---------------------------enedwaith forced ally isengard-------------------------------- 
         set_event_counter france_allied_teutonic 1
     end_monitor
-
-
-
-
+    
     ;########################## Faction: Dunland #########################
 
     ; Defeat Rohan
@@ -15424,7 +15388,7 @@ script ; first line of script, must exist!
             move balin_1, 245, 341
             spawn_army
                 faction hre
-                character	Orcobal, named character, age 22, x 237, y 345, direction W, label guardian_moria_1
+                character	Orcobal, named character, age 22, x 237, y 345, portrait Orcobal, direction W, label guardian_moria_1
                 traits		OrcRace 1, AIBoost 1, BattleChivalryEvil 2, GoodAmbusher 2, GoodCommander 2, GoodDefender 1, HarshRuler 1, Intelligent 1, LoyaltyStarter 1, OneRingAvailable 1
                 unit		Goblin Bodyguards				exp 5 armour 0 weapon_lvl 0
                 unit		Warg Riders					exp 2 armour 0 weapon_lvl 0
@@ -15485,7 +15449,7 @@ script ; first line of script, must exist!
                 move balin_1, 245, 341
                 spawn_army
                     faction hre
-                    character	Orcobal, named character, age 22, x 237, y 345, direction W, label guardian_moria_1
+                    character	Orcobal, named character, age 22, x 237, y 345, portrait Orcobal, direction W, label guardian_moria_1
                     traits		OrcRace 1, AIBoost 1, BattleChivalryEvil 2, GoodAmbusher 2, GoodCommander 2, GoodDefender 1, HarshRuler 1, Intelligent 1, LoyaltyStarter 1, OneRingAvailable 1
                     unit		Goblin Bodyguards				exp 5 armour 0 weapon_lvl 0
                     unit		Warg Riders					exp 2 armour 0 weapon_lvl 0
@@ -15504,7 +15468,7 @@ script ; first line of script, must exist!
             campaign_wait 5
             spawn_army
                 faction hre
-                character	Orcobal, named character, age 22, x 244, y 341, direction E, label guardian_moria_2
+                character	Orcobal, named character, age 22, x 244, y 341, portrait Orcobal, direction E, label guardian_moria_2
                 traits		OrcRace 1, BattleChivalryEvil 2, GoodAmbusher 2, GoodCommander 2, GoodDefender 1, HarshRuler 1, Intelligent 1, LoyaltyStarter 1, OneRingAvailable 1
                 unit		Goblin Bodyguards				exp 5 armour 0 weapon_lvl 0
                 unit		Warg Riders					exp 2 armour 0 weapon_lvl 0
@@ -31162,35 +31126,35 @@ script ; first line of script, must exist!
     
     declare_counter palantiri
     
-    monitor_event SettlementTurnEnd SettlementBuildingExists = elostirion_palantir
+    monitor_event SettlementTurnStart SettlementBuildingExists = elostirion_palantir
     and SettlementIsLocal
     
         inc_counter palantiri 1
         
     end_monitor
     
-    monitor_event SettlementTurnEnd SettlementBuildingExists = orthanc_palantir
+    monitor_event SettlementTurnStart SettlementBuildingExists = orthanc_palantir
     and SettlementIsLocal
     
         inc_counter palantiri 1
         
     end_monitor
     
-    monitor_event SettlementTurnEnd SettlementBuildingExists = anor_palantir
+    monitor_event SettlementTurnStart SettlementBuildingExists = anor_palantir
     and SettlementIsLocal
     
         inc_counter palantiri 1
         
     end_monitor
     
-    monitor_event SettlementTurnEnd SettlementBuildingExists = ithil_palantir
+    monitor_event SettlementTurnStart SettlementBuildingExists = ithil_palantir
     and SettlementIsLocal
     
         inc_counter palantiri 1
         
     end_monitor
     
-    monitor_event SettlementTurnEnd SettlementBuildingExists = mirror_of_galadriel
+    monitor_event SettlementTurnStart SettlementBuildingExists = mirror_of_galadriel
     and SettlementIsLocal
     and FactionCultureType greek
     
@@ -31198,7 +31162,33 @@ script ; first line of script, must exist!
         
     end_monitor
     
+    monitor_event FactionTurnEnd I_HotseatEnabled = 1
+    and FactionIsLocal
+    
+        if I_CompareCounter palantiri > 0
+            campaign_wait 3
+            console_command toggle_fow
+            campaign_wait 5
+            if I_CompareCounter palantiri > 1
+                campaign_wait 5
+            end_if
+            if I_CompareCounter palantiri > 2
+                campaign_wait 5
+            end_if
+            if I_CompareCounter palantiri > 3
+                campaign_wait 5
+            end_if
+            if I_CompareCounter palantiri > 4
+                campaign_wait 5
+            end_if
+            console_command toggle_fow
+        end_if
+        set_counter palantiri 0
+        
+    end_monitor
+    
     monitor_event FactionTurnStart FactionIsLocal
+    and I_HotseatEnabled = 0
         
         if I_CompareCounter palantiri > 0
             campaign_wait 3
@@ -31984,6 +31974,7 @@ declare_counter second_ring
 declare_counter elephant_gate_tier3
 declare_counter third_ring
 declare_counter engage_enemy
+declare_counter obj_set
 
 monitor_event GeneralAssaultsGeneral CharacterIsLocal
 and FactionType turks
@@ -32117,7 +32108,7 @@ monitor_event ButtonPressed ButtonPressed prebattle_fight_button
 	
 end_monitor
 
-monitor_conditions I_InBattle 
+monitor_conditions I_BattleStarted
 and I_CompareCounter labels_set = 0
 
     battle_wait 0.1
@@ -32125,7 +32116,7 @@ and I_CompareCounter labels_set = 0
     set_counter battle_start 1
 	
 if I_BattlePlayerArmyIsAttacker
-
+    log always ------------------------set labels-------------------------------------
     ;;;Army 1
     set_counter player_unit_count 0
 	
@@ -32425,8 +32416,9 @@ if I_BattlePlayerArmyIsAttacker
     end_if
 end_if
 
-if ! I_BattlePlayerArmyIsAttacker
+if not I_BattlePlayerArmyIsAttacker
     ;;;Army 1
+    log always ------------------------set labels-------------------------------------
     set_counter enemy_unit_count 0
     if I_BattleEnemyArmyNumberOfUnits > 0
     label_unit 0 0 0 a1u1
@@ -32940,7 +32932,7 @@ if I_BattlePlayerArmyIsAttacker
     end_if
 end_if
 
-if ! I_BattlePlayerArmyIsAttacker
+if not I_BattlePlayerArmyIsAttacker
     if I_CompareCounter player_unit_count >= 1
     if I_UnitPercentageAmmoLeft a2u1 > 0
 		set_counter pu1_missile 1
@@ -33163,15 +33155,17 @@ if ! I_BattlePlayerArmyIsAttacker
     end_if
 end_if
 
-    if ! I_BattleIsSiegeBattle
-    and ! I_BattleIsSallyOutBattle
+    if not I_BattleIsSiegeBattle
+    and not I_BattleIsSallyOutBattle
 		set_counter open_battle 1
         set_counter ha_fix 1
+        log always ------------------------open battle set-------------------------------------
     end_if
 	
     if I_BattleEnemyArmyNumberOfMountClass elephant > 0
     and I_BattleIsSiegeBattle
 		set_counter elephant_fix 1
+        log always ------------------------elephant fix enabled-------------------------------------
     end_if
 	
 set_counter labels_set 1
@@ -33181,47 +33175,66 @@ monitor_event BattleConflictPhaseCommenced FactionIsLocal
 
     battle_wait 5
 	
-    set_counter script_delay 1
-	if I_CompareCounter script_delay = 1
-	
-		if not I_BattlePlayerArmyIsAttacker
-			if I_BattleIsSiegeBattle
-				ai_gta_plan_set 0 ATTACK_SETTLEMENT
-				ai_active_set on
-            end_if
-			if I_BattleIsRiverBattle
-                ai_gta_add_objective 0 ASSAULT_CROSSING 999
-                ai_gta_plan_set 0 ATTACK_ALL
-				ai_active_set on
-			end_if
-		end_if
-		
-		if I_BattlePlayerArmyIsAttacker
-		and I_CompareCounter open_battle = 1
-			if I_CompareCounter attacker_missile < 10
-				ai_gta_add_objective 1 DEFEND_LINE 999
-				ai_gta_plan_set 1 DEFEND_FEATURE
-				battle_wait 1
-				ai_active_set on
-			end_if
-			if I_CompareCounter attacker_missile >= 10
-				ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-				ai_gta_plan_set 1 ATTACK_ALL
-				battle_wait 1
-				ai_active_set on
-			end_if
-		end_if
-	end_if	
-	set_counter script_delay 0
+    if not I_BattlePlayerArmyIsAttacker
+        if I_BattleIsSiegeBattle
+            ai_gta_plan_set 1 ATTACK_SETTLEMENT
+            log always ------------------------ai_gta_plan_set ATTACK_SETTLEMENT (start)-------------------------------------
+            ai_active_set on
+        end_if
+        if I_BattleIsRiverBattle
+            ai_gta_add_objective 1 ASSAULT_CROSSING 999
+            set_counter obj_set 1
+            ai_gta_plan_set 1 ATTACK_ALL
+            ai_active_set on
+            log always ------------------------ai_gta_plan_set ATTACK_ALL (start)-------------------------------------
+            log always ------------------------ai_gta_add_objective ASSAULT_CROSSING (start)-------------------------------------
+        end_if
+    end_if
+    
+    if I_BattlePlayerArmyIsAttacker
+    and I_CompareCounter open_battle = 1
+        if I_CompareCounter attacker_missile < 10
+            ai_gta_add_objective 1 DEFEND_LINE 999
+            set_counter obj_set 1
+            log always ------------------------ai_gta_add_objective DEFEND_LINE (enemy missile < 10)-------------------------------------
+            ai_gta_plan_set 1 DEFEND_FEATURE
+            log always ------------------------ai_gta_plan_set DEFEND_FEATURE (enemy missile < 10)-------------------------------------
+            battle_wait 1
+            ai_active_set on
+        end_if
+        if I_CompareCounter attacker_missile >= 10
+            ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+            set_counter obj_set 1
+            log always ------------------------ai_gta_plan_set ATTACK_ENEMY_BATTLEGROUP (enemy missile > 10)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ai_gta_plan_set ATTACK_ALL (enemy missile > 10)-------------------------------------
+            battle_wait 1
+            ai_active_set on
+        end_if
+    end_if
 	
 end_monitor
 
-monitor_event BattleReinforcementsArrive ! ArmyIsLocal
-and I_CompareCounter open_battle = 1
+monitor_event BattleReinforcementsArrive not ArmyIsLocal
+and not I_BattleIsSiegeBattle
+and not I_BattleIsSallyOutBattle
 
+    
     set_counter ai_reinforcements 1
-    battle_wait 300
-    set_counter ai_reinforcements 0
+    log always ------------------------ai reinforcement arrive waite-------------------------------------
+    battle_wait 200
+    set_counter ai_reinforcements 2
+    log always ------------------------ai reinforcement arrive go-------------------------------------
+    
+end_monitor
+
+monitor_event BattleReinforcementsArrive ArmyIsLocal
+    
+    log always -------------------------- player reinforcements arrive--------------------------
+    battle_wait 7
+    if I_BattlePlayerArmyNumberOfAttribute oathbreakers_unit > 0
+        inc_counter oathbreaker_timer 1
+    end_if
     
 end_monitor
 
@@ -33230,6 +33243,7 @@ and I_BattleIsSiegeBattle
 and I_BattlePlayerArmyIsAttacker
 
     set_counter player_breached 1
+    log always ------------------------ ai set - player breached-------------------------------------
     
 end_monitor
 
@@ -33238,13 +33252,16 @@ and I_BattleIsSiegeBattle
 and I_BattlePlayerArmyIsAttacker
 
     set_counter player_breached 1
+    log always ------------------------ ai set - player breached-------------------------------------
     
 end_monitor
 
 monitor_conditions I_BattleStarted
 and I_BattlePlayerArmyIsAttacker
     
-    battle_wait 5
+    battle_wait 20
+    
+    log always -------------------------ai defending---------------
     
 	if I_CompareCounter enemy_unit_count > 0
     if I_IsUnitUnderFire a2u1
@@ -33666,214 +33683,342 @@ and I_BattlePlayerArmyIsAttacker
     end_if
     end_if
     end_if
+    if I_CompareCounter ai_reinforcements = 2
+        set_counter ai_reinforcements 0
+    end_if
 	if I_CompareCounter open_battle > 0
         if I_CompareCounter ai_reinforcements = 1
         and I_CompareCounter engage_enemy = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 DEFEND_LINE 999
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective DEFEND_LINE (wait for reinforcements)-------------------------------------
 			ai_gta_plan_set 1 DEFEND_FEATURE
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            log always ------------------------ ai_gta_plan_set DEFEND_FEATURE (wait for reinforcements)-------------------------------------
+            ai_active_set on
+			battle_wait 10
         end_if
 		if I_CompareCounter ob_under_fire > 0
         and I_CompareCounter ai_reinforcements = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (under fire!)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL (under fire!)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_CompareCounter ob_under_fire < 0
         and I_CompareCounter engage_enemy = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 DEFEND_LINE 999
-			ai_gta_plan_set 1 DEFEND_FEATURE
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective DEFEND_LINE (firing at enemy)-------------------------------------
+            ai_gta_plan_set 1 DEFEND_FEATURE
+            log always ------------------------ ai_gta_plan_set DEFEND_FEATURE (firing at enemy)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_CompareCounter ob_engaged > 3
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (army engaged)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (army engaged)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
-		if I_UnitEnemyUnitInRadius a2u1 100
+		if I_UnitEnemyUnitInRadius a2u1 50
         and I_CompareCounter ai_reinforcements = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (enemy close to general)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (enemy close to general)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_PercentageUnitKilled a2u1 > 10
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 10% general killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 10% general killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
-		if I_PercentageOfArmyKilled 1 0 > 20
+		if I_PercentageOfArmyKilled 1 0 > 7
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 7% army killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 7% army killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_UnitEnemyUnitInRadius a2u1 220
 		and I_BattleEnemyArmyNumberOfUnitClass missile = 0
 		and I_BattlePlayerArmyNumberOfUnitClass missile > 0
         and I_CompareCounter ai_reinforcements = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many archers)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many archers)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_BattleEnemyArmyPercentageOfUnitCategory cavalry > 60
 		and I_UnitEnemyUnitInRadius a2u1 350
         and I_CompareCounter ai_reinforcements = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many cav units)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many cavalry)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 	end_if
 	if I_BattleIsSiegeBattle
 	and I_BattleSettlementFortificationLevel = none
 		if I_CompareCounter ob_under_fire > 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (under fire!)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL (under fire!)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_CompareCounter ob_under_fire < 0
         and I_CompareCounter engage_enemy = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 DEFEND_LINE 999
-			ai_gta_plan_set 1 DEFEND_FEATURE
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
-		end_if
-		if I_CompareCounter ob_engaged > 2
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective DEFEND_LINE (firing at enemy)-------------------------------------
+            ai_gta_plan_set 1 DEFEND_FEATURE
+            log always ------------------------ ai_gta_plan_set DEFEND_FEATURE (firing at enemy)-------------------------------------
+            ai_active_set on
+			battle_wait 10
+        end_if
+		if I_CompareCounter ob_engaged > 1
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (army engaged)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (army engaged)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
-		if I_UnitEnemyUnitInRadius a2u1 100
+		if I_UnitEnemyUnitInRadius a2u1 50
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (enemy close to general)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (enemy close to general)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_PercentageUnitKilled a2u1 > 10
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 10% general killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 10% general killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
-		if I_PercentageOfArmyKilled 1 0 > 20
+		if I_PercentageOfArmyKilled 1 0 > 7
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 7% army killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 7% army killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_UnitEnemyUnitInRadius a2u1 220
 		and I_BattleEnemyArmyNumberOfUnitClass missile = 0
 		and I_BattlePlayerArmyNumberOfUnitClass missile > 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many archers)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many archers)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_BattleEnemyArmyPercentageOfUnitCategory cavalry > 60
 		and I_UnitEnemyUnitInRadius a2u1 350
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many cav units)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many cavakry)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 	end_if
     if I_CompareCounter player_breached > 0
 		if I_CompareCounter ob_under_fire > 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (under fire!)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL (under fire!)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_CompareCounter ob_under_fire < 0
         and I_CompareCounter engage_enemy = 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 DEFEND_LINE 999
-			ai_gta_plan_set 1 DEFEND_FEATURE
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective DEFEND_LINE (firing at enemy)-------------------------------------
+            ai_gta_plan_set 1 DEFEND_FEATURE
+            log always ------------------------ ai_gta_plan_set DEFEND_FEATURE (firing at enemy)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_CompareCounter ob_engaged > 2
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (army engaged)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (army engaged)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_UnitEnemyUnitInRadius a2u1 50
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (enemy close to general)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (enemy close to general)-------------------------------------
+            ai_active_set on
+			battle_wait 10
 		end_if
 		if I_PercentageUnitKilled a2u1 > 10
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 10% general killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 10% general killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
-		if I_PercentageOfArmyKilled 1 0 > 20
+		if I_PercentageOfArmyKilled 1 0 > 7
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 7% army killed)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 7% army killed)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_UnitEnemyUnitInRadius a2u1 220
 		and I_BattleEnemyArmyNumberOfUnitClass missile = 0
 		and I_BattlePlayerArmyNumberOfUnitClass missile > 0
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many archers)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many archers)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 		if I_BattleEnemyArmyPercentageOfUnitCategory cavalry > 60
 		and I_UnitEnemyUnitInRadius a2u1 350
+            if I_CompareCounter obj_set = 1
+                ai_gta_del_objective 1 0
+            end_if
 			ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
-			ai_gta_plan_set 1 ATTACK_ALL
-			battle_wait 1
-			ai_active_set on
-			battle_wait 30
+            set_counter obj_set 1
+            log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> enemy to many cav units)-------------------------------------
+            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> enemy to many cavakry)-------------------------------------
+            ai_active_set on
+			battle_wait 10
             set_counter engage_enemy 1
 		end_if
 	end_if
@@ -33884,9 +34029,10 @@ monitor_conditions I_BattleStarted
 and not I_BattlePlayerArmyIsAttacker
 and I_BattleIsSallyOutBattle
 
-	ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+	ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (sally out!)-------------------------------------
 	ai_active_set on
-    battle_wait 30
+    battle_wait 10
 
 end_monitor
 
@@ -33895,43 +34041,496 @@ monitor_conditions I_BattleStarted
 and not I_BattlePlayerArmyIsAttacker
 and I_CompareCounter open_battle = 1
 
+
+    battle_wait 20
+    
+    log always -------------------------ai attacking---------------
+    
+	if I_CompareCounter enemy_unit_count > 0
+    if I_IsUnitUnderFire a1u1
+    inc_counter ob_under_fire 2
+    end_if
+    if I_UnitStatus a1u1 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u1 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u1 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u1 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u1 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 1
+    if I_IsUnitUnderFire a1u2
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u2 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u2 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u2 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u2 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u2 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 2
+    if I_IsUnitUnderFire a1u3
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u3 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u3 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u3 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u3 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u3 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 3
+    if I_IsUnitUnderFire a1u4
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u4 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u4 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u4 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u4 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u4 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 4
+    if I_IsUnitUnderFire a1u5
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u5 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u5 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u5 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u5 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u5 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 5
+    if I_IsUnitUnderFire a1u6
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u6 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u6 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u6 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u6 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u6 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 6
+    if I_IsUnitUnderFire a1u7
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u7 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u7 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u7 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u7 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u7 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 7
+    if I_IsUnitUnderFire a1u8
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u8 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u8 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u8 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u8 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u8 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 8
+    if I_IsUnitUnderFire a1u9
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u9 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u9 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u9 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u9 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u9 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 9
+    if I_IsUnitUnderFire a1u10
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u10 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u10 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u10 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u10 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u10 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 10
+    if I_IsUnitUnderFire a1u11
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u11 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u11 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u11 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u11 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u11 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 11
+    if I_IsUnitUnderFire a1u12
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u12 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u12 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u12 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u12 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u12 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 12
+    if I_IsUnitUnderFire a1u13
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u13 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u13 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u13 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u13 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u13 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 13
+    if I_IsUnitUnderFire a1u14
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u14 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u14 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u14 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u14 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u14 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 14
+    if I_IsUnitUnderFire a1u15
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u15 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u15 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u15 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u15 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u15 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 15
+    if I_IsUnitUnderFire a1u16
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u16 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u16 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u16 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u16 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u16 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 16
+    if I_IsUnitUnderFire a1u17
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u17 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u17 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u17 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u17 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u17 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 17
+    if I_IsUnitUnderFire a1u18
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u18 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u18 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u18 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u18 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u18 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count > 18
+    if I_IsUnitUnderFire a1u19
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u19 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u19 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u19 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u19 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u19 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    if I_CompareCounter enemy_unit_count = 20
+    if I_IsUnitUnderFire a1u20
+    inc_counter ob_under_fire 1
+    end_if
+    if I_UnitStatus a1u20 fighting
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u20 pursuing
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u20 charging
+    inc_counter ob_engaged 1
+    end_if
+    if I_UnitStatus a1u20 missiles_firing
+    inc_counter ob_under_fire -1
+    end_if
+    if I_UnitStatus a1u20 missiles_reloading
+    inc_counter ob_under_fire -1
+    end_if
+
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+    end_if
+
     if I_CompareCounter ai_reinforcements = 1
     and I_CompareCounter engage_enemy = 0
+        if I_CompareCounter obj_set = 1
+            ai_gta_del_objective 0 0
+        end_if
         ai_gta_add_objective 0 DEFEND_LINE 999
-        ai_gta_plan_set 0 DEFEND_FEATURE
-        battle_wait 1
+        set_counter obj_set 1
+        log always ------------------------ ai_gta_add_objective DEFEND_LINE (firing at enemy)-------------------------------------
+		ai_gta_plan_set 0 DEFEND_FEATURE
+		log always ------------------------ ai_gta_plan_set DEFEND_FEATURE (wait for reinforcements)-------------------------------------
         ai_active_set on
-        battle_wait 30
+		battle_wait 10
     end_if
-    if I_CompareCounter ai_reinforcements = 0
+    if I_CompareCounter ai_reinforcements = 2
+        if I_CompareCounter obj_set = 1
+            ai_gta_del_objective 0 0
+        end_if
         ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
-        ai_gta_plan_set 0 ATTACK_ALL
-        battle_wait 1
+        set_counter obj_set 1
+        log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (stop waiting reinfro)-------------------------------------
+		ai_gta_plan_set 0 ATTACK_ALL
+		log always ------------------------ ai_gta_plan_set ATTACK_ALL  (stop waiting reinfro)-------------------------------------
         ai_active_set on
-        battle_wait 30
+		set_counter engage_enemy 1
+		battle_wait 10
     end_if
-    if I_UnitEnemyUnitInRadius a1u1 100
+    if I_UnitEnemyUnitInRadius a1u1 50
+        if I_CompareCounter obj_set = 1
+            ai_gta_del_objective 0 0
+        end_if
         ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
-        ai_gta_plan_set 0 ATTACK_ALL
-        battle_wait 1
+        set_counter obj_set 1
+        log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (enemy close to general)-------------------------------------
+		ai_gta_plan_set 0 ATTACK_ALL
+		log always ------------------------ ai_gta_plan_set ATTACK_ALL  (enemy close to general)-------------------------------------
         ai_active_set on
-        battle_wait 30
+		set_counter engage_enemy 1
+		battle_wait 10
     end_if
     if I_PercentageUnitKilled a1u1 > 10
-        ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
-        ai_gta_plan_set 0 ATTACK_ALL
-        battle_wait 1
+        if I_CompareCounter obj_set = 1
+            ai_gta_del_objective 0 0
+        end_if
+		ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+        set_counter obj_set 1
+		log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 10% general killed)-------------------------------------
+		ai_gta_plan_set 0 ATTACK_ALL
+		log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 10% general killed)-------------------------------------
         ai_active_set on
-        battle_wait 30
-        set_counter engage_enemy 1
+		set_counter engage_enemy 1
+		battle_wait 10
     end_if
-    if I_PercentageOfArmyKilled 0 0 > 10
-        ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
-        ai_gta_plan_set 0 ATTACK_ALL
-        battle_wait 1
+    if I_PercentageOfArmyKilled 0 0 > 7
+        if I_CompareCounter obj_set = 1
+            ai_gta_del_objective 0 0
+        end_if
+		ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+        set_counter obj_set 1
+		log always ------------------------ ai_gta_add_objective ATTACK_ENEMY_BATTLEGROUP (> 7% army killed)-------------------------------------
+		ai_gta_plan_set 0 ATTACK_ALL
+		log always ------------------------ ai_gta_plan_set ATTACK_ALL  (> 7% army killed)-------------------------------------
         ai_active_set on
-        battle_wait 30
-        set_counter engage_enemy 1
+		set_counter engage_enemy 1
+		battle_wait 10
     end_if
 
 end_monitor
@@ -33943,6 +34542,8 @@ monitor_event BattleDeploymentPhaseCommenced FactionIsLocal	;deploy stakes
     and I_BattlePlayerArmyNumberOfUnitCategory cavalry > 0
     and I_BattleEnemyArmyNumberOfUnitCategory cavalry = 0
     and I_BattleEnemyArmyNumberOfAttribute stakes > 0
+    
+    log always ------------------------ DEPLOY STAKES-------------------------------------
 
     if I_CompareCounter enemy_unit_count > 0
     unit_deploy_stakes a2u1
@@ -34034,23 +34635,24 @@ end_monitor
 monitor_conditions I_BattleStarted
     and I_CompareCounter ha_fix = 1
     and I_CompareCounter open_battle = 1
-    and ! I_BattlePlayerArmyIsAttacker
-    and ! I_BattleAiAttacking
+    and not I_BattlePlayerArmyIsAttacker
+    and not I_BattleAiAttacking
 
-    ai_gta_plan_set 0 ATTACK_ALL
+    ai_gta_plan_set 1 ATTACK_ALL
     battle_wait 5
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
     set_counter ha_fix 0
+    log always ------------------------ ha fix??-------------------------------------
     
 end_monitor
 
 monitor_conditions I_BattleStarted
     and I_CompareCounter ha_fix = 1
     and I_BattleIsRiverBattle
-    and ! I_BattlePlayerArmyIsAttacker
-    and ! I_BattleAiAssaultingCrossing
+    and not I_BattlePlayerArmyIsAttacker
+    and not I_BattleAiAssaultingCrossing
 
-    ai_gta_add_objective 0 ASSAULT_CROSSING 999
+    ai_gta_add_objective 1 ASSAULT_CROSSING 999
 
     if I_CompareCounter enemy_unit_count > 0
     ai_gta_add_unit_label 0 0 a1u1
@@ -34135,6 +34737,7 @@ monitor_conditions I_BattleStarted
     ai_active_set on
 
     set_counter ha_fix 0
+    log always ------------------------ ha fix crossing??-------------------------------------
 end_monitor
 
 ;;;;;;;;Elephant;;;;;;;;;;;;
@@ -34142,191 +34745,192 @@ end_monitor
 monitor_conditions I_BattleStarted
     and I_CompareCounter elephant_fix = 1
     and I_BattleIsSiegeBattle
-    and ! I_BattleIsFortBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattleIsFortBattle
+    and not I_BattlePlayerArmyIsAttacker
     and I_IsBattleSettlementCastle
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    log always ------------------------ elephant fix castle-------------------------------------
 ;    ai_active_set off
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
-    and ! I_UnitStatus a1u1 running_amok
-    and ! I_UnitDestroyed a1u1
-    and ! I_UnitStatus a1u1 left_battle
-    and ! I_IsUnitRouting a1u1
+    and not I_UnitStatus a1u1 running_amok
+    and not I_UnitDestroyed a1u1
+    and not I_UnitStatus a1u1 left_battle
+    and not I_IsUnitRouting a1u1
     ai_gta_add_unit_label 0 0 a1u1
     end_if
 
     if I_CompareCounter enemy_unit_count > 1
     if I_UnitFormation a1u2 = horde
-    and ! I_UnitStatus a1u2 running_amok
-    and ! I_UnitDestroyed a1u2
-    and ! I_UnitStatus a1u2 left_battle
-    and ! I_IsUnitRouting a1u2
+    and not I_UnitStatus a1u2 running_amok
+    and not I_UnitDestroyed a1u2
+    and not I_UnitStatus a1u2 left_battle
+    and not I_IsUnitRouting a1u2
     ai_gta_add_unit_label 0 0 a1u2
     end_if
 
     if I_CompareCounter enemy_unit_count > 2
     if I_UnitFormation a1u3 = horde
-    and ! I_UnitStatus a1u3 running_amok
-    and ! I_UnitDestroyed a1u3
-    and ! I_UnitStatus a1u3 left_battle
-    and ! I_IsUnitRouting a1u3
+    and not I_UnitStatus a1u3 running_amok
+    and not I_UnitDestroyed a1u3
+    and not I_UnitStatus a1u3 left_battle
+    and not I_IsUnitRouting a1u3
     ai_gta_add_unit_label 0 0 a1u3
     end_if
 
     if I_CompareCounter enemy_unit_count > 3
     if I_UnitFormation a1u4 = horde
-    and ! I_UnitStatus a1u4 running_amok
-    and ! I_UnitDestroyed a1u4
-    and ! I_UnitStatus a1u4 left_battle
-    and ! I_IsUnitRouting a1u4
+    and not I_UnitStatus a1u4 running_amok
+    and not I_UnitDestroyed a1u4
+    and not I_UnitStatus a1u4 left_battle
+    and not I_IsUnitRouting a1u4
     ai_gta_add_unit_label 0 0 a1u4
     end_if
 
     if I_CompareCounter enemy_unit_count > 4
     if I_UnitFormation a1u5 = horde
-    and ! I_UnitStatus a1u5 running_amok
-    and ! I_UnitDestroyed a1u5
-    and ! I_UnitStatus a1u5 left_battle
-    and ! I_IsUnitRouting a1u5
+    and not I_UnitStatus a1u5 running_amok
+    and not I_UnitDestroyed a1u5
+    and not I_UnitStatus a1u5 left_battle
+    and not I_IsUnitRouting a1u5
     ai_gta_add_unit_label 0 0 a1u5
     end_if
 
     if I_CompareCounter enemy_unit_count > 5
     if I_UnitFormation a1u6 = horde
-    and ! I_UnitStatus a1u6 running_amok
-    and ! I_UnitDestroyed a1u6
-    and ! I_UnitStatus a1u6 left_battle
-    and ! I_IsUnitRouting a1u6
+    and not I_UnitStatus a1u6 running_amok
+    and not I_UnitDestroyed a1u6
+    and not I_UnitStatus a1u6 left_battle
+    and not I_IsUnitRouting a1u6
     ai_gta_add_unit_label 0 0 a1u6
     end_if
 
     if I_CompareCounter enemy_unit_count > 6
     if I_UnitFormation a1u7 = horde
-    and ! I_UnitStatus a1u7 running_amok
-    and ! I_UnitDestroyed a1u7
-    and ! I_UnitStatus a1u7 left_battle
-    and ! I_IsUnitRouting a1u7
+    and not I_UnitStatus a1u7 running_amok
+    and not I_UnitDestroyed a1u7
+    and not I_UnitStatus a1u7 left_battle
+    and not I_IsUnitRouting a1u7
     ai_gta_add_unit_label 0 0 a1u7
     end_if
 
     if I_CompareCounter enemy_unit_count > 7
     if I_UnitFormation a1u8 = horde
-    and ! I_UnitStatus a1u8 running_amok
-    and ! I_UnitDestroyed a1u8
-    and ! I_UnitStatus a1u8 left_battle
-    and ! I_IsUnitRouting a1u8
+    and not I_UnitStatus a1u8 running_amok
+    and not I_UnitDestroyed a1u8
+    and not I_UnitStatus a1u8 left_battle
+    and not I_IsUnitRouting a1u8
     ai_gta_add_unit_label 0 0 a1u8
     end_if
 
     if I_CompareCounter enemy_unit_count > 8
     if I_UnitFormation a1u9 = horde
-    and ! I_UnitStatus a1u9 running_amok
-    and ! I_UnitDestroyed a1u9
-    and ! I_UnitStatus a1u9 left_battle
-    and ! I_IsUnitRouting a1u9
+    and not I_UnitStatus a1u9 running_amok
+    and not I_UnitDestroyed a1u9
+    and not I_UnitStatus a1u9 left_battle
+    and not I_IsUnitRouting a1u9
     ai_gta_add_unit_label 0 0 a1u9
     end_if
 
     if I_CompareCounter enemy_unit_count > 9
     if I_UnitFormation a1u10 = horde
-    and ! I_UnitStatus a1u10 running_amok
-    and ! I_UnitDestroyed a1u10
-    and ! I_UnitStatus a1u10 left_battle
-    and ! I_IsUnitRouting a1u10
+    and not I_UnitStatus a1u10 running_amok
+    and not I_UnitDestroyed a1u10
+    and not I_UnitStatus a1u10 left_battle
+    and not I_IsUnitRouting a1u10
     ai_gta_add_unit_label 0 0 a1u10
     end_if
 
     if I_CompareCounter enemy_unit_count > 10
     if I_UnitFormation a1u11 = horde
-    and ! I_UnitStatus a1u11 running_amok
-    and ! I_UnitDestroyed a1u11
-    and ! I_UnitStatus a1u11 left_battle
-    and ! I_IsUnitRouting a1u11
+    and not I_UnitStatus a1u11 running_amok
+    and not I_UnitDestroyed a1u11
+    and not I_UnitStatus a1u11 left_battle
+    and not I_IsUnitRouting a1u11
     ai_gta_add_unit_label 0 0 a1u11
     end_if
 
     if I_CompareCounter enemy_unit_count > 11
     if I_UnitFormation a1u12 = horde
-    and ! I_UnitStatus a1u12 running_amok
-    and ! I_UnitDestroyed a1u12
-    and ! I_UnitStatus a1u12 left_battle
-    and ! I_IsUnitRouting a1u12
+    and not I_UnitStatus a1u12 running_amok
+    and not I_UnitDestroyed a1u12
+    and not I_UnitStatus a1u12 left_battle
+    and not I_IsUnitRouting a1u12
     ai_gta_add_unit_label 0 0 a1u12
     end_if
 
     if I_CompareCounter enemy_unit_count > 12
     if I_UnitFormation a1u13 = horde
-    and ! I_UnitStatus a1u13 running_amok
-    and ! I_UnitDestroyed a1u13
-    and ! I_UnitStatus a1u13 left_battle
-    and ! I_IsUnitRouting a1u13
+    and not I_UnitStatus a1u13 running_amok
+    and not I_UnitDestroyed a1u13
+    and not I_UnitStatus a1u13 left_battle
+    and not I_IsUnitRouting a1u13
     ai_gta_add_unit_label 0 0 a1u13
     end_if
 
     if I_CompareCounter enemy_unit_count > 13
     if I_UnitFormation a1u14 = horde
-    and ! I_UnitStatus a1u14 running_amok
-    and ! I_UnitDestroyed a1u14
-    and ! I_UnitStatus a1u14 left_battle
-    and ! I_IsUnitRouting a1u14
+    and not I_UnitStatus a1u14 running_amok
+    and not I_UnitDestroyed a1u14
+    and not I_UnitStatus a1u14 left_battle
+    and not I_IsUnitRouting a1u14
     ai_gta_add_unit_label 0 0 a1u14
     end_if
 
     if I_CompareCounter enemy_unit_count > 14
     if I_UnitFormation a1u15 = horde
-    and ! I_UnitStatus a1u15 running_amok
-    and ! I_UnitDestroyed a1u15
-    and ! I_UnitStatus a1u15 left_battle
-    and ! I_IsUnitRouting a1u15
+    and not I_UnitStatus a1u15 running_amok
+    and not I_UnitDestroyed a1u15
+    and not I_UnitStatus a1u15 left_battle
+    and not I_IsUnitRouting a1u15
     ai_gta_add_unit_label 0 0 a1u15
     end_if
 
     if I_CompareCounter enemy_unit_count > 15
     if I_UnitFormation a1u16 = horde
-    and ! I_UnitStatus a1u16 running_amok
-    and ! I_UnitDestroyed a1u16
-    and ! I_UnitStatus a1u16 left_battle
-    and ! I_IsUnitRouting a1u16
+    and not I_UnitStatus a1u16 running_amok
+    and not I_UnitDestroyed a1u16
+    and not I_UnitStatus a1u16 left_battle
+    and not I_IsUnitRouting a1u16
     ai_gta_add_unit_label 0 0 a1u16
     end_if
 
     if I_CompareCounter enemy_unit_count > 16
     if I_UnitFormation a1u17 = horde
-    and ! I_UnitStatus a1u17 running_amok
-    and ! I_UnitDestroyed a1u17
-    and ! I_UnitStatus a1u17 left_battle
-    and ! I_IsUnitRouting a1u17
+    and not I_UnitStatus a1u17 running_amok
+    and not I_UnitDestroyed a1u17
+    and not I_UnitStatus a1u17 left_battle
+    and not I_IsUnitRouting a1u17
     ai_gta_add_unit_label 0 0 a1u17
     end_if
 
     if I_CompareCounter enemy_unit_count > 17
     if I_UnitFormation a1u18 = horde
-    and ! I_UnitStatus a1u18 running_amok
-    and ! I_UnitDestroyed a1u18
-    and ! I_UnitStatus a1u18 left_battle
-    and ! I_IsUnitRouting a1u18
+    and not I_UnitStatus a1u18 running_amok
+    and not I_UnitDestroyed a1u18
+    and not I_UnitStatus a1u18 left_battle
+    and not I_IsUnitRouting a1u18
     ai_gta_add_unit_label 0 0 a1u18
     end_if
 
     if I_CompareCounter enemy_unit_count > 18
     if I_UnitFormation a1u19 = horde
-    and ! I_UnitStatus a1u19 running_amok
-    and ! I_UnitDestroyed a1u19
-    and ! I_UnitStatus a1u19 left_battle
-    and ! I_IsUnitRouting a1u19
+    and not I_UnitStatus a1u19 running_amok
+    and not I_UnitDestroyed a1u19
+    and not I_UnitStatus a1u19 left_battle
+    and not I_IsUnitRouting a1u19
     ai_gta_add_unit_label 0 0 a1u19
     end_if
 
     if I_CompareCounter enemy_unit_count = 20
     if I_UnitFormation a1u20 = horde
-    and ! I_UnitStatus a1u20 running_amok
-    and ! I_UnitDestroyed a1u20
-    and ! I_UnitStatus a1u20 left_battle
-    and ! I_IsUnitRouting a1u20
+    and not I_UnitStatus a1u20 running_amok
+    and not I_UnitDestroyed a1u20
+    and not I_UnitStatus a1u20 left_battle
+    and not I_IsUnitRouting a1u20
     ai_gta_add_unit_label 0 0 a1u20
     end_if
     end_if
@@ -34359,192 +34963,193 @@ end_monitor
 monitor_conditions I_BattleStarted
     and I_CompareCounter elephant_fix = 1
     and I_BattleIsSiegeBattle
-    and ! I_BattleIsFortBattle
-    and ! I_BattlePlayerArmyIsAttacker
-    and ! I_IsBattleSettlementCastle
+    and not I_BattleIsFortBattle
+    and not I_BattlePlayerArmyIsAttacker
+    and not I_IsBattleSettlementCastle
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    log always ------------------------ elephant fix city-------------------------------------
 ;    ai_active_set off
     unit_group_order_halt army1
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
-    and ! I_UnitStatus a1u1 running_amok
-    and ! I_UnitDestroyed a1u1
-    and ! I_UnitStatus a1u1 left_battle
-    and ! I_IsUnitRouting a1u1
+    and not I_UnitStatus a1u1 running_amok
+    and not I_UnitDestroyed a1u1
+    and not I_UnitStatus a1u1 left_battle
+    and not I_IsUnitRouting a1u1
     ai_gta_add_unit_label 0 0 a1u1
     end_if
 
     if I_CompareCounter enemy_unit_count > 1
     if I_UnitFormation a1u2 = horde
-    and ! I_UnitStatus a1u2 running_amok
-    and ! I_UnitDestroyed a1u2
-    and ! I_UnitStatus a1u2 left_battle
-    and ! I_IsUnitRouting a1u2
+    and not I_UnitStatus a1u2 running_amok
+    and not I_UnitDestroyed a1u2
+    and not I_UnitStatus a1u2 left_battle
+    and not I_IsUnitRouting a1u2
     ai_gta_add_unit_label 0 0 a1u2
     end_if
 
     if I_CompareCounter enemy_unit_count > 2
     if I_UnitFormation a1u3 = horde
-    and ! I_UnitStatus a1u3 running_amok
-    and ! I_UnitDestroyed a1u3
-    and ! I_UnitStatus a1u3 left_battle
-    and ! I_IsUnitRouting a1u3
+    and not I_UnitStatus a1u3 running_amok
+    and not I_UnitDestroyed a1u3
+    and not I_UnitStatus a1u3 left_battle
+    and not I_IsUnitRouting a1u3
     ai_gta_add_unit_label 0 0 a1u3
     end_if
 
     if I_CompareCounter enemy_unit_count > 3
     if I_UnitFormation a1u4 = horde
-    and ! I_UnitStatus a1u4 running_amok
-    and ! I_UnitDestroyed a1u4
-    and ! I_UnitStatus a1u4 left_battle
-    and ! I_IsUnitRouting a1u4
+    and not I_UnitStatus a1u4 running_amok
+    and not I_UnitDestroyed a1u4
+    and not I_UnitStatus a1u4 left_battle
+    and not I_IsUnitRouting a1u4
     ai_gta_add_unit_label 0 0 a1u4
     end_if
 
     if I_CompareCounter enemy_unit_count > 4
     if I_UnitFormation a1u5 = horde
-    and ! I_UnitStatus a1u5 running_amok
-    and ! I_UnitDestroyed a1u5
-    and ! I_UnitStatus a1u5 left_battle
-    and ! I_IsUnitRouting a1u5
+    and not I_UnitStatus a1u5 running_amok
+    and not I_UnitDestroyed a1u5
+    and not I_UnitStatus a1u5 left_battle
+    and not I_IsUnitRouting a1u5
     ai_gta_add_unit_label 0 0 a1u5
     end_if
 
     if I_CompareCounter enemy_unit_count > 5
     if I_UnitFormation a1u6 = horde
-    and ! I_UnitStatus a1u6 running_amok
-    and ! I_UnitDestroyed a1u6
-    and ! I_UnitStatus a1u6 left_battle
-    and ! I_IsUnitRouting a1u6
+    and not I_UnitStatus a1u6 running_amok
+    and not I_UnitDestroyed a1u6
+    and not I_UnitStatus a1u6 left_battle
+    and not I_IsUnitRouting a1u6
     ai_gta_add_unit_label 0 0 a1u6
     end_if
 
     if I_CompareCounter enemy_unit_count > 6
     if I_UnitFormation a1u7 = horde
-    and ! I_UnitStatus a1u7 running_amok
-    and ! I_UnitDestroyed a1u7
-    and ! I_UnitStatus a1u7 left_battle
-    and ! I_IsUnitRouting a1u7
+    and not I_UnitStatus a1u7 running_amok
+    and not I_UnitDestroyed a1u7
+    and not I_UnitStatus a1u7 left_battle
+    and not I_IsUnitRouting a1u7
     ai_gta_add_unit_label 0 0 a1u7
     end_if
 
     if I_CompareCounter enemy_unit_count > 7
     if I_UnitFormation a1u8 = horde
-    and ! I_UnitStatus a1u8 running_amok
-    and ! I_UnitDestroyed a1u8
-    and ! I_UnitStatus a1u8 left_battle
-    and ! I_IsUnitRouting a1u8
+    and not I_UnitStatus a1u8 running_amok
+    and not I_UnitDestroyed a1u8
+    and not I_UnitStatus a1u8 left_battle
+    and not I_IsUnitRouting a1u8
     ai_gta_add_unit_label 0 0 a1u8
     end_if
 
     if I_CompareCounter enemy_unit_count > 8
     if I_UnitFormation a1u9 = horde
-    and ! I_UnitStatus a1u9 running_amok
-    and ! I_UnitDestroyed a1u9
-    and ! I_UnitStatus a1u9 left_battle
-    and ! I_IsUnitRouting a1u9
+    and not I_UnitStatus a1u9 running_amok
+    and not I_UnitDestroyed a1u9
+    and not I_UnitStatus a1u9 left_battle
+    and not I_IsUnitRouting a1u9
     ai_gta_add_unit_label 0 0 a1u9
     end_if
 
     if I_CompareCounter enemy_unit_count > 9
     if I_UnitFormation a1u10 = horde
-    and ! I_UnitStatus a1u10 running_amok
-    and ! I_UnitDestroyed a1u10
-    and ! I_UnitStatus a1u10 left_battle
-    and ! I_IsUnitRouting a1u10
+    and not I_UnitStatus a1u10 running_amok
+    and not I_UnitDestroyed a1u10
+    and not I_UnitStatus a1u10 left_battle
+    and not I_IsUnitRouting a1u10
     ai_gta_add_unit_label 0 0 a1u10
     end_if
 
     if I_CompareCounter enemy_unit_count > 10
     if I_UnitFormation a1u11 = horde
-    and ! I_UnitStatus a1u11 running_amok
-    and ! I_UnitDestroyed a1u11
-    and ! I_UnitStatus a1u11 left_battle
-    and ! I_IsUnitRouting a1u11
+    and not I_UnitStatus a1u11 running_amok
+    and not I_UnitDestroyed a1u11
+    and not I_UnitStatus a1u11 left_battle
+    and not I_IsUnitRouting a1u11
     ai_gta_add_unit_label 0 0 a1u11
     end_if
 
     if I_CompareCounter enemy_unit_count > 11
     if I_UnitFormation a1u12 = horde
-    and ! I_UnitStatus a1u12 running_amok
-    and ! I_UnitDestroyed a1u12
-    and ! I_UnitStatus a1u12 left_battle
-    and ! I_IsUnitRouting a1u12
+    and not I_UnitStatus a1u12 running_amok
+    and not I_UnitDestroyed a1u12
+    and not I_UnitStatus a1u12 left_battle
+    and not I_IsUnitRouting a1u12
     ai_gta_add_unit_label 0 0 a1u12
     end_if
 
     if I_CompareCounter enemy_unit_count > 12
     if I_UnitFormation a1u13 = horde
-    and ! I_UnitStatus a1u13 running_amok
-    and ! I_UnitDestroyed a1u13
-    and ! I_UnitStatus a1u13 left_battle
-    and ! I_IsUnitRouting a1u13
+    and not I_UnitStatus a1u13 running_amok
+    and not I_UnitDestroyed a1u13
+    and not I_UnitStatus a1u13 left_battle
+    and not I_IsUnitRouting a1u13
     ai_gta_add_unit_label 0 0 a1u13
     end_if
 
     if I_CompareCounter enemy_unit_count > 13
     if I_UnitFormation a1u14 = horde
-    and ! I_UnitStatus a1u14 running_amok
-    and ! I_UnitDestroyed a1u14
-    and ! I_UnitStatus a1u14 left_battle
-    and ! I_IsUnitRouting a1u14
+    and not I_UnitStatus a1u14 running_amok
+    and not I_UnitDestroyed a1u14
+    and not I_UnitStatus a1u14 left_battle
+    and not I_IsUnitRouting a1u14
     ai_gta_add_unit_label 0 0 a1u14
     end_if
 
     if I_CompareCounter enemy_unit_count > 14
     if I_UnitFormation a1u15 = horde
-    and ! I_UnitStatus a1u15 running_amok
-    and ! I_UnitDestroyed a1u15
-    and ! I_UnitStatus a1u15 left_battle
-    and ! I_IsUnitRouting a1u15
+    and not I_UnitStatus a1u15 running_amok
+    and not I_UnitDestroyed a1u15
+    and not I_UnitStatus a1u15 left_battle
+    and not I_IsUnitRouting a1u15
     ai_gta_add_unit_label 0 0 a1u15
     end_if
 
     if I_CompareCounter enemy_unit_count > 15
     if I_UnitFormation a1u16 = horde
-    and ! I_UnitStatus a1u16 running_amok
-    and ! I_UnitDestroyed a1u16
-    and ! I_UnitStatus a1u16 left_battle
-    and ! I_IsUnitRouting a1u16
+    and not I_UnitStatus a1u16 running_amok
+    and not I_UnitDestroyed a1u16
+    and not I_UnitStatus a1u16 left_battle
+    and not I_IsUnitRouting a1u16
     ai_gta_add_unit_label 0 0 a1u16
     end_if
 
     if I_CompareCounter enemy_unit_count > 16
     if I_UnitFormation a1u17 = horde
-    and ! I_UnitStatus a1u17 running_amok
-    and ! I_UnitDestroyed a1u17
-    and ! I_UnitStatus a1u17 left_battle
-    and ! I_IsUnitRouting a1u17
+    and not I_UnitStatus a1u17 running_amok
+    and not I_UnitDestroyed a1u17
+    and not I_UnitStatus a1u17 left_battle
+    and not I_IsUnitRouting a1u17
     ai_gta_add_unit_label 0 0 a1u17
     end_if
 
     if I_CompareCounter enemy_unit_count > 17
     if I_UnitFormation a1u18 = horde
-    and ! I_UnitStatus a1u18 running_amok
-    and ! I_UnitDestroyed a1u18
-    and ! I_UnitStatus a1u18 left_battle
-    and ! I_IsUnitRouting a1u18
+    and not I_UnitStatus a1u18 running_amok
+    and not I_UnitDestroyed a1u18
+    and not I_UnitStatus a1u18 left_battle
+    and not I_IsUnitRouting a1u18
     ai_gta_add_unit_label 0 0 a1u18
     end_if
 
     if I_CompareCounter enemy_unit_count > 18
     if I_UnitFormation a1u19 = horde
-    and ! I_UnitStatus a1u19 running_amok
-    and ! I_UnitDestroyed a1u19
-    and ! I_UnitStatus a1u19 left_battle
-    and ! I_IsUnitRouting a1u19
+    and not I_UnitStatus a1u19 running_amok
+    and not I_UnitDestroyed a1u19
+    and not I_UnitStatus a1u19 left_battle
+    and not I_IsUnitRouting a1u19
     ai_gta_add_unit_label 0 0 a1u19
     end_if
 
     if I_CompareCounter enemy_unit_count = 20
     if I_UnitFormation a1u20 = horde
-    and ! I_UnitStatus a1u20 running_amok
-    and ! I_UnitDestroyed a1u20
-    and ! I_UnitStatus a1u20 left_battle
-    and ! I_IsUnitRouting a1u20
+    and not I_UnitStatus a1u20 running_amok
+    and not I_UnitDestroyed a1u20
+    and not I_UnitStatus a1u20 left_battle
+    and not I_IsUnitRouting a1u20
     ai_gta_add_unit_label 0 0 a1u20
     end_if
     end_if
@@ -34581,189 +35186,190 @@ monitor_conditions I_BattleStarted
     and I_CompareCounter elephant_fix = 1
     and I_BattleIsSiegeBattle
     and I_BattleIsFortBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    log always ------------------------ elephant fix fort-------------------------------------
 ;    ai_active_set off
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
-    and ! I_UnitStatus a1u1 running_amok
-    and ! I_UnitDestroyed a1u1
-    and ! I_UnitStatus a1u1 left_battle
-    and ! I_IsUnitRouting a1u1
+    and not I_UnitStatus a1u1 running_amok
+    and not I_UnitDestroyed a1u1
+    and not I_UnitStatus a1u1 left_battle
+    and not I_IsUnitRouting a1u1
     ai_gta_add_unit_label 0 0 a1u1
     end_if
 
     if I_CompareCounter enemy_unit_count > 1
     if I_UnitFormation a1u2 = horde
-    and ! I_UnitStatus a1u2 running_amok
-    and ! I_UnitDestroyed a1u2
-    and ! I_UnitStatus a1u2 left_battle
-    and ! I_IsUnitRouting a1u2
+    and not I_UnitStatus a1u2 running_amok
+    and not I_UnitDestroyed a1u2
+    and not I_UnitStatus a1u2 left_battle
+    and not I_IsUnitRouting a1u2
     ai_gta_add_unit_label 0 0 a1u2
     end_if
 
     if I_CompareCounter enemy_unit_count > 2
     if I_UnitFormation a1u3 = horde
-    and ! I_UnitStatus a1u3 running_amok
-    and ! I_UnitDestroyed a1u3
-    and ! I_UnitStatus a1u3 left_battle
-    and ! I_IsUnitRouting a1u3
+    and not I_UnitStatus a1u3 running_amok
+    and not I_UnitDestroyed a1u3
+    and not I_UnitStatus a1u3 left_battle
+    and not I_IsUnitRouting a1u3
     ai_gta_add_unit_label 0 0 a1u3
     end_if
 
     if I_CompareCounter enemy_unit_count > 3
     if I_UnitFormation a1u4 = horde
-    and ! I_UnitStatus a1u4 running_amok
-    and ! I_UnitDestroyed a1u4
-    and ! I_UnitStatus a1u4 left_battle
-    and ! I_IsUnitRouting a1u4
+    and not I_UnitStatus a1u4 running_amok
+    and not I_UnitDestroyed a1u4
+    and not I_UnitStatus a1u4 left_battle
+    and not I_IsUnitRouting a1u4
     ai_gta_add_unit_label 0 0 a1u4
     end_if
 
     if I_CompareCounter enemy_unit_count > 4
     if I_UnitFormation a1u5 = horde
-    and ! I_UnitStatus a1u5 running_amok
-    and ! I_UnitDestroyed a1u5
-    and ! I_UnitStatus a1u5 left_battle
-    and ! I_IsUnitRouting a1u5
+    and not I_UnitStatus a1u5 running_amok
+    and not I_UnitDestroyed a1u5
+    and not I_UnitStatus a1u5 left_battle
+    and not I_IsUnitRouting a1u5
     ai_gta_add_unit_label 0 0 a1u5
     end_if
 
     if I_CompareCounter enemy_unit_count > 5
     if I_UnitFormation a1u6 = horde
-    and ! I_UnitStatus a1u6 running_amok
-    and ! I_UnitDestroyed a1u6
-    and ! I_UnitStatus a1u6 left_battle
-    and ! I_IsUnitRouting a1u6
+    and not I_UnitStatus a1u6 running_amok
+    and not I_UnitDestroyed a1u6
+    and not I_UnitStatus a1u6 left_battle
+    and not I_IsUnitRouting a1u6
     ai_gta_add_unit_label 0 0 a1u6
     end_if
 
     if I_CompareCounter enemy_unit_count > 6
     if I_UnitFormation a1u7 = horde
-    and ! I_UnitStatus a1u7 running_amok
-    and ! I_UnitDestroyed a1u7
-    and ! I_UnitStatus a1u7 left_battle
-    and ! I_IsUnitRouting a1u7
+    and not I_UnitStatus a1u7 running_amok
+    and not I_UnitDestroyed a1u7
+    and not I_UnitStatus a1u7 left_battle
+    and not I_IsUnitRouting a1u7
     ai_gta_add_unit_label 0 0 a1u7
     end_if
 
     if I_CompareCounter enemy_unit_count > 7
     if I_UnitFormation a1u8 = horde
-    and ! I_UnitStatus a1u8 running_amok
-    and ! I_UnitDestroyed a1u8
-    and ! I_UnitStatus a1u8 left_battle
-    and ! I_IsUnitRouting a1u8
+    and not I_UnitStatus a1u8 running_amok
+    and not I_UnitDestroyed a1u8
+    and not I_UnitStatus a1u8 left_battle
+    and not I_IsUnitRouting a1u8
     ai_gta_add_unit_label 0 0 a1u8
     end_if
 
     if I_CompareCounter enemy_unit_count > 8
     if I_UnitFormation a1u9 = horde
-    and ! I_UnitStatus a1u9 running_amok
-    and ! I_UnitDestroyed a1u9
-    and ! I_UnitStatus a1u9 left_battle
-    and ! I_IsUnitRouting a1u9
+    and not I_UnitStatus a1u9 running_amok
+    and not I_UnitDestroyed a1u9
+    and not I_UnitStatus a1u9 left_battle
+    and not I_IsUnitRouting a1u9
     ai_gta_add_unit_label 0 0 a1u9
     end_if
 
     if I_CompareCounter enemy_unit_count > 9
     if I_UnitFormation a1u10 = horde
-    and ! I_UnitStatus a1u10 running_amok
-    and ! I_UnitDestroyed a1u10
-    and ! I_UnitStatus a1u10 left_battle
-    and ! I_IsUnitRouting a1u10
+    and not I_UnitStatus a1u10 running_amok
+    and not I_UnitDestroyed a1u10
+    and not I_UnitStatus a1u10 left_battle
+    and not I_IsUnitRouting a1u10
     ai_gta_add_unit_label 0 0 a1u10
     end_if
 
     if I_CompareCounter enemy_unit_count > 10
     if I_UnitFormation a1u11 = horde
-    and ! I_UnitStatus a1u11 running_amok
-    and ! I_UnitDestroyed a1u11
-    and ! I_UnitStatus a1u11 left_battle
-    and ! I_IsUnitRouting a1u11
+    and not I_UnitStatus a1u11 running_amok
+    and not I_UnitDestroyed a1u11
+    and not I_UnitStatus a1u11 left_battle
+    and not I_IsUnitRouting a1u11
     ai_gta_add_unit_label 0 0 a1u11
     end_if
 
     if I_CompareCounter enemy_unit_count > 11
     if I_UnitFormation a1u12 = horde
-    and ! I_UnitStatus a1u12 running_amok
-    and ! I_UnitDestroyed a1u12
-    and ! I_UnitStatus a1u12 left_battle
-    and ! I_IsUnitRouting a1u12
+    and not I_UnitStatus a1u12 running_amok
+    and not I_UnitDestroyed a1u12
+    and not I_UnitStatus a1u12 left_battle
+    and not I_IsUnitRouting a1u12
     ai_gta_add_unit_label 0 0 a1u12
     end_if
 
     if I_CompareCounter enemy_unit_count > 12
     if I_UnitFormation a1u13 = horde
-    and ! I_UnitStatus a1u13 running_amok
-    and ! I_UnitDestroyed a1u13
-    and ! I_UnitStatus a1u13 left_battle
-    and ! I_IsUnitRouting a1u13
+    and not I_UnitStatus a1u13 running_amok
+    and not I_UnitDestroyed a1u13
+    and not I_UnitStatus a1u13 left_battle
+    and not I_IsUnitRouting a1u13
     ai_gta_add_unit_label 0 0 a1u13
     end_if
 
     if I_CompareCounter enemy_unit_count > 13
     if I_UnitFormation a1u14 = horde
-    and ! I_UnitStatus a1u14 running_amok
-    and ! I_UnitDestroyed a1u14
-    and ! I_UnitStatus a1u14 left_battle
-    and ! I_IsUnitRouting a1u14
+    and not I_UnitStatus a1u14 running_amok
+    and not I_UnitDestroyed a1u14
+    and not I_UnitStatus a1u14 left_battle
+    and not I_IsUnitRouting a1u14
     ai_gta_add_unit_label 0 0 a1u14
     end_if
 
     if I_CompareCounter enemy_unit_count > 14
     if I_UnitFormation a1u15 = horde
-    and ! I_UnitStatus a1u15 running_amok
-    and ! I_UnitDestroyed a1u15
-    and ! I_UnitStatus a1u15 left_battle
-    and ! I_IsUnitRouting a1u15
+    and not I_UnitStatus a1u15 running_amok
+    and not I_UnitDestroyed a1u15
+    and not I_UnitStatus a1u15 left_battle
+    and not I_IsUnitRouting a1u15
     ai_gta_add_unit_label 0 0 a1u15
     end_if
 
     if I_CompareCounter enemy_unit_count > 15
     if I_UnitFormation a1u16 = horde
-    and ! I_UnitStatus a1u16 running_amok
-    and ! I_UnitDestroyed a1u16
-    and ! I_UnitStatus a1u16 left_battle
-    and ! I_IsUnitRouting a1u16
+    and not I_UnitStatus a1u16 running_amok
+    and not I_UnitDestroyed a1u16
+    and not I_UnitStatus a1u16 left_battle
+    and not I_IsUnitRouting a1u16
     ai_gta_add_unit_label 0 0 a1u16
     end_if
 
     if I_CompareCounter enemy_unit_count > 16
     if I_UnitFormation a1u17 = horde
-    and ! I_UnitStatus a1u17 running_amok
-    and ! I_UnitDestroyed a1u17
-    and ! I_UnitStatus a1u17 left_battle
-    and ! I_IsUnitRouting a1u17
+    and not I_UnitStatus a1u17 running_amok
+    and not I_UnitDestroyed a1u17
+    and not I_UnitStatus a1u17 left_battle
+    and not I_IsUnitRouting a1u17
     ai_gta_add_unit_label 0 0 a1u17
     end_if
 
     if I_CompareCounter enemy_unit_count > 17
     if I_UnitFormation a1u18 = horde
-    and ! I_UnitStatus a1u18 running_amok
-    and ! I_UnitDestroyed a1u18
-    and ! I_UnitStatus a1u18 left_battle
-    and ! I_IsUnitRouting a1u18
+    and not I_UnitStatus a1u18 running_amok
+    and not I_UnitDestroyed a1u18
+    and not I_UnitStatus a1u18 left_battle
+    and not I_IsUnitRouting a1u18
     ai_gta_add_unit_label 0 0 a1u18
     end_if
 
     if I_CompareCounter enemy_unit_count > 18
     if I_UnitFormation a1u19 = horde
-    and ! I_UnitStatus a1u19 running_amok
-    and ! I_UnitDestroyed a1u19
-    and ! I_UnitStatus a1u19 left_battle
-    and ! I_IsUnitRouting a1u19
+    and not I_UnitStatus a1u19 running_amok
+    and not I_UnitDestroyed a1u19
+    and not I_UnitStatus a1u19 left_battle
+    and not I_IsUnitRouting a1u19
     ai_gta_add_unit_label 0 0 a1u19
     end_if
 
     if I_CompareCounter enemy_unit_count = 20
     if I_UnitFormation a1u20 = horde
-    and ! I_UnitStatus a1u20 running_amok
-    and ! I_UnitDestroyed a1u20
-    and ! I_UnitStatus a1u20 left_battle
-    and ! I_IsUnitRouting a1u20
+    and not I_UnitStatus a1u20 running_amok
+    and not I_UnitDestroyed a1u20
+    and not I_UnitStatus a1u20 left_battle
+    and not I_IsUnitRouting a1u20
     ai_gta_add_unit_label 0 0 a1u20
     end_if
     end_if
@@ -34796,10 +35402,11 @@ end_monitor
 monitor_event BattleEnemyUnitAttacksPlayerUnit TrueCondition
     and I_CompareCounter rally_walls = 1
     and BattleIsMeleeAttack
-    and ! BattlePlayerUnitOnWalls
-    and ! BattleEnemyUnitOnWalls
+    and not BattlePlayerUnitOnWalls
+    and not BattleEnemyUnitOnWalls
+    log always ------------------------ elephant gates stuff-------------------------------------
 
-    if I_CompareCounter elephant_gate != 2
+    if I_CompareCounter elephant_gate not= 2
     set_counter elephant_gate 0
     set_counter del_objective 1
     end_if
@@ -34840,12 +35447,12 @@ monitor_event BattleEnemyUnitAttacksPlayerUnit TrueCondition
 end_monitor
 
 monitor_event BattlePlayerUnitAttacksEnemyUnit BattleIsMeleeAttack
-    and I_CompareCounter panel_check = 1
     and I_CompareCounter rally_walls = 1
-    and ! BattlePlayerUnitOnWalls
-    and ! BattleEnemyUnitOnWalls
+    and not BattlePlayerUnitOnWalls
+    and not BattleEnemyUnitOnWalls
+    log always ------------------------ elephant rally walls?-------------------------------------
 
-    if I_CompareCounter elephant_gate != 2
+    if I_CompareCounter elephant_gate not= 2
     set_counter elephant_gate 0
     set_counter del_objective 1
     end_if
@@ -34888,206 +35495,208 @@ end_monitor
 monitor_conditions I_BattleStarted
     and I_CompareCounter del_objective = 1
     and I_BattleIsSiegeBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
     set_counter del_objective 2
     battle_wait 15
     if I_CompareCounter del_objective = 2
-    ai_gta_del_objective 0
+    ai_gta_del_objective 1 0
     ai_active_set off
     battle_wait 0.5
     ai_active_set on
     set_counter del_objective 0
     end_if
+    log always ------------------------ elephant del objective?-------------------------------------
 end_monitor
 
 monitor_conditions I_BattleStarted
     and I_CompareCounter elephant_gate_tier2 = 1
-    and ! I_BattleIsFortBattle
+    and not I_BattleIsFortBattle
     and I_BattleIsSiegeBattle
     and I_IsBattleSettlementCastle
     and I_BattleSettlementFortificationLevel > 2
 
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    log always ------------------------ elephant t2?-------------------------------------
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
-    and ! I_UnitStatus a1u1 running_amok
-    and ! I_UnitDestroyed a1u1
-    and ! I_UnitStatus a1u1 left_battle
-    and ! I_IsUnitRouting a1u1
+    and not I_UnitStatus a1u1 running_amok
+    and not I_UnitDestroyed a1u1
+    and not I_UnitStatus a1u1 left_battle
+    and not I_IsUnitRouting a1u1
     ai_gta_add_unit_label 0 0 a1u1
     end_if
 
     if I_CompareCounter enemy_unit_count > 1
     if I_UnitFormation a1u2 = horde
-    and ! I_UnitStatus a1u2 running_amok
-    and ! I_UnitDestroyed a1u2
-    and ! I_UnitStatus a1u2 left_battle
-    and ! I_IsUnitRouting a1u2
+    and not I_UnitStatus a1u2 running_amok
+    and not I_UnitDestroyed a1u2
+    and not I_UnitStatus a1u2 left_battle
+    and not I_IsUnitRouting a1u2
     ai_gta_add_unit_label 0 0 a1u2
     end_if
 
     if I_CompareCounter enemy_unit_count > 2
     if I_UnitFormation a1u3 = horde
-    and ! I_UnitStatus a1u3 running_amok
-    and ! I_UnitDestroyed a1u3
-    and ! I_UnitStatus a1u3 left_battle
-    and ! I_IsUnitRouting a1u3
+    and not I_UnitStatus a1u3 running_amok
+    and not I_UnitDestroyed a1u3
+    and not I_UnitStatus a1u3 left_battle
+    and not I_IsUnitRouting a1u3
     ai_gta_add_unit_label 0 0 a1u3
     end_if
 
     if I_CompareCounter enemy_unit_count > 3
     if I_UnitFormation a1u4 = horde
-    and ! I_UnitStatus a1u4 running_amok
-    and ! I_UnitDestroyed a1u4
-    and ! I_UnitStatus a1u4 left_battle
-    and ! I_IsUnitRouting a1u4
+    and not I_UnitStatus a1u4 running_amok
+    and not I_UnitDestroyed a1u4
+    and not I_UnitStatus a1u4 left_battle
+    and not I_IsUnitRouting a1u4
     ai_gta_add_unit_label 0 0 a1u4
     end_if
 
     if I_CompareCounter enemy_unit_count > 4
     if I_UnitFormation a1u5 = horde
-    and ! I_UnitStatus a1u5 running_amok
-    and ! I_UnitDestroyed a1u5
-    and ! I_UnitStatus a1u5 left_battle
-    and ! I_IsUnitRouting a1u5
+    and not I_UnitStatus a1u5 running_amok
+    and not I_UnitDestroyed a1u5
+    and not I_UnitStatus a1u5 left_battle
+    and not I_IsUnitRouting a1u5
     ai_gta_add_unit_label 0 0 a1u5
     end_if
 
     if I_CompareCounter enemy_unit_count > 5
     if I_UnitFormation a1u6 = horde
-    and ! I_UnitStatus a1u6 running_amok
-    and ! I_UnitDestroyed a1u6
-    and ! I_UnitStatus a1u6 left_battle
-    and ! I_IsUnitRouting a1u6
+    and not I_UnitStatus a1u6 running_amok
+    and not I_UnitDestroyed a1u6
+    and not I_UnitStatus a1u6 left_battle
+    and not I_IsUnitRouting a1u6
     ai_gta_add_unit_label 0 0 a1u6
     end_if
 
     if I_CompareCounter enemy_unit_count > 6
     if I_UnitFormation a1u7 = horde
-    and ! I_UnitStatus a1u7 running_amok
-    and ! I_UnitDestroyed a1u7
-    and ! I_UnitStatus a1u7 left_battle
-    and ! I_IsUnitRouting a1u7
+    and not I_UnitStatus a1u7 running_amok
+    and not I_UnitDestroyed a1u7
+    and not I_UnitStatus a1u7 left_battle
+    and not I_IsUnitRouting a1u7
     ai_gta_add_unit_label 0 0 a1u7
     end_if
 
     if I_CompareCounter enemy_unit_count > 7
     if I_UnitFormation a1u8 = horde
-    and ! I_UnitStatus a1u8 running_amok
-    and ! I_UnitDestroyed a1u8
-    and ! I_UnitStatus a1u8 left_battle
-    and ! I_IsUnitRouting a1u8
+    and not I_UnitStatus a1u8 running_amok
+    and not I_UnitDestroyed a1u8
+    and not I_UnitStatus a1u8 left_battle
+    and not I_IsUnitRouting a1u8
     ai_gta_add_unit_label 0 0 a1u8
     end_if
 
     if I_CompareCounter enemy_unit_count > 8
     if I_UnitFormation a1u9 = horde
-    and ! I_UnitStatus a1u9 running_amok
-    and ! I_UnitDestroyed a1u9
-    and ! I_UnitStatus a1u9 left_battle
-    and ! I_IsUnitRouting a1u9
+    and not I_UnitStatus a1u9 running_amok
+    and not I_UnitDestroyed a1u9
+    and not I_UnitStatus a1u9 left_battle
+    and not I_IsUnitRouting a1u9
     ai_gta_add_unit_label 0 0 a1u9
     end_if
 
     if I_CompareCounter enemy_unit_count > 9
     if I_UnitFormation a1u10 = horde
-    and ! I_UnitStatus a1u10 running_amok
-    and ! I_UnitDestroyed a1u10
-    and ! I_UnitStatus a1u10 left_battle
-    and ! I_IsUnitRouting a1u10
+    and not I_UnitStatus a1u10 running_amok
+    and not I_UnitDestroyed a1u10
+    and not I_UnitStatus a1u10 left_battle
+    and not I_IsUnitRouting a1u10
     ai_gta_add_unit_label 0 0 a1u10
     end_if
 
     if I_CompareCounter enemy_unit_count > 10
     if I_UnitFormation a1u11 = horde
-    and ! I_UnitStatus a1u11 running_amok
-    and ! I_UnitDestroyed a1u11
-    and ! I_UnitStatus a1u11 left_battle
-    and ! I_IsUnitRouting a1u11
+    and not I_UnitStatus a1u11 running_amok
+    and not I_UnitDestroyed a1u11
+    and not I_UnitStatus a1u11 left_battle
+    and not I_IsUnitRouting a1u11
     ai_gta_add_unit_label 0 0 a1u11
     end_if
 
     if I_CompareCounter enemy_unit_count > 11
     if I_UnitFormation a1u12 = horde
-    and ! I_UnitStatus a1u12 running_amok
-    and ! I_UnitDestroyed a1u12
-    and ! I_UnitStatus a1u12 left_battle
-    and ! I_IsUnitRouting a1u12
+    and not I_UnitStatus a1u12 running_amok
+    and not I_UnitDestroyed a1u12
+    and not I_UnitStatus a1u12 left_battle
+    and not I_IsUnitRouting a1u12
     ai_gta_add_unit_label 0 0 a1u12
     end_if
 
     if I_CompareCounter enemy_unit_count > 12
     if I_UnitFormation a1u13 = horde
-    and ! I_UnitStatus a1u13 running_amok
-    and ! I_UnitDestroyed a1u13
-    and ! I_UnitStatus a1u13 left_battle
-    and ! I_IsUnitRouting a1u13
+    and not I_UnitStatus a1u13 running_amok
+    and not I_UnitDestroyed a1u13
+    and not I_UnitStatus a1u13 left_battle
+    and not I_IsUnitRouting a1u13
     ai_gta_add_unit_label 0 0 a1u13
     end_if
 
     if I_CompareCounter enemy_unit_count > 13
     if I_UnitFormation a1u14 = horde
-    and ! I_UnitStatus a1u14 running_amok
-    and ! I_UnitDestroyed a1u14
-    and ! I_UnitStatus a1u14 left_battle
-    and ! I_IsUnitRouting a1u14
+    and not I_UnitStatus a1u14 running_amok
+    and not I_UnitDestroyed a1u14
+    and not I_UnitStatus a1u14 left_battle
+    and not I_IsUnitRouting a1u14
     ai_gta_add_unit_label 0 0 a1u14
     end_if
 
     if I_CompareCounter enemy_unit_count > 14
     if I_UnitFormation a1u15 = horde
-    and ! I_UnitStatus a1u15 running_amok
-    and ! I_UnitDestroyed a1u15
-    and ! I_UnitStatus a1u15 left_battle
-    and ! I_IsUnitRouting a1u15
+    and not I_UnitStatus a1u15 running_amok
+    and not I_UnitDestroyed a1u15
+    and not I_UnitStatus a1u15 left_battle
+    and not I_IsUnitRouting a1u15
     ai_gta_add_unit_label 0 0 a1u15
     end_if
 
     if I_CompareCounter enemy_unit_count > 15
     if I_UnitFormation a1u16 = horde
-    and ! I_UnitStatus a1u16 running_amok
-    and ! I_UnitDestroyed a1u16
-    and ! I_UnitStatus a1u16 left_battle
-    and ! I_IsUnitRouting a1u16
+    and not I_UnitStatus a1u16 running_amok
+    and not I_UnitDestroyed a1u16
+    and not I_UnitStatus a1u16 left_battle
+    and not I_IsUnitRouting a1u16
     ai_gta_add_unit_label 0 0 a1u16
     end_if
 
     if I_CompareCounter enemy_unit_count > 16
     if I_UnitFormation a1u17 = horde
-    and ! I_UnitStatus a1u17 running_amok
-    and ! I_UnitDestroyed a1u17
-    and ! I_UnitStatus a1u17 left_battle
-    and ! I_IsUnitRouting a1u17
+    and not I_UnitStatus a1u17 running_amok
+    and not I_UnitDestroyed a1u17
+    and not I_UnitStatus a1u17 left_battle
+    and not I_IsUnitRouting a1u17
     ai_gta_add_unit_label 0 0 a1u17
     end_if
 
     if I_CompareCounter enemy_unit_count > 17
     if I_UnitFormation a1u18 = horde
-    and ! I_UnitStatus a1u18 running_amok
-    and ! I_UnitDestroyed a1u18
-    and ! I_UnitStatus a1u18 left_battle
-    and ! I_IsUnitRouting a1u18
+    and not I_UnitStatus a1u18 running_amok
+    and not I_UnitDestroyed a1u18
+    and not I_UnitStatus a1u18 left_battle
+    and not I_IsUnitRouting a1u18
     ai_gta_add_unit_label 0 0 a1u18
     end_if
 
     if I_CompareCounter enemy_unit_count > 18
     if I_UnitFormation a1u19 = horde
-    and ! I_UnitStatus a1u19 running_amok
-    and ! I_UnitDestroyed a1u19
-    and ! I_UnitStatus a1u19 left_battle
-    and ! I_IsUnitRouting a1u19
+    and not I_UnitStatus a1u19 running_amok
+    and not I_UnitDestroyed a1u19
+    and not I_UnitStatus a1u19 left_battle
+    and not I_IsUnitRouting a1u19
     ai_gta_add_unit_label 0 0 a1u19
     end_if
 
     if I_CompareCounter enemy_unit_count = 20
     if I_UnitFormation a1u20 = horde
-    and ! I_UnitStatus a1u20 running_amok
-    and ! I_UnitDestroyed a1u20
-    and ! I_UnitStatus a1u20 left_battle
-    and ! I_IsUnitRouting a1u20
+    and not I_UnitStatus a1u20 running_amok
+    and not I_UnitDestroyed a1u20
+    and not I_UnitStatus a1u20 left_battle
+    and not I_IsUnitRouting a1u20
     ai_gta_add_unit_label 0 0 a1u20
     end_if
     end_if
@@ -35118,13 +35727,12 @@ monitor_conditions I_BattleStarted
 end_monitor
 
 monitor_event BattleEnemyUnitAttacksPlayerUnit TrueCondition
-    and I_CompareCounter panel_check = 1
     and I_CompareCounter rally_walls = 2
     and BattleIsMeleeAttack
-    and ! BattlePlayerUnitOnWalls
-    and ! BattleEnemyUnitOnWalls
+    and not BattlePlayerUnitOnWalls
+    and not BattleEnemyUnitOnWalls
 
-    if I_CompareCounter second_ring != 2
+    if I_CompareCounter second_ring not= 2
     set_counter second_ring 0
     set_counter del_objective 1
     end_if
@@ -35164,12 +35772,11 @@ monitor_event BattleEnemyUnitAttacksPlayerUnit TrueCondition
 end_monitor
 
 monitor_event BattlePlayerUnitAttacksEnemyUnit BattleIsMeleeAttack
-    and I_CompareCounter panel_check = 1
     and I_CompareCounter rally_walls = 2
-    and ! BattlePlayerUnitOnWalls
-    and ! BattleEnemyUnitOnWalls
+    and not BattlePlayerUnitOnWalls
+    and not BattleEnemyUnitOnWalls
 
-    if I_CompareCounter second_ring != 2
+    if I_CompareCounter second_ring not= 2
     set_counter second_ring 0
     set_counter del_objective 1
     end_if
@@ -35213,185 +35820,185 @@ monitor_conditions I_BattleStarted
     and I_IsBattleSettlementCastle
     and I_BattleSettlementFortificationLevel > 2
 
-    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
-    and ! I_UnitStatus a1u1 running_amok
-    and ! I_UnitDestroyed a1u1
-    and ! I_UnitStatus a1u1 left_battle
-    and ! I_IsUnitRouting a1u1
+    and not I_UnitStatus a1u1 running_amok
+    and not I_UnitDestroyed a1u1
+    and not I_UnitStatus a1u1 left_battle
+    and not I_IsUnitRouting a1u1
     ai_gta_add_unit_label 0 0 a1u1
     end_if
 
     if I_CompareCounter enemy_unit_count > 1
     if I_UnitFormation a1u2 = horde
-    and ! I_UnitStatus a1u2 running_amok
-    and ! I_UnitDestroyed a1u2
-    and ! I_UnitStatus a1u2 left_battle
-    and ! I_IsUnitRouting a1u2
+    and not I_UnitStatus a1u2 running_amok
+    and not I_UnitDestroyed a1u2
+    and not I_UnitStatus a1u2 left_battle
+    and not I_IsUnitRouting a1u2
     ai_gta_add_unit_label 0 0 a1u2
     end_if
 
     if I_CompareCounter enemy_unit_count > 2
     if I_UnitFormation a1u3 = horde
-    and ! I_UnitStatus a1u3 running_amok
-    and ! I_UnitDestroyed a1u3
-    and ! I_UnitStatus a1u3 left_battle
-    and ! I_IsUnitRouting a1u3
+    and not I_UnitStatus a1u3 running_amok
+    and not I_UnitDestroyed a1u3
+    and not I_UnitStatus a1u3 left_battle
+    and not I_IsUnitRouting a1u3
     ai_gta_add_unit_label 0 0 a1u3
     end_if
 
     if I_CompareCounter enemy_unit_count > 3
     if I_UnitFormation a1u4 = horde
-    and ! I_UnitStatus a1u4 running_amok
-    and ! I_UnitDestroyed a1u4
-    and ! I_UnitStatus a1u4 left_battle
-    and ! I_IsUnitRouting a1u4
+    and not I_UnitStatus a1u4 running_amok
+    and not I_UnitDestroyed a1u4
+    and not I_UnitStatus a1u4 left_battle
+    and not I_IsUnitRouting a1u4
     ai_gta_add_unit_label 0 0 a1u4
     end_if
 
     if I_CompareCounter enemy_unit_count > 4
     if I_UnitFormation a1u5 = horde
-    and ! I_UnitStatus a1u5 running_amok
-    and ! I_UnitDestroyed a1u5
-    and ! I_UnitStatus a1u5 left_battle
-    and ! I_IsUnitRouting a1u5
+    and not I_UnitStatus a1u5 running_amok
+    and not I_UnitDestroyed a1u5
+    and not I_UnitStatus a1u5 left_battle
+    and not I_IsUnitRouting a1u5
     ai_gta_add_unit_label 0 0 a1u5
     end_if
 
     if I_CompareCounter enemy_unit_count > 5
     if I_UnitFormation a1u6 = horde
-    and ! I_UnitStatus a1u6 running_amok
-    and ! I_UnitDestroyed a1u6
-    and ! I_UnitStatus a1u6 left_battle
-    and ! I_IsUnitRouting a1u6
+    and not I_UnitStatus a1u6 running_amok
+    and not I_UnitDestroyed a1u6
+    and not I_UnitStatus a1u6 left_battle
+    and not I_IsUnitRouting a1u6
     ai_gta_add_unit_label 0 0 a1u6
     end_if
 
     if I_CompareCounter enemy_unit_count > 6
     if I_UnitFormation a1u7 = horde
-    and ! I_UnitStatus a1u7 running_amok
-    and ! I_UnitDestroyed a1u7
-    and ! I_UnitStatus a1u7 left_battle
-    and ! I_IsUnitRouting a1u7
+    and not I_UnitStatus a1u7 running_amok
+    and not I_UnitDestroyed a1u7
+    and not I_UnitStatus a1u7 left_battle
+    and not I_IsUnitRouting a1u7
     ai_gta_add_unit_label 0 0 a1u7
     end_if
 
     if I_CompareCounter enemy_unit_count > 7
     if I_UnitFormation a1u8 = horde
-    and ! I_UnitStatus a1u8 running_amok
-    and ! I_UnitDestroyed a1u8
-    and ! I_UnitStatus a1u8 left_battle
-    and ! I_IsUnitRouting a1u8
+    and not I_UnitStatus a1u8 running_amok
+    and not I_UnitDestroyed a1u8
+    and not I_UnitStatus a1u8 left_battle
+    and not I_IsUnitRouting a1u8
     ai_gta_add_unit_label 0 0 a1u8
     end_if
 
     if I_CompareCounter enemy_unit_count > 8
     if I_UnitFormation a1u9 = horde
-    and ! I_UnitStatus a1u9 running_amok
-    and ! I_UnitDestroyed a1u9
-    and ! I_UnitStatus a1u9 left_battle
-    and ! I_IsUnitRouting a1u9
+    and not I_UnitStatus a1u9 running_amok
+    and not I_UnitDestroyed a1u9
+    and not I_UnitStatus a1u9 left_battle
+    and not I_IsUnitRouting a1u9
     ai_gta_add_unit_label 0 0 a1u9
     end_if
 
     if I_CompareCounter enemy_unit_count > 9
     if I_UnitFormation a1u10 = horde
-    and ! I_UnitStatus a1u10 running_amok
-    and ! I_UnitDestroyed a1u10
-    and ! I_UnitStatus a1u10 left_battle
-    and ! I_IsUnitRouting a1u10
+    and not I_UnitStatus a1u10 running_amok
+    and not I_UnitDestroyed a1u10
+    and not I_UnitStatus a1u10 left_battle
+    and not I_IsUnitRouting a1u10
     ai_gta_add_unit_label 0 0 a1u10
     end_if
 
     if I_CompareCounter enemy_unit_count > 10
     if I_UnitFormation a1u11 = horde
-    and ! I_UnitStatus a1u11 running_amok
-    and ! I_UnitDestroyed a1u11
-    and ! I_UnitStatus a1u11 left_battle
-    and ! I_IsUnitRouting a1u11
+    and not I_UnitStatus a1u11 running_amok
+    and not I_UnitDestroyed a1u11
+    and not I_UnitStatus a1u11 left_battle
+    and not I_IsUnitRouting a1u11
     ai_gta_add_unit_label 0 0 a1u11
     end_if
 
     if I_CompareCounter enemy_unit_count > 11
     if I_UnitFormation a1u12 = horde
-    and ! I_UnitStatus a1u12 running_amok
-    and ! I_UnitDestroyed a1u12
-    and ! I_UnitStatus a1u12 left_battle
-    and ! I_IsUnitRouting a1u12
+    and not I_UnitStatus a1u12 running_amok
+    and not I_UnitDestroyed a1u12
+    and not I_UnitStatus a1u12 left_battle
+    and not I_IsUnitRouting a1u12
     ai_gta_add_unit_label 0 0 a1u12
     end_if
 
     if I_CompareCounter enemy_unit_count > 12
     if I_UnitFormation a1u13 = horde
-    and ! I_UnitStatus a1u13 running_amok
-    and ! I_UnitDestroyed a1u13
-    and ! I_UnitStatus a1u13 left_battle
-    and ! I_IsUnitRouting a1u13
+    and not I_UnitStatus a1u13 running_amok
+    and not I_UnitDestroyed a1u13
+    and not I_UnitStatus a1u13 left_battle
+    and not I_IsUnitRouting a1u13
     ai_gta_add_unit_label 0 0 a1u13
     end_if
 
     if I_CompareCounter enemy_unit_count > 13
     if I_UnitFormation a1u14 = horde
-    and ! I_UnitStatus a1u14 running_amok
-    and ! I_UnitDestroyed a1u14
-    and ! I_UnitStatus a1u14 left_battle
-    and ! I_IsUnitRouting a1u14
+    and not I_UnitStatus a1u14 running_amok
+    and not I_UnitDestroyed a1u14
+    and not I_UnitStatus a1u14 left_battle
+    and not I_IsUnitRouting a1u14
     ai_gta_add_unit_label 0 0 a1u14
     end_if
 
     if I_CompareCounter enemy_unit_count > 14
     if I_UnitFormation a1u15 = horde
-    and ! I_UnitStatus a1u15 running_amok
-    and ! I_UnitDestroyed a1u15
-    and ! I_UnitStatus a1u15 left_battle
-    and ! I_IsUnitRouting a1u15
+    and not I_UnitStatus a1u15 running_amok
+    and not I_UnitDestroyed a1u15
+    and not I_UnitStatus a1u15 left_battle
+    and not I_IsUnitRouting a1u15
     ai_gta_add_unit_label 0 0 a1u15
     end_if
 
     if I_CompareCounter enemy_unit_count > 15
     if I_UnitFormation a1u16 = horde
-    and ! I_UnitStatus a1u16 running_amok
-    and ! I_UnitDestroyed a1u16
-    and ! I_UnitStatus a1u16 left_battle
-    and ! I_IsUnitRouting a1u16
+    and not I_UnitStatus a1u16 running_amok
+    and not I_UnitDestroyed a1u16
+    and not I_UnitStatus a1u16 left_battle
+    and not I_IsUnitRouting a1u16
     ai_gta_add_unit_label 0 0 a1u16
     end_if
 
     if I_CompareCounter enemy_unit_count > 16
     if I_UnitFormation a1u17 = horde
-    and ! I_UnitStatus a1u17 running_amok
-    and ! I_UnitDestroyed a1u17
-    and ! I_UnitStatus a1u17 left_battle
-    and ! I_IsUnitRouting a1u17
+    and not I_UnitStatus a1u17 running_amok
+    and not I_UnitDestroyed a1u17
+    and not I_UnitStatus a1u17 left_battle
+    and not I_IsUnitRouting a1u17
     ai_gta_add_unit_label 0 0 a1u17
     end_if
 
     if I_CompareCounter enemy_unit_count > 17
     if I_UnitFormation a1u18 = horde
-    and ! I_UnitStatus a1u18 running_amok
-    and ! I_UnitDestroyed a1u18
-    and ! I_UnitStatus a1u18 left_battle
-    and ! I_IsUnitRouting a1u18
+    and not I_UnitStatus a1u18 running_amok
+    and not I_UnitDestroyed a1u18
+    and not I_UnitStatus a1u18 left_battle
+    and not I_IsUnitRouting a1u18
     ai_gta_add_unit_label 0 0 a1u18
     end_if
 
     if I_CompareCounter enemy_unit_count > 18
     if I_UnitFormation a1u19 = horde
-    and ! I_UnitStatus a1u19 running_amok
-    and ! I_UnitDestroyed a1u19
-    and ! I_UnitStatus a1u19 left_battle
-    and ! I_IsUnitRouting a1u19
+    and not I_UnitStatus a1u19 running_amok
+    and not I_UnitDestroyed a1u19
+    and not I_UnitStatus a1u19 left_battle
+    and not I_IsUnitRouting a1u19
     ai_gta_add_unit_label 0 0 a1u19
     end_if
 
     if I_CompareCounter enemy_unit_count = 20
     if I_UnitFormation a1u20 = horde
-    and ! I_UnitStatus a1u20 running_amok
-    and ! I_UnitDestroyed a1u20
-    and ! I_UnitStatus a1u20 left_battle
-    and ! I_IsUnitRouting a1u20
+    and not I_UnitStatus a1u20 running_amok
+    and not I_UnitDestroyed a1u20
+    and not I_UnitStatus a1u20 left_battle
+    and not I_IsUnitRouting a1u20
     ai_gta_add_unit_label 0 0 a1u20
     end_if
     end_if
@@ -35422,10 +36029,9 @@ end_monitor
 
 ;;;;;;;Elephants Gate and Walls
 monitor_event BattleBattleGatesDestroyedByEngine TrueCondition ;wtf
-    and I_CompareCounter panel_check = 1
 
 if I_BattleIsSiegeBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
     if I_CompareCounter elephant_gate = 1
@@ -35451,10 +36057,9 @@ end_if
 end_monitor
 
 monitor_event BattleWallsCaptured TrueCondition
-    and I_CompareCounter panel_check = 1
 
 if I_BattleIsSiegeBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
     if I_CompareCounter elephant_gate = 1
@@ -35480,14 +36085,13 @@ end_if
 end_monitor
 
 monitor_event BattleWallsBreachedByEngine TrueCondition
-    and I_CompareCounter panel_check = 1
 
 if I_BattleIsSiegeBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_BattleEnemyArmyNumberOfMountClass elephant > 0
 
     if I_CompareCounter elephant_gate = 1
-    ai_gta_del_objective 0
+    ai_gta_del_objective 1 0
     ai_active_set off
     battle_wait 0.5
     ai_active_set on
@@ -35498,7 +36102,7 @@ if I_BattleIsSiegeBattle
     if I_CompareCounter second_ring = 1
     and I_IsBattleSettlementCastle
     and I_BattleSettlementFortificationLevel > 2
-    ai_gta_del_objective 0
+    ai_gta_del_objective 1 0
     ai_active_set off
     battle_wait 0.5
     ai_active_set on
@@ -35517,11 +36121,11 @@ end_if
 end_monitor
 
 monitor_conditions I_BattleStarted ;dont suicide general
-
-    and I_BattleIsSiegeBattle
-	and not I_BattlePlayerArmyIsAttacker
-    and I_IsUnitMoveFastSet a1u1
-    and I_BattleEnemyArmyNumberOfUnitCategory cavalry > 0
+and I_BattleIsSiegeBattle
+and not I_BattlePlayerArmyIsAttacker
+and I_IsUnitMoveFastSet a1u1
+and I_BattleEnemyArmyNumberOfUnitCategory cavalry > 0
+    log always ------------------------ dont suicide general?-------------------------------------
 
     battle_wait 0.5
     unit_order_halt a1u1
@@ -35626,7 +36230,7 @@ end_monitor
 
 monitor_conditions I_BattleStarted
     and I_BattleIsSiegeBattle
-    and ! I_BattlePlayerArmyIsAttacker
+    and not I_BattlePlayerArmyIsAttacker
     and I_UnitEnemyUnitInRadius a1u1 60
     
     if I_CompareCounter general_wait > 0
@@ -35657,13 +36261,15 @@ end_monitor
 
 monitor_conditions I_BattleStarted
     and I_CompareCounter g5_special > 2
+    log always ------------------------ special ability-------------------------------------
 
-    if ! I_BattlePlayerArmyIsAttacker
+    if not I_BattlePlayerArmyIsAttacker
     and I_IsUnitEngaged a1u1
 
         inc_counter g5_special 1
         if I_CompareCounter g5_special = 6
             unit_use_special_ability a1u1
+            log always ------------------------ use special ability-------------------------------------
             set_counter g5_special 0
         end_if
     end_if
@@ -35674,6 +36280,7 @@ monitor_conditions I_BattleStarted
         inc_counter g5_special 1
         if I_CompareCounter g5_special = 6
             unit_use_special_ability a2u1
+            log always ------------------------ use special ability-------------------------------------
             set_counter g5_special 0
         end_if
     end_if
@@ -35681,12 +36288,13 @@ monitor_conditions I_BattleStarted
     battle_wait 1
     
     if I_CompareCounter enemy_unit_count > 1
-        if ! I_BattlePlayerArmyIsAttacker
+        if not I_BattlePlayerArmyIsAttacker
         and I_IsUnitEngaged a1u2
 
             inc_counter g5_special_2 1
             if I_CompareCounter g5_special_2 = 6
                 unit_use_special_ability a1u2
+                log always ------------------------ use special ability-------------------------------------
                 set_counter g5_special_2 0
             end_if
         end_if
@@ -35697,16 +36305,18 @@ monitor_conditions I_BattleStarted
             inc_counter g5_special_2 1
             if I_CompareCounter g5_special_2 = 6
                 unit_use_special_ability a2u2
+                log always ------------------------ use special ability-------------------------------------
                 set_counter g5_special_2 0
             end_if
         end_if
         if I_CompareCounter enemy_unit_count > 2
-            if ! I_BattlePlayerArmyIsAttacker
+            if not I_BattlePlayerArmyIsAttacker
             and I_IsUnitEngaged a1u3
 
                 inc_counter g5_special_3 1
                 if I_CompareCounter g5_special_3 = 6
                     unit_use_special_ability a1u3
+                log always ------------------------ use special ability-------------------------------------
                     set_counter g5_special_3 0
                 end_if
             end_if
@@ -35717,6 +36327,7 @@ monitor_conditions I_BattleStarted
                 inc_counter g5_special_3 1
                 if I_CompareCounter g5_special_3 = 6
                     unit_use_special_ability a2u2
+                    log always ------------------------ use special ability-------------------------------------
                     set_counter g5_special_3 0
                 end_if
             end_if
@@ -35780,6 +36391,7 @@ monitor_event ScrollOpened ScrollOpened post_battle_scroll
     set_counter general_wait 0
     ;;;;;;;Open Battles
     set_counter ob_under_fire 0
+    set_counter ob_engaged 0
     set_counter ob_engaged 0
     ;;;;;;;Special Ability
     set_counter g5_special 0
