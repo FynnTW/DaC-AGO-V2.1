@@ -36,8 +36,8 @@ unlockable
 
 end
 nonplayable
-	papal_states
 	slave
+	papal_states
 	scripts
 	united
 end
@@ -5970,7 +5970,7 @@ settlement castle
 	}
 }
 
-character	Uglag, named character, male, leader, age 54, x 242, y 341, hero_ability LEGION, label uglag_1
+character	Uglag, named character, male, leader, age 54, x 242, y 341, portrait Uglag, hero_ability LEGION, label uglag_1
 traits		Hero 1, OrcRace 1, FactionLeader 1, HeroAbilityOrcLegion 1, GoodCommander 3, BattleScarred 3, PietyStarter 1, StrategyChivalryEvil 2, GoodAttacker 1, Energetic 3, NightBattleCapable 1, SiegeDefender 1, OneRingAvailable 1
 ancillaries	king_oomm, slasher, orc_drum
 army
@@ -5984,7 +5984,7 @@ unit		Goblin Band			exp 0 armour 0 weapon_lvl 0
 unit		Goblin Infantry				exp 0 armour 0 weapon_lvl 0
 unit		Goblin Infantry				exp 0 armour 0 weapon_lvl 0
 
-character	Agorolg, named character, male, heir, age 36, x 254, y 370, hero_ability ORC_DRAUGHT, battle_model mordor_general, label agorolg_1
+character	Agorolg, named character, male, heir, age 36, x 254, y 370, portrait Agorolg, hero_ability ORC_DRAUGHT, battle_model mordor_general, label agorolg_1
 traits		Hero 1, OrcRace 1, FactionHeirCustom 1, HeroAbilityOrcDraught 1, Hatred 2, GoodCommander 3, LoyaltyStarter 1, PietyStarter 1, GoodDefender 2, BattleChivalryEvil 2 , NightBattleCapable 1, Overseer 1, NaturalManagementSkill 1, Energetic 3, OneRingAvailable 1, MoriaInquisitor 1
 ancillaries	orc_horn
 army
@@ -5994,7 +5994,7 @@ unit		Goblin Band				exp 0 armour 0 weapon_lvl 0
 unit		Goblin Infantry				exp 0 armour 0 weapon_lvl 0
 unit		Goblin Infantry				exp 0 armour 0 weapon_lvl 0
 
-character	Lunug, named character, male, age 18, x 233, y 350, label lunug_1
+character	Lunug, named character, male, age 18, x 233, y 350, portrait Lunug, label lunug_1
 traits		OrcRace 1, LoyaltyStarter 1, GoodCommander 1, StrategyChivalryEvil 2, Berserker 3, Bloodthirsty 2, Overseer 1, GoodSiegeAttacker 1, NightBattleCapable 1, OneRingAvailable 1, MountainOrcStrat 1, CustomBG 1
 ancillaries goblin
 army
@@ -6280,7 +6280,7 @@ unit		Temple Wards				exp 3 armour 0 weapon_lvl 0
 unit		Angmarim Infantry					exp 1 armour 0 weapon_lvl 0
 unit		Angmarim Archers					exp 1 armour 0 weapon_lvl 0
 
-character	Hunvorn, named character, male, age 21, x 203, y 442, portrait Hunvorn, battle_model hunvorn, hero_ability VENOM, label hurnvorn_1
+character	Hunvorn, named character, male, age 21, x 203, y 442, portrait Hunvorn, battle_model barrow_wights_lord, hero_ability VENOM, label hurnvorn_1
 traits		Hunvorn 1, CustomBG 1, Hero 1, WraithRace 1, HeroAbilityVenom 1, ColdWarrior 1, LoyaltyStarter 1 , GoodCommander 2 , FearGeneral 1, BattleFear 1, GoodAttacker 1 , GoodAmbusher 2, NightBattleCapable 1, Noctophilia 2, OneRingAvailable 1
 ancillaries	poison
 army
