@@ -1157,7 +1157,7 @@ Fords_Province
 	grassland, unlocked, roads, no_brigands, boats, no_pirates, Enedwaith, ResH
 	5
 	1
-	religions { catholic 30 elven 0 dwarven 0 northmen 50 heretic 0 islam 0 wildmen 20 nomadic 0 orthodox 0 kings 0 }
+	religions { catholic 10 elven 0 dwarven 0 northmen 50 heretic 0 islam 0 wildmen 40 nomadic 0 orthodox 0 kings 0 }
 Adorn_Province
 	legion: Gap_of_Rohan_Province
 	Adorn
