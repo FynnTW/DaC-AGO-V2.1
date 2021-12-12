@@ -182,7 +182,7 @@ building core_castle_building
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -207,8 +207,8 @@ building core_castle_building
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhovanion and event_counter balchoth_clan_joins 1
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhun and event_counter balchoth_clan_joins 1
 				recruit_pool "Orc Band"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
+				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Goblins"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { england, }  and region_religion catholic 15 and hidden_resource Rhovanion or hidden_resource Logathavuld or hidden_resource Mirkwood or hidden_resource Vale
@@ -258,7 +258,7 @@ building core_castle_building
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -283,8 +283,8 @@ building core_castle_building
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhovanion and event_counter balchoth_clan_joins 1
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhun and event_counter balchoth_clan_joins 1
 				recruit_pool "Orc Band"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
+				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Goblins"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { england, }  and region_religion catholic 15 and hidden_resource Rhovanion or hidden_resource Logathavuld or hidden_resource Mirkwood or hidden_resource Vale
@@ -335,7 +335,7 @@ building core_castle_building
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -360,8 +360,8 @@ building core_castle_building
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhovanion and event_counter balchoth_clan_joins 1
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhun and event_counter balchoth_clan_joins 1
 				recruit_pool "Orc Band"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
+				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Goblins"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { england, }  and region_religion catholic 15 and hidden_resource Rhovanion or hidden_resource Logathavuld or hidden_resource Mirkwood or hidden_resource Vale
@@ -413,7 +413,7 @@ building core_castle_building
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan				
@@ -438,8 +438,8 @@ building core_castle_building
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhovanion and event_counter balchoth_clan_joins 1
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhun and event_counter balchoth_clan_joins 1
 				recruit_pool "Orc Band"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
+				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Goblins"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { england, }  and region_religion catholic 15 and hidden_resource Rhovanion or hidden_resource Logathavuld or hidden_resource Mirkwood or hidden_resource Vale
@@ -491,7 +491,7 @@ building core_castle_building
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan				
@@ -516,8 +516,8 @@ building core_castle_building
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhovanion and event_counter balchoth_clan_joins 1
 				recruit_pool "Balchoth Tribesmen"  1   0.096   2  0  requires factions { venice, }  and region_religion orthodox 15 and hidden_resource Rhun and event_counter balchoth_clan_joins 1
 				recruit_pool "Orc Band"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
-				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15
+				recruit_pool "Orc Scouts"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Orc Raiders"  1   0.12   2  0  requires factions { england, }  and region_religion catholic 15 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15
 				recruit_pool "Mirkwood Goblins"  1   0.176   3  0  requires factions { poland, }  and region_religion catholic 15	
 				recruit_pool "Mirkwood Hunters"  1   0.176   3  0  requires factions { england, }  and region_religion catholic 15 and hidden_resource Rhovanion or hidden_resource Logathavuld or hidden_resource Mirkwood or hidden_resource Vale
@@ -582,7 +582,7 @@ building equestrian
 				recruit_pool "Gondor Cavalry Militia"  1   0.09   2  0  requires factions { sicily, denmark, }  and region_religion islam 25
 				recruit_pool "Gondor Cavalry Militia"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 25 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Amrothian Squires"  1   0.07  1  0  requires factions { denmark, }  and region_religion islam 33
-				recruit_pool "Amrothian Squires"  1   0.07  1  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast
+				recruit_pool "Amrothian Squires"  1   0.07  1  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.066   1  0  requires factions { sicily, denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.066   1  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB and event_counter reunited_kingdom 1
 
@@ -653,11 +653,11 @@ building equestrian
 				recruit_pool "Gondor Cavalry"  1   0.09   2  0  requires factions { sicily, }  and region_religion islam 50
 				recruit_pool "Gondor Cavalry"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Amrothian Squires"  1   0.082   2  0  requires factions { denmark, }  and region_religion islam 33 
-				recruit_pool "Amrothian Squires"  1   0.082   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Squires"  1   0.082   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Sea-ward Lancers"  1   0.066   1  0  requires factions { denmark, }  and region_religion islam 50
 				recruit_pool "Sea-ward Lancers"  1   0.066   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "White Knights"  1   0.09   1  0  requires factions { denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM
-				recruit_pool "White Knights"  1   0.09   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "White Knights"  1   0.09   1  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.082   2  0  requires factions { sicily, denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.082   2  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB and event_counter reunited_kingdom 1
 
@@ -729,11 +729,11 @@ building equestrian
 				recruit_pool "Gondor Cavalry"  1   0.09   2  0  requires factions { sicily, }  and region_religion islam 50
 				recruit_pool "Gondor Cavalry"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Amrothian Squires"  1   0.098   2  1  requires factions { denmark, }  and region_religion islam 33
-				recruit_pool "Amrothian Squires"  1   0.098   2  1  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Squires"  1   0.098   2  1  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Sea-ward Lancers"  1   0.098   2  0  requires factions { denmark, }  and region_religion islam 50
 				recruit_pool "Sea-ward Lancers"  1   0.098   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "White Knights"  1   0.098   2  0  requires factions { denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM
-				recruit_pool "White Knights"  1   0.098   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "White Knights"  1   0.098   2  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Knights of the Silver Swan"  1   0.058   1  0  requires factions { denmark, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF
 				recruit_pool "Knights of the Silver Swan"  1   0.058   1  0  requires factions { denmark, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI
 				recruit_pool "Knights of the Silver Swan"  1   0.058   1  0  requires factions { denmark, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK
@@ -892,7 +892,7 @@ building c_equestrian
 				recruit_pool "Amrothian Squires"  1   0.04  1  0  requires factions { denmark, }  and region_religion islam 33
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.036  1   0  requires factions { sicily, denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB
 				recruit_pool "Gondor Cavalry Militia"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 25 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Amrothian Squires"  1   0.04  1  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Squires"  1   0.04  1  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.036  1   0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB and event_counter reunited_kingdom 1
 
 				recruit_pool "Rohirrim"  1   0.076   2  0  requires factions { milan, }  and region_religion northmen 25
@@ -963,9 +963,9 @@ building c_equestrian
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.06   2  0  requires factions { sicily, denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB
 				recruit_pool "Gondor Cavalry Militia"   1   0.076   2  0  requires factions { turks, }  and region_religion islam 25 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Cavalry"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Amrothian Squires"  1   0.06   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Lancers"  1   0.06   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "White Knights"  1   0.06   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Squires"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Lancers"  1   0.06   1  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "White Knights"  1   0.06   1  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB and event_counter reunited_kingdom 1
 
 				recruit_pool "Riddermark Cavalry"  1   0.084   1  0  requires factions { milan, }  and region_religion northmen 55 and hidden_resource Enedwaith and hidden_resource ResH
@@ -1075,9 +1075,9 @@ building c_equestrian
 				recruit_pool "Pinnath Gelin Cavalry"  1   0.076   2  1  requires factions { sicily, denmark, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResB
 				recruit_pool "Gondor Cavalry Militia"   1   0.092   3  0  requires factions { turks, }  and region_religion islam 25 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Cavalry"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Amrothian Squires"  1   0.076   2  2  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Lancers"  1   0.068   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "White Knights"  1   0.068   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Squires"  1   0.076   2  2  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Lancers"  1   0.068   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "White Knights"  1   0.068   2  0  requires factions { turks, }  and region_religion islam 50 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Knights of the Silver Swan"  1   0.028   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1
 				recruit_pool "Knights of the Silver Swan"  1   0.028   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI and event_counter reunited_kingdom 1
 				recruit_pool "Knights of the Silver Swan"  1   0.028   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK and event_counter reunited_kingdom 1
@@ -1875,8 +1875,8 @@ building barracks
 				recruit_pool "Lamedon Clansmen"  1   0.052   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.052   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.052   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1				
-				recruit_pool "Amrothian Pikemen"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Amrothian Guardsmen"  1   0.075   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Pikemen"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Guardsmen"  1   0.075   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 
 				recruit_pool "Firebeard Warriors"  1   0.035   1  0  requires factions { hungary, }  and region_religion dwarven 50 and hidden_resource Lindon and hidden_resource ResA
 				recruit_pool "Firebeard Warriors"  1   0.035   1  0  requires factions { hungary, }  and region_religion dwarven 50 and hidden_resource Lindon and hidden_resource ResD
@@ -1900,10 +1900,9 @@ building barracks
 				recruit_pool "Dorwinion Infantry"  1   0.044   1  0  requires factions { byzantium, }  and region_religion northmen 40
 				recruit_pool "Avari Warriors"  1   0.02   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_elf 1
 				
-				recruit_pool "Orc Maulers"  1   0.06   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.06   1  0  requires factions { england, }  and region_religion catholic 25	and event_counter is_the_ai 1		
+				recruit_pool "Orc Maulers"  1   0.06   2  0  requires factions { england, }  and region_religion catholic 25	
 				recruit_pool "Morannon Guard"  1   0.06   3  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 25 	
+				recruit_pool "Orc Host"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale 	
 				recruit_pool "Morgul Chosen"  1   0.02   1  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB			
 
 				recruit_pool "Dol Guldur Host"  1   0.14   3  0  requires factions { poland, }  and region_religion catholic 25
@@ -2059,14 +2058,14 @@ building barracks
 				recruit_pool "Lamedon Clansmen"  1   0.06   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.06   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.06   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1				
-				recruit_pool "Amrothian Pikemen"  1   0.06   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Amrothian Guardsmen"  1   0.06   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Pikemen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Guardsmen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Lossarnach Axemen"  1   0.044   1  0  requires factions { turks, } and hidden_resource GondorWest and hidden_resource ResG and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.044   1  0  requires factions { turks, } and hidden_resource GondorEast and hidden_resource ResK and event_counter reunited_kingdom 1
 				recruit_pool "Gondor Spearmen"  1   0.044   1  0  requires factions { turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Infantry"  1   0.044   1  0  requires factions { turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Sea-ward Spearmen"  1   0.044   1  0  requires factions { sicily, turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Footmen"  1   0.044   1  0  requires factions { sicily, turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Spearmen"  1   0.044   1  0  requires factions { turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Footmen"  1   0.044   1  0  requires factions { turks, } and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Guards of Osgiliath"  1   0.028   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Guards of Osgiliath"  1   0.028   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1
 
@@ -2106,13 +2105,12 @@ building barracks
 				recruit_pool "Regent Spearguard"  1   0.06   1  0  requires factions { byzantium, }  and region_religion northmen 65
 
 				recruit_pool "Orc Maulers"  1   0.076   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.076   1  0  requires factions { england, }  and region_religion catholic 25 and event_counter is_the_ai 1
 				recruit_pool "Morannon Guard"  1   0.076   3  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.2   3  0  requires factions { england, }  and region_religion catholic 25		
+				recruit_pool "Orc Host"  1   0.2   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale	
 				recruit_pool "Morgul Chosen"  1   0.06   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB			
 				recruit_pool "Morgul Chosen"  1   0.06   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResC
 				recruit_pool "Black Uruk Halberds"  1   0.116   3  0  requires factions { england, }  and region_religion catholic 50
-				recruit_pool "Black Uruks"  1   0.116   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Black Uruks"  1   0.116   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Host"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Orc Maulers"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25
@@ -2311,25 +2309,25 @@ building barracks
 				recruit_pool "Lamedon Clansmen"  1   0.076   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.076   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.076   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1				
-				recruit_pool "Amrothian Pikemen"  1   0.076   2  0  requires factions { sicily, turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1
-				recruit_pool "Amrothian Guardsmen"  1   0.076   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Pikemen"  1   0.076   2  0  requires factions { turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Guardsmen"  1   0.076   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.06   2  0  requires factions { turks, }  and hidden_resource GondorWest and hidden_resource ResG and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.06   2  0  requires factions { turks, }  and hidden_resource GondorEast and hidden_resource ResK and event_counter reunited_kingdom 1
 				recruit_pool "Gondor Spearmen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Infantry"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Sea-ward Spearmen"  1   0.06   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Footmen"  1   0.06   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Spearmen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Footmen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Guards of Osgiliath"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Guards of Osgiliath"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Wardens White Tower"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Wardens White Tower"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Wardens White Tower"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResL and event_counter reunited_kingdom 1				
 				recruit_pool "Citadel Guard"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast				
-				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResL and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.044   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResL and event_counter reunited_kingdom 1
 
 				recruit_pool "Ered Luin Militia"  1   0.06   2  1  requires factions { hungary, }  and region_religion dwarven 25
 				recruit_pool "Ered Luin Pikemen"  1   0.06   2  1  requires factions { hungary, }  and region_religion dwarven 25
@@ -2380,9 +2378,8 @@ building barracks
 				recruit_pool "Vintner-Court Knights"  1   0.052   1  0  requires factions { byzantium, }  and region_religion northmen 75
 
 				recruit_pool "Orc Maulers"  1   0.08   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.08   1  0  requires factions { england, }  and region_religion catholic 25 and event_counter is_the_ai 1
 				recruit_pool "Morannon Guard"  1   0.12   3  1  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.18   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Host"  1   0.18   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Saurons Will"  1   0.10   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResA
 				recruit_pool "Saurons Will"  1   0.10   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB
 				recruit_pool "Saurons Will"  1   0.10   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResF
@@ -2390,7 +2387,7 @@ building barracks
 				recruit_pool "Morgul Chosen"  1   0.10   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB			
 				recruit_pool "Morgul Chosen"  1   0.10   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResC
 				recruit_pool "Black Uruk Halberds"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50
-				recruit_pool "Black Uruks"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Black Uruks"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Castellans of Dol Guldur"  1   0.06   1  0  requires factions { poland, } and region_religion catholic 75 and hidden_resource Mirkwood and hidden_resource ResL
 				recruit_pool "Dol Guldur Host"  1   0.18   3  1  requires factions { poland, }  and region_religion catholic 25
@@ -2577,8 +2574,8 @@ building castle_barracks
 				recruit_pool "Lamedon Clansmen"  1   0.082   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.082   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.082   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1			
-				recruit_pool "Amrothian Pikemen"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Amrothian Guardsmen"  1   0.105   2  0  requires factions { sicily, turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Pikemen"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Guardsmen"  1   0.105   2  0  requires factions { turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 
 				recruit_pool "Firebeard Warriors"  1   0.042   1  0  requires factions { hungary, }  and region_religion dwarven 50 and hidden_resource Lindon and hidden_resource ResA
 				recruit_pool "Firebeard Warriors"  1   0.042   1  0  requires factions { hungary, }  and region_religion dwarven 50 and hidden_resource Lindon and hidden_resource ResD
@@ -2603,9 +2600,8 @@ building castle_barracks
 				recruit_pool "Avari Warriors"  1   0.05   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_elf 1
 
 				recruit_pool "Orc Maulers"  1   0.09   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.09   1  0  requires factions { england, }  and region_religion catholic 25	and event_counter is_the_ai 1
 				recruit_pool "Morannon Guard"  1   0.09   3  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Host"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				
 				recruit_pool "Dol Guldur Host"  1   0.17   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Orc Maulers"  1   0.17   3  0  requires factions { poland, }  and region_religion catholic 25
@@ -2761,14 +2757,14 @@ building castle_barracks
 				recruit_pool "Lamedon Clansmen"  1   0.098   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.098   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.098   1  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF	and event_counter reunited_kingdom 1			
-				recruit_pool "Amrothian Pikemen"  1   0.09   2  0  requires factions { sicily, turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Amrothian Guardsmen"  1   0.09   2  0  requires factions { sicily, turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Pikemen"  1   0.09   2  0  requires factions { turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Amrothian Guardsmen"  1   0.09   2  0  requires factions { turks,}  and region_religion islam 33 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Lossarnach Axemen"  1   0.074   1  0  requires factions { turks, }  and hidden_resource GondorWest and hidden_resource ResG and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.074   1  0  requires factions { turks, }  and hidden_resource GondorEast and hidden_resource ResK and event_counter reunited_kingdom 1
 				recruit_pool "Gondor Spearmen"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Infantry"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Sea-ward Spearmen"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Footmen"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Spearmen"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Footmen"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Guards of Osgiliath"  1   0.058   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Guards of Osgiliath"  1   0.058   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1
 
@@ -2808,11 +2804,10 @@ building castle_barracks
 				recruit_pool "Regent Spearguard"  1   0.09   1  0  requires factions { byzantium, }  and region_religion northmen 65
 
 				recruit_pool "Orc Maulers"  1   0.106   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.106   1  0  requires factions { england, }  and region_religion catholic 25 and event_counter is_the_ai 1
 				recruit_pool "Morannon Guard"  1   0.106   3  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.21   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Host"  1   0.21   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Black Uruk Halberds"  1   0.146   3  0  requires factions { england, }  and region_religion catholic 50
-				recruit_pool "Black Uruks"  1   0.146   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Black Uruks"  1   0.146   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Host"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Orc Maulers"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25
@@ -3012,25 +3007,25 @@ building castle_barracks
 				recruit_pool "Lamedon Clansmen"  1   0.106   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResD and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.106   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResE and event_counter reunited_kingdom 1
 				recruit_pool "Lamedon Clansmen"  1   0.106   2  0  requires factions { turks, }  and region_religion islam 33 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1				
-				recruit_pool "Amrothian Pikemen"  1   0.106   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
-				recruit_pool "Amrothian Guardsmen"  1   0.106   2  0  requires factions { sicily, turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Pikemen"  1   0.106   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Guardsmen"  1   0.106   2  0  requires factions { turks, }  and region_religion islam 33 and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.09   2  0  requires factions { turks, }  and hidden_resource GondorWest and hidden_resource ResG and event_counter reunited_kingdom 1
 				recruit_pool "Lossarnach Axemen"  1   0.09   2  0  requires factions { turks, }  and hidden_resource GondorEast and hidden_resource ResK and event_counter reunited_kingdom 1
 				recruit_pool "Gondor Spearmen"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
 				recruit_pool "Gondor Infantry"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Sea-ward Spearmen"  1   0.09   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
-				recruit_pool "Sea-ward Footmen"  1   0.09   2  0  requires factions { sicily, turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Spearmen"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
+				recruit_pool "Sea-ward Footmen"  1   0.09   2  0  requires factions { turks, }  and region_religion islam 50 and event_counter reunited_kingdom 1 and not hidden_resource Cardolan and not hidden_resource Arthedain and not hidden_resource GondorWest and not hidden_resource GondorEast 
 				recruit_pool "Guards of Osgiliath"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Guards of Osgiliath"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 60 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1
 				recruit_pool "Wardens White Tower"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResC and event_counter reunited_kingdom 1
 				recruit_pool "Wardens White Tower"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResM and event_counter reunited_kingdom 1		
 				recruit_pool "Wardens White Tower"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorEast and hidden_resource ResL and event_counter reunited_kingdom 1					
 				recruit_pool "Citadel Guard"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and event_counter reunited_kingdom 1 and hidden_resource GondorWest or hidden_resource GondorEast
-				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
-				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { sicily, turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResL and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResF and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResI and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResK and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResM and event_counter reunited_kingdom 1
+				recruit_pool "Talon Knights"  1   0.074   1  0  requires factions { turks, }  and region_religion islam 75 and hidden_resource GondorWest and hidden_resource ResL and event_counter reunited_kingdom 1
 
 				recruit_pool "Ered Luin Militia"  1   0.09   2  1  requires factions { hungary, }  and region_religion dwarven 25
 				recruit_pool "Ered Luin Pikemen"  1   0.09   2  1  requires factions { hungary, }  and region_religion dwarven 25 	
@@ -3084,9 +3079,8 @@ building castle_barracks
 				recruit_pool "Vintner-Court Knights"  1   0.082   1  0  requires factions { byzantium, }  and region_religion northmen 75
 
 				recruit_pool "Orc Maulers"  1   0.11   2  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Maulers"  1   0.11   1  0  requires factions { england, }  and region_religion catholic 25 and event_counter is_the_ai 1
 				recruit_pool "Morannon Guard"  1   0.11   3  1  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Orc Host"  1   0.21   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Host"  1   0.21   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 				recruit_pool "Saurons Will"  1   0.13   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResA
 				recruit_pool "Saurons Will"  1   0.13   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB
 				recruit_pool "Saurons Will"  1   0.13   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResF
@@ -3094,7 +3088,7 @@ building castle_barracks
 				recruit_pool "Morgul Chosen"  1   0.13   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResB			
 				recruit_pool "Morgul Chosen"  1   0.13   2  0  requires factions { england, }  and region_religion catholic 75 and hidden_resource Mordor and hidden_resource ResC
 				recruit_pool "Black Uruk Halberds"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50
-				recruit_pool "Black Uruks"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Black Uruks"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Castellans of Dol Guldur"  1   0.09   1  0  requires factions { poland, } and region_religion catholic 75 and hidden_resource Mirkwood and hidden_resource ResL				
 				recruit_pool "Dol Guldur Host"  1   0.21   3  1  requires factions { poland, }  and region_religion catholic 25
@@ -3273,7 +3267,7 @@ building missiles
 				recruit_pool "Avari Shadows"  1   0.05   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_elf 1
 				recruit_pool "Avari Shadows"  1   0.03   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.17   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.17   3  0  requires factions { poland, }  and region_religion catholic 25	
@@ -3383,8 +3377,8 @@ building missiles
 				recruit_pool "Moriquendi Sentinels"  1   0.066   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_elf 1
 				recruit_pool "Moriquendi Sentinels"  1   0.036   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.21   4  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Black Uruk Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Orc Archers"  1   0.21   4  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Black Uruk Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25 			
@@ -3524,8 +3518,8 @@ building missiles
 				recruit_pool "Moriquendi Sentinels"  1   0.066   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_elf 1
 				recruit_pool "Moriquendi Sentinels"  1   0.046   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.21   4  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Black Uruk Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Orc Archers"  1   0.21   4  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Black Uruk Archers"  1   0.17   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.21   3  0  requires factions { poland, }  and region_religion catholic 25			
@@ -3644,7 +3638,7 @@ building c_missiles
 				recruit_pool "Avari Shadows"  1   0.02   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_elf 1
 				recruit_pool "Avari Shadows"  1   0.02   1  0  requires factions { byzantium, }  and region_religion northmen 50 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 25
+				recruit_pool "Orc Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.14   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.14   3  0  requires factions { poland, }  and region_religion catholic 25
@@ -3756,8 +3750,8 @@ building c_missiles
 				recruit_pool "Moriquendi Sentinels"  1   0.036   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_elf 1
 				recruit_pool "Moriquendi Sentinels"  1   0.02   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.18   4  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Black Uruk Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Orc Archers"  1   0.18   4  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Black Uruk Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25				
@@ -3906,8 +3900,8 @@ building c_missiles
 				recruit_pool "Moriquendi Sentinels"  1   0.036   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_elf 1
 				recruit_pool "Moriquendi Sentinels"  1   0.02   1  0  requires factions { byzantium, }  and region_religion northmen 75 and event_counter dorwinion_men 1 and not event_counter dorwinion_war 1
 
-				recruit_pool "Orc Archers"  1   0.18   4  0  requires factions { england, }  and region_religion catholic 25
-				recruit_pool "Black Uruk Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50
+				recruit_pool "Orc Archers"  1   0.18   4  0  requires factions { england, }  and region_religion catholic 25 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
+				recruit_pool "Black Uruk Archers"  1   0.14   3  0  requires factions { england, }  and region_religion catholic 50 and not hidden_resource Rhovanion and not hidden_resource Logathavuld and not hidden_resource Mirkwood and not hidden_resource Vale
 
 				recruit_pool "Dol Guldur Archers"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25
 				recruit_pool "Dol Guldur Scouts"  1   0.18   3  0  requires factions { poland, }  and region_religion catholic 25					
@@ -3974,13 +3968,12 @@ building forest_camps
 {
 	levels hunting_camp lumber_camp
 	{
-		hunting_camp requires factions { turks, normans, sicily, } and hidden_resource forest and event_counter gondor_rk 1
+		hunting_camp requires factions { turks, normans, } and hidden_resource forest
 		{
 			capability
 			{
 				recruit_pool "Woodland Hunters"  1   0.028   1  0  requires factions { normans, }  and region_religion wildmen 10
 				recruit_pool "Woodland Hunters"  1   0.028   1  0  requires factions { turks, }  and region_religion islam 10
-				recruit_pool "Woodland Hunters"  1   0.028   1  0  requires factions { sicily, }  and region_religion islam 10
 				free_upkeep bonus 2
 				income_bonus bonus 32 requires factions { turks, sicily, }
 				income_bonus bonus 32 requires factions { normans, } and not event_counter bree_military 1
@@ -3995,7 +3988,7 @@ building forest_camps
 				lumber_camp
 			}
 		}
-		lumber_camp requires factions { turks, normans, } and hidden_resource forest and event_counter gondor_rk 1
+		lumber_camp requires factions { turks, normans, } and hidden_resource forest
 		{
 			capability
 			{
@@ -4003,8 +3996,6 @@ building forest_camps
 				recruit_pool "Lumbermen"  1   0.06   2  0  requires factions { normans, }  and region_religion wildmen 10
 				recruit_pool "Woodland Hunters"  1   0.04   1  0  requires factions { turks, }  and region_religion islam 10
 				recruit_pool "Lumbermen"  1   0.06   2  0  requires factions { turks, }  and region_religion islam 10
-				recruit_pool "Woodland Hunters"  1   0.04   1  0  requires factions { sicily, }  and region_religion islam 10
-				recruit_pool "Lumbermen"  1   0.06   2  0  requires factions { sicily, }  and region_religion islam 10
 				recruit_pool "Brehins Sword-Wielders"  1   0.045   2  0  requires factions { normans, }  and event_counter scouring_shire 1
 				free_upkeep bonus 2
 				income_bonus bonus 32 requires factions { turks, sicily, }
@@ -4611,7 +4602,7 @@ building professional_military
 				recruit_pool "Lamedon Clansmen"  0.999    0.082   0.999   0  requires factions { sicily, denmark, turks, } and not hidden_resource GondorWest
 				recruit_pool "Blackroot Vale Archers"  0.999   0.082   0.999  0  requires factions { sicily, denmark, turks, } and not hidden_resource GondorWest
 				recruit_pool "Ithilien Rangers"  0.999   0.05   0.999  0  requires factions { sicily, denmark, turks, } and not hidden_resource GondorEast
-				recruit_pool "White Knights"  0.999   0.09   0.999  0  requires factions { sicily, turks, denmark, } and not hidden_resource GondorWest
+				recruit_pool "White Knights"  0.999   0.09   0.999  0  requires factions { turks, denmark, } and not hidden_resource GondorWest
 				recruit_pool "Knights of the Silver Swan"  0.999   0.058   0.999  0  requires factions { sicily, turks, denmark, } and not hidden_resource GondorWest
 				recruit_pool "Lossarnach Axemen"  0.999   0.074   0.999  0  requires factions { sicily, denmark, turks, } and not hidden_resource GondorEast and not hidden_resource GondorWest 
 				recruit_pool "Guards of Osgiliath"  0.999   0.058   0.999  0  requires factions { sicily, denmark, turks, } and not hidden_resource GondorEast
@@ -5209,7 +5200,7 @@ building port
 				
 				recruit_pool "Angren Raiders"  1   0.064   1  0  requires factions { teutonic_order, } and region_religion wildmen 35				
 				recruit_pool "Haven Guard"  1   0.02   1  0  requires factions { denmark, } and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.02   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.02   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.048   1  0  requires factions { russia, } and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.048   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1				
 				trade_base_income_bonus bonus 1
@@ -5242,10 +5233,10 @@ building port
 				
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, } and region_religion wildmen 35				
 				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { denmark, }  and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.024  1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.024  1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.056   1  0  requires factions { russia, } and region_religion kings 40
 				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { denmark, } and region_religion islam 60
-				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1
+				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, } and region_religion orthodox 50 and event_counter naval_clan_joins 1	
 				recruit_pool "Lindar Mariners"  1   0.056   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1	
 				trade_base_income_bonus bonus 1
@@ -5278,10 +5269,10 @@ building port
 				
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, } and region_religion wildmen 35				
 				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { denmark, }  and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.056   1  0  requires factions { russia, } and region_religion kings 40
 				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { denmark, } and region_religion islam 60
-				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1
+				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, } and region_religion orthodox 50 and event_counter naval_clan_joins 1	
 				recruit_pool "Lindar Mariners"  1   0.056   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1	
 				recruit_pool "Lindar Mariners"  1   0.048   1  0  requires factions { hungary, }
@@ -5314,10 +5305,10 @@ building port
 				
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, }   and region_religion wildmen 35					
 				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.064   1  0  requires factions { russia, }   and region_religion kings 40
 				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { denmark, } and region_religion islam 60	
-				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
+				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }   and region_religion orthodox 50 and event_counter naval_clan_joins 1	
 				recruit_pool "Lindar Mariners"  1   0.056   1  1  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1	
 				trade_base_income_bonus bonus 1
@@ -5353,9 +5344,9 @@ building port
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }   and region_religion orthodox 50 and event_counter naval_clan_joins 1			
 				recruit_pool "Azrazair Marines"  1   0.064   1  1  requires factions { russia, }   and region_religion kings 40
 				recruit_pool "Nimrodel Mariners"  1   0.04   1  1  requires factions { denmark, } and region_religion islam 60
-				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
+				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
 				recruit_pool "Haven Guard"  1   0.032   1  1  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Lindar Mariners"  1   0.064   1  1  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1	
 				trade_base_income_bonus bonus 2
 				recruitment_cost_bonus_naval bonus 3 requires factions { denmark, russia, saxons, } 
@@ -5394,7 +5385,7 @@ building castle_port
 				
 				recruit_pool "Angren Raiders"  1   0.064   1  0  requires factions { teutonic_order, }   and region_religion wildmen 35				
 				recruit_pool "Haven Guard"  1   0.02   1  0  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.056   1  0  requires factions { russia, }   and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.056   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1		
 				trade_base_income_bonus bonus 2	
@@ -5429,9 +5420,9 @@ building castle_port
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, }   and region_religion wildmen 35
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }   and region_religion orthodox 50 and event_counter naval_clan_joins 1
 				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { denmark, } and region_religion islam 60	
-				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
+				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
 				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.056   1  0  requires factions { russia, }   and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.064   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1
 				trade_base_income_bonus bonus 3
@@ -5467,9 +5458,9 @@ building castle_port
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, }   and region_religion wildmen 35
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }   and region_religion orthodox 50 and event_counter naval_clan_joins 1
 				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { denmark, } and region_religion islam 60	
-				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
+				recruit_pool "Nimrodel Mariners"  1   0.032   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
 				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.024   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.056   1  0  requires factions { russia, }   and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.064   1  0  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1
 				recruit_pool "Lindar Mariners"  1   0.056   1  0  requires factions { hungary, }
@@ -5505,9 +5496,9 @@ building castle_port
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, }   and region_religion wildmen 35
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }   and region_religion orthodox 50 and event_counter naval_clan_joins 1
 				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { denmark, } and region_religion islam 60	
-				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
+				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1			
 				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { denmark, }   and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.064   1  0  requires factions { russia, }   and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.064   1  1  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1			
 				trade_base_income_bonus bonus 4
@@ -5542,9 +5533,9 @@ building castle_port
 				recruit_pool "Angren Raiders"  1   0.08   2  0  requires factions { teutonic_order, }  and region_religion wildmen 35	
 				recruit_pool "Udege Marines"  1   0.056   1  0  requires factions { venice, }  and region_religion orthodox 50 and event_counter naval_clan_joins 1
 				recruit_pool "Nimrodel Mariners"  1   0.04   1  1  requires factions { denmark, } and region_religion islam 60
-				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { sicily, turks, } and region_religion islam 60 and event_counter reunited_kingdom 1				
+				recruit_pool "Nimrodel Mariners"  1   0.04   1  0  requires factions { turks, } and region_religion islam 60 and event_counter reunited_kingdom 1				
 				recruit_pool "Haven Guard"  1   0.032   1  1  requires factions { denmark, }  and region_religion islam 75				
-				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Haven Guard"  1   0.032   1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Azrazair Marines"  1   0.064   1  1  requires factions { russia, }  and region_religion kings 40	
 				recruit_pool "Lindar Mariners"  1   0.072   1  1  requires factions { saxons, }  and region_religion elven 33 and event_counter mithlond_controlled 1			
 				trade_base_income_bonus bonus 5
@@ -6747,9 +6738,9 @@ building guild_horse_breeders_guild
 				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { denmark, }
 				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { denmark, }
 				recruit_pool "Sea-ward Lancers"  				 0  0.02   0.5 	 0  requires factions { denmark, }				
-				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { sicily, turks, } and event_counter reunited_kingdom 1
-				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { sicily, turks, } and event_counter reunited_kingdom 1
-				recruit_pool "Sea-ward Lancers"  				 0  0.02   0.5 	 0  requires factions { sicily, turks, } and event_counter reunited_kingdom 1
+				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { turks, } and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { turks, } and event_counter reunited_kingdom 1
+				recruit_pool "Sea-ward Lancers"  				 0  0.02   0.5 	 0  requires factions { turks, } and event_counter reunited_kingdom 1
 				recruit_pool "Nomad Horsemen" 					 0  0.02   0.5	 0  requires factions { khand, }
 				recruit_pool "Khandish Raiders" 				 0  0.02   0.5	 0  requires factions { khand, }
 				recruit_pool "Variag Horse Archers" 				 0  0.02   0.5	 0  requires factions { khand, }
@@ -6762,10 +6753,6 @@ building guild_horse_breeders_guild
 				recruit_pool "Dunedain Scouts"  			 0  0.02   0.5	 0  requires factions { turks, }
 				recruit_pool "Dunedain Cavalry"  				 0  0.02   0.5	 0  requires factions { turks, }
 				recruit_pool "Sworn Horsemen"  	 0  0.02   0.5	 0  requires factions { turks, }
-				recruit_pool "Cardolan Riders"  		 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
-				recruit_pool "Dunedain Scouts"  			 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
-				recruit_pool "Dunedain Cavalry"  				 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
-				recruit_pool "Sworn Horsemen"  	 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
 			}
 			material wooden
 			construction  4
@@ -6791,8 +6778,8 @@ building guild_horse_breeders_guild
 				recruit_pool "Serpent Archers" 			 0  0.02   0.5  	 0  requires factions { spain, }
 				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { denmark, }
 				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { denmark, }				
-				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { sicily, turks, } and event_counter reunited_kingdom 1
-				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { sicily, turks, } and event_counter reunited_kingdom 1
+				recruit_pool "Gondor Cavalry Militia" 		 	 0  0.02   0.5 	 0  requires factions { turks, } and event_counter reunited_kingdom 1
+				recruit_pool "Amrothian Squires"  				 0  0.02   0.5 	 0  requires factions { turks, } and event_counter reunited_kingdom 1
 				recruit_pool "Nomad Horsemen" 					 0  0.02   0.5	 0  requires factions { khand, }
 				recruit_pool "Khandish Raiders" 				 0  0.02   0.5	 0  requires factions { khand, }
 				recruit_pool "Windriders of Khand" 				 0  0.02   0.5	 0  requires factions { khand, }
@@ -6802,9 +6789,6 @@ building guild_horse_breeders_guild
 				recruit_pool "Cardolan Riders"  		 0  0.02   0.5	 0  requires factions { turks, }
 				recruit_pool "Dunedain Scouts"  			 0  0.02   0.5	 0  requires factions { turks, }
 				recruit_pool "Dunedain Cavalry"  	 0  0.02   0.5	 0  requires factions { turks, }
-				recruit_pool "Cardolan Riders"  		 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
-				recruit_pool "Dunedain Scouts"  			 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
-				recruit_pool "Dunedain Cavalry"  	 0  0.02   0.5	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
 				
 				recruit_pool "Eored Lancers" 	 1  0.056   1  	 0  requires factions { milan, }
 				recruit_pool "Muhad Beastmasters"  	 1  0.056   1	 0  requires factions { spain, }
@@ -6813,7 +6797,6 @@ building guild_horse_breeders_guild
 				recruit_pool "Variag Horse Archers" 	 1  0.056   1	 0  requires factions { khand, }
 				recruit_pool "Eotheod Horse Archers"   1  0.056   1	 0  requires factions { timurids, }
 				recruit_pool "Sworn Horsemen"  	 1  0.04   1	 0  requires factions { turks, }
-				recruit_pool "Sworn Horsemen"  	 1  0.04   1	 0  requires factions { sicily, } and event_counter reunited_kingdom 1
 			}
 			faction_capability
 			{
@@ -8462,7 +8445,7 @@ building city_hall
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -8640,7 +8623,7 @@ building city_hall
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -8819,7 +8802,7 @@ building city_hall
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -9000,7 +8983,7 @@ building city_hall
 				recruit_pool "Vineyard Levies"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Vineyard Bowmen"  1   0.096   2  0  requires factions { byzantium, }  and region_religion northmen 25
 				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { denmark, }  and region_religion islam 25 and hidden_resource coast
-				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { sicily, turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
+				recruit_pool "Coastal Wardens"  1   0.096   2  0  requires factions { turks, }  and region_religion islam 25 and hidden_resource coast and event_counter reunited_kingdom 1
 				recruit_pool "Peasant Militia"  1   0.112   2  0  requires factions { milan, }  and region_religion northmen 15
 				recruit_pool "Peasant Militia"  1   0.09   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
 				recruit_pool "Peasant Scouts"  1   0.08   2  0  requires factions { aztecs, } and event_counter dunland_homeland 1 and hidden_resource Rohan
@@ -10045,7 +10028,7 @@ building orocarni_clan_hall
 				recruit_pool "Stonefoot Spearmen"  1   0.048   1  0  requires factions { moors, }  and region_religion dwarven 33
 				recruit_pool "Stiffbeard Archers"  1   0.04   1  0  requires factions { khand, }  and region_religion nomadic 33
 				recruit_pool "Stonefoot Spearmen"  1   0.04   1  0  requires factions { khand, }  and region_religion nomadic 33
-				recruitment_slots 1
+				recruitment_slots bonus 1
 				free_upkeep bonus 2
 			}
 			material wooden
@@ -10070,7 +10053,7 @@ building orocarni_clan_hall
 				recruit_pool "Orocarni Warriors"  1   0.044   1  0  requires factions { khand, }  and region_religion nomadic 66
 				recruit_pool "Iron Fist Hammers"  1   0.032   1  0  requires factions { khand, }  and region_religion nomadic 66
 				recruit_pool "Blacklock Engineers"  1   0.032   1  0  requires factions { khand, }  and region_religion nomadic 66
-				recruitment_slots 2
+				recruitment_slots bonus 2
 				free_upkeep bonus 3
             }
             material wooden
@@ -10099,7 +10082,7 @@ building KD_Unity_Hall
 				recruit_pool "Erebor Infantry"  1   0.024   2  0  requires factions { norway, }  ;and event_counter khazad_E_Reinforcements_Arrived 1
 				recruit_pool "Kings Axes"  1   0.024   2  0  requires factions { norway, }  ;and event_counter khazad_IH_Reinforcements_Arrived 1
 				recruit_pool "Blacklock Engineers"  1   0.024   2  0  requires factions { norway, }  ;and event_counter khazad_BM_Reinforcements_Arrived 1 and event_counter khazad_IH_Reinforcements_Arrived 1 and event_counter khazad_E_Reinforcements_Arrived 1
-				recruitment_slots 1
+				recruitment_slots bonus 1
 				free_upkeep bonus 2
 			}
 			material wooden
@@ -10130,7 +10113,7 @@ building house_of_kings
 				recruit_pool "Fountain Guard"  1   0.04   1  0  requires factions { sicily, denmark, }  and region_religion islam 75 
 				recruit_pool "Fountain Guard"  1   0.04   1  0  requires factions { turks, }  and region_religion islam 75 and event_counter reunited_kingdom 1
 				recruit_pool "Tirith Aear Wardens"  1  0.04  1  0  requires factions { denmark, } and region_religion islam 75
-				recruit_pool "Tirith Aear Wardens"  1  0.04  1  0  requires factions { sicily, turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
+				recruit_pool "Tirith Aear Wardens"  1  0.04  1  0  requires factions { turks, } and region_religion islam 75 and event_counter reunited_kingdom 1
 				free_upkeep bonus 3
 				recruits_morale_bonus bonus 5
 				law_bonus bonus 5
@@ -10161,7 +10144,7 @@ building dunedain_camp
 				recruit_pool "Dunedain Wardens"  1   0.032   1  0  requires factions { normans, } and not event_counter scouring_shire 1
 				recruit_pool "Dunedain Wardens"  1   0.04   1  0  requires factions { saxons, }
 				recruit_pool "Dunedain Scouts"  1   0.036   1  0  requires factions { saxons, }
-				recruitment_slots 1
+				recruitment_slots bonus 1
 				free_upkeep bonus 2
 			}
 			material wooden
@@ -10181,7 +10164,7 @@ building dunedain_camp
 				recruit_pool "Dunedain Wardens"  1   0.036   1  0  requires factions { normans, } and not event_counter scouring_shire 1
 				recruit_pool "Sworn Horsemen"  1   0.032   1  0  requires factions { normans, } and not event_counter scouring_shire 1
 				recruit_pool "Dunedain Blademasters"  1   0.032   1  0  requires factions { normans, } and not event_counter scouring_shire 1
-				recruitment_slots 2
+				recruitment_slots bonus 2
 				free_upkeep bonus 3
             }
             material wooden
@@ -10833,7 +10816,7 @@ building mil_education
 		{
 			capability
 			{
-				recruitment_slots 1 requires factions { sicily, denmark, turks, }
+				recruitment_slots bonus 1 requires factions { sicily, denmark, turks, }
 				law_bonus bonus 1 requires factions { sicily, denmark, turks, }
 			}
 			material wooden
@@ -12433,9 +12416,7 @@ building hinterland_unique2
 				recruit_pool "Amrothian Squires"  1   0.07   1  0  requires factions { denmark, } and event_counter is_the_ai 1
 				recruit_pool "Sea-ward Lancers"  1   0.07   1  0  requires factions { denmark, } and event_counter is_the_ai 1			
 				recruit_pool "Tirith Aear Wardens"  1  0.028  2  0  requires factions { denmark, turks, } and region_religion islam 80
-				recruit_pool "Tirith Aear Knights"  1  0.028   2  0  requires factions { denmark, turks, } and region_religion islam 80			
-				recruit_pool "Tirith Aear Wardens"  1  0.028  2  0  requires factions { sicily, } and region_religion islam 80 and event_counter reunited_kingdom 1
-				recruit_pool "Tirith Aear Knights"  1  0.028   2  0  requires factions { sicily, } and region_religion islam 80 and event_counter reunited_kingdom 1
+				recruit_pool "Tirith Aear Knights"  1  0.028   2  0  requires factions { denmark, turks, } and region_religion islam 80		
 				recruit_pool "Naru n'Aru Royal Knights"  1  0.04   1  0  requires factions { russia, } and region_religion kings 75
 				recruit_pool "Naru n'Aru Royal Guard"  1   0.04   1  0  requires factions { russia, }  and region_religion kings 75	
 				retrain_cost_bonus bonus 1  requires factions { denmark, }
