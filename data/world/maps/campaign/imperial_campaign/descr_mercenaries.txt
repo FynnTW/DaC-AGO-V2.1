@@ -44,7 +44,7 @@ pool Harad
 	regions Umbar_Province Gobel_Ancalimon_Province Amrun_Province Shafra_Province Erelond_Province 
 	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven kings nomadic }	
 	unit Human Boat,				exp 1 cost 1000 replenish 0.04 - 0.10 max 1 initial 1 religions { northmen islam wildmen elven dwarven kings nomadic }
-	unit Harondor Mercenaries				exp 0 cost 900 replenish 0.056 - 0.10 max 2 initial 1 religions { islam orthodox kings nomadic }	
+	unit Harondor Mercenaries,				exp 0 cost 900 replenish 0.056 - 0.10 max 2 initial 1 religions { islam orthodox kings nomadic }	
 	unit Azrazair Raiders,			exp 1 cost 280 replenish 0.12 - 0.2 max 2 initial 1 religions { catholic kings orthodox nomadic }
 	unit Southron Warband,		exp 0 cost 350 replenish 0.056 - 0.10 max 3 initial 0 religions { catholic kings orthodox nomadic }
 	unit Haradrim Archers,		exp 0 cost 300 replenish 0.12 - 0.20 max 2 initial 0 religions { catholic kings orthodox nomadic }
@@ -291,10 +291,10 @@ pool Rhun_Sea
 ;Must be allied
 pool Bree_BoH
 	regions Bree_Province Cardolan_Province Metraith_Province Shire_North_Province Shire_South_Province Shire_West_Province
-	unit Breeland Militia,		exp 0 cost 500 replenish 0.084 - 0.12 max 3 initial 2 religions { islam } events { turks_allied_normans }
-	unit Archer Militia,		exp 0 cost 500 replenish 0.084 - 0.12 max 3 initial 2 religions { islam } events { turks_allied_normans }
-	unit Journeymen,			exp 0 cost 650 replenish 0.084 - 0.12 max 2 initial 1 religions { islam } events { turks_allied_normans }
-	unit Sellswords,			exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven }
+	unit Breeland Militia,			exp 0 cost 500 replenish 0.084 - 0.12 max 3 initial 2 religions { islam } events { turks_allied_normans }
+	unit Archer Militia,			exp 0 cost 500 replenish 0.084 - 0.12 max 3 initial 2 religions { islam } events { turks_allied_normans }
+	unit Journeymen,				exp 0 cost 650 replenish 0.084 - 0.12 max 2 initial 1 religions { islam } events { turks_allied_normans }
+	unit Sellswords,				exp 0 cost 1000 replenish 0.024 - 0.04 max 1 initial 1 religions { northmen islam dwarven wildmen catholic orthodox elven }
 	unit Merchant Cavalry,				exp 0 cost 700 replenish 0.032 - 0.048 max 1 initial 1 religions { dwarven }
 	unit Bandits,				exp 0 cost 500 replenish 0.08 - 0.16 max 2 initial 1 religions { northmen wildmen islam orthodox dwarven }
 	unit Dwarven Travellers,		exp 0 cost 550 replenish 0.032 - 0.056 max 1 initial 1 religions { northmen islam wildmen dwarven elven }
