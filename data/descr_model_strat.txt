@@ -79,7 +79,7 @@ ignore_registry
 ;;;;;;;;;;;;;;
 
 type				dunedain_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				turks, models_strat/textures/dunedain_diplomat.tga
@@ -87,7 +87,7 @@ model_flexi_m			models_strat/dunedain_diplomat.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				evil_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				england, models_strat/textures/diplomat_mordor.tga
@@ -101,7 +101,7 @@ model_flexi_m			models_strat/evil_ambassador.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				elven_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				saxons, models_strat/textures/elven_diplomat_high.tga
@@ -111,7 +111,7 @@ model_flexi_m			models_strat/elven_ambassador.cas, max
 shadow_model_flexi		models_strat/shadow_hand.CAS, max
 
 type				dwarven_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				moors, models_strat/textures/erebor_diplomat.tga
@@ -121,7 +121,7 @@ model_flexi_m			models_strat/dwarven_diplomat.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				northern_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				timurids, models_strat/textures/ambasador_hre.tga
@@ -148,7 +148,7 @@ model_flexi_m			models_strat/northern_ambassador.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				southern_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				milan, models_strat/textures/southern_ambasador_milan.tga
@@ -167,7 +167,7 @@ model_flexi_m			models_strat/southern_ambassador.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				islamic_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				spain, models_strat/textures/islamic_ambassador_timurids.tga
@@ -177,7 +177,7 @@ model_flexi_m			models_strat/islamic_ambassador.cas, max
 shadow_model_flexi		models_strat/shadow_hand.CAS, max
 
 type				arnor_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				turks, models_strat/textures/ambasador_hre.tga
@@ -185,7 +185,7 @@ model_flexi_m			models_strat/northern_ambassador.CAS, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				grima
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				france, models_strat/textures/grima.tga
@@ -193,7 +193,7 @@ model_flexi_m			models_strat/grima.cas, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				radagast
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				timurids, models_strat/textures/radagast.tga
@@ -201,7 +201,7 @@ model_flexi_m			models_strat/radagast.cas, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				mos
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				england, models_strat/textures/mos.tga
@@ -209,7 +209,7 @@ model_flexi_m			models_strat/mos.cas, max
 shadow_model_flexi		models_strat/shadow_scroll.CAS, max
 
 type				umbar_ambassador
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				england, models_strat/textures/umbar_diplomat.tga
@@ -259,7 +259,7 @@ model_flexi_m			models_strat/dwarven_spy.cas, max
 shadow_model_flexi		models_strat/shadow_hand.CAS, max
 
 type				evil_spy
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				england, models_strat/textures/spy_orcsmm.tga
@@ -630,7 +630,7 @@ shadow_model_flexi		models_strat/shadow_staff.CAS, max
 ;;;;;;;;;;;
 
 type				heretic
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				slave, models_strat/textures/heretic_christian_rebels.tga
@@ -643,7 +643,7 @@ shadow_model_flexi		models_strat/shadow_staff.CAS, max
 ;;;;;;;;;
 
 type				witch
-skeleton			strat_diplomat
+skeleton			strat_diplomat_fast
 scale				0.7
 indiv_range			40
 texture				slave, models_strat/textures/witch.tga
