@@ -36,7 +36,7 @@
 12 brehin_sword
 1 1
 54 unit_models/_Units/Dunland_Bill/brehin_sword_lod0.mesh 6400
-3
+6
 6 aztecs
 61 unit_models/_Units/Dunland_Bill/textures/brehin_sword.texture
 66 unit_models/_Units/Dunland_Bill/textures/brehin_sword_norm.texture 0
@@ -46,7 +46,16 @@
 5 slave
 61 unit_models/_Units/Dunland_Bill/textures/brehin_sword.texture
 66 unit_models/_Units/Dunland_Bill/textures/brehin_sword_norm.texture 0
-3
+14 teutonic_order
+61 unit_models/_Units/Dunland_Bill/textures/brehin_sword.texture
+66 unit_models/_Units/Dunland_Bill/textures/brehin_sword_norm.texture 0
+6 france
+61 unit_models/_Units/Dunland_Bill/textures/brehin_sword.texture
+66 unit_models/_Units/Dunland_Bill/textures/brehin_sword_norm.texture 0
+7 normans
+61 unit_models/_Units/Dunland_Bill/textures/brehin_sword.texture
+66 unit_models/_Units/Dunland_Bill/textures/brehin_sword_norm.texture 0
+6
 6 aztecs
 68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
 73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
@@ -54,6 +63,15 @@
 68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
 73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
 5 slave
+68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
+73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
+14 teutonic_order
+68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
+73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
+6 france
+68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
+73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
+7 normans
 68 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach.texture
 73 unit_models/_Units/Dunland_Bill/textures/brehin_sword_attach_norm.texture 0
 1
@@ -1480,8 +1498,12 @@
 16 mount_naru_horse
 1 1
 62 unit_models/Mounts/naru_horse/new_Naru_knights_horse_lod0.mesh 15000
-1
+2
 6 russia
+68 unit_models/Mounts/naru_horse/textures/new_naru_knight_horse.texture
+74 unit_models/Mounts/naru_horse/textures/new_naru_knights_horse_norm.texture
+30 unit_sprites/nazgul_sprite.spr
+5 slave
 68 unit_models/Mounts/naru_horse/textures/new_naru_knight_horse.texture
 74 unit_models/Mounts/naru_horse/textures/new_naru_knights_horse_norm.texture
 30 unit_sprites/nazgul_sprite.spr
@@ -2494,7 +2516,7 @@
 64 unit_models/Mounts/heavy_horse_marka/tirith_aear_horse_lod0.mesh 121
 64 unit_models/Mounts/heavy_horse_marka/tirith_aear_horse_lod0.mesh 1225
 64 unit_models/Mounts/heavy_horse_marka/tirith_aear_horse_lod0.mesh 10000
-3
+4
 5 turks
 69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_barded.texture
 69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_normal.texture
@@ -2504,6 +2526,10 @@
 69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_normal.texture
 49 unit_sprites/denmark_Tirith_Aear_Horse_sprite.spr
 5 slave
+69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_barded.texture
+69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_normal.texture
+49 unit_sprites/denmark_Tirith_Aear_Horse_sprite.spr
+6 sicily
 69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_barded.texture
 69 unit_models/Mounts/heavy_horse_marka/textures/ta_horse_normal.texture
 49 unit_sprites/denmark_Tirith_Aear_Horse_sprite.spr
@@ -11260,7 +11286,7 @@
 14 iron_guard_upg
 1 1
 53 unit_models/_Units/iron_soldiers/iron_sword_lod0.mesh 6400 
-5
+6
 8 scotland
 65 unit_models/_Units/iron_soldiers/textures/iron_foot_armor.texture 
 72 unit_models/_Units/iron_soldiers/textures/iron_foot_armor_normal.texture 
@@ -11281,7 +11307,11 @@
 65 unit_models/_Units/iron_soldiers/textures/iron_foot_armor.texture 
 72 unit_models/_Units/iron_soldiers/textures/iron_foot_armor_normal.texture 
 44 unit_sprites/moors_iron_guard_upg_sprite.spr 
-5
+7 hungary
+65 unit_models/_Units/iron_soldiers/textures/iron_foot_armor.texture 
+72 unit_models/_Units/iron_soldiers/textures/iron_foot_armor_normal.texture 
+44 unit_sprites/moors_iron_guard_upg_sprite.spr 
+6
 8 scotland
 72 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_diff.texture 
 74 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_normal.texture 0  
@@ -11295,6 +11325,9 @@
 72 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_diff.texture 
 74 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_normal.texture 0  
 4 merc
+72 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_diff.texture 
+74 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_normal.texture 0  
+7 hungary
 72 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_diff.texture 
 74 unit_models/_Units/iron_soldiers/textures/iron_foot_weapons_normal.texture 0  
 1
@@ -17486,7 +17519,7 @@
 26 rhudaur_captain_early_flag
 1 1
 93 unit_models/_Generals_and_Captains/northern_captain_flag/rhudaur_captain_flag_early_lod0.mesh 100000
-7
+8
 8 gundabad
 58 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen_normal.texture 0
@@ -17508,7 +17541,10 @@
 5 slave
 58 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen_normal.texture 0
-7
+7 normans
+58 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/hillmen_normal.texture 0
+8
 8 gundabad
 47 unit_models/AttachmentSets/rhudaur_diff.texture
 47 unit_models/AttachmentSets/rhudaur_norm.texture 0
@@ -17528,6 +17564,9 @@
 47 unit_models/AttachmentSets/rhudaur_diff.texture
 47 unit_models/AttachmentSets/rhudaur_norm.texture 0
 5 slave
+47 unit_models/AttachmentSets/rhudaur_diff.texture
+47 unit_models/AttachmentSets/rhudaur_norm.texture 0
+7 normans
 47 unit_models/AttachmentSets/rhudaur_diff.texture
 47 unit_models/AttachmentSets/rhudaur_norm.texture 0
 4
@@ -17800,7 +17839,7 @@
 7 militia
 1 1
 42 unit_models/_units/rohan/militia_lod0.mesh 6400
-7
+8
 4 merc
 49 unit_models/_units/rohan/textures/militia.texture
 54 unit_models/_units/rohan/textures/militia_norm.texture
@@ -17829,7 +17868,11 @@
 49 unit_models/_units/rohan/textures/militia.texture
 54 unit_models/_units/rohan/textures/militia_norm.texture
 37 unit_sprites/milan_militia_sprite.spr
-7
+7 denmark
+49 unit_models/_units/rohan/textures/militia.texture
+54 unit_models/_units/rohan/textures/militia_norm.texture
+37 unit_sprites/milan_militia_sprite.spr
+8
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
@@ -17851,6 +17894,9 @@
 6 sicily
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
+7 denmark
+62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
 1
 4 None
 10 MTW2_Spear 0
@@ -17861,7 +17907,7 @@
 11 militia_upg
 1 1
 46 unit_models/_units/rohan/militia_upg_lod0.mesh 6400
-7
+8
 4 merc
 53 unit_models/_units/rohan/textures/militia_upg.texture
 58 unit_models/_units/rohan/textures/militia_upg_norm.texture
@@ -17890,7 +17936,11 @@
 53 unit_models/_units/rohan/textures/militia_upg.texture
 58 unit_models/_units/rohan/textures/militia_upg_norm.texture
 37 unit_sprites/milan_militia_sprite.spr
-7
+7 denmark
+53 unit_models/_units/rohan/textures/militia_upg.texture
+58 unit_models/_units/rohan/textures/militia_upg_norm.texture
+37 unit_sprites/milan_militia_sprite.spr
+8
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_4_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_4_norm.texture 0
@@ -17910,6 +17960,9 @@
 62 unit_models/_units/rohan/textures/rohan_weapons_4_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_4_norm.texture 0
 6 sicily
+62 unit_models/_units/rohan/textures/rohan_weapons_4_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_4_norm.texture 0
+7 denmark
 62 unit_models/_units/rohan/textures/rohan_weapons_4_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_4_norm.texture 0
 1
@@ -17988,7 +18041,7 @@
 24 rohan_captain_early_flag
 1 1
 91 unit_models/_Generals_and_Captains/northern_captain_flag/rohan_captain_flag_early_lod0.mesh 100000
-16
+17
 6 russia
 45 unit_models/_units/AA/aa_rohan_banner.texture
 50 unit_models/_units/AA/aa_rohan_banner_norm.texture 0
@@ -18037,7 +18090,10 @@
 4 merc
 51 unit_models/_units/rohan/textures/spearmens.texture
 56 unit_models/_units/rohan/textures/spearmens_norm.texture 0
-16
+7 denmark
+51 unit_models/_units/rohan/textures/spearmens.texture
+56 unit_models/_units/rohan/textures/spearmens_norm.texture 0
+17
 6 russia
 49 unit_models/_units/AA/aa_rohan_banner_att.texture
 54 unit_models/_units/AA/aa_rohan_banner_att_norm.texture 0
@@ -18084,6 +18140,9 @@
 60 unit_models/_units/rohan/textures/heavy_weapons_diff.texture
 60 unit_models/_units/rohan/textures/heavy_weapons_norm.texture 0
 4 merc
+60 unit_models/_units/rohan/textures/heavy_weapons_diff.texture
+60 unit_models/_units/rohan/textures/heavy_weapons_norm.texture 0
+7 denmark
 60 unit_models/_units/rohan/textures/heavy_weapons_diff.texture
 60 unit_models/_units/rohan/textures/heavy_weapons_norm.texture 0
 4
@@ -19863,7 +19922,7 @@
 11 Warg_riders
 1 1
 61 unit_models/_Units/ES_Greek_Greek_Heavy/Warg_riders_lod0.mesh 6400
-4
+5
 8 gundabad
 73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_gu.texture
 80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
@@ -19880,7 +19939,11 @@
 73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_IS.texture
 80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
 42 unit_sprites/france_Warg_riders_sprite.spr
-4
+7 england
+73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_IS.texture
+80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
+42 unit_sprites/france_Warg_riders_sprite.spr
+5
 8 gundabad
 59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
@@ -19893,6 +19956,9 @@
 5 slave
 59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
+7 england
+59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
+59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
 1
 5 Horse
 12 MTW2_HR_Mace 0
@@ -19903,7 +19969,7 @@
 15 Warg_riders_upg
 1 1
 61 unit_models/_Units/ES_Greek_Greek_Heavy/Warg_riders_lod0.mesh 6400
-4
+5
 8 gundabad
 73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_gu.texture
 80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
@@ -19920,7 +19986,11 @@
 73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_IS.texture
 80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
 42 unit_sprites/france_Warg_riders_sprite.spr
-4
+7 england
+73 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_IS.texture
+80 unit_models/_units/ES_Greek_Greek_Heavy/textures/mtw2_es_greek_normal_IS.texture
+42 unit_sprites/france_Warg_riders_sprite.spr
+5
 8 gundabad
 59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
@@ -19931,6 +20001,9 @@
 59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
 5 slave
+59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
+59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
+7 england
 59 unit_models/AttachmentSets/Final mordor_mordor_diff.texture
 59 unit_models/AttachmentSets/Final mordor_mordor_norm.texture 0
 1
@@ -20888,7 +20961,7 @@
 19 dis_royal_guard_upg
 1 1
 50 unit_models/_units/rohan/dis_royal_guard_lod0.mesh 6400
-7
+8
 4 merc
 52 unit_models/_units/rohan/textures/spearmens2.texture
 57 unit_models/_units/rohan/textures/spearmens2_norm.texture
@@ -20917,7 +20990,11 @@
 52 unit_models/_units/rohan/textures/spearmens2.texture
 57 unit_models/_units/rohan/textures/spearmens2_norm.texture
 45 unit_sprites/milan_dis_royal_guard_sprite.spr
-7
+7 denmark
+52 unit_models/_units/rohan/textures/spearmens2.texture
+57 unit_models/_units/rohan/textures/spearmens2_norm.texture
+45 unit_sprites/milan_dis_royal_guard_sprite.spr
+8
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_3_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_3_norm.texture 0
@@ -20937,6 +21014,9 @@
 62 unit_models/_units/rohan/textures/rohan_weapons_3_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_3_norm.texture 0
 6 sicily
+62 unit_models/_units/rohan/textures/rohan_weapons_3_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_3_norm.texture 0
+7 denmark
 62 unit_models/_units/rohan/textures/rohan_weapons_3_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_3_norm.texture 0
 1
@@ -21513,7 +21593,7 @@
 21 rohan_mounted_archers
 1 1
 56 unit_models/_units/rohan/rohan_mounted_archers_lod0.mesh 6400
-6
+7
 4 merc
 52 unit_models/_units/rohan/textures/spearmens0.texture
 57 unit_models/_units/rohan/textures/spearmens0_norm.texture
@@ -21538,7 +21618,11 @@
 52 unit_models/_units/rohan/textures/spearmens0.texture
 57 unit_models/_units/rohan/textures/spearmens0_norm.texture
 51 unit_sprites/milan_rohan_mounted_archers_sprite.spr
-6
+7 denmark
+52 unit_models/_units/rohan/textures/spearmens0.texture
+57 unit_models/_units/rohan/textures/spearmens0_norm.texture
+51 unit_sprites/milan_rohan_mounted_archers_sprite.spr
+7
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
@@ -21557,6 +21641,9 @@
 6 sicily
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
+7 denmark
+62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
 1
 5 Horse
 26 MTW2_HR_Shortbowman_String 12 MTW2_HR_Mace
@@ -21568,7 +21655,7 @@
 25 rohan_mounted_archers_upg
 1 1
 60 unit_models/_units/rohan/rohan_mounted_archers_upg_lod0.mesh 6400
-6
+7
 4 merc
 52 unit_models/_units/rohan/textures/spearmens1.texture
 57 unit_models/_units/rohan/textures/spearmens1_norm.texture
@@ -21593,7 +21680,11 @@
 52 unit_models/_units/rohan/textures/spearmens1.texture
 57 unit_models/_units/rohan/textures/spearmens1_norm.texture
 51 unit_sprites/milan_rohan_mounted_archers_sprite.spr
-6
+7 denmark
+52 unit_models/_units/rohan/textures/spearmens1.texture
+57 unit_models/_units/rohan/textures/spearmens1_norm.texture
+51 unit_sprites/milan_rohan_mounted_archers_sprite.spr
+7
 4 merc
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
@@ -21610,6 +21701,9 @@
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
 6 sicily
+62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
+62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
+7 denmark
 62 unit_models/_units/rohan/textures/rohan_weapons_1_diff.texture
 62 unit_models/_units/rohan/textures/rohan_weapons_1_norm.texture 0
 1
@@ -26502,7 +26596,7 @@
 16 woodland_hunters
 1 1
 52 unit_models/_Units/en_lmail_hmail/woodland_lod0.mesh 6400
-5
+6
 6 russia
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
@@ -26523,7 +26617,11 @@
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 46 unit_sprites/turks_woodland_hunters_sprite.spr
-5
+6 sicily
+59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
+66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
+46 unit_sprites/turks_woodland_hunters_sprite.spr
+6
 6 russia
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
@@ -26537,6 +26635,9 @@
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 5 slave
+48 unit_models/AttachmentSets/woodland_diff.texture
+48 unit_models/AttachmentSets/woodland_norm.texture 0
+6 sicily
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 1
@@ -26550,7 +26651,7 @@
 20 woodland_hunters_upg
 1 1
 52 unit_models/_Units/en_lmail_hmail/woodland_lod0.mesh 6400
-5
+6
 6 russia
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
@@ -26571,7 +26672,11 @@
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 46 unit_sprites/turks_woodland_hunters_sprite.spr
-5
+6 sicily
+59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
+66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
+46 unit_sprites/turks_woodland_hunters_sprite.spr
+6
 6 russia
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
@@ -26585,6 +26690,9 @@
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 5 slave
+48 unit_models/AttachmentSets/woodland_diff.texture
+48 unit_models/AttachmentSets/woodland_norm.texture 0
+6 sicily
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 1
@@ -26611,7 +26719,7 @@
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 39 unit_sprites/turks_lumbermen_sprite.spr
-6 united
+6 sicily
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 39 unit_sprites/turks_lumbermen_sprite.spr
@@ -26629,7 +26737,7 @@
 5 slave
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
-6 united
+6 sicily
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 7 normans
@@ -26658,7 +26766,7 @@
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 39 unit_sprites/turks_lumbermen_sprite.spr
-6 united
+6 sicily
 59 unit_models/_Units/EN_Lmail_Hmail/textures/woodland.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/woodland_normal.texture
 39 unit_sprites/turks_lumbermen_sprite.spr
@@ -26676,7 +26784,7 @@
 5 slave
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
-6 united
+6 sicily
 48 unit_models/AttachmentSets/woodland_diff.texture
 48 unit_models/AttachmentSets/woodland_norm.texture 0
 7 normans
@@ -27145,7 +27253,7 @@
 17 dunedain_garrison
 1 1 
 61 unit_models/_Units/en_lmail_hmail/dunedain_garrison_lod0.mesh 6400 
-6
+7
 6 saxons
 60 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2.texture
 67 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2_normal.texture
@@ -27170,7 +27278,11 @@
 60 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2.texture
 67 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2_normal.texture
 52 unit_sprites/turks_arnorian_heavy_archers_sprite.spr
-6
+7 denmark 
+60 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2.texture
+67 unit_models/_Units/EN_Lmail_Hmail/textures/dunedain2_normal.texture
+52 unit_sprites/turks_arnorian_heavy_archers_sprite.spr
+7
 6 saxons 
 49 unit_models/AttachmentSets/dunedain3_diff.texture
 49 unit_models/AttachmentSets/dunedain3_norm.texture 0
@@ -27187,6 +27299,9 @@
 49 unit_models/AttachmentSets/dunedain3_diff.texture
 49 unit_models/AttachmentSets/dunedain3_norm.texture 0
 4 merc 
+49 unit_models/AttachmentSets/dunedain3_diff.texture
+49 unit_models/AttachmentSets/dunedain3_norm.texture 0
+7 denmark 
 49 unit_models/AttachmentSets/dunedain3_diff.texture
 49 unit_models/AttachmentSets/dunedain3_norm.texture 0
 1 
@@ -27293,7 +27408,7 @@
 18 Sworn_Infantry_upg
 1 1 
 66 unit_models/_Units/EN_Lmail_Hmail/aum_arnor_heavy_archer_lod0.mesh 6400 
-4
+5
 7 normans
 60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
 67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture 
@@ -27310,7 +27425,11 @@
 60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
 67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture 
 52 unit_sprites/turks_arnorian_heavy_archers_sprite.spr
-4
+5 slave 
+60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
+67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture 
+52 unit_sprites/turks_arnorian_heavy_archers_sprite.spr
+5
 7 normans
 45 unit_models/AttachmentSets/arnor_diff.texture 
 45 unit_models/AttachmentSets/arnor_norm.texture 0 
@@ -27321,6 +27440,9 @@
 45 unit_models/AttachmentSets/arnor_diff.texture 
 45 unit_models/AttachmentSets/arnor_norm.texture 0 
 4 merc 
+45 unit_models/AttachmentSets/arnor_diff.texture 
+45 unit_models/AttachmentSets/arnor_norm.texture 0 
+5 slave 
 45 unit_models/AttachmentSets/arnor_diff.texture 
 45 unit_models/AttachmentSets/arnor_norm.texture 0 
 1 
@@ -27384,7 +27506,7 @@
 18 Sworn_Horsemen_upg 
 1 1 
 48 unit_models/_Units/EN_Lmail_Hmail/arms_lod0.mesh 6400 
-4
+5
 7 normans 
 60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
 67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture  
@@ -27401,7 +27523,11 @@
 60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
 67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture 
 45 unit_sprites/turks_arnor_sergeants_sprite.spr
-4
+6 sicily 
+60 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike.texture 
+67 unit_models/_Units/EN_Lmail_Hmail/textures/arnorpike_normal.texture 
+45 unit_sprites/turks_arnor_sergeants_sprite.spr
+5
 7 normans
 45 unit_models/AttachmentSets/arnor_diff.texture 
 45 unit_models/AttachmentSets/arnor_norm.texture 0 
@@ -27414,6 +27540,9 @@
 4 merc 
 45 unit_models/AttachmentSets/arnor_diff.texture 
 45 unit_models/AttachmentSets/arnor_norm.texture 0 
+6 sicily 
+45 unit_models/AttachmentSets/arnor_diff.texture 
+45 unit_models/AttachmentSets/arnor_norm.texture 0  
 1 
 5 Horse 
 13 MTW2_HR_Lance 
@@ -28759,7 +28888,7 @@
 7 normans
 56 unit_models/_Units/EN_Lmail_Hmail/textures/bree2.texture
 63 unit_models/_Units/EN_Lmail_Hmail/textures/bree2_normal.texture 0
-6 united
+6 sicily
 56 unit_models/_Units/EN_Lmail_Hmail/textures/bree2.texture
 63 unit_models/_Units/EN_Lmail_Hmail/textures/bree2_normal.texture 0
 5 slave
@@ -28778,7 +28907,7 @@
 7 normans
 44 unit_models/AttachmentSets/bree_diff.texture
 44 unit_models/AttachmentSets/bree_norm.texture 0
-6 united
+6 sicily
 44 unit_models/AttachmentSets/bree_diff.texture
 44 unit_models/AttachmentSets/bree_norm.texture 0
 5 slave
@@ -35406,7 +35535,7 @@
 19 beorning_axemen_upg
 1 1
 60 unit_models/_units/Anduin_Bill/Beorning_axemen_upg_lod0.mesh 6400
-7
+8
 8 timurids
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
@@ -35435,7 +35564,11 @@
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
 37 unit_sprites/merc_beorning_sprite.spr
-7
+6 russia
+56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
+61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture
+37 unit_sprites/merc_beorning_sprite.spr
+8
 8 timurids
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
@@ -35455,12 +35588,14 @@
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
 7 ireland
+56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
+61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
+6 russia
 56 unit_models/_Units/Anduin_Bill/textures/Beorning.texture
 61 unit_models/_Units/Anduin_Bill/textures/Beorning_norm.texture 0
 1
 4 None
 11 MTW2_2H_Axe 0
-2
 19 MTW2_2H_Axe_primary 14 fs_test_shield
 0
 16 -0.090000004 0 0 -0.34999999 0.80000001 0.60000002
@@ -38205,7 +38340,7 @@
 7 ulairon
 1 1
 41 unit_models/_Units/mord/ulairon_lod0.mesh 6400
-3
+4
 4 merc
 48 unit_models/_Units/mord/textures/ulairon.texture
 53 unit_models/_Units/mord/textures/ulairon_norm.texture
@@ -38218,7 +38353,11 @@
 48 unit_models/_Units/mord/textures/ulairon.texture
 53 unit_models/_Units/mord/textures/ulairon_norm.texture
 43 unit_sprites/poland_dorwin_maa50_sprite.spr
-3
+7 england
+48 unit_models/_Units/mord/textures/ulairon.texture
+53 unit_models/_Units/mord/textures/ulairon_norm.texture
+43 unit_sprites/poland_dorwin_maa50_sprite.spr
+4
 4 merc
 54 unit_models/AttachmentSets/guldur_men_att_diff.texture
 54 unit_models/AttachmentSets/guldur_men_att_norm.texture 0
@@ -38226,6 +38365,9 @@
 54 unit_models/AttachmentSets/guldur_men_att_diff.texture
 54 unit_models/AttachmentSets/guldur_men_att_norm.texture 0
 5 slave
+54 unit_models/AttachmentSets/guldur_men_att_diff.texture
+54 unit_models/AttachmentSets/guldur_men_att_norm.texture 0
+7 england
 54 unit_models/AttachmentSets/guldur_men_att_diff.texture
 54 unit_models/AttachmentSets/guldur_men_att_norm.texture 0
 4
@@ -46710,7 +46852,7 @@
 18 watchmen_sword_upg
 1 1
 58 unit_models/_Units/EN_Lmail_Hmail/breeland_sword_lod0.mesh 6400
-5
+6
 6 russia
 59 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg_normal.texture
@@ -46731,7 +46873,11 @@
 59 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg.texture
 66 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg_normal.texture
 46 unit_sprites/turks_breeland_militia_sprite.spr
-5
+6 sicily
+59 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg.texture
+66 unit_models/_Units/EN_Lmail_Hmail/textures/bree_upg_normal.texture
+46 unit_sprites/turks_breeland_militia_sprite.spr
+6
 6 russia
 44 unit_models/AttachmentSets/bree_diff.texture
 44 unit_models/AttachmentSets/bree_norm.texture 0
@@ -46745,6 +46891,9 @@
 44 unit_models/AttachmentSets/bree_diff.texture
 44 unit_models/AttachmentSets/bree_norm.texture 0
 5 slave
+44 unit_models/AttachmentSets/bree_diff.texture
+44 unit_models/AttachmentSets/bree_norm.texture 0
+6 sicily
 44 unit_models/AttachmentSets/bree_diff.texture
 44 unit_models/AttachmentSets/bree_norm.texture 0
 1
@@ -47040,7 +47189,7 @@
 14 Rhudaur_Nobles
 1 1
 57 unit_models/_Units/EN_Lmail_Hmail/rhudaurnobles_lod0.mesh 6400
-7
+8
 8 gundabad
 68 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles.texture
 73 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles_norm.texture
@@ -47069,7 +47218,11 @@
 68 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles.texture
 73 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles_norm.texture
 47 unit_sprites/portugal_rhudaur_axemen_sprite.spr
-7
+7 normans
+68 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles.texture
+73 unit_models/_Units/EN_Lmail_Hmail/textures/rhudaur_huscarles_norm.texture
+47 unit_sprites/portugal_rhudaur_axemen_sprite.spr
+8
 8 gundabad
 56 unit_models/AttachmentSets/rhudaur_huscarles_att.texture
 61 unit_models/AttachmentSets/rhudaur_huscarles_att_norm.texture 0
@@ -47089,6 +47242,9 @@
 56 unit_models/AttachmentSets/rhudaur_huscarles_att.texture
 61 unit_models/AttachmentSets/rhudaur_huscarles_att_norm.texture 0
 4 merc
+56 unit_models/AttachmentSets/rhudaur_huscarles_att.texture
+61 unit_models/AttachmentSets/rhudaur_huscarles_att_norm.texture 0
+7 normans
 56 unit_models/AttachmentSets/rhudaur_huscarles_att.texture
 61 unit_models/AttachmentSets/rhudaur_huscarles_att_norm.texture 0
 1
@@ -48713,7 +48869,7 @@
 17 arnor_knights_2hd
 1 1
 51 unit_models/_Units/EN_Lmail_Hmail/2h_arkn_lod0.mesh 6400
-4
+5
 5 turks
 58 unit_models/_Units/EN_Lmail_Hmail/textures/knights.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/knights_normal.texture
@@ -48730,7 +48886,11 @@
 58 unit_models/_Units/EN_Lmail_Hmail/textures/knights.texture
 65 unit_models/_Units/EN_Lmail_Hmail/textures/knights_normal.texture
 47 unit_sprites/turks_arnor_knights_2hd_sprite.spr
-4
+7 normans
+58 unit_models/_Units/EN_Lmail_Hmail/textures/knights.texture
+65 unit_models/_Units/EN_Lmail_Hmail/textures/knights_normal.texture
+47 unit_sprites/turks_arnor_knights_2hd_sprite.spr
+5
 5 turks
 47 unit_models/AttachmentSets/knights_diff.texture
 47 unit_models/AttachmentSets/knights_norm.texture 0
@@ -48741,6 +48901,9 @@
 47 unit_models/AttachmentSets/knights_diff.texture
 47 unit_models/AttachmentSets/knights_norm.texture 0
 4 merc
+47 unit_models/AttachmentSets/knights_diff.texture
+47 unit_models/AttachmentSets/knights_norm.texture 0
+7 normans
 47 unit_models/AttachmentSets/knights_diff.texture
 47 unit_models/AttachmentSets/knights_norm.texture 0
 1

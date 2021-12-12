@@ -316,7 +316,7 @@ strat_model		morholt  ; 3 (Morholt)
 strat_model		witchking  ; 4 (Witch-king)
 strat_model		agandaur  ; 5 (Agandaur)
 strat_model		drangu  ; 6 (Drangu)
-strat_model		dunedain_captain   ; 7 (Hunvorn)
+strat_model		barrow_wight   ; 7 (Hunvorn)
 strat_model		northguard   ; 8 (Hunvorn)
 battle_model		angmar_general
 battle_equip		gladius, chainmail shirt helmet and rectangular shield

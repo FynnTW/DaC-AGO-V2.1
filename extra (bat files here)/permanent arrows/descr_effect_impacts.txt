@@ -3146,9 +3146,9 @@ effect poison_arrow_cloud
 		; main explosion
 		model 					models_effects/poison_cloud.cas
 		sort_for_speed
-		anim_time				6.0
-		max_scale   			2.3
-		max_particle_scale 		0.5
+		anim_time				3.0
+		max_scale   			2.0
+		max_particle_scale 		0.3
 		scale_time_bias			0.35
 		alpha_time_bias			0.3
 		;clr_adjust_by_ambient_intensity 		

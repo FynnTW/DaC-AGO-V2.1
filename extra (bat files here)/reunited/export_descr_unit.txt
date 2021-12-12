@@ -240,7 +240,7 @@ stat_food				60, 300
 stat_cost				5, 1000, 265, 75, 75, 1000, 1, 100
 armour_ug_levels		5, 6, 6, 6
 armour_ug_models	    tower_bodyguard, tower_bodyguard_upg
-ownership				sicily, turks, slave
+ownership				sicily, slave
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -276,7 +276,7 @@ stat_fire_delay			0
 stat_food				60, 300
 stat_cost				2, 580, 200, 75, 75, 580, 4, 53
 armour_ug_levels		1, 2, 3, 4
-armour_ug_models		gondor_guardsmen_ug1, gondor_guardsmen_ug2 gondor_guardsmen_ug3, gondor_guardsmen_ug3
+armour_ug_models		gondor_guardsmen_ug1, gondor_guardsmen_ug2, gondor_guardsmen_ug3, gondor_guardsmen_ug3
 ownership				sicily, turks, slave, russia
 era 0					sicily
 era 1					sicily
@@ -425,7 +425,7 @@ stat_food        		60, 300
 stat_cost       		2, 780, 290, 125, 125, 780, 4, 87
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		anfalas_pikes, anfalas_pikes, anfalas_pikes_upg, anfalas_pikes_upg
-ownership				sicily, denmark, united, slave, turks
+ownership				sicily, denmark, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -462,7 +462,7 @@ stat_food				60, 300
 stat_cost				3, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_infantry, gondor_infantry_ug1, gondor_infantry_ug2, gondor_infantry_ug2
-ownership				sicily, united, slave, turks, russia
+ownership				sicily, slave, turks, russia
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -499,7 +499,7 @@ stat_food				60, 300
 stat_cost				3, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_spearmen, gondor_spearmen_ug1, gondor_spearmen_ug2, gondor_spearmen_ug2
-ownership				sicily, united, slave, turks
+ownership				sicily, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -536,7 +536,7 @@ stat_food				60, 300
 stat_cost				3, 900, 315, 125, 125, 900, 4, 90
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_archers, gondor_archers_ug1, gondor_archers_ug2,  gondor_archers_ug2
-ownership				sicily, united, slave, turks
+ownership				sicily, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -573,7 +573,7 @@ stat_food				60, 300
 stat_cost				3, 1050, 360, 125, 125, 1050, 4, 105
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_cavalry, gondor_cavalry_ug1, gondor_cavalry_ug2, gondor_cavalry_ug2
-ownership				sicily, united, slave, turks
+ownership				sicily, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -649,7 +649,7 @@ stat_food				60, 300
 stat_cost				5, 1400, 470, 200, 200, 1400, 2, 140
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		fountain_guard_ug1, fountain_guard_ug1, fountain_guard_ug1
-ownership				sicily, denmark, united, slave, turks
+ownership				sicily, denmark, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -725,7 +725,7 @@ stat_food				60, 300
 stat_cost				3, 750, 255, 125, 125, 750, 4, 75
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		gondor_blackroot_archers_theo, gondor_blackroot_archers, gondor_blackroot_archers, gondor_blackroot_archers_ug1
-ownership				sicily, denmark, united, slave, turks
+ownership				sicily, denmark, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -762,7 +762,7 @@ stat_food				60, 300
 stat_cost				3, 1085, 355, 125, 125, 1085, 4, 108
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		lossarnach, lossarnach_ug1, lossarnach_ug2, lossarnach_ug2
-ownership				sicily, denmark, united, slave, turks
+ownership				sicily, denmark, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -799,10 +799,10 @@ stat_food				60, 300
 stat_cost				5, 920, 260, 125, 125, 920, 3, 86
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		rangers, rangers, rangers_ug1, rangers_ug1
-ownership				sicily, denmark, united, slave, turks
-era 0					sicily, united
-era 1					sicily, united
-era 2					sicily, united
+ownership				sicily, denmark, slave, turks
+era 0					sicily
+era 1					sicily
+era 2					sicily
 info_pic_dir			sicily
 recruit_priority_offset	20
 
@@ -873,7 +873,7 @@ stat_food				60, 300
 stat_cost				5, 1275, 420, 125, 125, 1275, 3, 127
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		kingsguard, kingsguard_ug1, kingsguard_ug1
-ownership				sicily, united, slave, turks
+ownership				sicily, slave, turks
 era 0					sicily
 era 1					sicily
 era 2					sicily
@@ -1061,7 +1061,7 @@ stat_food				60, 300
 stat_cost				5, 1000, 280, 200, 200, 1000, 1, 100
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		royal_swan_guard, royal_swan_guard_upg, royal_swan_guard_upg
-ownership				denmark, turks, slave, sicily
+ownership				denmark, turks, slave
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1098,7 +1098,7 @@ stat_food				60, 300
 stat_cost				2, 500, 190, 125, 125, 500, 5, 50
 armour_ug_levels		1, 2, 3, 4
 armour_ug_models		coastal_guard, coastal_guard, coastal_guard_upg, marines
-ownership				denmark, turks, slave, sicily
+ownership				denmark, turks, slave
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1134,7 +1134,7 @@ stat_food				60, 300
 stat_cost				5, 1170, 425, 200, 200, 1170, 3, 117
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		cobas_haven, cobas_haven, cobas_haven
-ownership				denmark, turks, slave, sicily
+ownership				denmark, turks, slave
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1171,7 +1171,7 @@ stat_food        		60, 300
 stat_cost        		2, 680, 285, 125, 125, 680, 4, 73
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		gondor_dol_amroth_guardsmen, gondor_dol_amroth_guardsmen_ug1, gondor_dol_amroth_guardsmen_ug1, gondor_dol_amroth_guardsmen_upg2
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1207,7 +1207,7 @@ stat_food        		60, 300
 stat_cost        		2, 670, 270, 125, 125, 670, 4, 95
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		gondor_dol_amroth_archers, gondor_dol_amroth_archers_ug1, gondor_dol_amroth_archers_ug1, gondor_dol_amroth_archers_upg2
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1243,7 +1243,7 @@ stat_food       		60, 300
 stat_cost        		3, 950, 360, 125, 125, 950, 4, 95
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		gondor_dol_amroth_men-at-arms, gondor_dol_amroth_men-at-arms_ug1, gondor_dol_amroth_men-at-arms_ug1, gondor_dol_amroth_men-at-arms_ug2
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1280,7 +1280,7 @@ stat_food        		60, 300
 stat_cost       		2, 760, 295, 125, 125, 760, 4, 87
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		gondor_dol_amroth_pikemen, gondor_dol_amroth_pikemen_ug1, gondor_dol_amroth_pikemen_ug1, gondor_dol_amroth_pikemen_upg2
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1317,7 +1317,7 @@ stat_food				60, 300
 stat_cost				5, 1500, 515, 200, 200, 1500, 2, 150
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		datower_guards3, datower_guards3, datower_guards3
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1354,7 +1354,7 @@ stat_food				60, 300
 stat_cost				5, 1150, 440, 200, 200, 1150, 2, 115
 armour_ug_levels 		5, 6, 6, 6
 armour_ug_models 		datower_guards, datower_guards
-ownership				denmark, sicily, slave, turks
+ownership				denmark, slave, turks
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1501,7 +1501,7 @@ stat_food				60, 300
 stat_cost				5, 920, 365, 125, 125, 910, 4, 91
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		nimrodl, nimrodl, nimrodl, nimrodl
-ownership				denmark, turks, slave, sicily
+ownership				denmark, turks, slave
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -1539,7 +1539,7 @@ stat_food				60, 300
 stat_cost				5, 1275, 425, 125, 125, 1275, 3, 127
 armour_ug_levels 		4, 5, 6, 6, 6
 armour_ug_models 		White_Knights, White_Knights, White_Knights
-ownership				denmark, turks, slave, sicily
+ownership				denmark, turks, slave
 era 0					denmark
 era 1					denmark
 era 2					denmark
@@ -2701,7 +2701,7 @@ stat_food				60, 300
 stat_cost				2, 360, 150, 75, 75, 360, 4, 36
 armour_ug_levels		0, 1, 2, 3
 armour_ug_models		lumbermen, lumbermen_upg, lumbermen_upg, lumbermen_upg
-ownership				normans, united, turks, slave, russia
+ownership				normans, turks, slave, russia
 era 0					normans, turks
 era 1					normans, turks
 era 2					normans, turks
@@ -2734,7 +2734,7 @@ stat_food				60, 300
 stat_cost				3, 425, 155, 75, 75, 425, 4, 42
 armour_ug_levels		0, 1, 2, 3
 armour_ug_models		woodland_hunters, woodland_hunters_upg, woodland_hunters_upg, woodland_hunters_upg
-ownership				normans, united, turks, slave, russia
+ownership				normans, turks, slave, russia
 era 0					normans, turks
 era 1					normans, turks
 era 2					normans, turks
@@ -2995,7 +2995,7 @@ stat_food				60, 300
 stat_cost				5, 1000, 145, 125, 125, 1000, 1, 100
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		troll_slayers, troll_slayers, troll_slayers_upg, troll_slayers_upg
-ownership				turks, slave, sicily
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3066,7 +3066,7 @@ stat_food				60, 300
 stat_cost				6, 1410, 450, 200, 200, 1410, 2, 141
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		dunedain_elite_archer, dunedain_elite_archer, dunedain_elite_archer_upg, dunedain_elite_archer_upg
-ownership				turks, slave, normans, sicily
+ownership				turks, slave, normans
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3101,7 +3101,7 @@ stat_food				60, 300
 stat_cost				2, 630, 270, 125, 125, 630, 5, 63
 armour_ug_levels		1, 2, 3, 4
 armour_ug_models		arnor_militia, arnor_militia_upg, arnor_militia_upg, arnor_militia_upg
-ownership				turks, slave, sicily
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3136,7 +3136,7 @@ stat_food				60, 300
 stat_cost				2, 540, 240, 125, 125, 540, 5, 54
 armour_ug_levels		1, 2, 3, 4
 armour_ug_models		arnorian_archers, arnorian_archers_upg, arnorian_archers_upg, arnorian_archers_upg
-ownership				turks, slave, sicily
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3171,7 +3171,7 @@ stat_food				60, 300
 stat_cost				3, 750, 280, 125, 125, 750, 4, 75
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		Sworn_Infantry, Sworn_Infantry, Sworn_Infantry_upg, Sworn_Infantry_upg
-ownership				turks, slave, sicily
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3206,7 +3206,7 @@ stat_food				60, 300
 stat_cost				5, 956, 330, 125, 125, 956, 4, 95
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		Sworn_Horsemen, Sworn_Horsemen, Sworn_Horsemen_upg, Sworn_Horsemen_upg
-ownership				turks, sicily, normans, slave
+ownership				turks, normans, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3241,7 +3241,7 @@ stat_food				60, 300
 stat_cost				3, 785, 220, 125, 125, 785, 4, 75
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		dorwin_maa101, dorwin_maa101_upg, dorwin_maa101_upg, dorwin_maa101_upg
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3276,7 +3276,7 @@ stat_food				60, 300
 stat_cost				5, 805, 230, 125, 125, 805, 4, 80
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		dorwin_maa103, dorwin_maa103_upg, dorwin_maa103_upg, dorwin_maa103_upg
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3313,7 +3313,7 @@ stat_food				60, 300
 stat_cost				3, 850, 225, 125, 125, 850, 3, 88
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		Dunedain_Spearmen, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg, Dunedain_Spearmen_upg
-ownership				turks, sicily, slave, normans, saxons
+ownership				turks, slave, normans, saxons
 era 0					turks, saxons, normans
 era 1					turks, saxons, normans
 era 2					turks, saxons, normans
@@ -3348,7 +3348,7 @@ stat_food				60, 300
 stat_cost				5, 1150, 320, 125, 125, 1150, 3, 118
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		br_dunedain, br_dunedain, arnor_knights_2hd, arnor_knights_2hd
-ownership				turks, normans, sicily, slave
+ownership				turks, normans, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3383,7 +3383,7 @@ stat_food				60, 300
 stat_cost				4, 930, 205, 125, 125, 930, 3, 80
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		dunedain_rangers2, dunedain_rangers2_upg, dunedain_rangers2_upg, dunedain_rangers2_upg
-ownership				turks, normans, sicily, slave
+ownership				turks, normans, slave
 era 0					turks, normans
 era 1					turks, normans
 era 2					turks, normans
@@ -3420,7 +3420,7 @@ stat_food				60, 300
 stat_cost				5, 865, 240, 125, 125, 865, 3, 80
 armour_ug_levels		2, 3, 4, 5
 armour_ug_models		mounted_dunedain_rangers, bowmasters, bowmasters, bowmasters
-ownership				turks, sicily, slave, saxons
+ownership				turks, slave, saxons
 era 0					turks, saxons
 era 1					turks, saxons
 era 2					turks, saxons
@@ -3456,7 +3456,7 @@ stat_food				60, 300
 stat_cost				5, 1250, 360, 125, 125, 1250, 3, 126
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		mounted_br, mounted_br, arnor_knights, arnor_knights
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3491,7 +3491,7 @@ stat_food				60, 300
 stat_cost				2, 880, 235, 125, 125, 880, 4, 76
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		arthedain_footmen, arthedain_footmen, arthedain_footmen_upg, arthedain_footmen_upg
-ownership				slave, turks, sicily
+ownership				slave, turks
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3526,7 +3526,7 @@ stat_food				60, 300
 stat_cost				6, 1350, 400, 200, 200, 1350, 2, 135
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		dunedain_infantry, dunedain_infantry, dunedain_infantry
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3561,7 +3561,7 @@ stat_food				60, 300
 stat_cost				5, 1150, 340, 125, 125, 1150, 2, 118
 armour_ug_levels		3, 4, 5, 6, 6, 6
 armour_ug_models		dunedain_swordsmen, dunedain_swordsmen, arnor_knights_dis, arnor_knights_dis
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -3597,7 +3597,7 @@ stat_food				60, 300
 stat_cost				6, 1500, 525, 200, 200, 1500, 2, 150
 armour_ug_levels		4, 5, 6, 6, 6
 armour_ug_models		dunedain_knights2, dunedain_knights2, dunedain_knights2
-ownership				turks, sicily, slave
+ownership				turks, slave
 era 0					turks
 era 1					turks
 era 2					turks
@@ -9768,7 +9768,7 @@ mount                   wildmen_chariot
 mount_effect            horse +2, camel +2, elephant +2
 attributes              sea_faring, very_hardy, can_withdraw, hide_forest, frighten_mounted
 move_speed_mod          1.3
-formation               4, 5, 9, 11, 2, square
+formation               4, 5, 9, 11, 2, horde
 stat_health             2, 2
 stat_pri                11, 6, enedwaith_cha_javelin, 85, 7, thrown, missile_mechanical, piercing, spear, 0, 1
 stat_pri_attr           thrown, ap, bp, area
@@ -9859,7 +9859,7 @@ stat_food				60, 300
 stat_cost				5, 1000, 240, 125, 125, 1000, 1, 100
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		bonded_champions
-ownership				aztecs
+ownership				aztecs, slave
 era 0					aztecs
 era 1					aztecs
 era 2					aztecs
@@ -10192,7 +10192,7 @@ stat_food				60, 300
 stat_cost				2, 500, 240, 125, 125, 500, 3, 50
 armour_ug_levels		2, 3, 4, 4, 4
 armour_ug_models		derfelmen, derfelmen
-ownership				aztecs, slave, teutonic_order
+ownership				aztecs, slave
 era 0					aztecs
 era 1					aztecs
 era 2					aztecs
@@ -10446,10 +10446,10 @@ stat_food				60, 300
 stat_cost				5, 1000, 240, 125, 125, 1000, 1, 100
 armour_ug_levels		3, 4, 4, 4
 armour_ug_models		mordor_uruks_bg
-ownership				england, poland, papal_states, slave
-era 0					england, poland, papal_states
-era 1					england, poland, papal_states
-era 2					england, poland, papal_states
+ownership				england, poland, slave
+era 0					england, poland
+era 1					england, poland
+era 2					england, poland
 recruit_priority_offset	25
 
 type					Orc Band
@@ -12167,7 +12167,7 @@ stat_food				60, 300
 stat_cost				3, 870, 305, 125, 125, 900, 4, 131
 armour_ug_levels		2, 3, 4, 5, 5, 5
 armour_ug_models		Warg_riders, Warg_riders_upg
-ownership				france, poland, slave, gundabad
+ownership				france, poland, slave, gundabad, england
 era 0					france, poland, gundabad
 era 1					france, poland, gundabad
 era 2					france, poland, gundabad
@@ -13381,7 +13381,7 @@ stat_cost				2, 850, 280, 200, 200, 1200, 4, 200
 armour_ug_levels		1
 armour_ug_models		Elephant_Crew3
 ownership				slave, hre
-era 0					slave
+era 0					slave, hre
 era 1					slave, hre
 era 2					slave, hre
 recruit_priority_offset 50
@@ -15264,7 +15264,7 @@ stat_food				60, 300
 stat_cost				2, 820, 320, 75, 75, 820, 4, 76
 armour_ug_levels		0, 1, 2, 3
 armour_ug_models		beastmaster, beastmaster, beastmaster_upg, beastmaster_upg
-ownership				spain, russia, slave, england
+ownership				spain, slave, england
 era 0					spain
 era 1					spain
 era 2					spain
@@ -16119,7 +16119,7 @@ soldier                 rhunel, 14, 3, 1.2
 mount                   easterling_chariot
 mount_effect            horse +4, camel +2
 attributes              sea_faring, very_hardy, can_withdraw, frighten_foot, frighten_mounted, extreme_range, command, power_charge
-formation               4, 5, 9, 11, 2, square
+formation               4, 5, 9, 11, 2, horde
 stat_health             2, 3
 stat_pri                9, 2, rhun_elite_arrow_chariot, 200, 50, missile, missile_mechanical, piercing, none, 0, 1
 stat_pri_attr           prec, area
@@ -16378,7 +16378,7 @@ mount                   easterling_chariot
 mount_effect            horse +4, camel +1, elephant +2
 attributes              sea_faring, very_hardy, can_withdraw, frighten_foot, frighten_mounted, extreme_range, command, power_charge
 move_speed_mod          1.1
-formation               4, 5, 9, 11, 2, square
+formation               4, 5, 9, 11, 2, horde
 stat_health             2, 3
 stat_pri	 			14, 4, khand_crossbow_bolt, 110, 20, missile, missile_mechanical, piercing, none, 0, 1
 stat_pri_attr	 		area, ap, bp
@@ -17321,7 +17321,7 @@ stat_food				60, 300
 stat_cost				2, 380, 140, 125, 125, 380, 5, 38
 armour_ug_levels		1, 2, 3
 armour_ug_models		farmhand_pikemen, farmhand_pikemen, farmhand_pikemen
-ownership				slave, sicily, byzantium, milan, scotland, aztecs, normans, united, denmark, teutonic_order, timurids, turks
+ownership				slave, sicily, byzantium, milan, scotland, aztecs, normans, denmark, teutonic_order, timurids, turks
 era 0					slave, normans
 era 1					slave, normans
 era 2					slave, normans
@@ -17429,10 +17429,10 @@ stat_food				60, 300
 stat_cost				2, 1200, 200, 60, 140, 1200, 2, 120
 armour_ug_levels		2
 armour_ug_models		westron_ballista_crew
-ownership				sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, aztecs, byzantium, venice, khand, spain, russia, slave
-era 0					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
-era 1					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
-era 2					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+ownership				sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, aztecs, byzantium, venice, khand, spain, russia, slave
+era 0					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+era 1					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+era 2					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
 recruit_priority_offset	-10
 
 type					Dwarven Ballista
@@ -17598,10 +17598,10 @@ stat_food				60, 300
 stat_cost				3, 1500, 350, 60, 140, 1500, 2, 150
 armour_ug_levels		4
 armour_ug_models		westron_catapult_crew
-ownership				sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, aztecs, byzantium, venice, khand, spain, russia, slave
-era 0					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
-era 1					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
-era 2					sicily, denmark, united, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+ownership				sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, aztecs, byzantium, venice, khand, spain, russia, slave
+era 0					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+era 1					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
+era 2					sicily, denmark, milan, scotland, teutonic_order, timurids, normans, turks, byzantium, aztecs, venice, khand, spain, russia
 recruit_priority_offset	-10
 
 type					Dwarven Catapult
@@ -17887,40 +17887,6 @@ era 1                   mongols, ireland, saxons, slave
 era 2                   mongols, ireland, saxons, slave
 recruit_priority_offset 0
 
-type                    Orc Garrison Elite
-dictionary				Snaga_Armoured_Defenders      ;Snaga Armoured Defenders AF1 
-category                infantry
-class				 	heavy
-voice_type				Heavy
-banner faction			main_infantry
-banner holy				crusade
-soldier					Norse_Swordsmen, 80, 0, 1.0
-mount_effect			elephant -4
-attributes				sea_faring, hide_forest, hardy, can_withdraw, free_upkeep_unit, mercenary_unit, garrison_unit, no_custom
-move_speed_mod			0.98
-formation				1.4, 1.4, 2.8, 2.8, 6, square
-stat_health				1, 6
-stat_pri				5, 3, no, 0, 0, melee, melee_blade, piercing, sword, 10, 1
-stat_pri_attr			no
-stat_sec				0, 0, no, 0, 0, no, melee_simple, blunt, none, 0, 1
-stat_sec_attr			no
-stat_pri_armour			4, 3, 3, leather
-stat_sec_armour			0, 0, flesh
-stat_heat				2
-stat_ground				0, 0, 0, 0
-stat_mental				18, normal, trained
-stat_charge_dist		6
-stat_fire_delay			0
-stat_food				60, 300
-stat_cost               1, 0, 0, 125, 125, 410, 4, 100
-armour_ug_levels        1, 2
-armour_ug_models        mordor_orcs, heavy_orcs
-ownership               portugal, hre, france, england, poland, slave, gundabad
-era 0                   portugal, hre, france, england, poland, slave, gundabad
-era 1                   portugal, hre, france, england, poland, slave, gundabad
-era 2                   portugal, hre, france, england, poland, slave, gundabad
-recruit_priority_offset 0
-
 type                    Harad Garrison Elite
 dictionary				Southron_Armoured_Defenders
 category                infantry
@@ -18057,6 +18023,39 @@ era 1                   timurids, teutonic_order, aztecs, slave
 era 2                   timurids, teutonic_order, aztecs, slave
 recruit_priority_offset 0
 
+type                    Orc Garrison Elite
+dictionary				Snaga_Armoured_Defenders      ;Snaga Armoured Defenders AF1 
+category                infantry
+class				 	heavy
+voice_type				Heavy
+banner faction			main_infantry
+banner holy				crusade
+soldier					Norse_Swordsmen, 80, 0, 1.0
+mount_effect			elephant -4
+attributes				sea_faring, hide_forest, hardy, can_withdraw, free_upkeep_unit, mercenary_unit, garrison_unit, no_custom
+move_speed_mod			0.98
+formation				1.4, 1.4, 2.8, 2.8, 6, square
+stat_health				1, 6
+stat_pri				5, 3, no, 0, 0, melee, melee_blade, piercing, sword, 10, 1
+stat_pri_attr			no
+stat_sec				0, 0, no, 0, 0, no, melee_simple, blunt, none, 0, 1
+stat_sec_attr			no
+stat_pri_armour			4, 3, 3, leather
+stat_sec_armour			0, 0, flesh
+stat_heat				2
+stat_ground				0, 0, 0, 0
+stat_mental				18, normal, trained
+stat_charge_dist		6
+stat_fire_delay			0
+stat_food				60, 300
+stat_cost               1, 0, 0, 125, 125, 410, 4, 100
+armour_ug_levels        1, 2
+armour_ug_models        mordor_orcs, heavy_orcs
+ownership               portugal, hre, france, england, poland, slave, gundabad
+era 0                   portugal, hre, france, england, poland, slave, gundabad
+era 1                   portugal, hre, france, england, poland, slave, gundabad
+era 2                   portugal, hre, france, england, poland, slave, gundabad
+recruit_priority_offset 0
 ;#################################################################
 ;############################ SHIPS ##############################
 ;#################################################################
@@ -18114,7 +18113,7 @@ stat_food				60, 300
 stat_cost				3, 1500, 150, 100, 100, 500, 4, 120
 armour_ug_levels		0
 armour_ug_models		Peasants
-ownership				sicily, turks, united, denmark, slave
+ownership				sicily, turks, denmark, slave
 recruit_priority_offset	0
 
 type					Gondor Ship
@@ -18142,7 +18141,7 @@ stat_food				60, 300
 stat_cost				5, 2000, 200, 100, 100, 500, 4, 120
 armour_ug_levels		0
 armour_ug_models		Peasants
-ownership				sicily, turks, united, denmark, slave
+ownership				sicily, turks, denmark, slave
 recruit_priority_offset	0
 
 type					Elven Boat
@@ -18388,7 +18387,7 @@ recruit_priority_offset	0
 
 ; Faction Standard Armour Cap (not to include unique blacksmith):
 ; 3 Moria, Bree, Anduin, Dunland, Enedwaith, Rohan, Harad, Khand, Mordor, Dol Guldur, Gundabad
-; 4 Dale, Dorwinion, Rhun, Isengard, Woodelves, Lothlorien, Angmar, Reunited
+; 4 Dale, Dorwinion, Rhun, Isengard, Woodelves, Lothlorien, Angmar
 ; 5 Gondor, Northedain, Dol Amroth, Adunaim
 ; 6 High Elves
 ; 7 Erebor, Ered Luin, Khazad-Dum
