@@ -284,18 +284,22 @@ water_cover
 1     500.0 distance 
 2  FIN 
 #    resolution level 2
-2   [nentries]
-0     150.0 distance 
-1  FIN 
-2   [nentries]
-0     150.0 distance 
-1  FIN 
-2   [nentries]
+3   [nentries]
 0     100.0 distance 
-1  FIN 
-2   [nentries]
-0     100.0 distance 
-1  FIN 
+1    1000.0 distance 
+2  FIN 
+3   [nentries]
+0      80.0 distance 
+1     500.0 distance 
+2  FIN 
+3   [nentries]
+0      50.0 distance 
+1     500.0 distance 
+2  FIN 
+3   [nentries]
+0      50.0 distance 
+1     500.0 distance 
+2  FIN 
 #==========================================================
 264   [Number of nveggroups]
 #----------------------------------------------------------
