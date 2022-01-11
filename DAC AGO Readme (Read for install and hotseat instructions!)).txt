@@ -1,4 +1,6 @@
-Run Full cleaner and the better water textures batch files after install
+
+
+!!!!!!!!!!!!!!Run Full cleaner after install!!!!!!!!!!!!!!
 
 Use dac.bat to start the game with Engine Overhaul Project enabled
 Use dac_no_EOP.bat to start with Engine Overhaul Project disabled

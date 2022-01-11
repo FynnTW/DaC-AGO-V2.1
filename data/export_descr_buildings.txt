@@ -13247,7 +13247,7 @@ building c_isengard_barracks
 			}
 		}
 		
-		c_isengard_barracks_lvl3 castle requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1 and building_present_min_level city_hall city_hall and building_present_min_level smith armourer
+		c_isengard_barracks_lvl3 castle requires factions { france, } and event_counter isengard_barracks_lvl3_ready 1 and building_present_min_level castle_hall c_city_hall and building_present_min_level smith armourer
 		{
 			capability
 			{

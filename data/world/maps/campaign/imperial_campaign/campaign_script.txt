@@ -8332,6 +8332,34 @@ script ; first line of script, must exist!
             terminate_monitor
         end_if
     end_monitor
+    
+    monitor_event CharacterTurnStart Trait Thranduil > 0
+    and IsRegionOneOf Elven_Mirkwood_Province
+        
+        add_money mongols 800
+        
+    end_monitor
+    
+    monitor_event CharacterTurnStart Trait ThranduilUnion > 0
+    and IsRegionOneOf Elven_Mirkwood_Province
+        
+        add_money ireland 800
+        
+    end_monitor
+    
+    monitor_event CharacterTurnStart Trait Celeborn > 0
+    and IsRegionOneOf Celebrant_Province
+        
+        add_money ireland 800
+        
+    end_monitor
+    
+    monitor_event CharacterTurnStart Trait CelebornUnion > 0
+    and IsRegionOneOf Celebrant_Province
+        
+        add_money mongols 800
+        
+    end_monitor
 
     ;########################## Scouring of the Shire ######################
 
@@ -16006,33 +16034,59 @@ script ; first line of script, must exist!
                             restrict_clickable_area East_Moria_Province
                             point_at_settlement East_Moria
                             set_counter moria_reclaiming_dwarves_status 8
-                            spawn_army
-                                faction slave, sub_faction hre
-                                character	random_name, named character, age 30, x 241, y 342, direction E, label moria_reclaiming_cleaners_1
-                                traits		OrcRace 1, AIBoost 1, Locked 1, GoodAttacker 1, GoodCommander 1, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1
-                                unit		Raider Warband		exp 0 armour 0 weapon_lvl 0
-                            end
-                            campaign_wait 0.1
-                            console_command auto_win attacker
-                            siege_settlement moria_reclaiming_cleaners_1, East_Moria, attack
-                            campaign_wait 0.5
-                            spawn_army
-                                faction hre
-                                character	random_name, named character, age 33, x 241, y 342, label moria_goblin_army_2
-                                traits		OrcRace 1, AIBoost 1, Locked 1, BattleChivalryEvil 2, BattleScarred 2, GoodAttacker 2, GoodCommander 3, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1
-                                unit		Goblin Bodyguards		exp 7 armour 1 weapon_lvl 1
-                                unit		Mountain Uruks	exp 5 armour 1 weapon_lvl 0
-                                unit		Heavy Goblin Halberd	exp 2 armour 0 weapon_lvl 0
-                                unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
-                                unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
-                                unit		Snaga Archers		exp 1 armour 0 weapon_lvl 1
-                                unit		Goblin Archers	exp 1 armour 0 weapon_lvl 1
-                                unit		Snaga Skirmishers	exp 2 armour 0 weapon_lvl 1
-                            end
-                            campaign_wait 0.2
-                            siege_settlement moria_goblin_army_2, East_Moria, attack
-                            campaign_wait 0.1
-                            historic_event moria_reclaiming_dwarves_east_halls
+                            if I_SettlementOwner East_Moria = hre
+                                spawn_army
+                                    faction hre
+                                    character	random_name, named character, age 33, x 241, y 342, label moria_goblin_army_2
+                                    traits		OrcRace 1, AIBoost 1, Locked 1, BattleChivalryEvil 2, BattleScarred 2, GoodAttacker 2, GoodCommander 3, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1
+                                    unit		Goblin Bodyguards		exp 7 armour 1 weapon_lvl 1
+                                    unit		Mountain Uruks	exp 5 armour 1 weapon_lvl 0
+                                    unit		Heavy Goblin Halberd	exp 2 armour 0 weapon_lvl 0
+                                    unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
+                                    unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
+                                    unit		Snaga Archers		exp 1 armour 0 weapon_lvl 1
+                                    unit		Goblin Archers	exp 1 armour 0 weapon_lvl 1
+                                    unit		Snaga Skirmishers	exp 2 armour 0 weapon_lvl 1
+                                end
+                                campaign_wait 0.5
+                                move moria_goblin_army_2, 245, 341
+                            end_if
+                            if not I_SettlementOwner East_Moria = hre
+                                spawn_army
+                                    faction slave, sub_faction hre
+                                    character	random_name, named character, age 30, x 241, y 342, direction E, label moria_reclaiming_cleaners_1
+                                    traits		OrcRace 1, AIBoost 1, Locked 1, GoodAttacker 1, GoodCommander 1, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                    unit		Raider Warband		exp 1 armour 0 weapon_lvl 0
+                                end
+                                campaign_wait 0.5
+                                console_command auto_win attacker
+                                siege_settlement moria_reclaiming_cleaners_1, East_Moria, attack
+                                campaign_wait 2
+                            end_if
+                            if I_SettlementOwner East_Moria = slave
+                                spawn_army
+                                    faction hre
+                                    character	random_name, named character, age 33, x 241, y 342, label moria_goblin_army_2
+                                    traits		OrcRace 1, AIBoost 1, Locked 1, BattleChivalryEvil 2, BattleScarred 2, GoodAttacker 2, GoodCommander 3, LoyaltyStarter 1, NightBattleCapable 1, PietyStarter 1
+                                    unit		Goblin Bodyguards		exp 7 armour 1 weapon_lvl 1
+                                    unit		Mountain Uruks	exp 5 armour 1 weapon_lvl 0
+                                    unit		Heavy Goblin Halberd	exp 2 armour 0 weapon_lvl 0
+                                    unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
+                                    unit		Goblin Infantry	exp 3 armour 0 weapon_lvl 0
+                                    unit		Snaga Archers		exp 1 armour 0 weapon_lvl 1
+                                    unit		Goblin Archers	exp 1 armour 0 weapon_lvl 1
+                                    unit		Snaga Skirmishers	exp 2 armour 0 weapon_lvl 1
+                                end
+                                campaign_wait 0.2
+                                siege_settlement moria_goblin_army_2, East_Moria, attack
+                                campaign_wait 0.1
+                                historic_event moria_reclaiming_dwarves_east_halls
+                            end_if
                         end_if
                         if not I_CharacterTypeNearTile norway named_character, 6 249, 337
                             point_at_strat_position 249, 337
@@ -31212,7 +31266,7 @@ script ; first line of script, must exist!
 
     end_monitor
 
-    monitor_event FactionTurnEnd I_HotseatEnabled = 1
+    monitor_event FactionTurnEnd I_HotseatEnabled
     and FactionIsLocal
 
         if I_CompareCounter palantiri > 0
@@ -31238,7 +31292,7 @@ script ; first line of script, must exist!
     end_monitor
 
     monitor_event FactionTurnStart FactionIsLocal
-    and I_HotseatEnabled = 0
+    and not I_HotseatEnabled
 
         if I_CompareCounter palantiri > 0
             campaign_wait 3
@@ -32009,6 +32063,7 @@ declare_counter ob_under_fire
 declare_counter ob_engaged
 declare_counter control_union
 declare_counter ai_reinforcements
+declare_counter gates_destroyed
 declare_counter player_breached
 declare_counter ai_breached
 declare_counter g5_special
@@ -33245,40 +33300,28 @@ end_if
 set_counter labels_set 1
 end_monitor
 
+
 monitor_event BattleConflictPhaseCommenced FactionIsLocal
 
     battle_wait 5
 
     if not I_BattlePlayerArmyIsAttacker
         if I_BattleIsSiegeBattle
-            ai_gta_plan_set 1 ATTACK_SETTLEMENT
-            log always ------------------------ai_gta_plan_set 1 ATTACK_SETTLEMENT (start)-------------------------------------
             ai_gta_plan_set 0 ATTACK_SETTLEMENT
-            log always ------------------------ai_gta_plan_set 0 ATTACK_SETTLEMENT (start)-------------------------------------
+            log always ------------------------ai_gta_plan_set 1 ATTACK_SETTLEMENT (start)-------------------------------------
             ai_active_set on
         end_if
         if I_BattleIsSallyOutBattle
-            ai_gta_plan_set 1 SALLY_OUT
-            log always ------------------------ai_gta_plan_set 1 SALLY_OUT (start)-------------------------------------
             ai_gta_plan_set 0 SALLY_OUT
-            log always ------------------------ai_gta_plan_set 0 SALLY_OUT (start)-------------------------------------
+            log always ------------------------ai_gta_plan_set 1 SALLY_OUT (start)-------------------------------------
             ai_active_set on
-        end_if
-        if I_BattleIsRiverBattle
-            ai_gta_add_objective 1 ASSAULT_CROSSING 999
-            set_counter obj_set 1
-            ai_gta_plan_set 1 ATTACK_ALL
-            ai_active_set on
-            log always ------------------------ai_gta_plan_set ATTACK_ALL (start)-------------------------------------
-            log always ------------------------ai_gta_add_objective ASSAULT_CROSSING (start)-------------------------------------
         end_if
         if I_CompareCounter open_battle = 1
-            ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+            ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
             set_counter obj_set 1
-            log always ------------------------ai_gta_plan_set ATTACK_ENEMY_BATTLEGROUP (start)-------------------------------------
-            ai_gta_plan_set 1 ATTACK_ALL
+            log always ------------------------ai_gta_plan_set ATTACK_ENEMY_BATTLEGROUP (enemy missile > 10)-------------------------------------
+            ai_gta_plan_set 0 ATTACK_ALL
             log always ------------------------ai_gta_plan_set ATTACK_ALL (start)-------------------------------------
-            battle_wait 1
             ai_active_set on
         end_if
     end_if
@@ -34150,17 +34193,18 @@ and I_BattlePlayerArmyIsAttacker
 		end_if
 	end_if
     if I_CompareCounter gates_destroyed = 0
+    and I_CompareCounter player_breached = 0
     and I_BattleIsSiegeBattle
     and not I_BattleSettlementFortificationLevel = none
-		if I_PercentageOfArmyKilled 1 0 > 20
+		if I_PercentageOfArmyKilled 1 0 > 12
             if I_CompareCounter obj_set = 1
                 ai_gta_del_objective 1 0
             end_if
 			ai_gta_add_objective 1 DEFEND_LINE 999
             set_counter obj_set 1
             log always ------------------------ ai_gta_add_objective DEFEND_LINE (> 20% army killed)-------------------------------------
-            ai_gta_plan_set 1 WITHDRAW
-            log always ------------------------ ai_gta_plan_set WITHDRAW  (> 20% army killed)-------------------------------------
+            ai_gta_plan_set 1 DEFEND_FEATURE
+            log always ------------------------ ai_gta_plan_set DEFEND_FEATURE  (> 20% army killed)-------------------------------------
             ai_active_set on
 			battle_wait 10
 		end_if
@@ -34168,7 +34212,7 @@ and I_BattlePlayerArmyIsAttacker
     if I_CompareCounter gates_destroyed > 0
     and I_BattleIsSiegeBattle
     and not I_BattleSettlementFortificationLevel = none
-		if I_PercentageOfArmyKilled 1 0 > 20
+		if I_PercentageOfArmyKilled 1 0 > 12
             if I_CompareCounter obj_set = 1
                 ai_gta_del_objective 1 0
             end_if
@@ -36174,7 +36218,7 @@ monitor_conditions I_BattleStarted
     and I_IsBattleSettlementCastle
     and I_BattleSettlementFortificationLevel > 2
 
-    ai_gta_add_objective 1 ATTACK_ENEMY_BATTLEGROUP 999
+    ai_gta_add_objective 0 ATTACK_ENEMY_BATTLEGROUP 999
 
     if I_CompareCounter enemy_unit_count > 0
     if I_UnitFormation a1u1 = horde
